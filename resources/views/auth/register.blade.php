@@ -1,0 +1,43 @@
+{{--@title('Register')--}}
+
+@php($title = 'Register')
+
+@extends('layouts.small')
+
+@section('small-content')
+    {{--if we have github data do login--}}
+    @if (session()->has('githubData'))
+        {!! Form::open(['route' => 'register.post']) !!}
+        @formGroup('name')
+        {!! Form::label('name') !!}
+        {!! Form::text('name', session('githubData.name'), ['class' => 'form-control', 'required', 'placeholder' => 'John Doe']) !!}
+        @error('name')
+        @endFormGroup
+
+        @formGroup('email')
+        {!! Form::label('email') !!}
+        {!! Form::email('email', session('githubData.email'), ['class' => 'form-control', 'required', 'placeholder' => 'john@example.com']) !!}
+        @error('email')
+        @endFormGroup
+
+        @formGroup('username')
+        {!! Form::label('username') !!}
+        {!! Form::text('username', session('githubData.username'), ['class' => 'form-control', 'required', 'placeholder' => 'johndoe']) !!}
+        @error('username')
+        @endFormGroup
+
+        {!! Form::hidden('github_id', session('githubData.id')) !!}
+        {!! Form::hidden('github_username', session('githubData.username')) !!}
+        {!! Form::submit('Register', ['class' => 'btn btn-primary btn-block']) !!}
+        {!! Form::close() !!}
+    @else
+        <p>Register With Github</p>
+        <a href="{{ route('login.github') }}" class="btn btn-default btn-block">
+            <i class="fa fa-github"></i> Github
+        </a>
+        <p>Register With Email Address</p>
+        <a href="{{ route('register.no-github') }}" class="btn btn-default btn-block">
+            <i class="fa fa-register"></i> Register
+        </a>
+    @endif
+@endsection
