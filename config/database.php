@@ -34,7 +34,7 @@ return [
     */
 
     'connections' => [
-        'hcipsmlk' => [
+        'heroku_auto_get' => [
             'driver' => 'pgsql',
             'host' => $dbopts['host'],
             'port' => $dbopts['port'],
