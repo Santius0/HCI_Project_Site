@@ -28,23 +28,21 @@ class GithubController extends Controller
      */
     public function handleProviderCallback()
     {
-        if(User::findByGithubId($this->getSocialiteUser()->getId())->first()->github_id == $this->getSocialiteUser()->getId()) {
-            try {
-                $socialiteUser = $this->getSocialiteUser();
-            } catch (InvalidStateException $exception) {
-                $this->error('errors.github_invalid_state');
+        try {
+            $socialiteUser = $this->getSocialiteUser();
+        } catch (InvalidStateException $exception) {
+            $this->error('errors.github_invalid_state');
 
-                return redirect()->route('login');
-            }
-
-            try {
-                $user = User::findByGithubId($socialiteUser->getId());
-            } catch (ModelNotFoundException $exception) {
-                return $this->userNotFound(new GithubUser($socialiteUser->getRaw()));
-            }
-
-            return $this->userFound($user, $socialiteUser);
+            return redirect()->route('login');
         }
+
+        try {
+            $user = User::findByGithubId($socialiteUser->getId());
+        } catch (ModelNotFoundException $exception) {
+            return $this->userNotFound(new GithubUser($socialiteUser->getRaw()));
+        }
+
+        return $this->userFound($user, $socialiteUser);
     }
 
     private function getSocialiteUser(): SocialiteUser

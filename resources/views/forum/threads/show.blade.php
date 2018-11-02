@@ -38,7 +38,7 @@
                         <a href="{{ route('threads', $thread->author()->username()) }}" class="thread-info-link">{{ $thread->author()->name() }}</a>
                          posted {{ $thread->createdAt()->diffForHumans() }}
                     </div>
-                    @include('forum.threads.info.tags')
+                    {{--@include('forum.threads.info.tags')--}}
                 </div>
 
                 <div class="panel-body forum-content">
