@@ -20,17 +20,17 @@
             <a class="btn btn-success btn-block" href="{{ route('thread.create') }}">Create Thread</a>
             @endif
 
-            <h3>Tags</h3>
-            <div class="list-group">
+            {{--<h3>Tags</h3>--}}
+            {{--<div class="list-group">--}}
                 {{--<a href="{{ route('threads') }}" class="list-group-item {{ active('thread*', ! isset($activeTag) || $activeTag === null) }}">All</a>--}}
 
-                @foreach (App\Tag::orderBy('name')->get() as $tag)
-                    <a href="{{ route('threads.tag', $tag->id()) }}"
-                       class="list-group-item{{ isset($activeTag) && $tag->matches($activeTag) ? ' active' : '' }}">
-                        {{ $tag->name() }}
-                    </a>
-                @endforeach
-            </div>
+                {{--@foreach (App\Tag::orderBy('name')->get() as $tag)--}}
+                    {{--<a href="{{ route('threads.tag', $tag->id()) }}"--}}
+                       {{--class="list-group-item{{ isset($activeTag) && $tag->matches($activeTag) ? ' active' : '' }}">--}}
+                        {{--{{ $tag->name() }}--}}
+                    {{--</a>--}}
+                {{--@endforeach--}}
+            {{--</div>--}}
         </div>
         <div class="col-lg-9">
             @if (count($threads))
@@ -54,7 +54,7 @@
                                     @endif
                                     </div>
 
-                                @include('forum.threads.info.tags')
+{{--                                @include('forum.threads.info.tags')--}}
                                 </div>
 
                                 <div class="panel-body">
