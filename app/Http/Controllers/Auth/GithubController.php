@@ -61,7 +61,7 @@ class GithubController extends Controller
         return redirect()->route('threads');
     }
 
-    private function userNotFound(GithubUser $user): RedirectResponse
+    private function userNotFound(GithubUser $user)
     {
         if ($user->isTooYoung()) {
             $this->error('errors.github_account_too_young');
