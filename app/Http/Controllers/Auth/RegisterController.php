@@ -59,12 +59,12 @@ class RegisterController extends Controller
     public function register(Request $request)
     {
         $request->validate([
-            'name' => 'required|max:255',
+//            'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'username' => 'required|max:40|unique:users',
         ]);
         $user = new User([
-            'name' => $request->name,
+            'name' => $request->github_id,
             'email' => $request->email,
             'username' => strtolower($request->username),
             'password' => Hash::make($request->password),
