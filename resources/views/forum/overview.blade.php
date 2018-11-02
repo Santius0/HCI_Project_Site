@@ -16,7 +16,10 @@
                 </div>
             {{ Form::close() }}
 
+            @if(Auth::user())
             <a class="btn btn-success btn-block" href="{{ route('thread.create') }}">Create Thread</a>
+            @endif
+
             {{--<h3>Tags</h3>--}}
             <div class="list-group">
                 {{--<a href="{{ route('threads') }}" class="list-group-item {{ active('thread*', ! isset($activeTag) || $activeTag === null) }}">All</a>--}}

@@ -36,11 +36,11 @@ return [
     'connections' => [
         'heroku_auto_get' => [
             'driver' => 'pgsql',
-            'host' => $dbopts['host'],
-            'port' => $dbopts['port'],
-            'database' => ltrim($dbopts["path"],'/'),
-            'username' => $dbopts["user"],
-            'password' => $dbopts['pass'],
+            'host' => isset($dbopts['host']) ? $dbopts['host'] : env('DB_HOST'),
+            'port' => isset($dbopts['port']) ? $dbopts['port'] : env('DB_PORT'),
+            'database' => isset($dbopts['path']) ? ltrim($dbopts["path"],'/') : env('DB_DATABASE'),
+            'username' => isset($dbopts['user']) ? $dbopts["user"] : env('DB_USERNAME'),
+            'password' => isset($dbopts['pass']) ? $dbopts['pass'] : env('DB_PASSWORD'),
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',

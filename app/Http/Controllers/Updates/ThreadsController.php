@@ -31,11 +31,14 @@ class ThreadsController extends Controller
 
     public function create()
     {
-        return view('forum.threads.create');
+        return Auth::user() ? view('forum.threads.create') : redirect(route('threads'));
     }
 
     public function store(Request $request)
     {
+        if(!Auth::user()){
+            return false;
+        }
         $request->validate([
             'title' => 'required|max:60',
             'body' => 'required'
@@ -55,12 +58,20 @@ class ThreadsController extends Controller
 
     public function edit($id)
     {
-        $thread = Thread::find($id);
-        return view('forum.threads.edit', ['thread' => $thread, 'tags' => Tag::all(), 'method' => 'PUT', 'route' => 'thread.update']);
+        if(Auth::user()) {
+            $thread = Thread::find($id);
+            return view('forum.threads.edit', ['thread' => $thread, 'tags' => Tag::all(), 'method' => 'PUT', 'route' => 'thread.update']);
+        }
+        else{
+            return view(route('thread'));
+        }
     }
 
     public function update(Request $request, $id)
     {
+        if(!Auth::user()){
+            return false;
+        }
         $thread = Thread::find($id);
         if($thread){
             $thread->title = $request->title;
@@ -74,6 +85,9 @@ class ThreadsController extends Controller
 
     public function destroy($id)
     {
+        if(!Auth::user()){
+            return false;
+        }
         $thread = Thread::find($id);
         $thread->delete();
         return redirect(route('threads'));

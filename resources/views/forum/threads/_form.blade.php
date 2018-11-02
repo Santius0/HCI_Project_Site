@@ -8,7 +8,8 @@
 
     @formGroup('body')
         {!! Form::label('body') !!}
-        {!! Form::textarea('body', isset($thread) ? $thread->body() : null, ['class' => 'form-control wysiwyg', 'required']) !!}
+{{--        {!! Form::textarea('body', isset($thread) ? $thread->body() : null, ['class' => 'form-control wysiwyg', 'required']) !!}--}}
+        @include('layouts.editor')
         @error('body')
     @endFormGroup
 
