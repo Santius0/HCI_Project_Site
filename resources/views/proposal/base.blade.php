@@ -5,3 +5,4 @@
     $research_methods = Thread::getThread('Research Methods');
     $survey = Thread::getThread('Survey: Interview questions and general response');
    ;)
+@title('Proposal' . $subTitle)
