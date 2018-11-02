@@ -63,17 +63,8 @@ class RegisterController extends Controller
             'email' => 'required|email|max:255|unique:users',
             'username' => 'required|max:40|unique:users',
         ]);
-        $user = new User([
-            'name' => $request->name,
-            'email' => $request->email,
-            'username' =>$request->github_id,
-            'password' => $request->github_id,
-            'github_id' => $request->github_id,
-            'github_username' => $request->github_username,
-            'user_type' => User::DEFAULT,
-            'remember_token' => '',
-        ]);
-        $user->save();
+
+        event(new Registered($user = $this->create($request)));
         $this->guard()->login($user);
 
         return $this->registered($request, $user)
@@ -83,33 +74,22 @@ class RegisterController extends Controller
     /**
      * Create a new user instance after a valid registration.
      */
-    protected function create(array $data, int $mode = 0)
+    protected function create(Request $request)
     {
 
-        $this->assertEmailAddressIsUnique($data['email']);
-        $this->assertUsernameIsUnique($data['username']);
+        $this->assertEmailAddressIsUnique($request->email);
+        $this->assertUsernameIsUnique($request->username);
 
-        if($mode == 0) {
-            $user = new User([
-                'name' => $data['name'],
-                'email' => $data['email'],
-                'username' => strtolower($data['username']),
-                'github_id' => $data['github_id'],
-                'github_username' => $data['github_username'],
-                'user_type' => User::DEFAULT,
-                'remember_token' => '',
-            ]);
-        }
-        else{
-            $user = new User([
-                'name' => $data['name'],
-                'email' => $data['email'],
-                'username' => strtolower($data['username']),
-                'password' => Hash::make($data['password']),
-                'user_type' => User::DEFAULT,
-                'remember_token' => '',
-            ]);
-        }
+        $user = new User([
+            'name' => $request->name,
+            'email' => $request->email,
+            'username' => strtolower($request->username),
+            'password' => Hash::make($request->password),
+            'github_id' => $request->github_id,
+            'github_username' => $request->github_username,
+            'user_type' => User::DEFAULT,
+            'remember_token' => '',
+        ]);
         $user->save();
 //        $this->dispatch(new SendEmailConfirmation($user));
         return $user;
