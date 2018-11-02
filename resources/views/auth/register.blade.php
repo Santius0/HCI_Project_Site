@@ -23,7 +23,7 @@
             @error('username')
         @endFormGroup
 
-        {!! Form::text('github_id', session('githubData.id')) !!}
+        {!! Form('github_id', session('githubData.id')) !!}
         {!! Form::hidden('github_username', session('githubData.username')) !!}
         {!! Form::hidden('password', null) !!}
         {!! Form::submit('Register', ['class' => 'btn btn-primary btn-block']) !!}

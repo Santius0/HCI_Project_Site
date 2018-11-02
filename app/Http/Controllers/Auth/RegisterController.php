@@ -58,13 +58,13 @@ class RegisterController extends Controller
 
     public function register(Request $request)
     {
-        if(!$request->password) {
+        if($request->password == null) {
             $request->validate([
                 'name' => 'required|max:255',
                 'email' => 'required|email|max:255|unique:users',
                 'username' => 'required|max:40|unique:users',
             ]);
-            event(new Registered($user = $this->create($request->all())));
+            event(new Registered($user = $this->create($request->all(),0)));
         }
         else{
             $request->validate([
