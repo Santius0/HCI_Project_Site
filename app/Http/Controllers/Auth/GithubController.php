@@ -68,7 +68,7 @@ class GithubController extends Controller
 
             return redirect()->home();
         }
-
+        return 'jjj';
         return $this->redirectUserToRegistrationPage($user);
     }
 
