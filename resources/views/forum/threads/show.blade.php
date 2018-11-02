@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="panel-body forum-content">
-                    @markdown($thread->displayBody())
+                    <p>$thread->body()</p>
                 </div>
             </div>
 
