@@ -13,7 +13,7 @@
 
         @formGroup('email')
             {!! Form::label('email') !!}
-            {!! Form::email('email', session('githubData.id'), ['class' => 'form-control', 'required', 'placeholder' => 'john@example.com']) !!}
+            {!! Form::email('email', session('githubData.email'), ['class' => 'form-control', 'required', 'placeholder' => 'john@example.com']) !!}
             @error('email')
         @endFormGroup
 
@@ -23,7 +23,7 @@
             @error('username')
         @endFormGroup
 
-        {!! Form::hidden('github_id', session('githubData.id')) !!}
+        {!! Form::text('github_id', session('githubData.id')) !!}
         {!! Form::hidden('github_username', session('githubData.username')) !!}
         {!! Form::hidden('password', null) !!}
         {!! Form::submit('Register', ['class' => 'btn btn-primary btn-block']) !!}
