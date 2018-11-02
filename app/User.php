@@ -72,8 +72,8 @@ class User extends Authenticatable
     public function gravatarUrl($size = 100): string
     {
         $hash = md5(strtolower(trim($this->email)));
-//        $default = urlencode(route('avatar', ['username' => $this->username()]));
-        $default = urlencode("https://img.icons8.com/color/50/000000/avatar.png");
+        $default = urlencode(route('avatar', ['username' => $this->username()]));
+//        $default = urlencode("https://img.icons8.com/color/50/000000/avatar.png");
 
         return "https://www.gravatar.com/avatar/$hash?d=$default&s=$size";
     }
