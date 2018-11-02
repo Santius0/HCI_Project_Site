@@ -95,8 +95,8 @@ class RegisterController extends Controller
                 'name' => $data['name'],
                 'email' => $data['email'],
                 'username' => strtolower($data['username']),
-                'github_id' => $data['githubId'],
-                'github_username' => $data['githubUsername'],
+                'github_id' => $data['github_id'],
+                'github_username' => $data['github_username'],
                 'user_type' => User::DEFAULT,
                 'remember_token' => '',
             ]);
