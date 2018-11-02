@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="panel-body forum-content">
-                    <p>{{ $thread->displayBody() }}</p>
+                    <p>{!! $thread->body() !!}}</p>
                 </div>
             </div>
 
