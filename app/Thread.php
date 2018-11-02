@@ -38,12 +38,17 @@ class Thread extends Model
 
     public function body(): string
     {
-        return strip_tags(Markdown::convertToHtml($this->body));
+        return $this->body;
     }
 
-    public function excerpt(): string
+    public function displayBody()
     {
-        return strip_tags(Markdown::convertToHtml($this->body()));
+        Markdown::convertToHtml($this->body());
+    }
+
+    public function excerpt(int $limit = 100): string
+    {
+        return str_limit(strip_tags(Markdown::convertToHtml($this->body())), $limit);
     }
 
     public function tags()
