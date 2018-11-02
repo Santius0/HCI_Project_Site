@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use App\User;
 use Laravel\Socialite\Facades\Socialite;
 use App\GithubUser;
-use App\Jobs\UpdateProfile;
+//use App\Jobs\UpdateProfile;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
 use Laravel\Socialite\Two\InvalidStateException;
