@@ -58,23 +58,22 @@ class RegisterController extends Controller
 
     public function register(Request $request)
     {
-        if($request->password == null) {
-            $request->validate([
-                'name' => 'required|max:255',
-                'email' => 'required|email|max:255|unique:users',
-                'username' => 'required|max:40|unique:users',
-            ]);
-            event(new Registered($user = $this->create($request->all(),0)));
-        }
-        else{
-            $request->validate([
-                'name' => 'required|max:255',
-                'email' => 'required|email|max:255|unique:users',
-                'username' => 'required|max:40|unique:users',
-                'password' => 'required|confirmed|min:6'
-            ]);
-            event(new Registered($user = $this->create($request->all(), 1)));
-        }
+        $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|email|max:255|unique:users',
+            'username' => 'required|max:40|unique:users',
+        ]);
+        $user = new User([
+            'name' => $request->name,
+            'email' => $request->email,
+            'username' => strtolower($request->username),
+            'password' => Hash::make($request->password),
+            'github_id' => $request->github_id,
+            'github_username' => $request->github_username,
+            'user_type' => User::DEFAULT,
+            'remember_token' => '',
+        ]);
+        $user->save();
         $this->guard()->login($user);
 
         return $this->registered($request, $user)
