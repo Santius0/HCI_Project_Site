@@ -70,7 +70,7 @@
                     </div>
 
                     <div class="panel-body forum-content">
-                        @markdown($reply->body())
+                        <p>$reply->body())</p>
                     </div>
                 </div>
 
