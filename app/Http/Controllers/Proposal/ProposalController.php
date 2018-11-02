@@ -13,5 +13,4 @@ class ProposalController extends Controller
         return view('proposal.overview');
     }
 
-
 }

@@ -14,12 +14,12 @@
         @error('body')
     @endFormGroup
 
-    {{--@formGroup('tags')--}}
-        {{--{!! Form::label('tags') !!}--}}
-        {{--{!! Form::select('tags', $tags->pluck('name', 'id'), isset($thread) ? $thread->tags_ids() : [], ['class' => 'form-control', 'multiple']) !!}--}}
+    @formGroup('tags')
+        {!! Form::label('tags') !!}
+        {!! Form::select('tags', $tags->pluck('name', 'id'), isset($thread) ? $thread->tags_ids() : [], ['class' => 'form-control', 'multiple']) !!}
         {{--<span class="help-block">You can choose up to 3 tags.</span>--}}
-        {{--@error('tags')--}}
-    {{--@endFormGroup--}}
+        @error('tags')
+    @endFormGroup
 
     {!! Form::submit(isset($thread) ? 'Update Thread' : 'Create Thread', ['class' => 'btn btn-primary btn-block']) !!}
     <a href="{{ isset($thread) ? route('thread.show', $thread->id()) : route('threads') }}" class="btn btn-default btn-block">Cancel</a>

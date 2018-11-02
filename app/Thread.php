@@ -137,8 +137,13 @@ class Thread extends Model
             '));
     }
 
-    static public function getThread($title)
+    public static function getThread($title): self
     {
-        return self::where('title', $title)->first();
+        return static::where('title', $title)->first();
+    }
+
+    public static function getThreads($title)
+    {
+        return static::where('title', $title)->get();
     }
 }
