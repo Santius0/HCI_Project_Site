@@ -6,7 +6,7 @@
     </div>
 
     <div class="jumbotron text-center">
-        <div class="logo"><img src="{{ asset('images/placeholder1.png') }}" title={{ env('APP_NAME') }}></div>
+        <div class="logo"><img src="{{ asset('images/My_UWI_Owl.png') }}" title={{ env('APP_NAME') }}></div>
 
         <div style="margin-top:40px">
             <h2>
