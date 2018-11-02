@@ -28,6 +28,9 @@ class GithubController extends Controller
      */
     public function handleProviderCallback()
     {
+        echo $this->getSocialiteUser()->getId();
+        echo User::findByGithubId($this->getSocialiteUser()->getId())->first();
+        return;
         try {
             $socialiteUser = $this->getSocialiteUser();
         } catch (InvalidStateException $exception) {
@@ -61,14 +64,14 @@ class GithubController extends Controller
         return redirect()->route('threads');
     }
 
-    private function userNotFound(GithubUser $user)
+    private function userNotFound(GithubUser $user): RedirectResponse
     {
         if ($user->isTooYoung()) {
             $this->error('errors.github_account_too_young');
 
             return redirect()->home();
         }
-        return 'jjj';
+
         return $this->redirectUserToRegistrationPage($user);
     }
 
