@@ -86,7 +86,8 @@
                 <hr>
                 {!! Form::open(['route' => 'comment.store']) !!}
                 {{--@formGroup('body')--}}
-                {!! Form::textarea('body', null, ['class' => 'form-control wysiwyg', 'required']) !!}
+{{--                {!! Form::textarea('body', null, ['class' => 'form-control wysiwyg', 'required']) !!}--}}
+                @include('layouts.editor')
                 {{--@error('body')--}}
                 {{--@endFormGroup--}}
 
