@@ -1,5 +1,5 @@
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-<textarea name="content" class="form-control my-editor">{!! isset($thread) ? $thread->body() : null !!}</textarea>
+<textarea name="body" class="form-control my-editor">{!! isset($thread) ? $thread->body() : null !!}</textarea>
 <script>
     var editor_config = {
         path_absolute : "/",
@@ -27,7 +27,7 @@
                 file : cmsURL,
                 title : 'Filemanager',
                 width : x * 0.8,
-                height : y * 0.8,
+                height : y * 1.2,
                 resizable : "yes",
                 close_previous : "no"
             });
