@@ -1,5 +1,5 @@
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-<textarea name="body" class="form-control my-editor">{!! isset($thread) ? $thread->body() : null !!}</textarea>
+<textarea name="body" class="form-control my-editor, required">{!! isset($thread) ? $thread->body() : null !!}</textarea>
 <script>
     var editor_config = {
         path_absolute : "/",
@@ -25,9 +25,9 @@
 
             tinyMCE.activeEditor.windowManager.open({
                 file : cmsURL,
-                title : 'Filemanager',
+                title : 'HCIPSMLK',
                 width : x * 0.8,
-                height : y * 1.2,
+                height : y * 0.8,
                 resizable : "yes",
                 close_previous : "no"
             });
