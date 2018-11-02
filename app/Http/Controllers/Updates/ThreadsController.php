@@ -15,7 +15,7 @@ class ThreadsController extends Controller
     public function index()
     {
 //        $threads = Thread::all();
-        $threads = Thread::orderBy('created_at')->get();
+        $threads = Thread::orderBy('created_at', 'desc')->get();
         return view('forum.overview', compact('threads'));
 //        $search = request('search');
 //        $threads = $search ? SearchThreads::get($search) : Thread::feedPaginated();

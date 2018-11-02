@@ -136,4 +136,9 @@ class Thread extends Model
                 END AS latest_creation
             '));
     }
+
+    static public function getThread($title)
+    {
+        return self::where('title', $title)->first();
+    }
 }
