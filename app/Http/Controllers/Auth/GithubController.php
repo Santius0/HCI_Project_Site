@@ -72,12 +72,12 @@ class GithubController extends Controller
         $new_user = new User([
             'name' => $user->getName(),
             'email' => $user->getEmail(),
-            'username' => $user->getNickname(),
+            'username' => $user->getUsername(),
             'github_id' => $user->getId(),
-            'github_username' => $user->getNickname()
+            'github_username' => $user->getUsername()
         ]);
         $new_user->save();
-        Auth::login($user);
+        Auth::login($new_user);
         return $this->redirectUserToRegistrationPage($user);
     }
 
