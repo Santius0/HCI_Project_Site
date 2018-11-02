@@ -33,7 +33,8 @@ class ThreadsController extends Controller
 
     public function create()
     {
-        return Auth::user() ? view('forum.threads.create') : redirect(route('threads'));
+        $tags = Tag::all()->toArray();
+        return Auth::user() ? view('forum.threads.create', compact('tags')) : redirect(route('threads'));
     }
 
     public function store(Request $request)
