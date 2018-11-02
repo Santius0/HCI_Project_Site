@@ -42,6 +42,7 @@ Route::namespace('Auth')->group(function () {
 //    // Social authentication
     Route::get('login/github', 'GithubController@redirectToProvider')->name('login.github');
     Route::get('auth/github', 'GithubController@handleProviderCallback');
+    Route::get('register/username/change', 'GithubController@usernameChaange')->name('register.username.post');
 });
 
 Route::prefix('/updates')->namespace('Updates')->group(function (){

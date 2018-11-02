@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\User;
 use Laravel\Socialite\Facades\Socialite;
@@ -68,8 +69,25 @@ class GithubController extends Controller
 
             return redirect()->home();
         }
-
+        $user = Socialite::driver('github')->user();
+        $new_user = new User([
+            'name' => $user->getName(),
+            'email' => $user->getEmail(),
+            'username' => $user->getNickname(),
+            'github_id' => $user->getId(),
+            'github_username' => $user->getNickname()
+        ]);
+        $new_user->save();
+        Auth::login($user);
         return $this->redirectUserToRegistrationPage($user);
+    }
+
+    public function usernameChange(Request $request)
+    {
+        $user = Auth::user();
+        $user->username = $request->username;
+        $user->save();
+        return redirect(route('threads'));
     }
 
     private function redirectUserToRegistrationPage(GithubUser $user): RedirectResponse
