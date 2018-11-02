@@ -37,26 +37,6 @@ final class GithubUser implements Arrayable
         return array_get($this->attributes, $name);
     }
 
-    public function getId()
-    {
-        return $this->get('id');
-    }
-
-    public function getName()
-    {
-        return $this->get('name');
-    }
-
-    public function getEmail()
-    {
-        return $this->get('email');
-    }
-
-    public function getUsername()
-    {
-        return $this->get('login');
-    }
-
     public function toArray(): array
     {
         return [
