@@ -81,3 +81,8 @@ Route::prefix('/profile')->namespace('Profile')->group(function (){
     Route::get('avatar/{username}', 'ProfileController@avatar')->name('avatar');
 });
 
+Route::prefix('/proposal')->namespace('Proposal')->group(function(){
+    Route::get('/', 'ProposalController@index')->name('proposal');
+    Route::get('/definition', 'ProposalController@definition')->name('proposal.definition');
+    Route::get('/research', 'ProposalController@research')->name('proposal.research');
+});

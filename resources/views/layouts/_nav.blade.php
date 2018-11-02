@@ -13,6 +13,7 @@
         <div class="collapse navbar-collapse" id="main-navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="{{ active(['threads', 'thread*']) }}"><a href="{{ route('threads') }}">Updates</a></li>
+                <li class="{{ active(['proposal', 'proposal*']) }}"><a href="{{ route('proposal') }}">Project Proposal</a></li>
                 {{--<li class="{{ active(['team', 'team*']) }}"><a href="{{ route('team') }}">Team Members</a></li>--}}
                 {{--<li class="{{ active(['subjects', 'subjects*']) }}"><a href="{{ route('subjects') }}">Test Subjects</a></li>--}}
             </ul>
