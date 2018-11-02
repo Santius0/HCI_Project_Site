@@ -1,4 +1,4 @@
-<div class="modal fade" id="{{ $id }}" tabindex="-1" role="dialog">
+<div class="modal" id="{{ $id }}" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             {{ Form::open(['route' => $route, 'method' => 'DELETE']) }}

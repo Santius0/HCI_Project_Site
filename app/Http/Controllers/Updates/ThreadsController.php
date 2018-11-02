@@ -76,6 +76,6 @@ class ThreadsController extends Controller
     {
         $thread = Thread::find($id);
         $thread->delete();
-        return back();
+        return redirect(route('threads'));
     }
 }

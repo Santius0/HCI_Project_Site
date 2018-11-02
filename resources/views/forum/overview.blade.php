@@ -8,17 +8,17 @@
     <h1>{{ $title }}</h1>
     <hr>
 
-    {{--<div class="row forum">--}}
-        {{--<div class="col-lg-3">--}}
-            {{--{{ Form::open(['route' => 'threads', 'method' => 'GET']) }}--}}
-                {{--<div class="form-group">--}}
+    <div class="row forum">
+        <div class="col-lg-3">
+            {{ Form::open(['route' => 'threads', 'method' => 'GET']) }}
+                <div class="form-group">
                     {{--{{ Form::text('search', $search ?? null, ['class' => 'form-control', 'placeholder' => 'Search for threads...']) }}--}}
-                {{--</div>--}}
-            {{--{{ Form::close() }}--}}
+                </div>
+            {{ Form::close() }}
 
-            {{--<a class="btn btn-success btn-block" href="{{ route('thread.create') }}">Create Thread</a>--}}
+            <a class="btn btn-success btn-block" href="{{ route('thread.create') }}">Create Thread</a>
             {{--<h3>Tags</h3>--}}
-            {{--<div class="list-group">--}}
+            <div class="list-group">
                 {{--<a href="{{ route('threads') }}" class="list-group-item {{ active('thread*', ! isset($activeTag) || $activeTag === null) }}">All</a>--}}
 
                 {{--@foreach (App\Tag::orderBy('name')->get() as $tag)--}}
@@ -27,8 +27,8 @@
                         {{--{{ $tag->name() }}--}}
                     {{--</a>--}}
                 {{--@endforeach--}}
-            {{--</div>--}}
-        {{--</div>--}}
+            </div>
+        </div>
         <div class="col-lg-9">
             @if (count($threads))
                         @foreach ($threads as $thread)
@@ -64,10 +64,10 @@
                             </div>
                         @endforeach
 
-                        <div class="text-center">
+                        {{--<div class="text-center">--}}
                             {{--{!! $threads->render() !!}--}}
-                            Pagination Thing
-                        </div>
+                            {{--Pagination Thing--}}
+                        {{--</div>--}}
             @else
                 <div class="alert alert-info text-center">
                     No threads were found!
