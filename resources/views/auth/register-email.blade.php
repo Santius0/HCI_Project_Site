@@ -33,6 +33,9 @@
         @error('password_confirmation')
     @endFormGroup
 
+    {!! Form::hidden('github_id', null) !!}
+    {!! Form::hidden('github_username', null) !!}
+
     <div class="form-group">
         <label>
             {!! Form::checkbox('remember') !!}

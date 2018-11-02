@@ -25,6 +25,7 @@
 
         {!! Form::hidden('github_id', session('githubData.id')) !!}
         {!! Form::hidden('github_username', session('githubData.username')) !!}
+        {!! Form::hidden('password', null) !!}
         {!! Form::submit('Register', ['class' => 'btn btn-primary btn-block']) !!}
         {!! Form::close() !!}
     @else
