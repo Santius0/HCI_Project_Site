@@ -69,7 +69,6 @@ class GithubController extends Controller
 
             return redirect()->home();
         }
-        $user = Socialite::driver('github')->user();
         $new_user = new User([
             'name' => $user->getName(),
             'email' => $user->getEmail(),
