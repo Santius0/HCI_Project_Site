@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Updates;
 
+use App\Comment;
 use App\Http\Controllers\Controller;
 use App\Tag;
 use App\Thread;
@@ -89,6 +90,7 @@ class ThreadsController extends Controller
             return false;
         }
         $thread = Thread::find($id);
+        Comment::where('parent_id', $id)->delete();
         $thread->delete();
         return redirect(route('threads'));
     }
