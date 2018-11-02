@@ -1,16 +1,21 @@
-@extends('layouts.small')
+@title('Login')
 
-@php($title = 'Login')
+@extends('layouts.small')
 
 @section('small-content')
     {!! Form::open(['route' => 'login.post']) !!}
 
-    {!! Form::label('email address') !!}
-    {!! Form::email('email', null, ['class' => 'form-control', 'required']) !!}
+    @formGroup('email')
+        {!! Form::label('email address') !!}
+        {!! Form::email('email', null, ['class' => 'form-control', 'required']) !!}
+        @error('email')
+    @endFormGroup
 
-    {!! Form::label('password') !!}
-    {!! Form::password('password', ['class' => 'form-control', 'required']) !!}
-
+    @formGroup('password')
+        {!! Form::label('password') !!}
+        {!! Form::password('password', ['class' => 'form-control', 'required']) !!}
+        @error('password')
+    @endFormGroup
 
     <div class="form-group">
         <label>

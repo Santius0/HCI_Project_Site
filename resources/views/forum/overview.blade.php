@@ -1,6 +1,6 @@
 @php($subTitle = isset($activeTag) ? $activeTag->name() : null)
 
-@php($title = 'Updates' . $subTitle)
+@title('Updates' . $subTitle)
 
 @extends('layouts.default')
 

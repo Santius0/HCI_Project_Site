@@ -1,16 +1,16 @@
 {!! Form::open(['route' => $route, 'method' => $method ?? 'POST']) !!}
-    {{--@formGroup('subject')--}}
+    @formGroup('subject')
         {!! Form::label('title') !!}
         {!! Form::text('title', isset($thread) ? $thread->title() : null, ['class' => 'form-control', 'required', 'maxlength' => '60']) !!}
         <span class="help-block">Maximum 60 characters.</span>
-        {{--@error('subject')--}}
-    {{--@endFormGroup--}}
+        @error('subject')
+    @endFormGroup
 
-    {{--@formGroup('body')--}}
+    @formGroup('body')
         {!! Form::label('body') !!}
         {!! Form::textarea('body', isset($thread) ? $thread->body() : null, ['class' => 'form-control wysiwyg', 'required']) !!}
-        {{--@error('body')--}}
-    {{--@endFormGroup--}}
+        @error('body')
+    @endFormGroup
 
     {{--@formGroup('tags')--}}
         {{--{!! Form::label('tags') !!}--}}

@@ -1,25 +1,37 @@
-{{--@title('Register')--}}
-@php($title = 'Register')
-
+@title('Register')
 @extends('layouts.small')
 
 @section('small-content')
     {!! Form::open(['route' => 'register.post']) !!}
+    @formGroup('name')
+        {!! Form::label('name') !!}
+        {!! Form::text('name', null, ['class' => 'form-control', 'required', 'placeholder' => 'John Doe']) !!}
+        @error('name')
+    @endFormGroup
 
-    {!! Form::label('name') !!}
-    {!! Form::text('name', null, ['class' => 'form-control', 'required', 'placeholder' => 'John Doe']) !!}
+    @formGroup('email')
+        {!! Form::label('email') !!}
+        {!! Form::email('email', null, ['class' => 'form-control', 'required', 'placeholder' => 'john@example.com']) !!}
+        @error('email')
+    @endFormGroup
 
-    {!! Form::label('email') !!}
-    {!! Form::email('email', null, ['class' => 'form-control', 'required', 'placeholder' => 'john@example.com']) !!}
+    @formGroup('username')
+        {!! Form::label('username') !!}
+        {!! Form::text('username', null, ['class' => 'form-control', 'required', 'placeholder' => 'johndoe']) !!}
+        @error('username')
+    @endFormGroup
 
-    {!! Form::label('username') !!}
-    {!! Form::text('username', null, ['class' => 'form-control', 'required', 'placeholder' => 'johndoe']) !!}
+    @formGroup('password')
+        {!! Form::label('password') !!}
+        {!! Form::password('password', ['class' => 'form-control', 'required', 'placeholder' => '6 or more characters']) !!}
+        @error('password')
+    @endFormGroup
 
-    {!! Form::label('password') !!}
-    {!! Form::password('password', ['class' => 'form-control', 'required', 'placeholder' => '6 or more characters']) !!}
-
-    {!! Form::label('confirm password') !!}
-    {!! Form::password('password_confirmation', ['class' => 'form-control', 'required', 'placeholder' => '6 or more characters']) !!}
+    @formGroup('password_confirmation')
+        {!! Form::label('confirm password') !!}
+        {!! Form::password('password_confirmation', ['class' => 'form-control', 'required', 'placeholder' => '6 or more characters']) !!}
+        @error('password_confirmation')
+    @endFormGroup
 
     <div class="form-group">
         <label>

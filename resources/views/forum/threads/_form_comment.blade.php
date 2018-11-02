@@ -1,10 +1,10 @@
 {!! Form::open(['route' => $route, 'method' => $method ?? 'POST']) !!}
 
-{{--@formGroup('body')--}}
-{!! Form::label('body') !!}
-{!! Form::textarea('body', isset($comment) ? $comment->body() : null, ['class' => 'form-control wysiwyg', 'required']) !!}
-{{--@error('body')--}}
-{{--@endFormGroup--}}
+@formGroup('body')
+    {!! Form::label('body') !!}
+    {!! Form::textarea('body', isset($comment) ? $comment->body() : null, ['class' => 'form-control wysiwyg', 'required']) !!}
+    @error('body')
+@endFormGroup
 
 {!! Form::hidden('author_id', $comment->author_id) !!}
 {!! Form::hidden('parent_id', $comment->parent_id) !!}

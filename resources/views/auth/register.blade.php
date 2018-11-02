@@ -1,7 +1,4 @@
-{{--@title('Register')--}}
-
-@php($title = 'Register')
-
+@title('Register')
 @extends('layouts.small')
 
 @section('small-content')
@@ -9,21 +6,21 @@
     @if (session()->has('githubData'))
         {!! Form::open(['route' => 'register.post']) !!}
         @formGroup('name')
-        {!! Form::label('name') !!}
-        {!! Form::text('name', session('githubData.name'), ['class' => 'form-control', 'required', 'placeholder' => 'John Doe']) !!}
-        @error('name')
+            {!! Form::label('name') !!}
+            {!! Form::text('name', session('githubData.name'), ['class' => 'form-control', 'required', 'placeholder' => 'John Doe']) !!}
+            @error('name')
         @endFormGroup
 
         @formGroup('email')
-        {!! Form::label('email') !!}
-        {!! Form::email('email', session('githubData.email'), ['class' => 'form-control', 'required', 'placeholder' => 'john@example.com']) !!}
-        @error('email')
+            {!! Form::label('email') !!}
+            {!! Form::email('email', session('githubData.email'), ['class' => 'form-control', 'required', 'placeholder' => 'john@example.com']) !!}
+            @error('email')
         @endFormGroup
 
         @formGroup('username')
-        {!! Form::label('username') !!}
-        {!! Form::text('username', session('githubData.username'), ['class' => 'form-control', 'required', 'placeholder' => 'johndoe']) !!}
-        @error('username')
+            {!! Form::label('username') !!}
+            {!! Form::text('username', session('githubData.username'), ['class' => 'form-control', 'required', 'placeholder' => 'johndoe']) !!}
+            @error('username')
         @endFormGroup
 
         {!! Form::hidden('github_id', session('githubData.id')) !!}
@@ -38,7 +35,7 @@
             </a>
         </div>
         <div>
-            <p>Register With Email Address</p>
+            <p>Register With Email</p>
             <a href="{{ route('register.no-github') }}" class="btn btn-default btn-block">
                 <i class="fa fa-register"></i> Register
             </a>
