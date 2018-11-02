@@ -16,7 +16,7 @@
 
     @formGroup('tags')
         {!! Form::label('tags') !!}
-        {!! Form::select('tags', $tags->pluck('name', 'id'), isset($thread) ? $thread->tags_ids() : [], ['class' => 'form-control', 'multiple']) !!}
+        {!! Form::select('tags', $tags->pluck('name', 'id'), isset($thread) ? $thread->tags_ids() : [], ['class' => 'form-control selectize', 'multiple']) !!}
         {{--<span class="help-block">You can choose up to 3 tags.</span>--}}
         @error('tags')
     @endFormGroup
