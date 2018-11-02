@@ -15,6 +15,12 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+        $this->bootMacros();
+    }
+
+    public function bootMacros()
+    {
+        require base_path('resources/macros/blade.php');
     }
 
     /**

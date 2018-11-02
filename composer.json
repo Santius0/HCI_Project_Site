@@ -9,10 +9,11 @@
         "csanquer/pdo-service-provider": "~1.1dev",
         "fideloper/proxy": "^4.0",
         "graham-campbell/markdown": "^10.2",
+        "grohiro/laravel-blade-macro": "^4.0",
         "laravel/framework": "5.7.*",
         "laravel/socialite": "^3.2",
         "laravel/tinker": "^1.0",
-        "laravelcollective/html": "~5.7",
+        "laravelcollective/html": "^5.7",
         "monurakkaya/laravel-formgroup": "^1.1",
         "watson/active": "^3.0"
     },

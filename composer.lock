@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df62e6790a8061951e9521b565cc2a26",
+    "content-hash": "092a6f1a1058fce2af8ba202d8d66836",
     "packages": [
         {
             "name": "csanquer/pdo-service-provider",
@@ -484,6 +484,40 @@
                 "markdown"
             ],
             "time": "2018-09-29T10:19:14+00:00"
+        },
+        {
+            "name": "grohiro/laravel-blade-macro",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/grohiro/laravel-blade-macro.git",
+                "reference": "5bd7ad64c1ccda910d7f914e9530f063eb320f3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/grohiro/laravel-blade-macro/zipball/5bd7ad64c1ccda910d7f914e9530f063eb320f3b",
+                "reference": "5bd7ad64c1ccda910d7f914e9530f063eb320f3b",
+                "shasum": ""
+            },
+            "type": "helper",
+            "autoload": {
+                "psr-4": {
+                    "Grohiro\\LaravelBladeMacro\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel Blade `@macro` directive.",
+            "homepage": "https://github.com/grohiro/laravel-blade-macro",
+            "keywords": [
+                "blade",
+                "laravel",
+                "macro",
+                "reusable-block"
+            ],
+            "time": "2017-10-02T15:05:08+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
