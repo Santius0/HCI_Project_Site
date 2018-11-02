@@ -74,7 +74,7 @@ class User extends Authenticatable
         $hash = md5(strtolower(trim($this->email)));
         $default = urlencode(route('avatar', ['username' => $this->username()]));
 
-        return "https://www.gravatar.com/avatar/$hash?s=$size&d=$default";
+        return "https://www.gravatar.com/avatar/$hash?d=$default&s=$size";
     }
 
     public static function findByUsername(string $username): self
