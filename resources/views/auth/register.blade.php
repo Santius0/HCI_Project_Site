@@ -13,7 +13,7 @@
 
         @formGroup('email')
             {!! Form::label('email') !!}
-            {!! Form::email('email', session('githubData.email'), ['class' => 'form-control', 'required', 'placeholder' => 'john@example.com']) !!}
+            {!! Form::email('email', session('githubData.id'), ['class' => 'form-control', 'required', 'placeholder' => 'john@example.com']) !!}
             @error('email')
         @endFormGroup
 
