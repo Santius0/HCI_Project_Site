@@ -1,5 +1,5 @@
 <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-<textarea name="body" class="form-control my-editor">{!! isset($thread) ? $thread->body() : null !!}</textarea>
+<textarea name="body" class="form-control my-editor">{!! isset($content) ? $content : null !!}</textarea>
 <script>
     var editor_config = {
         path_absolute : "/",

@@ -1,3 +1,4 @@
+@php($content = isset($thread) ? $thread->body() : '')
 {!! Form::open(['route' => $route, 'method' => $method ?? 'POST']) !!}
     @formGroup('subject')
         {!! Form::label('title') !!}

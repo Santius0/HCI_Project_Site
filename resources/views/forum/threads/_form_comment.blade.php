@@ -1,8 +1,10 @@
 {!! Form::open(['route' => $route, 'method' => $method ?? 'POST']) !!}
 
+@php($content = isset($comment) ? $comment->body() : '')
 @formGroup('body')
     {!! Form::label('body') !!}
-    {!! Form::textarea('body', isset($comment) ? $comment->body() : null, ['class' => 'form-control wysiwyg', 'required']) !!}
+{{--    {!! Form::textarea('body', isset($comment) ? $comment->body() : null, ['class' => 'form-control wysiwyg', 'required']) !!}--}}
+        @include('layouts.editor')
     @error('body')
 @endFormGroup
 

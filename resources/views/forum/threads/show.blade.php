@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="panel-body forum-content">
-                    <p>{!! $thread->body() !!}}</p>
+                    <p>{!! $thread->body() !!}</p>
                 </div>
             </div>
 
@@ -70,7 +70,7 @@
                     </div>
 
                     <div class="panel-body forum-content">
-                        <p>$reply->body())</p>
+                        <p>{!! $reply->body() !!}</p>
                     </div>
                 </div>
 
