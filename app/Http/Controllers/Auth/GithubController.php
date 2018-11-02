@@ -28,7 +28,7 @@ class GithubController extends Controller
      */
     public function handleProviderCallback()
     {
-        echo $this->getSocialiteUser()->getId();
+        return User::findByGithubId($this->getSocialiteUser()->getId())->first()->github_id;
         echo User::findByGithubId($this->getSocialiteUser()->getId())->first();
         return;
         try {
