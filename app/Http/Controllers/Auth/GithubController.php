@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use App\User;
-use Socialite;
-use App\Social\GithubUser;
+use Laravel\Socialite\Facades\Socialite;
+use App\GithubUser;
 use App\Jobs\UpdateProfile;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
@@ -52,7 +52,9 @@ class GithubController extends Controller
 
     private function userFound(User $user, SocialiteUser $socialiteUser): RedirectResponse
     {
-        $this->dispatchNow(new UpdateProfile($user, ['github_username' => $socialiteUser->getNickname()]));
+        $user->update([
+            'github_username' => $socialiteUser->getNickname()
+        ]);
 
         Auth::login($user);
 

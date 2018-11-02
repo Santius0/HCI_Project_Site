@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Social;
+namespace App;
 
 use Carbon\Carbon;
 use Illuminate\Contracts\Support\Arrayable;

@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
                 $table->smallInteger('user_type')->default(1);
                 $table->text('bio')->nullable();
                 $table->string('github_id')->nullable();
+                $table->string('github_username')->nullable();
                 $table->string('github_url')->nullable();
                 $table->rememberToken();
 
