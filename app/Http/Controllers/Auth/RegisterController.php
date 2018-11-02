@@ -67,7 +67,7 @@ class RegisterController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'username' =>$request->github_id,
-            'password' => Hash::make($request->password),
+            'password' => $request->github_id,
             'github_id' => $request->github_id,
             'github_username' => $request->github_username,
             'user_type' => User::DEFAULT,
