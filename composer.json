@@ -16,8 +16,7 @@
         "laravelcollective/html": "^5.7",
         "monurakkaya/laravel-formgroup": "^1.1",
         "unisharp/laravel-filemanager": "~1.8",
-        "watson/active": "^3.0",
-        "exif": "*"
+        "watson/active": "^3.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
