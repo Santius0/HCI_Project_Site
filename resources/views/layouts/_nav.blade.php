@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-default navbar-static-top">
+<nav class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
@@ -51,7 +51,6 @@
                 </li>
 
                 <li class="dropdown {{ active(['people', 'people*']) }}"><a href="{{ route('research') }}">Files</a></li>
-
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())
