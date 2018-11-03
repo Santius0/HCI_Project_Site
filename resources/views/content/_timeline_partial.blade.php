@@ -1,4 +1,4 @@
-<h2>Super Simple Bootstrap Responsive Timeline</h2>
+<h2>Application Prototyping Timeline</h2>
 
 <ul class="timeline">
     <li>
@@ -7,14 +7,22 @@
         </div>
         <div class="timeline-panel">
             <div class="timeline-heading">
-                <h4>Timeline Event</h4>
+                <h4><a href="{{ route('proposal.concept') }}">Conceptual Design</a>/h4>
             </div>
             <div class="timeline-body">
-                <p>Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+                <p>{{ \App\Thread::where('title', 'Conceptual Design') }}</p>
+        </div>
+            <div class="content">
+                <ul class="file-list">
+                    <li><a href="example/video" class="video-link">Introduction video</a></li>
+                    <li><a href="example.pdf">Project Plan, pdf 2,8 MB</a></li>
+                    <li><a href="example.pdf">Requirements, pdf 5,3 MB</a></li>
+                    <li><a href="example.pdf">Test Plan, pdf 7,6 MB</a></li>
+                </ul>
             </div>
-            <div class="timeline-footer">
-                <p class="text-right">Feb-21-2014</p>
-            </div>
+            {{--<div class="timeline-footer">--}}
+                {{--<p class="text-right">Feb-21-2014</p>--}}
+            {{--</div>--}}
         </div>
     </li>
 
