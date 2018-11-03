@@ -83,7 +83,7 @@ class UserSeeder extends Seeder
         );
 
         foreach ($items as $item){
-            if($user = User::where('email', $items['email'])->first()){
+            if($user = User::where('email', $item['email'])->first()){
                 $user->update($item);
             }
             else {
