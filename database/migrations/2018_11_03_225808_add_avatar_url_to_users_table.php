@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateThreadTagTable extends Migration
+class AddAvatarUrlToUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreateThreadTagTable extends Migration
      */
     public function up()
     {
-        Schema::create('thread_tag', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('thread_id')->index();
-            $table->integer('tag_id')->index();
-
-            $table->timestamps();
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('avatar_url')->nullable();
         });
     }
 
@@ -29,6 +25,8 @@ class CreateThreadTagTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('article_tag');
+        Schema::table('users', function (Blueprint $table) {
+            //
+        });
     }
 }

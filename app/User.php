@@ -70,12 +70,18 @@ class User extends Authenticatable
         return $this->github_username;
     }
 
+    public function avatar_url()
+    {
+        return $this->avatar_url;
+    }
+
     public function gravatarUrl($size = 100): string
     {
         $hash = md5(strtolower(trim($this->email)));
 //        $default = urlencode(route('avatar', ['username' => $this->username()]));
-        $default = urlencode("https://img.icons8.com/color/50/000000/avatar.png");
+//        $default = urlencode("https://img.icons8.com/color/50/000000/avatar.png");
 //        $default = urlencode('hcipsmlk.herokuapp.com/profile/avatar/'.$this->username());
+        $default = urlencode($this->avatar_url() ? $this->avatar_url() : asset('images/avatars/'.rand(1,64).'png'));
 
         return "https://www.gravatar.com/avatar/$hash?d=$default&s=$size";
     }

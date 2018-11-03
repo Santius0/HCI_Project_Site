@@ -14,7 +14,8 @@ class UserSeeder extends Seeder
                 'username' => 'sergio_dev',
                 'password' => bcrypt('password'),
                 'user_type' => User::DEVELOPER,
-                'bio' => "Web developer and document management. Responsible for the construction of the <b><i>My UWI</i></b> project website and content and technical editing of documents."
+                'bio' => "Web developer and document management. Responsible for the construction of the <b><i>My UWI</i></b> project website and content and technical editing of documents.",
+                'avatar_url' => "https://img.icons8.com/color/50/000000/avatar.png"
             ] ,
             [  'name' => 'Maya Bannis',
                 'email' => 'maya@example.com',
@@ -78,7 +79,8 @@ class UserSeeder extends Seeder
                 'username' => 'todah_user',
                 'password' => bcrypt('password'),
                 'user_type' => User::TEST_USER,
-                'bio' => "Bsc. Bio-Chemistry, current UWI student. Average user"
+                'bio' => "Bsc. Bio-Chemistry, current UWI student. Average user",
+                'avatar_url' => "https://img.icons8.com/color/50/000000/avatar.png"
             ]
         ];
 
