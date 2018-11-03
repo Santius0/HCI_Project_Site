@@ -3,7 +3,11 @@
 @php($subTitle = 'Problem Definition')
 
 @section('content')
+    <h1>{{ $title }}</h1>
+    <hr>
     <div class="row forum">
-        {!! $problem_thread->body() !!}
+        <div class="forum-content">
+            {!! $problem_thread->body() !!}
+        </div>
     </div>
 @endsection
