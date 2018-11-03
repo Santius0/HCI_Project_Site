@@ -17,7 +17,7 @@
   position: absolute;
   content:" ";
   width: 2px;
-  background: #ffffff;
+  background: #a0a5a0;
   left: 50%;
   margin-left: -1.5px;
 }
@@ -48,7 +48,7 @@
   width: -webkit-calc(100% - 25px);
   float: left;
   border: 1px solid #dcdcdc;
-  background: #ffffff;
+  background: #a0a5a0;
   position: relative;
 }
 .timeline > li > .timeline-panel:before {
@@ -68,13 +68,13 @@
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #ffffff;
-  border-right: 0 solid #ffffff;
+  border-left: 14px solid #a0a5a0;
+  border-right: 0 solid #a0a5a0;
   border-bottom: 14px solid transparent;
   content:" ";
 }
 .timeline > li > .timeline-badge {
-  color: #ffffff;
+  color: #a0a5a0;
   width: 24px;
   height: 24px;
   line-height: 50px;
@@ -100,7 +100,7 @@
   right: auto;
 }
 .timeline-badge > a {
-  color: #ffffff !important;
+  color: #a0a5a0 !important;
 }
 .timeline-badge a:hover {
   color: #dcdcdc !important;

@@ -5,7 +5,7 @@
 @endif
     <div class="timeline-badge">
             <a><i class="fa fa-circle" id=""></i></a>
-        </div>
+    </div>
         <div class="timeline-panel">
             <div class="timeline-heading">
                 <h4><a href="{{ route($badge_header_route) }}">{{ $badge_header }}</a></h4>
