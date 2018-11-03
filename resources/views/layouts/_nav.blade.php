@@ -33,7 +33,7 @@
                 </li>
 
                 <li class="dropdown {{ active(['prototype', 'prototype*']) }}">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Prototyping <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('prototype') }}">Overview</a></li>
                         <li><a href="{{ route('prototype.timeline') }}">Application Timeline</a></li>
