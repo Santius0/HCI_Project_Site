@@ -85,5 +85,5 @@ Route::prefix('/proposal')->namespace('Proposal')->group(function(){
     Route::get('/', 'ProposalController@index')->name('proposal');
     Route::get('/definition', 'ProposalController@definition')->name('proposal.definition');
     Route::get('/research', 'ProposalController@research')->name('proposal.research');
-    Route::get('/research', 'ProposalController@research')->name('proposal.users');
+    Route::get('/research', 'ProposalController@users')->name('proposal.users');
 });
