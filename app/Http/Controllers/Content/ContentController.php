@@ -37,10 +37,15 @@ class ContentController extends Controller
         return view('content.research_results', compact('research_results_thread'));
     }
 
-    public function prototyping()
+    public function prototype()
     {
-        $problem_thread = Thread::where('title', 'Problem Definition')->first();
-        return view('content.problem_definition', compact('problem_thread'));
+        $reflection = Thread::where('title', 'Reflection')->first();
+        return view('content.prototype_overview', compact('reflection'));
+    }
+
+    public function prototype_timeline()
+    {
+
     }
 
 }
