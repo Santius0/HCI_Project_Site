@@ -2,6 +2,6 @@
 @title('Conceptual Design')
 
 @section('post_body')
-    {!! $problem_thread->body() !!}
+    {!! $concept_thread->body() !!}
 @endsection
 
