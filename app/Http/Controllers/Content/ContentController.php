@@ -57,7 +57,15 @@ class ContentController extends Controller
 
     public function prototype_timeline()
     {
-        return view('content.timeline');
+        $timeline_items = array([
+            array(['badge_header' => 'Conceptual Design',
+                'badge_header_route' => 'proposal.concept',
+                'badge_content' => Thread::where('title', 'Conceptual Design')->first()->excerpt(),
+//                'date' => '',
+                'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Design Doc'])
+            ])
+        ]);
+        return view('content.timeline', compact('timeline_items'));
     }
 
     public function concept()
