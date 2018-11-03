@@ -8,7 +8,7 @@ class UserSeeder extends Seeder
     public function run()
     {
 //        Developers
-        factory(User::class)->create([
+        User::create([
             'name' => 'Sergio Mathurin',
             'email' => 'sergio@example.com',
             'username' => 'sergio_dev',
@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
             'bio' => "Web developer and document management. Responsible for the construction of the <b><i>My UWI</i></b> project website and content and technical editing of documents."
         ]);
 
-        factory(User::class)->create([
+        User::createcreate([
             'name' => 'Maya Bannis',
             'email' => 'maya@example.com',
             'username' => 'maya_dev',
@@ -26,7 +26,7 @@ class UserSeeder extends Seeder
             'bio' => "UX design and application content lead. Responsible for application prototype implementation and broad application functionality."
         ]);
 
-        factory(User::class)->create([
+        User::createcreate([
             'name' => 'Liam Gilbert',
             'email' => 'liam@example.com',
             'username' => 'liam_dev',
@@ -35,18 +35,18 @@ class UserSeeder extends Seeder
             'bio' => "UX designer and data collection. Responsible for application prototype implementation and data collection through the use of the specified research methods."
         ]);
 
-        factory(User::class)->create([
+        User::createcreate([
             'name' => 'Keneil Spencer',
             'email' => 'keneil@example.com',
             'username' => 'keneil_dev',
             'password' => bcrypt('password'),
-            'user_type' => 2,
+            'user_type' => User::DEVELOPER,
             'bio' => "Data collection lead. Responsible for the collection and organisation of user data, using the specified research methods."
         ]);
 
 
 //        Test Users
-        factory(User::class)->create([
+        User::createcreate([
             'name' => 'Keisha-Ann',
             'email' => 'keisha-ann@example.com',
             'username' => 'keisha-ann_user',
@@ -55,7 +55,7 @@ class UserSeeder extends Seeder
             'bio' => "Avid android user, current UWI student. Average user."
         ]);
 
-        factory(User::class)->create([
+        User::createcreate([
             'name' => 'Andre',
             'email' => 'andre@example.com',
             'username' => 'andre_user',
@@ -64,7 +64,7 @@ class UserSeeder extends Seeder
             'bio' => "Information Technology major, current UWI student. Technically adept user."
         ]);
 
-        factory(User::class)->create([
+        User::createcreate([
             'name' => 'Afiesha',
             'email' => 'afriesha@example.com',
             'username' => 'afriesha_user',
@@ -73,7 +73,7 @@ class UserSeeder extends Seeder
             'bio' => "Bsc. Management minor in Computer Science, 2nd year UWI student. Technically adept user"
         ]);
 
-        factory(User::class)->create([
+        User::createcreate([
             'name' => 'Nikita',
             'email' => 'nikita@example.com',
             'username' => 'nikita_user',
@@ -82,7 +82,7 @@ class UserSeeder extends Seeder
             'bio' => "Bsc. Psychology, 1st year UWI student. Average user"
         ]);
 
-        factory(User::class)->create([
+        User::createcreate([
             'name' => 'Gabriella',
             'email' => 'gabriella@example.com',
             'username' => 'gabriella_user',
@@ -91,7 +91,7 @@ class UserSeeder extends Seeder
             'bio' => "Bsc. Bio-Chemistry, current UWI student. Average user"
         ]);
 
-        factory(User::class)->create([
+        User::createcreate([
             'name' => 'Todah-Joy',
             'email' => 'todah@example.com',
             'username' => 'todah_user',
