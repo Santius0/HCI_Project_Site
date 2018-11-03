@@ -9,7 +9,7 @@
                    {{--]--}}
         {{--) --}}
         @include('content._timeline_badge',
-                  ['invert' => $invert, 'badge_header' => 'Badge Header', 'badge_header_route' => '#',
+                  ['invert' => $invert, 'badge_header' => 'Badge Header', 'badge_header_route' => 'prototype.timeline',
                   'badge_content' => 'jjj', 'file_list' => null, 'date' => null
                    ]
         )
