@@ -1,5 +1,5 @@
 @extends('layouts.default')
-@title('Prototyping Timeline'}
+@title('Prototyping Timeline')
 @section('content')
     <h2>Application Prototyping Timeline</h2>
     @php($invert = false)
