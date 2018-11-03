@@ -2,5 +2,5 @@
 @title('Reflection and LoFi Prototype')
 
 @section('post_body')
-{!! $research_results_thread->body() !!}
+{!! $$reflection_thread->body() !!}
 @endsection

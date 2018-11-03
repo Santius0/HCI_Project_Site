@@ -39,8 +39,8 @@ class ContentController extends Controller
 
     public function prototype()
     {
-        $reflection = Thread::where('title', 'Reflection')->first();
-        return view('content.prototype_overview', compact('reflection'));
+        $reflection_thread = Thread::where('title', 'Reflection')->first();
+        return view('content.prototype_overview', compact('reflection_thread'));
     }
 
     public function prototype_timeline()
