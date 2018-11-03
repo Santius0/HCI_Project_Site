@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @include('proposal.base')
-@title(Project Proposal | 'Problem Definition')
+@title('Project Proposal | Problem Definition')
 
 @section('content')
     <h1>{{ $title }}</h1>
