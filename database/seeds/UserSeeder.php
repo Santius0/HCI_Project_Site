@@ -7,12 +7,8 @@ class UserSeeder extends Seeder
 {
     public function run()
     {
-//        Developers
-        $user = User::where('email', 'sergio@example.com')->first();
-        if($user){
-            $user->delete();
-        }
         $items = [
+            //        Developers
             [ 'name' => 'Sergio Mathurin',
                 'email' => 'sergio@example.com',
                 'username' => 'sergio_dev',
