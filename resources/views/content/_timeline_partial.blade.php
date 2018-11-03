@@ -8,14 +8,11 @@
                   'badge_content' => $item['badge_content'], 'file_list' => isset($item['file_list'])?$item['file_list']:null, 'date' => isset($item['date'])?$item['date']:null
                    ]
         )
-        @php(
-            if($invert){
-                $invert = false;
-            }
-            else{
-                $invert = true;
-            }
-        )
+        @if($invert)
+            @php($invert = false)
+        @else
+            @php($invert = true)
+        @endif
     @endforeach
     <li class="clearfix no-float"></li>
 </ul>
