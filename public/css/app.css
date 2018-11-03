@@ -9823,3 +9823,34 @@ a.list-group-item-danger.active:focus {
   }
 }
 
+.docs-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.docs-list ul > li {
+  position: relative;
+  margin-bottom: 2px;
+  background: rgba(12, 13, 14, 0.15);
+  padding: 15px 5px;
+}
+
+.docs-list ul > li > .img {
+  position: absolute;
+}
+
+.docs-list ul > li > .desc {
+  padding-left: 50px;
+}
+
+.docs-list ul > li > .desc > small {
+  display: block;
+  padding-top: 5px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.docs-list ul > li:hover {
+  background: darkgray;
+}
+
