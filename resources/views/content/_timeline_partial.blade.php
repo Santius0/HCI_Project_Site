@@ -19,6 +19,7 @@
                         <li><a href="example.pdf">Test Plan, pdf 7,6 MB</a></li>
                     </ul>
                 </div>
+                <br>
             </div>
             <div class="timeline-footer">
                 {{--<p class="text-right">Feb-21-2014</p>--}}
@@ -32,7 +33,7 @@
         </div>
         <div class="timeline-panel">
             <div class="timeline-heading">
-                <h4>Timeline Event</h4>
+                <h4><a href="{{ route('proposal.concept') }}">Conceptual Design</a></h4>
             </div>
             <div class="timeline-body">
                 <p>Stranguillione in deinde cepit roseo commendavit patris super color est se sed. Virginis plus plorantes abscederem assignato ipsum ait regem Ardalio nos filiae Hellenicus mihi cum. Theophilo litore in lucem in modo invenit quasi nomen magni ergo est se est Apollonius, habet clementiae venit ad nomine sed dominum depressit filia navem.</p>
@@ -121,6 +122,28 @@
     <li class="clearfix no-float"></li>
 </ul>
 
-<p class="footer">Icons by <a href="https://fortawesome.github.io/Font-Awesome/">FontAwesome 4.1 Icons</a>.<br />
-    Created by <a href="http://jenniferperrin.com">Jennifer Perrin</a>
-</p>
+<li class="text-center">
+    <div class="timeline-badge">
+        <a><i class="fa fa-circle" id=""></i></a>
+    </div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4><a href="{{ route('proposal.concept') }}">Conceptual Design</a></h4>
+        </div>
+        <div class="timeline-body">
+            <p>{{ \App\Thread::where('title', 'Conceptual Design')->first()->excerpt() }}</p>
+            <div class="content">
+                <ul class="file-list">
+                    <li><a href="example/video" class="video-link">Introduction video</a></li>
+                    <li><a href="example.pdf">Project Plan, pdf 2,8 MB</a></li>
+                    <li><a href="example.pdf">Requirements, pdf 5,3 MB</a></li>
+                    <li><a href="example.pdf">Test Plan, pdf 7,6 MB</a></li>
+                </ul>
+            </div>
+            <br>
+        </div>
+        <div class="timeline-footer">
+            {{--<p class="text-right">Feb-21-2014</p>--}}
+        </div>
+    </div>
+</li>
