@@ -44,11 +44,13 @@
                 <li class="dropdown {{ active(['people', 'people*']) }}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">People <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('research') }}">Overview</a></li>
+                        {{--<li><a href="{{ route('research') }}">Overview</a></li>--}}
                         <li><a href="{{ route('research.methods') }}">Development Team</a></li>
                         <li><a href="{{ route('research.results') }}">Test Users</a></li>
                     </ul>
                 </li>
+
+                <li class="dropdown {{ active(['people', 'people*']) }}"><a href="{{ route('research') }}">Files</a></li>
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
