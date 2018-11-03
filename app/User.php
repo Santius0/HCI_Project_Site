@@ -12,8 +12,9 @@ class User extends Authenticatable
 
     const DEFAULT = 1;
     const DEVELOPER = 2;
-    const PROFESSOR = 3;
-    const ADMIN = 4;
+    const TEST_USER = 3;
+    const PROFESSOR = 4;
+    const ADMIN = 5;
 
     protected $table = 'users';
     /**
