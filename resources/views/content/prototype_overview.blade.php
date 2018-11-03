@@ -3,6 +3,7 @@
 
 @section('post_body')
     {!! $reflection_thread->body() !!}
+    @break
     <h1>Final LoFi Prototype</h1>
     <hr>
     <div class="row">
