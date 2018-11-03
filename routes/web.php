@@ -85,11 +85,11 @@ Route::prefix('/proposal')->namespace('Content')->group(function(){
     Route::get('/', 'ContentController@index')->name('proposal');
     Route::get('/definition', 'ContentController@definition')->name('proposal.definition');
     Route::get('/research', 'ContentController@research')->name('proposal.research');
-    Route::get('/research', 'ContentController@users')->name('proposal.users');
+    Route::get('/stakeholders', 'ContentController@users')->name('proposal.users');
 });
 
 Route::prefix('/research')->namespace('Content')->group(function(){
-    Route::get('/', 'ContentController@users')->name('research');
-    Route::get('/', 'ContentController@users')->name('research.methods');
-    Route::get('/', 'ContentController@users')->name('research.results');
+    Route::get('/', 'ContentController@research')->name('research');
+    Route::get('/methods', 'ContentController@users')->name('research.methods');
+    Route::get('/results', 'ContentController@users')->name('research.results');
 });
