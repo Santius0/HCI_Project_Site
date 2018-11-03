@@ -5,7 +5,7 @@
         </div>
         <div class="timeline-panel">
             <div class="timeline-heading">
-                <h4><a href="{{ route($badge_header_route) }}">{{ $badge_heeader }}</a></h4>
+                <h4><a href="{{ route($badge_header_route) }}">{{ $badge_header }}</a></h4>
             </div>
             <div class="timeline-body">
 {{--                <p>{{ \App\Thread::where('title', 'Conceptual Design')->first()->excerpt() }}</p>--}}
