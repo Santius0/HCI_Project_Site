@@ -9507,7 +9507,10 @@ a.list-group-item-danger.active:focus {
 }
 
 #footer {
-  padding-bottom: 20px;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
 }
 
 #sponsors {

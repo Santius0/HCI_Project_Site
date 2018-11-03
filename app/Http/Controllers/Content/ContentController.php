@@ -57,7 +57,7 @@ class ContentController extends Controller
 
     public function prototype_timeline()
     {
-
+        return view('content.timeline');
     }
 
 }
