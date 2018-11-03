@@ -9823,27 +9823,40 @@ a.list-group-item-danger.active:focus {
   }
 }
 
-a {
+#docs-list {
+  /*
+  // Percentage bar progress complete
+  #myBar {
+      width: 10%;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      color: white;
+  }
+  */
+}
+
+#docs-list a {
   text-decoration: none;
 }
 
-* {
+#docs-list * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-ul {
+#docs-list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.w3-panel {
+#docs-list .w3-panel {
   padding: 0;
   margin-bottom: 0 !important;
 }
 
-ul li {
+#docs-list ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
@@ -9857,21 +9870,21 @@ ul li {
   user-select: none;
 }
 
-ul li:nth-child(odd) {
+#docs-list ul li:nth-child(odd) {
   background: #f9f9f9;
 }
 
-ul li:hover {
+#docs-list ul li:hover {
   background: #ddd;
 }
 
-ul li.checked {
+#docs-list ul li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
 
-ul li.checked::before {
+#docs-list ul li.checked::before {
   content: "";
   position: absolute;
   border-color: #fff;
@@ -9885,32 +9898,32 @@ ul li.checked::before {
   width: 7px;
 }
 
-.close {
+#docs-list .close {
   position: absolute;
   right: 0;
   top: 0;
   padding: 12px 20px 12px 17px;
 }
 
-.close:hover {
+#docs-list .close:hover {
   background-color: #f44336;
   color: white;
 }
 
-.header {
+#docs-list .header {
   background-color: #f44336;
   padding: 30px 40px;
   color: white;
   text-align: center;
 }
 
-.header:after {
+#docs-list .header:after {
   content: "";
   display: table;
   clear: both;
 }
 
-input {
+#docs-list input {
   margin: 0;
   border: none;
   border-radius: 0;
@@ -9920,7 +9933,7 @@ input {
   font-size: 16px;
 }
 
-.addBtn {
+#docs-list .addBtn {
   padding: 10px;
   width: 25%;
   background: #d9d9d9;
@@ -9934,23 +9947,12 @@ input {
   border-radius: 0;
 }
 
-.addBtn:hover {
+#docs-list .addBtn:hover {
   background-color: #bbb;
 }
 
-/*
-// Percentage bar progress complete
-#myBar {
-    width: 10%;
-    height: 30px;
-    text-align: center;
-    line-height: 30px; 
-    color: white; 
-}
-*/
-
 @media screen and (max-width: 600px) {
-  .newItem {
+  #docs-list .newItem {
     opacity: 0;
   }
 }
