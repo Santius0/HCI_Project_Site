@@ -2,16 +2,18 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img class="img-responsive" src="{{ isset($image['asset_src']) ? asset($image['asset_src']) : $image['src'] }}" alt="{{ $image['name'] }}">
-                        <div class="carousel-caption">
-                            {{ $image['name'] }}
+                @foreach($images as $image)
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive" src="{{ isset($image['asset_src']) ? asset($image['asset_src']) : $image['src'] }}" alt="{{ $image['name'] }}">
+                            <div class="carousel-caption">
+                                {{ $image['name'] }}
+                            </div>
                         </div>
                     </div>
-                </div>
-            <!-- Controls -->
+                @endforeach
+                <!-- Controls -->
                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                 </a>
