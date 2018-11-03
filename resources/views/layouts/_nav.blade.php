@@ -14,7 +14,7 @@
             <ul class="nav navbar-nav">
                 <li class="{{ active(['threads', 'thread*']) }}"><a href="{{ route('threads') }}">Updates</a></li>
 
-                <li class="dropdown">
+                <li class="dropdown {{ active(['proposal', 'proposal*']) }}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('proposal') }}">Overview</a></li>
@@ -23,7 +23,7 @@
                     </ul>
                 </li>
 
-{{--                <li class="{{ active(['research', 'research*']) }}"><a href="{{ route('proposal.research') }}">Research</a></li>--}}
+                <li class="{{ active(['research', 'research*']) }}"><a href="{{ route('proposal.research') }}">Research</a></li>
                 {{--<li class="{{ active(['subjects', 'subjects*']) }}"><a href="{{ route('subjects') }}">Test Subjects</a></li>--}}
             </ul>
             <ul class="nav navbar-nav navbar-right">
