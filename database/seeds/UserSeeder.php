@@ -8,6 +8,7 @@ class UserSeeder extends Seeder
     public function run()
     {
 //        Developers
+        User::where('email', 'sergio@example.com')->first()->delete();
         User::create([
             'name' => 'Sergio Mathurin',
             'email' => 'sergio@example.com',
@@ -16,7 +17,7 @@ class UserSeeder extends Seeder
             'user_type' => User::DEVELOPER,
             'bio' => "Web developer and document management. Responsible for the construction of the <b><i>My UWI</i></b> project website and content and technical editing of documents."
         ]);
-
+        User::where('email', 'maya@example.com')->first()->delete();
         User::create([
             'name' => 'Maya Bannis',
             'email' => 'maya@example.com',
