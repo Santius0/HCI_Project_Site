@@ -57,7 +57,7 @@ class ContentController extends Controller
 
     public function prototype_timeline()
     {
-        $timeline_items = array([
+        $timeline_items = array(
             array([
                 'badge_header' => 'Conceptual Design',
                 'badge_header_route' => 'proposal.concept',
@@ -72,7 +72,7 @@ class ContentController extends Controller
 //                'date' => '',
                 'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Design Doc'])
             ])
-        ]);
+        );
         return view('content.timeline', ['timeline_items' => $timeline_items]);
     }
 
