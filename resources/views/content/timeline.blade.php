@@ -2,6 +2,8 @@
 @title('Prototyping Timeline')
 @section('content')
     <h2>Application Prototyping Timeline</h2>
+    <br>
+    <br>
     @php($invert = false)
     <ul class="timeline">
         @foreach($timeline_items as $item)
