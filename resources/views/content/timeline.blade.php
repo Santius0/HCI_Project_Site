@@ -3,7 +3,7 @@
 @section('content')
     <h2>Application Prototyping Timeline</h2>
     @php($invert = false)
-
+    <h1>{{ count($timeline_contents) }}</h1>
     <ul class="timeline">
         @foreach($timeline_items as $item)
             {{--@include('content._timeline_badge',--}}
