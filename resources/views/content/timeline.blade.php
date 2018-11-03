@@ -8,7 +8,7 @@
         @foreach($timeline_items as $item)
             @include('content._timeline_badge',['invert' => $invert, 'badge_header' => isset($item['badge_header'])?$item['badge_header']:'Badge Header',
                                                 'badge_header_route' => isset($item['badge_header_route'])?$item['badge_header_route']:'#',
-                                                'badge_content' => $item['badge_content'], 'file_list' => isset($item['file_list'])?$item['file_list']:null,
+                                                'badge_content' => isset($item['badge_content'])?$item['badge_content']:'Badge Content', 'file_list' => isset($item['file_list'])?$item['file_list']:null,
                                                 'date' => isset($item['date'])?$item['date']:null
                                                 ]
             )
