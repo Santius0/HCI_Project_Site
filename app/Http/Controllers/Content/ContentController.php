@@ -60,4 +60,9 @@ class ContentController extends Controller
         return view('content.timeline');
     }
 
+    public function concept()
+    {
+        return view('content.concept');
+    }
+
 }
