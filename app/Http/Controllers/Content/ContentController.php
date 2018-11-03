@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Content;
 
 use App\Thread;
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -83,5 +84,21 @@ class ContentController extends Controller
         $concept_thread = Thread::where('title', 'Conceptual Design')->first();
         return view('content.concept', compact('concept_thread'));;
     }
+
+    public function development_team()
+    {
+        $group = 'Development Team';
+        $people = User::where('user_type', User::DEVELOPER)->get();
+        return view('content.people', compact('people', 'group'));
+    }
+
+    public function test_users()
+    {
+        $group = 'Test Users';
+        $people = User::where('user_type', User::TEST_USER)->get();
+        return view('content.people', compact('people', 'group'));
+    }
+
+
 
 }

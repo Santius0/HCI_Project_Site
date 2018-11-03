@@ -97,5 +97,10 @@ Route::prefix('/research')->namespace('Content')->group(function(){
 
 Route::prefix('/prototype')->namespace('Content')->group(function(){
     Route::get('/', 'ContentController@prototype')->name('prototype');
-    Route::get('/methods', 'ContentController@prototype_timeline')->name('prototype.timeline');
+    Route::get('/timeline', 'ContentController@prototype_timeline')->name('prototype.timeline');
+});
+
+Route::prefix('/people')->namespace('Content')->group(function(){
+    Route::get('/development-teams', 'ContentController@development_team')->name('poeple.devs');
+    Route::get('/test-users', 'ContentController@test_users')->name('people.users');
 });
