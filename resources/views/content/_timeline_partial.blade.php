@@ -11,18 +11,18 @@
             </div>
             <div class="timeline-body">
                 <p>{{ \App\Thread::where('title', 'Conceptual Design')->first()->excerpt() }}</p>
-        </div>
-            <div class="content">
-                <ul class="file-list">
-                    <li><a href="example/video" class="video-link">Introduction video</a></li>
-                    <li><a href="example.pdf">Project Plan, pdf 2,8 MB</a></li>
-                    <li><a href="example.pdf">Requirements, pdf 5,3 MB</a></li>
-                    <li><a href="example.pdf">Test Plan, pdf 7,6 MB</a></li>
-                </ul>
+                <div class="content">
+                    <ul class="file-list">
+                        <li><a href="example/video" class="video-link">Introduction video</a></li>
+                        <li><a href="example.pdf">Project Plan, pdf 2,8 MB</a></li>
+                        <li><a href="example.pdf">Requirements, pdf 5,3 MB</a></li>
+                        <li><a href="example.pdf">Test Plan, pdf 7,6 MB</a></li>
+                    </ul>
+                </div>
             </div>
-            {{--<div class="timeline-footer">--}}
+            <div class="timeline-footer">
                 {{--<p class="text-right">Feb-21-2014</p>--}}
-            {{--</div>--}}
+            </div>
         </div>
     </li>
 
