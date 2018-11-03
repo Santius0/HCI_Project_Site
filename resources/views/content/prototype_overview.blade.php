@@ -10,15 +10,15 @@
     <div class="jumbotron text-center">
         <div class="row">
             <div class="flex-column">
-                <img src="{{ asset('images/My_UWI_Owl.png') }}" title={{ env('APP_NAME') }}>
-                <img src="{{ asset('images/My_UWI_Owl.png') }}" title={{ env('APP_NAME') }}>
-                <img src="{{ asset('images/My_UWI_Owl.png') }}" title={{ env('APP_NAME') }}>
-                <img src="{{ asset('images/My_UWI_Owl.png') }}" title={{ env('APP_NAME') }}>
+                <img src="{{ asset('images/prototypes/lofi/lofi1.jpg') }}" title='LoFi_1' }}>
+                <img src="{{ asset('images/prototypes/lofi/lofi2.jpg') }}" title='LoFi_2' }}>
+                <img src="{{ asset('images/prototypes/lofi/lofi3.jpg') }}" title='LoFi_3' }}>
+                <img src="{{ asset('images/prototypes/lofi/lofi4.jpg') }}" title='LoFi_4' }}>
             </div>
             <div class="flex-column">
-                <img src="{{ asset('images/My_UWI_Owl.png') }}" title={{ env('APP_NAME') }}>
-                <img src="{{ asset('images/My_UWI_Owl.png') }}" title={{ env('APP_NAME') }}>
-                <img src="{{ asset('images/My_UWI_Owl.png') }}" title={{ env('APP_NAME') }}>
+                <img src="{{ asset('images/prototypes/lofi/lofi5.jpg') }}" title='LoFi_5' }}>
+                <img src="{{ asset('images/prototypes/lofi/lofi6.jpg') }}" title='LoFi_6' }}>
+                <img src="{{ asset('images/prototypes/lofi/lofi7.jpg') }}" title='LoFi_7' }}>
             </div>
         </div>
     </div>
