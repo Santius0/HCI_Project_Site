@@ -49,7 +49,7 @@
                     </ul>
                 </li>
 
-                <li class="dropdown {{ active(['people', 'people*']) }}"><a href="{{ route('research') }}">Files</a></li>
+                <li class="dropdown {{ active(['files', 'files*']) }}"><a href="{{ route('files') }}">Files</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())
