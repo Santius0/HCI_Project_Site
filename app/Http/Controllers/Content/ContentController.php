@@ -73,7 +73,7 @@ class ContentController extends Controller
                 'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Design Doc'])
             ])
         ]);
-        return view('content.timeline', compact('timeline_items'));
+        return view('content.timeline', ['timeline_items' => $timeline_items]);
     }
 
     public function concept()
