@@ -1,8 +1,7 @@
-@php(
-    use App\Thread;
-    $users_and_stakeholders = Thread::getThread('Stakeholders and Users');
-    $definition = Thread::getThread('Project Definition');
-    $research_methods = Thread::getThread('Research Methods');
-    $survey = Thread::getThread('Survey: Interview questions and general response');
-   ;)
-@title('Proposal' . $subTitle)
+{{--@php(--}}
+    {{--$users_and_stakeholders = App\Thread::getThread('Stakeholders and Users');--}}
+    {{--$definition = App\Thread::getThread('Project Definition');--}}
+    {{--$research_methods = App\Thread::getThread('Research Methods');--}}
+    {{--$survey = App\Thread::getThread('Survey: Interview questions and general response');--}}
+   {{--)--}}
+{{--@title('Proposal' . $subTitle)--}}

@@ -4,6 +4,6 @@
 
 @section('content')
     <div class="row forum">
-
+        {!! $problem_thread->body() !!}
     </div>
 @endsection

@@ -13,4 +13,10 @@ class ProposalController extends Controller
         return view('proposal.overview');
     }
 
+    public function definition()
+    {
+        $problem_thread = Thread::where('title', 'Problem Definition');
+        return view('proposal.problem_definition', compact('problem_thread'));
+    }
+
 }
