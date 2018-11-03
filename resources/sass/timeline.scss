@@ -35,7 +35,7 @@ p.footer {
   position: absolute;
   content:" ";
   width: 2px;
-  background: #ffffff;
+  //background: #ffffff;
   left: 50%;
   margin-left: -1.5px;
 }
@@ -66,7 +66,7 @@ p.footer {
   width: -webkit-calc(100% - 25px);
   float: left;
   border: 1px solid #dcdcdc;
-  background: #ffffff;
+  //background: #ffffff;
   position: relative;
 }
 .timeline > li > .timeline-panel:before {
