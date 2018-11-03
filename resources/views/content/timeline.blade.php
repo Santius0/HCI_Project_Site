@@ -3,7 +3,6 @@
 @section('content')
     <h2>Application Prototyping Timeline</h2>
     @php($invert = false)
-    <h1>{{ count($timeline_items) }}</h1>
     <ul class="timeline">
         @foreach($timeline_items as $item)
             @include('content._timeline_badge',['invert' => $invert, 'badge_header' => isset($item['badge_header'])?$item['badge_header']:'Badge Header',
