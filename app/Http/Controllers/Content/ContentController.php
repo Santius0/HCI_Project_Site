@@ -25,10 +25,16 @@ class ContentController extends Controller
         return view('content.users_and_stakeholders', compact('users_thread'));
     }
 
-    public function research()
+    public function research_methods()
     {
         $research_methods_thread = Thread::where('title', 'Research Methods')->first();
-        return view('content.research', compact('research_methods_thread'));
+        return view('content.research_methods', compact('research_methods_thread', 'survey'));
+    }
+
+    public function research_results()
+    {
+        $research_results = Thread::where('title', 'Research Results')->first();
+        return view('content.research_results', compact('research_results'));
     }
 
     public function prototyping()

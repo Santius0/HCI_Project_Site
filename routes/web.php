@@ -90,6 +90,6 @@ Route::prefix('/proposal')->namespace('Content')->group(function(){
 
 Route::prefix('/research')->namespace('Content')->group(function(){
     Route::get('/', 'ContentController@research')->name('research');
-    Route::get('/methods', 'ContentController@users')->name('research.methods');
-    Route::get('/results', 'ContentController@users')->name('research.results');
+    Route::get('/methods', 'ContentController@research_methods')->name('research.methods');
+    Route::get('/results', 'ContentController@research_results')->name('research.results');
 });
