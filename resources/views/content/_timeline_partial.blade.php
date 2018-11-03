@@ -1,59 +1,66 @@
-<script>
-    $(document).ready(function() {
-        $timelineExpandableTitle = $('.timeline-action.is-expandable .title');
+<h2>Super Simple Bootstrap Responsive Timeline</h2>
 
-        $($timelineExpandableTitle).attr('tabindex', '0');
-
-        // Give timelines ID's
-        $('.timeline').each(function(i, $timeline) {
-            var $timelineActions = $($timeline).find('.timeline-action.is-expandable');
-
-            $($timelineActions).each(function(j, $timelineAction) {
-                var $milestoneContent = $($timelineAction).find('.content');
-
-                $($milestoneContent).attr('id', 'timeline-' + i + '-milestone-content-' + j).attr('role', 'region');
-                $($milestoneContent).attr('aria-expanded', $($timelineAction).hasClass('expanded'));
-
-                $($timelineAction).find('.title').attr('aria-controls', 'timeline-' + i + '-milestone-content-' + j);
-            });
-        });
-
-        $($timelineExpandableTitle).click(function() {
-            $(this).parent().toggleClass('is-expanded');
-            $(this).siblings('.content').attr('aria-expanded', $(this).parent().hasClass('is-expanded'));
-        });
-
-        // Expand or navigate back and forth between sections
-        $($timelineExpandableTitle).keyup(function(e) {
-            if (e.which == 13){ //Enter key pressed
-                $(this).click();
-            } else if (e.which == 37 ||e.which == 38) { // Left or Up
-                $(this).closest('.timeline-milestone').prev('.timeline-milestone').find('.timeline-action .title').focus();
-            } else if (e.which == 39 ||e.which == 40) { // Right or Down
-                $(this).closest('.timeline-milestone').next('.timeline-milestone').find('.timeline-action .title').focus();
-            }
-        });
-    });
-</script>
-
-<article class="page">
-    <h1>Timeline</h1>
-
-    <h2>Vertical timeline</h2>
-    <ul class="timeline">
-        <li class="timeline-milestone is-completed timeline-start">
-            <div class="timeline-action">
-                <h2 class="title">Begin</h2>
-                <span class="date">First quarter 2013</span>
-                <div class="content">
-                    We will have a small kickoff
-                </div>
+<ul class="timeline">
+    <li>
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4>Timeline Event</h4>
             </div>
-        </li>
-        <li class="timeline-milestone is-current">
-            <div class="timeline-action is-expandable expanded">
-                <h2 class="title">Initial planning</h2>
-                <span class="date">Second quarter 2013</span>
+            <div class="timeline-body">
+                <p>Invitamus me testatur sed quod non dum animae tuae lacrimis ut libertatem deum rogus aegritudinis causet. Dicens hoc contra serpentibus isto.</p>
+            </div>
+            <div class="timeline-footer">
+                <p class="text-right">Feb-21-2014</p>
+            </div>
+        </div>
+    </li>
+
+    <li class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4>Timeline Event</h4>
+            </div>
+            <div class="timeline-body">
+                <p>Stranguillione in deinde cepit roseo commendavit patris super color est se sed. Virginis plus plorantes abscederem assignato ipsum ait regem Ardalio nos filiae Hellenicus mihi cum. Theophilo litore in lucem in modo invenit quasi nomen magni ergo est se est Apollonius, habet clementiae venit ad nomine sed dominum depressit filia navem.</p>
+            </div>
+            <div class="timeline-footer">
+                <p class="text-right">Feb-23-2014</p>
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4>Timeline Event</h4>
+            </div>
+            <div class="timeline-body">
+                <p>Advenientibus aliorum eam ad per te sed. Facere debetur aut veneris accedens.</p>
+            </div>
+            <div class="timeline-footer">
+                <p class="text-right">Feb-23-2014</p>
+            </div>
+        </div>
+    </li>
+
+    <li class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4>Timeline Event</h4>
+            </div>
+            <div class="timeline-body">
                 <div class="content">
                     <ul class="file-list">
                         <li><a href="example/video" class="video-link">Introduction video</a></li>
@@ -62,25 +69,50 @@
                         <li><a href="example.pdf">Test Plan, pdf 7,6 MB</a></li>
                     </ul>
                 </div>
+                <p>Volvitur ingreditur id ait mea vero cum autem quod ait Cumque ego illum vero cum unde beata. Commendavi si non dum est in. Dionysiadem tuos ratio puella ut casus, tunc lacrimas effunditis magister cives Tharsis. Puellae addita verbaque' capellam sanctissima quid, apollinem existimas filiam rex cum autem quod tamen adnuente rediens eam est se in. Peracta licet ad nomine Maria non ait in modo compungi mulierem volutpat.</p>
             </div>
-        </li>
-        <li class="timeline-milestone is-future">
-            <div class="timeline-action is-expandable">
-                <h2 class="title">Start construction</h2>
-                <span class="date">Fourth quarter 2013</span>
-                <div class="content">
+            <div class="timeline-footer">
+                <p class="text-right">Feb-27-2014</p>
+            </div>
+        </div>
+    </li>
 
-                </div>
+    <li>
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4>Timeline Event</h4>
             </div>
-        </li>
-        <li class="timeline-milestone is-future timeline-end">
-            <div class="timeline-action">
-                <h2 class="title">Test and verify</h2>
-                <span class="date">Second quarter 2014</span>
-                <div class="content">
+            <div class="timeline-body">
+                <p>Adfertur guttae sapientiae ducitur est Apollonius ut a a his domino Lycoridem in lucem. Theophile atque bona dei cenam veniebant est cum. Iusto opes mihi Tyrum in modo compungi mulierem ubi augue eiusdem ordo quos vero diam omni catervis famulorum. Bene dictis ut diem finito servis unde.</p>
+            </div>
+            <div class="timeline-footer">
+                <p class="text-right">Mar-01-2014</p>
+            </div>
+        </div>
+    </li>
 
-                </div>
+    <li  class="timeline-inverted">
+        <div class="timeline-badge">
+            <a><i class="fa fa-circle invert" id=""></i></a>
+        </div>
+        <div class="timeline-panel">
+            <div class="timeline-heading">
+                <h4>Timeline Event</h4>
             </div>
-        </li>
-    </ul>
-</article>
+            <div class="timeline-body">
+                <p>Crede respiciens loco dedit beneficio ad suis alteri si puella eius in. Acceptis codicello lenonem in deinde plectrum anni ipsa quod eam est Apollonius.</p>
+            </div>
+            <div class="timeline-footer primary">
+                <p class="text-right">Mar-02-2014</p>
+            </div>
+        </div>
+    </li>
+    <li class="clearfix no-float"></li>
+</ul>
+
+<p class="footer">Icons by <a href="https://fortawesome.github.io/Font-Awesome/">FontAwesome 4.1 Icons</a>.<br />
+    Created by <a href="http://jenniferperrin.com">Jennifer Perrin</a>
+</p>
