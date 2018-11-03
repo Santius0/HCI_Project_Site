@@ -81,9 +81,8 @@ class User extends Authenticatable
 //        $default = urlencode(route('avatar', ['username' => $this->username()]));
 //        $default = urlencode("https://img.icons8.com/color/50/000000/avatar.png");
 //        $default = urlencode('hcipsmlk.herokuapp.com/profile/avatar/'.$this->username());
-        $default = urlencode($this->avatar_url() ? $this->avatar_url() : asset('images/avatars/'.rand(1,64).'png'));
-
-        return "https://www.gravatar.com/avatar/$hash?d=$default&s=$size";
+        $url = $this->avatar_url() ? "https://www.gravatar.com/avatar/" . $hash . "?d=" . urlencode($this->avatar_url()) . "&s=" . $size : asset('images/avatars/' . rand(1,64) . ".png");
+        return $url;
     }
 
     public static function findByUsername(string $username): self
