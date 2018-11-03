@@ -33,8 +33,8 @@ class ContentController extends Controller
 
     public function research_results()
     {
-        $research_results = Thread::where('title', 'Research Results')->first();
-        return view('content.research_results', compact('research_results'));
+        $research_results_thread = Thread::where('title', 'Research Results')->first();
+        return view('content.research_results', compact('research_results_thread'));
     }
 
     public function prototyping()

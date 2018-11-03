@@ -2,5 +2,5 @@
 @php($subTitle = 'Research Methods')
 
 @section('post_body')
-    {!! $research_methods_thread->body() !!}
+    {!! $research_results_thread->body() !!}
 @endsection
