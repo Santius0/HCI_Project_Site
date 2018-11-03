@@ -14,7 +14,7 @@
             <ul class="nav navbar-nav">
                 <li class="{{ active(['threads', 'thread*']) }}"><a href="{{ route('threads') }}">Updates</a></li>
 
-                <li class="dropdown {{ active(['proposal', 'proposal*']) }}">
+                c
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('proposal') }}">Overview</a></li>
@@ -28,7 +28,15 @@
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('research') }}">Overview</a></li>
                         <li><a href="{{ route('research.methods') }}">Research Methods</a></li>
-                        <li><a href="{{ route('research.results') }}">Results</a></li>
+                        <li><a href="{{ route('research.results') }}">Research Results</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown {{ active(['prototype', 'prototype*']) }}">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ route('prototype') }}">Overview</a></li>
+                        <li><a href="{{ route('prototype.timeline') }}">Application Timeline</a></li>
                     </ul>
                 </li>
 
