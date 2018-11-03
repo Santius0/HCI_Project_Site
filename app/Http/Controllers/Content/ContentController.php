@@ -19,6 +19,12 @@ class ContentController extends Controller
         return view('content.problem_definition', compact('problem_thread'));
     }
 
+    public function proposal()
+    {
+        $problem_thread = Thread::where('title', 'Project Definition')->first();
+        return view('content.problem_definition', compact('problem_thread'));
+    }
+
     public function users()
     {
         $users_thread = Thread::where('title', 'Stakeholders and Users')->first();
@@ -32,6 +38,12 @@ class ContentController extends Controller
     }
 
     public function research_results()
+    {
+        $research_results_thread = Thread::where('title', 'Research Results')->first();
+        return view('content.research_results', compact('research_results_thread'));
+    }
+
+    public function research()
     {
         $research_results_thread = Thread::where('title', 'Research Results')->first();
         return view('content.research_results', compact('research_results_thread'));
