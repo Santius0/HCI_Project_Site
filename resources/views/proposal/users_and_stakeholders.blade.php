@@ -1,5 +1,5 @@
 @extends('proposal.base')
-@php($subTitle = 'Problem Definition')
+@php($subTitle = 'Users and Stakeholders')
 
 @section('post_body')
     {!! $users_thread->body() !!}

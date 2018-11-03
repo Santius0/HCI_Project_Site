@@ -1,5 +1,5 @@
 @extends('proposal.base')
-@php($subTitle = 'Problem Definition')
+@php($subTitle = 'Research')
 
 @section('post_body')
     {!! $research_methods_thread->body() !!}
