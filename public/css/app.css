@@ -9427,72 +9427,6 @@ a.list-group-item-danger.active:focus {
   width: 100%;
 }
 
-.bsa-cpc #_default_ {
-  position: relative;
-  margin-bottom: 1em;
-  padding: .5em 1em;
-  border-radius: 3px;
-  background-color: #ecf0f1;
-  line-height: 1.5;
-}
-
-.bsa-cpc .default-ad {
-  display: none;
-}
-
-.bsa-cpc ._default_ {
-  display: inline;
-  overflow: hidden;
-  line-height: 1.5;
-}
-
-.bsa-cpc ._default_ > * {
-  vertical-align: middle;
-}
-
-.bsa-cpc a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.bsa-cpc a:hover {
-  color: inherit;
-  text-decoration: none;
-}
-
-.bsa-cpc .default-image {
-  display: none;
-}
-
-.bsa-cpc .default-title:after {
-  content: "\A0\2014\A0";
-}
-
-.bsa-cpc .default-title,
-.bsa-cpc .default-description {
-  display: inline;
-}
-
-.bsa-cpc .default-title {
-  position: relative;
-  margin-left: 8px;
-}
-
-.bsa-cpc .default-title:before {
-  position: relative;
-  top: -1px;
-  left: -8px;
-  padding: 2px 5px;
-  border: solid 1px #18bc9c;
-  border-radius: 3px;
-  color: #18bc9c;
-  content: "Sponsor";
-  text-transform: uppercase;
-  font-size: 11px;
-  font-family: Verdana, sans-serif;
-  line-height: 1;
-}
-
 .panel-counter {
   text-align: center;
 }
@@ -9504,81 +9438,6 @@ a.list-group-item-danger.active:focus {
 .panel-counter .panel-body {
   font-size: 3em;
   font-weight: bold;
-}
-
-#footer {
-  left: 0px;
-  bottom: 0px;
-  height: 30px;
-  width: 100%;
-}
-
-#sponsors {
-  text-align: center;
-}
-
-#sponsors h2 {
-  font-size: 19px;
-  margin-top: 35px;
-}
-
-.sponsors-list {
-  padding-top: 20px;
-}
-
-.sponsors-list div {
-  margin-bottom: 20px;
-}
-
-.sponsors-list div img {
-  max-width: 50%;
-}
-
-@media (min-width: 768px) {
-  #sponsors h2 {
-    font-size: 26px;
-    margin-top: 50px;
-  }
-
-  .sponsors-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 40px;
-  }
-
-  .sponsors-list div {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 50%;
-            flex: 1 0 50%;
-    margin-bottom: 35px;
-    width: 50%;
-  }
-
-  .sponsors-list div img {
-    max-width: 200px;
-  }
-}
-
-@media (min-width: 992px) {
-  .sponsors-list div {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 25%;
-            flex: 1 0 25%;
-    width: 25%;
-  }
 }
 
 .forum .header-divider {
@@ -9732,14 +9591,13 @@ a.list-group-item-danger.active:focus {
   padding-left: 16px;
 }
 
-.md-editor .wysiwyg,
-.md-preview {
-  padding: 10px;
-}
-
 /* -----------------------------------------------
  * Timeline
  * --------------------------------------------- */
+
+.fa-circle {
+  color: #a0a5a0;
+}
 
 .timeline {
   list-style: none;
@@ -9754,7 +9612,7 @@ a.list-group-item-danger.active:focus {
   position: absolute;
   content: " ";
   width: 2px;
-  background: #ffffff;
+  background: #a0a5a0;
   left: 50%;
   margin-left: -1.5px;
 }
@@ -9792,7 +9650,7 @@ a.list-group-item-danger.active:focus {
   width: -webkit-calc(100% - 25px);
   float: left;
   border: 1px solid #dcdcdc;
-  background: #ffffff;
+  background: #a0a5a0;
   position: relative;
 }
 
@@ -9814,14 +9672,14 @@ a.list-group-item-danger.active:focus {
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #ffffff;
-  border-right: 0 solid #ffffff;
+  border-left: 14px solid #a0a5a0;
+  border-right: 0 solid #a0a5a0;
   border-bottom: 14px solid transparent;
   content: " ";
 }
 
 .timeline > li > .timeline-badge {
-  color: #ffffff;
+  color: #a0a5a0;
   width: 24px;
   height: 24px;
   line-height: 50px;
@@ -9851,7 +9709,7 @@ a.list-group-item-danger.active:focus {
 }
 
 .timeline-badge > a {
-  color: #ffffff !important;
+  color: #a0a5a0 !important;
 }
 
 .timeline-badge a:hover {
