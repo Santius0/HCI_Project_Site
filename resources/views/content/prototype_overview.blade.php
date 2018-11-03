@@ -23,4 +23,10 @@
             </div>
         </div>
     </div>
+    <hr>
+    <div class="alert alert-info">
+        <p>
+            Check out the full prototype on  <a href="https://share.proto.io/T4EDZF/" class="alert-link">Proto.io</a>
+        </p>
+    </div>
 @endsection
