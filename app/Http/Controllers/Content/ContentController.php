@@ -63,14 +63,16 @@ class ContentController extends Controller
                 'badge_header_route' => 'proposal.concept',
                 'badge_content' => Thread::where('title', 'Conceptual Design')->first()->excerpt(),
 //                'date' => '',
-                'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Design Doc'])
+                'file_list' => array('link' => 'https://www.google.com', 'name' => 'Design Doc'),
+                'images' => array('asset_src' => 'images/My_UWI_Owl.png', 'name' => 'concept')
             ),
             array(
                 'badge_header' => 'Conceptual Design',
                 'badge_header_route' => 'proposal.concept',
                 'badge_content' => Thread::where('title', 'Conceptual Design')->first()->excerpt(),
 //                'date' => '',
-                'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Design Doc'])
+                'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Design Doc']),
+                'images' => array('src' => 'https://drive.google.com/drive/folders/17DGtvlyBeWRiSsv4i-1sVvoocQmP-a9D', 'name' => 'concept2')
             )
         );
         return view('content.timeline', ['timeline_items' => $timeline_items]);
