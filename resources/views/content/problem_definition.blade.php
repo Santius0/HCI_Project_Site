@@ -1,5 +1,5 @@
 @extends('content.base')
-@php($subTitle = 'Problem Definition')
+@title('Problem Definition')
 
 @section('post_body')
     {!! $problem_thread->body() !!}

@@ -1,6 +1,4 @@
 @extends('layouts.default')
-@php($subTitle = isset($subTitle) ? $subTitle : '')
-@title('Project Proposal | ' . $subTitle)
 
 @section('content')
     <h1>{{ $title }}</h1>
