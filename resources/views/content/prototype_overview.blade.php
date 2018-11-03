@@ -7,7 +7,8 @@
     <br>
     <h1>Final LoFi Prototype</h1>
     <hr>
-    <div class="jumbotron text-center">
+    {{--<div class="jumbotron text-center">--}}
+    <div class="text-center">
         <div class="row">
             <div class="flex-column">
                 <img src="{{ asset('images/prototypes/lofi/lofi1.jpg') }}" title='LoFi_1'>
