@@ -18,7 +18,7 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal <span class="caret"></span></a>
                     <ul class="dropdown-menu">
 {{--                        <li><a href="{{ route('proposal') }}">Overview</a></li>--}}
-                        <li><a href="{{ route('proposal.definition') }}">Conceptual Design</a></li>
+                        <li><a href="{{ route('proposal.concept') }}">Conceptual Design</a></li>
                         <li><a href="{{ route('proposal.definition') }}">Problem Definition</a></li>
                         <li><a href="{{ route('proposal.users') }}">Users and Stakeholders</a></li>
                     </ul>
