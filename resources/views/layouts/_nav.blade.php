@@ -23,7 +23,7 @@
                     </ul>
                 </li>
 
-                <li class="{{ active(['research', 'research*']) }}"><a href="{{ route('proposal.research') }}">Research</a></li>
+                <li class="{{ active(['research', 'research*']) }}"><a href="{{ route('research') }}">Research</a></li>
                 {{--<li class="{{ active(['subjects', 'subjects*']) }}"><a href="{{ route('subjects') }}">Test Subjects</a></li>--}}
             </ul>
             <ul class="nav navbar-nav navbar-right">
