@@ -32,3 +32,4 @@
             </div>
         </div>
     </li>
+    <li class="clearfix no-float"></li>
