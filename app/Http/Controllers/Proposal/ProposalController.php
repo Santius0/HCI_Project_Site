@@ -22,13 +22,13 @@ class ProposalController extends Controller
     public function users()
     {
         $users_thread = Thread::where('title', 'Stakeholders and Users')->first();
-        return view('proposal.problem_definition', compact('users_thread'));
+        return view('proposal.users_and_stakeholders', compact('users_thread'));
     }
 
     public function research()
     {
-        $problem_thread = Thread::where('title', 'Problem Definition')->first();
-        return view('proposal.problem_definition', compact('problem_thread'));
+        $research_methods_thread = Thread::where('title', 'Research Methods')->first();
+        return view('research', compact('research_methods_thread'));
     }
 
     public function prototyping()
