@@ -88,6 +88,7 @@ class RegisterController extends Controller
             'github_id' => $request->github_id,
             'github_username' => $request->github_username,
             'user_type' => User::DEFAULT,
+            'avatar_url' => $request->avatar_url ? $request->avatar_url : asset('images/avatars/' . rand(1,50) . ".png"),
             'remember_token' => '',
         ]);
         $user->save();

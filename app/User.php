@@ -72,6 +72,10 @@ class User extends Authenticatable
 
     public function avatar_url()
     {
+        if(!$this->avatar_url){
+            $this->avatar_url = asset('images/avatars/' . rand(1,50) . ".png");
+            $this->save();
+        }
         return $this->avatar_url;
     }
 
@@ -81,7 +85,7 @@ class User extends Authenticatable
 //        $default = urlencode(route('avatar', ['username' => $this->username()]));
 //        $default = urlencode("https://img.icons8.com/color/50/000000/avatar.png");
 //        $default = urlencode('hcipsmlk.herokuapp.com/profile/avatar/'.$this->username());
-        $url = $this->avatar_url() ? "https://www.gravatar.com/avatar/" . $hash . "?d=" . urlencode($this->avatar_url()) . "&s=" . $size : asset('images/avatars/' . rand(1,64) . ".png");
+        $url = $this->avatar_url() ? "https://www.gravatar.com/avatar/" . $hash . "?d=" . urlencode($this->avatar_url()) . "&s=" . $size : asset('images/avatars/' . rand(1,50) . ".png");
         return $url;
     }
 
