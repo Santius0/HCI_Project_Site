@@ -22,6 +22,7 @@
                     </div>
                 @endif
                 @if(isset($images))
+                    @include('_partials._image_modal', ['images'=>$images])
                     <button class="btn btn-success" data-toggle="modal" data-taeget=".bs-example-modal-lg">See Images</button>
                 @endif
                 <br>
@@ -31,7 +32,3 @@
             </div>
         </div>
     </li>
-
-    @if(isset($images))
-        @include('_partials._image_modal', ['images'=>$images])
-    @endif
