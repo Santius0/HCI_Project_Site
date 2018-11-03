@@ -44,7 +44,6 @@
                 <li class="dropdown {{ active(['people', 'people*']) }}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">People <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        {{--<li><a href="{{ route('research') }}">Overview</a></li>--}}
                         <li><a href="{{ route('people.devs') }}">Development Team</a></li>
                         <li><a href="{{ route('people.users') }}">Test Users</a></li>
                     </ul>

@@ -101,6 +101,6 @@ Route::prefix('/prototype')->namespace('Content')->group(function(){
 });
 
 Route::prefix('/people')->namespace('Content')->group(function(){
-    Route::get('/development-teams', 'ContentController@development_team')->name('poeple.devs');
+    Route::get('/development-teams', 'ContentController@development_team')->name('people.devs');
     Route::get('/test-users', 'ContentController@test_users')->name('people.users');
 });
