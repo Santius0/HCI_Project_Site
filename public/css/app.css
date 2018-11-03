@@ -9650,7 +9650,7 @@ a.list-group-item-danger.active:focus {
   width: -webkit-calc(100% - 25px);
   float: left;
   border: 1px solid #dcdcdc;
-  background: #a0a5a0;
+  background: #ffffff;
   position: relative;
 }
 
@@ -9672,8 +9672,8 @@ a.list-group-item-danger.active:focus {
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #a0a5a0;
-  border-right: 0 solid #a0a5a0;
+  border-left: 14px solid #ffffff;
+  border-right: 0 solid #ffffff;
   border-bottom: 14px solid transparent;
   content: " ";
 }
