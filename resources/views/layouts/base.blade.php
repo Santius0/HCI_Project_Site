@@ -10,28 +10,26 @@
 
     <title>{{ isset($title) ? $title.' | ' : '' }} {{ config('app.name') }}</title>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        window.Laravel = {!! json_encode(['csrfToken' => csrf_token()]) !!};
+    </script>
 
-<script>
-    window.Laravel = {!! json_encode(['csrfToken' => csrf_token()]) !!};
-</script>
-
-@include('layouts._favicons')
-
+    @include('layouts._favicons')
 </head>
+
 <body class="{{ $bodyClass ?? '' }}">
+    <div id="app">
+        @include('layouts._nav')
 
-<div id="app">
-    @include('layouts._nav')
+        @yield('body')
 
-    @yield('body')
-
-    @include('layouts._footer')
-</div>
-
-<script src="{{ mix('js/app.js') }}"></script>
-
+        @include('layouts._footer')
+    </div>
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
+
 </html>
 
