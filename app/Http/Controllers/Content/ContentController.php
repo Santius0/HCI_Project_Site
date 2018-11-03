@@ -88,14 +88,14 @@ class ContentController extends Controller
     public function development_team()
     {
         $group = 'Development Team';
-        $people = User::where('user_type', User::DEVELOPER)->get()->oderBy('name');
+        $people = User::where('user_type', User::DEVELOPER)->get()->orderBy('name');
         return view('content.people', compact('people', 'group'));
     }
 
     public function test_users()
     {
         $group = 'Test Users';
-        $people = User::where('user_type', User::TEST_USER)->get()->oderBy('name');
+        $people = User::where('user_type', User::TEST_USER)->get()->orderBy('name');
         return view('content.people', compact('people', 'group'));
     }
 
