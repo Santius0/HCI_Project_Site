@@ -119,9 +119,8 @@
             </div>
         </div>
     </li>
-    <li class="clearfix no-float"></li>
 
-    <li class="text-center">
+    <li class="timeline-bottom">
         <div class="timeline-badge">
             <a><i class="fa fa-circle" id=""></i></a>
         </div>
@@ -146,4 +145,5 @@
             </div>
         </div>
     </li>
+    <li class="clearfix no-float"></li>
 </ul>

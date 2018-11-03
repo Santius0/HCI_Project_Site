@@ -182,6 +182,10 @@ p.footer {
   ul.timeline > li > .timeline-panel {
     float: right;
   }
+  ul.timeline > li > .timeline-bottom {
+    display: inline-block;
+    text-align: center;
+  }
   ul.timeline > li > .timeline-panel:before {
     border-left-width: 0;
     border-right-width: 15px;
