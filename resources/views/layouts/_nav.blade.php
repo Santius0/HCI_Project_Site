@@ -18,6 +18,7 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('proposal') }}">Overview</a></li>
+                        <li><a href="{{ route('proposal.definition') }}">Conceptual Design</a></li>
                         <li><a href="{{ route('proposal.definition') }}">Problem Definition</a></li>
                         <li><a href="{{ route('proposal.users') }}">Users and Stakeholders</a></li>
                     </ul>
@@ -37,6 +38,15 @@
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('prototype') }}">Overview</a></li>
                         <li><a href="{{ route('prototype.timeline') }}">Application Timeline</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown {{ active(['people', 'people*']) }}">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">People <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ route('research') }}">Overview</a></li>
+                        <li><a href="{{ route('research.methods') }}">Development Team</a></li>
+                        <li><a href="{{ route('research.results') }}">Test Users</a></li>
                     </ul>
                 </li>
 
