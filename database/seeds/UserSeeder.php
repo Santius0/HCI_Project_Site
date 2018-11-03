@@ -56,7 +56,7 @@ class UserSeeder extends Seeder
                 'email' => 'afriesha@example.com',
                 'username' => 'afriesha_user',
                 'password' => bcrypt('password'),
-                'user_type' => User::DEVELOPER,
+                'user_type' => User::TEST_USER,
                 'bio' => "Bsc. Management minor in Computer Science, 2nd year UWI student. Technically adept user"
             ],
             [   'name' => 'Nikita',

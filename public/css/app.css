@@ -9567,6 +9567,11 @@ a.list-group-item-danger.active:focus {
   max-width: 300px;
 }
 
+.profile-user-info .profile-user-bio-large {
+  margin: 5px auto;
+  max-width: 600px;
+}
+
 .profile-social-icons {
   font-size: 24px;
 }
@@ -9816,5 +9821,14 @@ a.list-group-item-danger.active:focus {
   .timeline > li.timeline-inverted > .timeline-badge {
     left: 28px;
   }
+}
+
+#footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
 }
 
