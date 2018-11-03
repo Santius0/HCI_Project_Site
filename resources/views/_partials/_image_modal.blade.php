@@ -1,4 +1,4 @@
-<div class="modal bs-example-modal-lg" tabindex="2" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal bs-example-modal-lg" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
