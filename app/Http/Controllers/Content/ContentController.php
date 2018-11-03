@@ -80,7 +80,8 @@ class ContentController extends Controller
 
     public function concept()
     {
-        return view('content.concept');
+        $concept_thread = Thread::where('title', 'Conceptual Design')->first();
+        return view('content.content.concept', compact('concept_thread'));;
     }
 
 }
