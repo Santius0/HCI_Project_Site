@@ -14,8 +14,8 @@
             <ul class="nav navbar-nav">
                 <li class="{{ active(['threads', 'thread*']) }}"><a href="{{ route('threads') }}">Updates</a></li>
 
-                c
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal <span class="caret"></span></a>
+                <li class="dropdown {{ active(['proposal', 'proposal*']) }}">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('proposal') }}">Overview</a></li>
                         <li><a href="{{ route('proposal.definition') }}">Problem Definition</a></li>
