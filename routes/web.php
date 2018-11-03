@@ -104,3 +104,7 @@ Route::prefix('/people')->namespace('Content')->group(function(){
     Route::get('/development-teams', 'ContentController@development_team')->name('people.devs');
     Route::get('/test-users', 'ContentController@test_users')->name('people.users');
 });
+
+Route::prefix('/files')->namespace('Content')->group(function(){
+    Route::get('/', 'ContentController@files')->name('files');
+});
