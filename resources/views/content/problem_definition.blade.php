@@ -1,4 +1,4 @@
-@extends('proposal.base')
+@extends('content.base')
 @php($subTitle = 'Problem Definition')
 
 @section('post_body')

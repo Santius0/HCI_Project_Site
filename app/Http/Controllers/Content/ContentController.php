@@ -10,31 +10,31 @@ class ContentController extends Controller
 {
     public function index()
     {
-        return view('proposal.overview');
+        return view('content.overview');
     }
 
     public function definition()
     {
         $problem_thread = Thread::where('title', 'Project Definition')->first();
-        return view('proposal.problem_definition', compact('problem_thread'));
+        return view('content.problem_definition', compact('problem_thread'));
     }
 
     public function users()
     {
         $users_thread = Thread::where('title', 'Stakeholders and Users')->first();
-        return view('proposal.users_and_stakeholders', compact('users_thread'));
+        return view('content.users_and_stakeholders', compact('users_thread'));
     }
 
     public function research()
     {
         $research_methods_thread = Thread::where('title', 'Research Methods')->first();
-        return view('research', compact('research_methods_thread'));
+        return view('content.research', compact('research_methods_thread'));
     }
 
     public function prototyping()
     {
         $problem_thread = Thread::where('title', 'Problem Definition')->first();
-        return view('proposal.problem_definition', compact('problem_thread'));
+        return view('content.problem_definition', compact('problem_thread'));
     }
 
 }

@@ -24,16 +24,14 @@
                 </li>
 
                 <li class="dropdown {{ active(['research', 'research*']) }}">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('research') }}">Overview</a></li>
-                        <li><a href="{{ route('research') }}">Research Methods</a></li>
-                        <li><a href="{{ route('research') }}">Results</a></li>
+                        <li><a href="{{ route('research.methods') }}">Research Methods</a></li>
+                        <li><a href="{{ route('research.results') }}">Results</a></li>
                     </ul>
                 </li>
 
-                <li><a href="{{ route('research') }}">Research</a></li>
-                {{--<li class="{{ active(['subjects', 'subjects*']) }}"><a href="{{ route('subjects') }}">Test Subjects</a></li>--}}
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())

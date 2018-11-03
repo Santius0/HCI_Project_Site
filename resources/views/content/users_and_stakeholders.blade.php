@@ -1,4 +1,4 @@
-@extends('proposal.base')
+@extends('content.base')
 @php($subTitle = 'Users and Stakeholders')
 
 @section('post_body')
