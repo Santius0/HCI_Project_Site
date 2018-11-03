@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Proposal;
+namespace App\Http\Controllers\Content;
 
 use App\Thread;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class ProposalController extends Controller
+class ContentController extends Controller
 {
     public function index()
     {

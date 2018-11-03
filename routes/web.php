@@ -81,13 +81,15 @@ Route::prefix('/profile')->namespace('Profile')->group(function (){
     Route::get('avatar/{username}', 'ProfileController@avatar')->name('avatar');
 });
 
-Route::prefix('/proposal')->namespace('Proposal')->group(function(){
-    Route::get('/', 'ProposalController@index')->name('proposal');
-    Route::get('/definition', 'ProposalController@definition')->name('proposal.definition');
-    Route::get('/research', 'ProposalController@research')->name('proposal.research');
-    Route::get('/research', 'ProposalController@users')->name('proposal.users');
+Route::prefix('/proposal')->namespace('Content')->group(function(){
+    Route::get('/', 'ContentController@index')->name('proposal');
+    Route::get('/definition', 'ContentController@definition')->name('proposal.definition');
+    Route::get('/research', 'ContentController@research')->name('proposal.research');
+    Route::get('/research', 'ContentController@users')->name('proposal.users');
 });
 
-Route::prefix('/research')->namespace('Proposal')->group(function(){
-    Route::get('/', 'ProposalController@users')->name('research');
+Route::prefix('/research')->namespace('Content')->group(function(){
+    Route::get('/', 'ContentController@users')->name('research');
+    Route::get('/', 'ContentController@users')->name('research.methods');
+    Route::get('/', 'ContentController@users')->name('research.results');
 });
