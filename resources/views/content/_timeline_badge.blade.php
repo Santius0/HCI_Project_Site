@@ -25,6 +25,9 @@
                     @include('_partials._image_modal', ['images'=>$images])
                     <button class="btn btn-success" data-toggle="modal" data-taeget=".bs-example-modal-lg">See Images</button>
                 @endif
+                <div class="alert alert-info">
+                    <p>Check out the full prototype on  <a href="https://share.proto.io/T4EDZF/" class="alert-link">Proto.io</a></p>
+                </div>
                 <br>
             </div>
             <div class="timeline-footer">
