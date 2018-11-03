@@ -7,10 +7,10 @@
         </div>
         <div class="timeline-panel">
             <div class="timeline-heading">
-                <h4><a href="{{ route('proposal.concept') }}">Conceptual Design</a>/h4>
+                <h4><a href="{{ route('proposal.concept') }}">Conceptual Design</a></h4>
             </div>
             <div class="timeline-body">
-                <p>{{ \App\Thread::where('title', 'Conceptual Design') }}</p>
+                <p>{{ \App\Thread::where('title', 'Conceptual Design')->first()->excerpt() }}</p>
         </div>
             <div class="content">
                 <ul class="file-list">
