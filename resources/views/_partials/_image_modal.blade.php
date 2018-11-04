@@ -13,7 +13,7 @@
                                             @endif
                                 <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=One" alt="...">
                                 <div class="carousel-caption">
-                                    One Image
+                                    {{$image['name']}}
                                 </div>
                             </div>
                         @endforeach
