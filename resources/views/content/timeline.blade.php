@@ -29,7 +29,7 @@
     <a class="btn btn-danger btn-block" href="#" data-toggle="modal" data-target="#deleteThread">
         Delete
     </a>
-    @include('_partials._delete_modal', [
+    @include('_partials._image_modal', [
        'id' => 'deleteThread',
        'route' => ['prototype.timeline'],
        'title' => 'Delete Thread',
