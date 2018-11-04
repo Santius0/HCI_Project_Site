@@ -9,14 +9,14 @@
                             @if($first)
                                 @php($first = false)
                                 <div class="item active">
-                                    <img class="img-responsive" src="{{ $src }}" alt= "{{ $image['name'] }}">
+                                    <img class="img-responsive" src="{{ $asset('images/Users/1.jpg') }}" alt= "{{ $image['name'] }}">
                                     <div class="carousel-caption">
                                         {{ $image['name'] }}
                                     </div>
                                 </div>
                             @else
                                 <div class="item">
-                                    <img class="img-responsive" src="{{ $src }}" alt= "{{ $image['name'] }}">
+                                    <img class="img-responsive" src="{{ asset('images/Users/1.jpg')}}" alt= "{{ $image['name'] }}">
                                     <div class="carousel-caption">
                                         {{ $image['name'] }}
                                     </div>
