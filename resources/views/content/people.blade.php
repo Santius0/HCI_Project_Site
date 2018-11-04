@@ -4,7 +4,7 @@
 @section('post_body')
     <br/>
     @foreach($people as $person)
-        @include('users._user_info', ['user' => $person, 'avatarSize' => 100, 'large' => true])
+        @include('users._user_info', ['user' => $person, 'avatarSize' => 250, 'large' => true])
         <br/>
         <hr/>
     @endforeach
