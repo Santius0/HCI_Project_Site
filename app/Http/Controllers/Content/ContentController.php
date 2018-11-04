@@ -105,13 +105,8 @@ class ContentController extends Controller
                 'images' => [
                     ['src' => 'https://image.ibb.co/dziuxf/3.jpg', 'name' => '1'],
                     ['src' => 'https://image.ibb.co/f1P1cf/4.jpg', 'name' => '2'],
-                    ['src' => 'https://image.ibb.co/dOd53L/5.jpg', 'name' => '3'],
-                    ['src' => 'https://image.ibb.co/iHcyOL/6.jpg', 'name' => '4'],
-                    ['src' => 'https://image.ibb.co/kTZdOL/7.jpg', 'name' => '5'],
-                    ['src' => 'https://image.ibb.co/csMQ3L/8.jpg', 'name' => '6'],
-                    ['src' => 'https://image.ibb.co/dOd53L/5.jpg', 'name' => '7'],
-                    ['src' => 'https://image.ibb.co/eTJuxf/1.jpg', 'name' => '8'],
-                    ['src' => 'https://image.ibb.co/csMQ3L/8.jpg', 'name' => '9'],
+                    ['src' => 'https://image.ibb.co/iHcyOL/6.jpg', 'name' => '3'],
+                    ['src' => 'https://image.ibb.co/kTZdOL/7.jpg', 'name' => '4'],
                 ]
 
             ),
@@ -120,15 +115,15 @@ class ContentController extends Controller
                 'badge_header_route' => 'prototype',
                 'badge_content' => 'Design sketches completed',
                  'images' => [
-                    ['src' => asset('images/Design_Sketch/1.jpeg'), 'name' => '1'],
-                    ['src' => asset('images/Design_Sketch/2.jpeg'), 'name' => '2'],
-                    ['src' => asset('images/Design_Sketch/3.jpeg'), 'name' => '3'],
-                    ['src' => asset('images/Design_Sketch/4.jpeg'), 'name' => '4'],
-                    ['src' => asset('images/Design_Sketch/5.jpeg'), 'name' => '5'],
-                    ['src' => asset('images/Design_Sketch/6.jpeg'), 'name' => '6'],
-                    ['src' => asset('images/Design_Sketch/7.jpeg'), 'name' => '7'],
-                    ['src' => asset('images/Design_Sketch/8.jpeg'), 'name' => '8'],
-                    ['src' => asset('images/Design_Sketch/9.jpeg'), 'name' => '9'],
+                    ['src' => 'https://image.ibb.co/nuLwA0/1.jpg', 'name' => '1'],
+                    ['src' => 'https://image.ibb.co/dEGExf/2.jpg', 'name' => '2'],
+                    ['src' => 'https://image.ibb.co/nz2Mcf/3.jpg', 'name' => '3'],
+                    ['src' => 'https://image.ibb.co/ifY53L/4.jpg', 'name' => '4'],
+                    ['src' => 'https://image.ibb.co/hzyiq0/5.jpg', 'name' => '5'],
+                    ['src' => 'https://image.ibb.co/ctPOq0/6.jpg', 'name' => '6'],
+                    ['src' => 'https://image.ibb.co/cZctq0/7.jpg', 'name' => '7'],
+                    ['src' => 'https://image.ibb.co/fosRA0/8.jpg', 'name' => '8'],
+                    ['src' => 'https://image.ibb.co/cmr8OL/9.jpg', 'name' => '9'],
                 ]
             )
         );
