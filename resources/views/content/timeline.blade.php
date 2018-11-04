@@ -21,19 +21,4 @@
         @endforeach
         <li class="clearfix no-float"></li>
     </ul>
-    {{--<a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target=#ViewImages>--}}
-        {{--Delete--}}
-    {{--</a>--}}
-    {{--@include('_partials._image_modal', ['id' => "ViewImages"])--}}
-
-    <a class="btn btn-danger btn-block" href="#" data-toggle="modal" data-target="#deleteThread">
-        Delete
-    </a>
-    @include('_partials._image_modal', [
-       'id' => 'deleteThread',
-       'route' => ['prototype.timeline'],
-       'title' => 'Delete Thread',
-       'body' => '<p>Are you sure you want to delete this thread and its replies? This cannot be undone.</p>',
-       ])
-
 @endsection
