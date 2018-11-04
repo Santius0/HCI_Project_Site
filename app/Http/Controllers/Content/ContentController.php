@@ -97,20 +97,21 @@ class ContentController extends Controller
                 'badge_header_route' => 'people.users',
                 'badge_content' => Thread::where('title', 'Recruiting Test Users')->first()->excerpt(),
             ),
+
             array(
                 'badge_header' => 'Research Interviews',
                 'badge_header_route' => 'research.results',
                 'badge_content' => '',
                 'images' => [
-                    ['src' => asset('images/Users/1.jpg'), 'name' => '1'],
-                    ['src' => asset('images/Users/2.jpg'), 'name' => '2'],
-                    ['src' => asset('images/Users/3.jpg'), 'name' => '3'],
-                    ['src' => asset('images/Users/4.jpg'), 'name' => '4'],
-                    ['src' => asset('images/Users/5.jpg'), 'name' => '5'],
-                    ['src' => asset('images/Users/6.jpg'), 'name' => '6'],
-                    ['src' => asset('images/Users/7.jpg'), 'name' => '7'],
-                    ['src' => asset('images/Users/8.jpg'), 'name' => '8'],
-                    ['src' => asset('images/Users/9.jpg'), 'name' => '9'],
+                    ['src' => 'https://image.ibb.co/nuLwA0/1.jpg', 'name' => '1'],
+                    ['src' => 'https://image.ibb.co/dEGExf/2.jpg', 'name' => '2'],
+                    ['src' => 'https://image.ibb.co/nz2Mcf/3.jpg', 'name' => '3'],
+                    ['src' => 'https://image.ibb.co/ifY53L/4.jpg', 'name' => '4'],
+                    ['src' => 'https://image.ibb.co/hzyiq0/5.jpg', 'name' => '5'],
+                    ['src' => 'https://image.ibb.co/ctPOq0/6.jpg', 'name' => '6'],
+                    ['src' => 'https://image.ibb.co/cZctq0/7.jpg', 'name' => '7'],
+                    ['src' => 'https://image.ibb.co/fosRA0/8.jpg', 'name' => '8'],
+                    ['src' => 'https://image.ibb.co/cmr8OL/9.jpg', 'name' => '9'],
                 ]
 
             ),
