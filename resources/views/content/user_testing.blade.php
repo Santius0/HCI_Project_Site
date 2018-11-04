@@ -1,11 +1,8 @@
 @extends('content.base')
 
 @title('User Testing')
-@php(
-    $interview_questions = \App\Thread::where('title','Survey: Interview questions and general response')->first();
-    $scenarios = \App\Thread::where('title','Scenarios')->first()
-
-)
+@php($interview_questions = \App\Thread::where('title','Survey: Interview questions and general response')->first())
+@php($scenarios = \App\Thread::where('title','Scenarios')->first())
 
 @section('post_body')
     <br>
