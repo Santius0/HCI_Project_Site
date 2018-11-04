@@ -3,6 +3,7 @@
         <div class="modal-content">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
+                        @if(isset($images))
                         <div class="item active">
                             <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=One" alt="...">
                             <div class="carousel-caption">
@@ -17,6 +18,7 @@
                                 </div>
                             </div>
                         @endforeach
+                            @endif
                     </div>
                 <!-- Wrapper for slides -->
                 <!-- Controls -->
