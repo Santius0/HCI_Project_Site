@@ -5,7 +5,7 @@
                 @foreach($images as $image)
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img class="img-responsive" src="{{ isset($images['asset_src']) ? $images['asset_src'] : $images['src']}}" alt="...">
+                            <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=One" alt="...">
                             <div class="carousel-caption">
                                 One Image
                             </div>
