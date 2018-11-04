@@ -2,8 +2,6 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                @php($y = [7,8,9])
-
                     <div class="carousel-inner">
                         <div class="item active">
                             <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=One" alt="...">
@@ -11,7 +9,7 @@
                                 One Image
                             </div>
                         </div>
-                        @foreach($y as $image)
+                        @foreach($images as $image)
                             <div class="item">
                                 <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=Two" alt="...">
                                 <div class="carousel-caption">
