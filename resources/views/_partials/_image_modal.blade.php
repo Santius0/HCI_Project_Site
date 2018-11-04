@@ -2,7 +2,6 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <button type="button" class="close pull-right" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
@@ -32,7 +31,6 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
             </div>
-
         </div>
     </div>
 </div>
