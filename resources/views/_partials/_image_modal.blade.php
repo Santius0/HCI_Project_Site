@@ -1,6 +1,6 @@
 <script>
     $(".modal").on("hidden.bs.modal", function(){
-        $(".modal-body1").html("");
+        $(".carousel-inner").html("");
     });
 </script>
 @php($first = true )

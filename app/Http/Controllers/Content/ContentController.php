@@ -130,22 +130,11 @@ class ContentController extends Controller
                 'badge_header' => 'Self Testing',
                 'badge_header_route' => 'research.results',
                 'badge_content' => 'Design re-assessed and improved upon.',
-                 'images' => [
-                    ['src' => 'https://image.ibb.co/nuLwA0/1.jpg', 'name' => '1'],
-                    ['src' => 'https://image.ibb.co/dEGExf/2.jpg', 'name' => '2'],
-                    ['src' => 'https://image.ibb.co/nz2Mcf/3.jpg', 'name' => '3'],
-                    ['src' => 'https://image.ibb.co/ifY53L/4.jpg', 'name' => '4'],
-                    ['src' => 'https://image.ibb.co/hzyiq0/5.jpg', 'name' => '5'],
-                    ['src' => 'https://image.ibb.co/ctPOq0/6.jpg', 'name' => '6'],
-                    ['src' => 'https://image.ibb.co/cZctq0/7.jpg', 'name' => '7'],
-                    ['src' => 'https://image.ibb.co/fosRA0/8.jpg', 'name' => '8'],
-                    ['src' => 'https://image.ibb.co/cmr8OL/9.jpg', 'name' => '9'],
-                ]
             ),
             array(
                 'badge_header' => 'Controlled Observation',
                 'badge_header_route' => 'research.results',
-                'badge_content' => 'Multiple rounds of controller observation and re-design',
+                'badge_content' => 'Multiple rounds of controller observation and re-design.',
                  'images' => [
                     ['src' => 'https://image.ibb.co/nuLwA0/1.jpg', 'name' => '1'],
                     ['src' => 'https://image.ibb.co/dEGExf/2.jpg', 'name' => '2'],
