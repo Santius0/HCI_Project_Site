@@ -6,6 +6,7 @@
                     <div class="carousel-inner">
                         @foreach($images as $image)
                             @if($first)
+                                @php($first = false)
                                 <div class="item active">
                                     <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=One" alt="...">
                                     <div class="carousel-caption">
