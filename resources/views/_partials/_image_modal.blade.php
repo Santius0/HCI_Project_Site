@@ -5,7 +5,7 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img class="img-responsive" src="http://placehold.it/1200x600/555/000&text=One" alt="...">
+                        <img class="img-responsive" src="{{ $images[1]['link'] }}" alt="...">
                         <div class="carousel-caption">
                             One Image
                         </div>

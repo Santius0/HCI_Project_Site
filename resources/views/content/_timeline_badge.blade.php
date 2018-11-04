@@ -21,14 +21,9 @@
                         </ul>
                     </div>
                 @endif
-                @if($images)
+                @if(isset($images))
                     <a href="#" data-toggle="modal" data-target="#imageCarousel">Images</a>
-                    @include('_partials._image_modal', [
-                       'id' => 'imageCarousel',
-                       'route' => ['prototype.timeline'],
-                       'title' => 'Delete Thread',
-                       'body' => '<p>Are you sure you want to delete this thread and its replies? This cannot be undone.</p>',
-                       ])
+                    @include('_partials._image_modal', ['id' => 'imageCarousel', 'images' => $images ])
                 @endif
                 <br>
             </div>
