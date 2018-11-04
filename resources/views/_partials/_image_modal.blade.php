@@ -1,5 +1,5 @@
 @php($first = true )
-<div class="modal" id="{{ $id }}" tabindex="-1" role="dialog">
+<div class="modal fade" id="{{ $id }}" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
