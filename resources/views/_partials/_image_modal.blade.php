@@ -5,7 +5,7 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img class="img-responsive" src="{{ $images['link'] }}" alt="...">
+                        <img class="img-responsive" src="{{ $images['asset_src'] }}" alt="...">
                         <div class="carousel-caption">
                             One Image
                         </div>
