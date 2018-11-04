@@ -18,13 +18,8 @@
 
     {{--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>--}}
     <script>
-        require("jsdom").env("", function(err, window) {
-            if (err) {
-                console.error(err);
-                return;
-            }
-
-            var $ = require("jquery")(window);
+        $(".modal").on("hidden.bs.modal", function(){
+            $(".carousel-inner").html("");
         });
     </script>
 

@@ -130,21 +130,26 @@ class ContentController extends Controller
                 'badge_header' => 'Self Testing',
                 'badge_header_route' => 'research.results',
                 'badge_content' => 'Design re-assessed and improved upon.',
+                'images' => [
+                    ['src' => 'https://image.ibb.co/dbTPV0/IMG-20181101-WA0001.jpg', 'name' => '1'],
+                    ['src' => 'https://image.ibb.co/fnsUxf/IMG-20181101-WA0000.jpg', 'name' => '2'],
+                    ['src' => 'https://image.ibb.co/gKhjV0/IMG-20181102-WA0009.jpg', 'name' => '3'],
+                    ['src' => 'https://image.ibb.co/m3Q4V0/IMG-20181102-WA0008.jpg', 'name' => '4'],
+                    ['src' => 'https://image.ibb.co/ih2jV0/IMG-20181102-WA0004.jpg', 'name' => '5'],
+                    ['src' => 'https://image.ibb.co/nK27iL/IMG-20181102-WA0003.jpg', 'name' => '6'],
+                    ['src' => 'https://image.ibb.co/m11YOL/IMG-20181102-WA0001.jpg', 'name' => '7'],
+                    ['src' => 'https://image.ibb.co/inMBA0/IMG-20181102-WA0002.jpg', 'name' => '8'],
+                ]
+
             ),
             array(
                 'badge_header' => 'Controlled Observation',
                 'badge_header_route' => 'research.results',
                 'badge_content' => 'Multiple rounds of controller observation and re-design.',
                  'images' => [
-                    ['src' => 'https://image.ibb.co/nuLwA0/1.jpg', 'name' => '1'],
-                    ['src' => 'https://image.ibb.co/dEGExf/2.jpg', 'name' => '2'],
-                    ['src' => 'https://image.ibb.co/nz2Mcf/3.jpg', 'name' => '3'],
-                    ['src' => 'https://image.ibb.co/ifY53L/4.jpg', 'name' => '4'],
-                    ['src' => 'https://image.ibb.co/hzyiq0/5.jpg', 'name' => '5'],
-                    ['src' => 'https://image.ibb.co/ctPOq0/6.jpg', 'name' => '6'],
-                    ['src' => 'https://image.ibb.co/cZctq0/7.jpg', 'name' => '7'],
-                    ['src' => 'https://image.ibb.co/fosRA0/8.jpg', 'name' => '8'],
-                    ['src' => 'https://image.ibb.co/cmr8OL/9.jpg', 'name' => '9'],
+                    ['src' => 'https://image.ibb.co/eTJuxf/1.jpg', 'name' => '1'],
+                    ['src' => 'https://image.ibb.co/csMQ3L/8.jpg', 'name' => '2'],
+                    ['src' => 'https://image.ibb.co/dOd53L/5.jpg', 'name' => '3'],
                 ]
             ),
             array(
@@ -152,17 +157,6 @@ class ContentController extends Controller
                 'badge_header_route' => 'prototype',
                 'badge_content' => 'Final LoFi deign was  created.',
                 'file_list' => array(['link' => 'https://share.proto.io/T4EDZF/', 'name' => 'Final prototype on Proto.io']),
-//                'images' => [
-//                    ['src' => 'https://image.ibb.co/nuLwA0/1.jpg', 'name' => '1'],
-//                    ['src' => 'https://image.ibb.co/dEGExf/2.jpg', 'name' => '2'],
-//                    ['src' => 'https://image.ibb.co/nz2Mcf/3.jpg', 'name' => '3'],
-//                    ['src' => 'https://image.ibb.co/ifY53L/4.jpg', 'name' => '4'],
-//                    ['src' => 'https://image.ibb.co/hzyiq0/5.jpg', 'name' => '5'],
-//                    ['src' => 'https://image.ibb.co/ctPOq0/6.jpg', 'name' => '6'],
-//                    ['src' => 'https://image.ibb.co/cZctq0/7.jpg', 'name' => '7'],
-//                    ['src' => 'https://image.ibb.co/fosRA0/8.jpg', 'name' => '8'],
-//                    ['src' => 'https://image.ibb.co/cmr8OL/9.jpg', 'name' => '9'],
-//                ]
             )
         );
         return view('content.timeline', ['timeline_items' => $timeline_items]);
