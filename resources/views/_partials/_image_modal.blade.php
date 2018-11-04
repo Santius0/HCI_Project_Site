@@ -5,18 +5,19 @@
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         @foreach($images as $image)
+{{--                            @php($src = isset($image['asset_src']) ? $image['asset_src'] : $image['src'])--}}
                             @php($src = isset($image['asset_src']) ? $image['asset_src'] : $image['src'])
                             @if($first)
                                 @php($first = false)
                                 <div class="item active">
-                                    <img class="img-responsive" src="{{ $src }}" alt= "{{ $image['name'] }}">
+                                    <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=Two" alt= "{{ $image['name'] }}">
                                     {{--<div class="carousel-caption">--}}
                                         {{--One Image--}}
                                     {{--</div>--}}
                                 </div>
                             @else
                                 <div class="item">
-                                    <img class="img-responsive" src="{{ $src }}" alt= "{{ $image['name'] }}">
+                                    <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=Two" alt= "{{ $image['name'] }}">
                                     {{--<div class="carousel-caption">--}}
                                         {{--One Imgggage--}}
                                     {{--</div>--}}
