@@ -1,5 +1,10 @@
+<script>
+    $(".modal").on("hidden.bs.modal", function(){
+        $(".modal-body1").html("");
+    });
+</script>
 @php($first = true )
-<div class="modal fade" id="{{ $id }}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bs" id="{{ $id }}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
