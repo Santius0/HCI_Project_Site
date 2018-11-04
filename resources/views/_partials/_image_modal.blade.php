@@ -10,16 +10,16 @@
                                 @php($first = false)
                                 <div class="item active">
                                     <img class="img-responsive" src="{{ $src }}" alt= "{{ $image['name'] }}">
-                                    {{--<div class="carousel-caption">--}}
-                                        {{--One Image--}}
-                                    {{--</div>--}}
+                                    <div class="carousel-caption">
+                                        {{ $image['name'] }}
+                                    </div>
                                 </div>
                             @else
                                 <div class="item">
                                     <img class="img-responsive" src="{{ $src }}" alt= "{{ $image['name'] }}">
-                                    {{--<div class="carousel-caption">--}}
-                                        {{--One Imgggage--}}
-                                    {{--</div>--}}
+                                    <div class="carousel-caption">
+                                        {{ $image['name'] }}
+                                    </div>
                                 </div>
                             @endif
                         @endforeach
