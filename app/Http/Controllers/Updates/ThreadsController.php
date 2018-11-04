@@ -33,7 +33,7 @@ class ThreadsController extends Controller
 
     public function create()
     {
-        return Auth::user() ? view('forum.threads.create', ['tags' => Tag::all()]) : redirect(route('threads'));
+        return Auth::user() ? view('forum.threads.create') : redirect(route('threads'));
     }
 
     public function store(Request $request)
@@ -62,7 +62,7 @@ class ThreadsController extends Controller
     {
         if(Auth::user()) {
             $thread = Thread::find($id);
-            return view('forum.threads.edit', ['thread' => $thread, 'tags' => Tag::all(), 'method' => 'PUT', 'route' => 'thread.update']);
+            return view('forum.threads.edit', ['thread' => $thread, 'method' => 'PUT', 'route' => 'thread.update']);
         }
         else{
             return view(route('thread'));
