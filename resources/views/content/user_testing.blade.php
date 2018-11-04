@@ -15,7 +15,7 @@
         {!! $interview_questions ->body() !!}
     </p>
     <br>
-    <div class="text-center">
+    <div class="text-center image-box">
         <div class="row">
             <div class="flex-column">
                 <img src="{{ asset('images/Users/interview/1.jpg') }}" title='interview_1' width="500" height="650">
@@ -43,7 +43,7 @@
         <b>Users were provided with a prototype and asked to attempt to navigate to the nest of their abilities. How long each task took to complete, how confidently the users performed each task and how many attempts a user had to make before completing each task was recorded.</b>
         <br>
     </p>
-    <div class="text-center">
+    <div class="text-center image-box">
         <div class="row">
             <div class="flex-column">
                 <img src="{{ asset('images/Users/observation/1.jpg') }}" title='observation_1' width="500" height="650">
