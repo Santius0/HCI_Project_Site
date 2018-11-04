@@ -120,14 +120,14 @@ class ContentController extends Controller
                 'badge_content' => 'Design sketches completed',
                  'images' => [
                 ['src' => asset('images/Design_Sketch/1.jpeg'), 'name' => '1'],
-                ['src' => asset('images/Design_Sketch/2.jepg'), 'name' => '2'],
-                ['src' => asset('images/Design_Sketch/3.jepg'), 'name' => '3'],
-                ['src' => asset('images/Design_Sketch/4.jepg'), 'name' => '4'],
-                ['src' => asset('images/Design_Sketch/5.jepg'), 'name' => '5'],
-                ['src' => asset('images/Design_Sketch/6.jepg'), 'name' => '6'],
-                ['src' => asset('images/Design_Sketch/7.jepg'), 'name' => '7'],
-                ['src' => asset('images/Design_Sketch/8.jepg'), 'name' => '8'],
-                ['src' => asset('images/Design_Sketch/9.jepg'), 'name' => '9'],
+                ['src' => asset('images/Design_Sketch/2.jpeg'), 'name' => '2'],
+                ['src' => asset('images/Design_Sketch/3.jpeg'), 'name' => '3'],
+                ['src' => asset('images/Design_Sketch/4.jpeg'), 'name' => '4'],
+                ['src' => asset('images/Design_Sketch/5.jpeg'), 'name' => '5'],
+                ['src' => asset('images/Design_Sketch/6.jpeg'), 'name' => '6'],
+                ['src' => asset('images/Design_Sketch/7.jpeg'), 'name' => '7'],
+                ['src' => asset('images/Design_Sketch/8.jpeg'), 'name' => '8'],
+                ['src' => asset('images/Design_Sketch/9.jpeg'), 'name' => '9'],
     ]
             )
         );
