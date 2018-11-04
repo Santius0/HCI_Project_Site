@@ -9752,6 +9752,10 @@ a.list-group-item-danger.active:focus {
 }
 
 .timeline-footer > a {
+  text-decoration: none;
+}
+
+.timeline-footer > a:hover {
   cursor: pointer;
   text-decoration: underline;
 }

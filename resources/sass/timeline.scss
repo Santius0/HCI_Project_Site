@@ -127,6 +127,9 @@
 }
 .timeline-footer p { margin-bottom: 0; }
 .timeline-footer > a {
+  text-decoration: none;
+}
+.timeline-footer > a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
