@@ -52,32 +52,41 @@ class HomeController extends Controller
             ),
 
             array(
-                'badge_header' => 'Research Interviews',
-                'badge_header_route' => 'research.results',
-                'badge_content' => '',
+                'badge_header' => 'Interviews',
+                'badge_header_route' => 'prototype.testing',
+                'badge_content' => 'Test users are interviewed.',
 
             ),
             array(
                 'badge_header' => 'Initial Application Design',
                 'badge_header_route' => 'prototype',
-                'badge_content' => 'Design sketches completed',
+                'badge_content' => 'Initial design sketches completed.',
             ),
             array(
                 'badge_header' => 'Self Testing',
-                'badge_header_route' => 'research.results',
-                'badge_content' => 'Design re-assessed and improved upon.',
+                'badge_header_route' => 'prototype.testing',
+                'badge_content' => 'Initial design assessed by team using multiple scenarios.',
+
+            ),
+            array(
+                'badge_header' => 'Second Application Design',
+                'badge_header_route' => 'prototype',
+                'badge_content' => 'Initial design re-assessed and improved upon.',
 
             ),
             array(
                 'badge_header' => 'Controlled Observation',
-                'badge_header_route' => 'research.results',
-                'badge_content' => 'Multiple rounds of controller observation and re-design.',
+                'badge_header_route' => 'prototype.testing',
+                'badge_content' => 'Users were provided with a prototype and asked to attempt to navigate to the nest of their abilities.',
             ),
             array(
                 'badge_header' => 'Final LoFi Prototype',
                 'badge_header_route' => 'prototype',
-                'badge_content' => 'Final LoFi design was  created.',
-                'file_list' => array(['link' => 'https://share.proto.io/T4EDZF/', 'name' => 'Final prototype on Proto.io']),
+                'badge_content' => 'Final LoFi prototype was created.',
+                'file_list' => array(
+                    ['link' => 'https://share.proto.io/T4EDZF/', 'name' => 'Final prototype on Proto.io'],
+                    ['link' => 'https://docs.google.com/document/d/1Nu_wGyuH_YlbpmIGzlqsj88UVrqvIiWq4xSjPNMinCY/edit#', 'name' => 'Finalised Project Proposal and Research Document'],
+                ),
             )
         );
         return view('home', ['timeline_items' => $timeline_items]);

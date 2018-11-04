@@ -38,7 +38,7 @@
     {!! $scenarios->body() !!}
     </p>
     <br><hr>
-    <h2>Controller Observation</h2>
+    <h2>Controlled Observation</h2>
     <br>
     <p>
         <b>Users were provided with a prototype and asked to attempt to navigate to the nest of their abilities. How long each task took to complete, how confidently the users performed each task and how many attempts a user had to make before completing each task was recorded.</b>
