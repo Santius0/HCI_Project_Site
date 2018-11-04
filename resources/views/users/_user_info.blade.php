@@ -1,8 +1,8 @@
 @if(isset($large) && $large)
     <div class="profile-user-info">
-            <a href="{{ route('profile', $user->username()) }}">
+            {{--<a href="{{ route('profile', $user->username()) }}">--}}
                 <img class="img-circle" src="{{ $user->gravatarUrl(isset($avatarSize) ? $avatarSize : 150) }}" width="{{ isset($avatarSize) ? $avatarSize : 150 }}" height="{{ isset($avatarSize) ? $avatarSize : 150 }}">
-            </a>
+            {{--</a>--}}
         <h2 class="profile-user-name">{{ $user->name() }}</h2>
         @if ($bio = $user->bio())
             <p class="profile-user-bio-large">
@@ -20,9 +20,9 @@
     </div>
 @else
     <div class="profile-user-info">
-        <a href="{{ route('profile', $user->username()) }}">
+{{--        <a href="{{ route('profile', $user->username()) }}">--}}
             <img class="img-circle" src="{{ $user->gravatarUrl(isset($avatarSize) ? $avatarSize : 150) }}" width="{{ isset($avatarSize) ? $avatarSize : 150 }}" height="{{ isset($avatarSize) ? $avatarSize : 150 }}">
-        </a>
+        {{--</a>--}}
     <h2 class="profile-user-name">{{ $user->name() }}</h2>
     @if ($bio = $user->bio())
         <p class="profile-user-bio">
