@@ -22,5 +22,5 @@
         <li class="clearfix no-float"></li>
     </ul>
 
-    @include('_partials._image_modal', ['id' => "ViewImages{$badge_header}"])
+    @include('_partials._image_modal', ['id' => "ViewImages{$item['badge_header']}"])
 @endsection
