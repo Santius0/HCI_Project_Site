@@ -13,8 +13,6 @@
             </h2>
         </div>
     </div>
-    <br>
-    <br>
     @php($invert = false)
     <ul class="timeline">
         @foreach($timeline_items as $item)
