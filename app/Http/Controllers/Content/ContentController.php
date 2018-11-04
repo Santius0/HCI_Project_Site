@@ -178,9 +178,10 @@ class ContentController extends Controller
 
     public function test_users()
     {
+        $content_thread = Thread::where('title', 'Team Roles')->first();
         $group = 'Test Users';
         $people = User::where('user_type', User::TEST_USER)->orderBy('name')->get();
-        return view('content.people', compact('people', 'group'));
+        return view('content.people', compact('people', 'group', 'content_thread'));
     }
 
     public function files()

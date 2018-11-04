@@ -41,6 +41,11 @@ class HomeController extends Controller
                 'badge_content' => Thread::where('title', 'Stakeholders and Users')->first()->excerpt(),
             ),
             array(
+                'badge_header' => 'Identify Development Team Member Roles',
+                'badge_header_route' => 'people.devs',
+                'badge_content' => Thread::where('title', 'Team Roles')->first()->excerpt(),
+            ),
+            array(
                 'badge_header' => 'Select Research Methods',
                 'badge_header_route' => 'research.methods',
                 'badge_content' => Thread::where('title', 'Research Methods')->first()->excerpt(),
