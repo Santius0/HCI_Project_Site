@@ -8,10 +8,10 @@
                             @if($first)
                                 <div class="item active">
                                     @php($first = false )
-                            @else
+                                    @else
                                         <div class="item">
                                             @endif
-                                <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=One" alt="...">
+                                <img class="img-responsive" src="{{ isset($image['asset_src']) ? $image['asset_src'] : $image['src'] }}" alt="{{ $image['name'] }}">
                                 <div class="carousel-caption">
                                     {{$image['name']}}
                                 </div>
