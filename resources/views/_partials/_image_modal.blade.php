@@ -5,7 +5,7 @@
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         @foreach($images as $image)
-                            @php($src = "http://placehold.it/1200x600/fffccc/000&text=Two")
+                            @php($src = $image['asset_src'])
                             @if($first)
                                 @php($first = false)
                                 <div class="item active">

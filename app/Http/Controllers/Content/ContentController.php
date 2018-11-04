@@ -116,7 +116,7 @@ class ContentController extends Controller
             ),
             array(
                 'badge_header' => 'Initial Application Design',
-                'badge_header_route' => 'people.users',
+                'badge_header_route' => 'prototype',
                 'badge_content' => 'Design sketches completed',
                  'images' => [
                 ['asset_src' => 'images/Design_Sketch/1.png', 'name' => '1'],
