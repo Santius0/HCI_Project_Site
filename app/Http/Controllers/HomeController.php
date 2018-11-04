@@ -55,7 +55,6 @@ class HomeController extends Controller
                 'badge_header_route' => 'people.users',
                 'badge_content' => Thread::where('title', 'Recruiting Test Users')->first()->excerpt(),
             ),
-
             array(
                 'badge_header' => 'Interviews',
                 'badge_header_route' => 'prototype.testing',
@@ -63,18 +62,24 @@ class HomeController extends Controller
 
             ),
             array(
-                'badge_header' => 'Initial Application Design',
+                'badge_header' => 'Assess Research Results',
+                'badge_header_route' => 'research.results',
+                'badge_content' => 'Using information gathered from the interviews, the application design process began.',
+
+            ),
+            array(
+                'badge_header' => 'Initial Application Prototype',
                 'badge_header_route' => 'prototype',
                 'badge_content' => 'Initial design sketches completed.',
             ),
             array(
                 'badge_header' => 'Self Testing',
                 'badge_header_route' => 'prototype.testing',
-                'badge_content' => 'Initial design assessed by team using multiple scenarios.',
+                'badge_content' => 'Initial design assessed by team using multiple scenarios and appropriate changes made.',
 
             ),
             array(
-                'badge_header' => 'Second Application Design',
+                'badge_header' => 'Second Application Prototype',
                 'badge_header_route' => 'prototype',
                 'badge_content' => 'Initial design re-assessed and improved upon.',
 
@@ -83,6 +88,11 @@ class HomeController extends Controller
                 'badge_header' => 'Controlled Observation',
                 'badge_header_route' => 'prototype.testing',
                 'badge_content' => 'Users were provided with a prototype and asked to attempt to navigate to the nest of their abilities.',
+            ),
+            array(
+                'badge_header' => 'Assess Research Results #2',
+                'badge_header_route' => 'research.results',
+                'badge_content' => 'Using the data gathered during the controlled observation experiment the application prototype was further modified.',
             ),
             array(
                 'badge_header' => 'Final LoFi Prototype',
