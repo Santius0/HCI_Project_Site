@@ -101,7 +101,7 @@ class ContentController extends Controller
                 'badge_header' => 'Research Interviews',
                 'badge_header_route' => 'research.results',
                 'badge_content' => '',
-                 'images' => [
+                'images' => [
                     ['asset_src' => 'images/Users/1.png', 'name' => '1'],
                     ['asset_src' => 'images/Users/2.png', 'name' => '2'],
                     ['asset_src' => 'images/Users/3.png', 'name' => '3'],
@@ -115,9 +115,20 @@ class ContentController extends Controller
 
             ),
             array(
-                'badge_header' => 'Recruit Test Users',
+                'badge_header' => 'Initial Application Design',
                 'badge_header_route' => 'people.users',
-                'badge_content' => Thread::where('title', 'Recruiting Test Users')->first()->excerpt(),
+                'badge_content' => 'Design sketches completed',
+                 'images' => [
+                ['asset_src' => 'images/Design_Sketch/1.png', 'name' => '1'],
+                ['asset_src' => 'images/Design_Sketch/2.png', 'name' => '2'],
+                ['asset_src' => 'images/Design_Sketch/3.png', 'name' => '3'],
+                ['asset_src' => 'images/Design_Sketch/4.png', 'name' => '4'],
+                ['asset_src' => 'images/Design_Sketch/5.png', 'name' => '5'],
+                ['asset_src' => 'images/Design_Sketch/6.png', 'name' => '6'],
+                ['asset_src' => 'images/Design_Sketch/7.png', 'name' => '7'],
+                ['asset_src' => 'images/Design_Sketch/8.png', 'name' => '8'],
+                ['asset_src' => 'images/Design_Sketch/9.png', 'name' => '9'],
+    ]
             )
         );
         return view('content.timeline', ['timeline_items' => $timeline_items]);
