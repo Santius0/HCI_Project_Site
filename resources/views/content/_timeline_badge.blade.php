@@ -21,10 +21,11 @@
                         </ul>
                     </div>
                 @endif
-                {{--@if(isset($images))--}}
-                    {{--@include('_partials._image_modal', ['images'=>$images])--}}
-                    {{--<button class="btn btn-success" data-toggle="modal" data-taeget=".bs-example-modal-lg">See Images</button>--}}
-                {{--@endif--}}
+                @if($images)
+                    <a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target=#ViewImages{{ $badge_header }}>
+                        Delete
+                    </a>
+                @endif
                 <br>
             </div>
             <div class="timeline-footer">
