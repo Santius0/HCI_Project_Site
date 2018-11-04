@@ -5,7 +5,7 @@
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         @foreach($images as $image)
-                            @php($src = asset($image['asset_src']))
+                            @php($src = $image['asset_src'])
                             @if($first)
                                 @php($first = false)
                                 <div class="item active">
