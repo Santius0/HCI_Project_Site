@@ -12,17 +12,18 @@
                 <img src="{{ asset('images/Design_Sketch/2.jpeg') }}" title='2' width="300" height="650">
                 <img src="{{ asset('images/Design_Sketch/3.jpeg') }}" title='3' width="300" height="650">
             </div>
+            <br>
             <div class="flex-column">
                 <img src="{{ asset('images/Design_Sketch/4.jpeg') }}" title='4' width="300" height="650">
                 <img src="{{ asset('images/Design_Sketch/5.jpeg') }}" title='5' width="300" height="650">
                 <img src="{{ asset('images/Design_Sketch/6.jpeg') }}" title='6' width="300" height="650">
             </div>
+            <br>
             <div class="flex-column">
                 <img src="{{ asset('images/Design_Sketch/7.jpeg') }}" title='7' width="300" height="650">
                 <img src="{{ asset('images/Design_Sketch/8.jpeg') }}" title='8' width="300" height="650">
                 <img src="{{ asset('images/Design_Sketch/9.jpeg') }}" title='9' width="300" height="650">
             </div>
-
         </div>
     </div>
     <br><hr>
@@ -39,11 +40,13 @@
                 <img src="{{ asset('images/mockup_1/2.jpg') }}" title='2' width="300" height="650">
                 <img src="{{ asset('images/mockup_1/3.jpg') }}" title='3' width="300" height="650">
             </div>
+            <br>
             <div class="flex-column">
                 <img src="{{ asset('images/mockup_1/4.jpg') }}" title='4' width="300" height="650">
                 <img src="{{ asset('images/mockup_1/5.jpg') }}" title='5' width="300" height="650">
                 <img src="{{ asset('images/mockup_1/6.jpg') }}" title='6' width="300" height="650">
             </div>
+            <br>
             <div class="flex-column">
                 <<img src="{{ asset('images/mockup_1/7.jpg') }}" title='7' width="300" height="650">
                 <img src="{{ asset('images/mockup_1/8.jpg') }}" title='8' width="300" height="650">
@@ -67,6 +70,7 @@
                 <img src="{{ asset('images/prototypes/lofi/lofi_3.jpg') }}" title='LoFi_3' width="500" height="800">
                 <img src="{{ asset('images/prototypes/lofi/lofi_4.jpg') }}" title='LoFi_4' width="500" height="800">
             </div>
+            <br>
             <div class="flex-column">
                 <img src="{{ asset('images/prototypes/lofi/lofi_5.jpg') }}" title='LoFi_5' width="500" height="800">
                 <img src="{{ asset('images/prototypes/lofi/lofi_6.jpg') }}" title='LoFi_6' width="500" height="800">

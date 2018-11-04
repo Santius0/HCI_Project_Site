@@ -21,6 +21,7 @@
                 <img src="{{ asset('images/Users/interview/1.jpg') }}" title='interview_1' width="500" height="500">
                 <img src="{{ asset('images/Users/interview/2.jpg') }}" title='interview_2' width="500" height="500">
             </div>
+            <br>
             <div class="flex-column">
                 <img src="{{ asset('images/Users/interview/3.jpeg') }}" title='interview_3' width="500" height="500">
                 <img src="{{ asset('images/Users/interview/4.jpeg') }}" title='interview_4' width="500" height="500">
@@ -49,10 +50,12 @@
                 <img src="{{ asset('images/Users/observation/1.jpg') }}" title='observation_1' width="500" height="500">
                 <img src="{{ asset('images/Users/observation/2.jpeg') }}" title='observation_2' width="500" height="500">
             </div>
+            <br>
             <div class="flex-column">
                 <img src="{{ asset('images/Users/observation/3.jpeg') }}" title='observation_3' width="500" height="500">
                 <img src="{{ asset('images/Users/observation/4.jpg') }}" title='observation_4' width="500" height="500">
             </div>
+            <br>
             <div class="flex-column">
                 <img src="{{ asset('images/Users/observation/5.jpg') }}" title='observation_5' width="500" height="500">
             </div>
