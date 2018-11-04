@@ -60,26 +60,43 @@ class ContentController extends Controller
     {
         $timeline_items = array(
             array(
-                'badge_header' => 'Conceptual Design',
-                'badge_header_route' => 'proposal.concept',
-//                'badge_content' => Thread::where('title', 'Conceptual Design')->first()->excerpt(),
-                'badge_content' => 'hhh',
+                'badge_header' => 'Problem Definition',
+                'badge_header_route' => 'proposal.definition',
+                'badge_content' => Thread::where('title', 'Project Definition')->first()->excerpt(),
 //                'date' => '',
 //                'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Design Doc']),
-                'images' => [
-                    ['asset_src' => 'images/My_UWI_Owl.png', 'name' => 'concept'],
-                    ['src' => 'https://drive.google.com/drive/folders/17DGtvlyBeWRiSsv4i-1sVvoocQmP-a9D', 'name' => 'concept2']
-                ]
+//                'images' => [
+//                    ['asset_src' => 'images/My_UWI_Owl.png', 'name' => 'concept'],
+//                    ['src' => 'https://drive.google.com/drive/folders/17DGtvlyBeWRiSsv4i-1sVvoocQmP-a9D', 'name' => 'concept2']
+//                ]
             ),
-//            array(
-//                'badge_header' => 'Conceptual Design',
-//                'badge_header_route' => 'proposal.concept',
-////                'badge_content' => Thread::where('title', 'Conceptual Design')->first()->excerpt(),
-//                'badge_content' => 'ggggggggggggggggggggggggggggggggggg',
-////                'date' => '',
+            array(
+                'badge_header' => 'Conceptual Design',
+                'badge_header_route' => 'proposal.concept',
+                'badge_content' => Thread::where('title', 'Conceptual Design')->first()->excerpt(),
 //                'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Design Doc']),
-//                'images' => array(['src' => 'https://drive.google.com/drive/folders/17DGtvlyBeWRiSsv4i-1sVvoocQmP-a9D', 'name' => 'concept2'])
-//            )
+//                'images' => [
+//                    ['asset_src' => 'images/My_UWI_Owl.png', 'name' => 'concept'],
+//                    ['src' => 'https://drive.google.com/drive/folders/17DGtvlyBeWRiSsv4i-1sVvoocQmP-a9D', 'name' => 'concept2']
+//                ]
+            ),
+            array(
+                'badge_header' => 'Identify Users and Stakeholders',
+                'badge_header_route' => 'proposal.users',
+                'badge_content' => Thread::where('title', 'Stakeholders and Users')->first()->excerpt(),
+            ),
+            array(
+                'badge_header' => 'Select Research Methods',
+                'badge_header_route' => 'research.methods',
+                'badge_content' => Thread::where('title', 'Research Methods')->first()->excerpt(),
+//                'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Survey Questions']),
+
+            ),
+            array(
+                'badge_header' => 'Recruit Test Users',
+                'badge_header_route' => 'people.users',
+                'badge_content' => Thread::where('title', 'Recruiting Test Users')->first()->excerpt(),
+            )
         );
         return view('content.timeline', ['timeline_items' => $timeline_items]);
     }
@@ -92,9 +109,10 @@ class ContentController extends Controller
 
     public function development_team()
     {
+        $content_thread = Thread::where('title', 'Recruiting Test Users')->first();
         $group = 'Development Team';
         $people = User::where('user_type', User::DEVELOPER)->orderBy('name')->get();
-        return view('content.people', compact('people', 'group'));
+        return view('content.people', compact('people', 'group', 'content_thread'));
     }
 
     public function test_users()
