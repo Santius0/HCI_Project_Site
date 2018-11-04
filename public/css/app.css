@@ -9660,7 +9660,7 @@ a.list-group-item-danger.active:focus {
 }
 
 .timeline > li > .timeline-panel:hover {
-  background: #8e8e8e;
+  background: #ddd;
 }
 
 .timeline > li > .timeline-panel:before {
