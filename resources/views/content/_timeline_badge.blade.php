@@ -23,7 +23,7 @@
                 @endif
                 @if(isset($images))
                     <a href="#" data-toggle="modal" data-target="#imageCarousel">Images</a>
-                    @include('_partials._image_modal', ['id' => 'imageCarousel', 'images' => $images ])
+                    @include('_partials._image_modal', ['id' => 'imageCarousel', 'images' => $images[0] ])
                 @endif
                 <br>
             </div>
