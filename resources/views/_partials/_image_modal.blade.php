@@ -19,12 +19,6 @@
                                 </div>
                             </div>
                         @endforeach
-                        <div class="item">
-                            <img class="img-responsive" src="http://placehold.it/1200x600/fcf00c/000&text=Three" alt="...">
-                            <div class="carousel-caption">
-                                Another Image
-                            </div>
-                        </div>
                     </div>
                 <!-- Wrapper for slides -->
                 <!-- Controls -->
