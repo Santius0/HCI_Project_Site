@@ -51,6 +51,9 @@
   background: #ffffff;
   position: relative;
 }
+.timeline > li > .timeline-panel:hover {
+  background: #0a4b3e;
+}
 .timeline > li > .timeline-panel:before {
   position: absolute;
   top: 26px;

@@ -9604,10 +9604,6 @@ a.list-group-item-danger.active:focus {
   color: #a0a5a0;
 }
 
-.timeline-panel:hover {
-  background: #ddd;
-}
-
 .timeline {
   list-style: none;
   padding: 10px 0;
@@ -9661,6 +9657,10 @@ a.list-group-item-danger.active:focus {
   border: 1px solid #dcdcdc;
   background: #ffffff;
   position: relative;
+}
+
+.timeline > li > .timeline-panel:hover {
+  background: #0a4b3e;
 }
 
 .timeline > li > .timeline-panel:before {
