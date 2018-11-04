@@ -170,7 +170,7 @@ class ContentController extends Controller
 
     public function development_team()
     {
-        $content_thread = Thread::where('title', 'Recruiting Test Users')->first();
+        $content_thread = Thread::where('title', 'Team Roles')->first();
         $group = 'Development Team';
         $people = User::where('user_type', User::DEVELOPER)->orderBy('name')->get();
         return view('content.people', compact('people', 'group', 'content_thread'));
@@ -178,7 +178,7 @@ class ContentController extends Controller
 
     public function test_users()
     {
-        $content_thread = Thread::where('title', 'Team Roles')->first();
+        $content_thread = Thread::where('title', 'Recruiting Test Users')->first();
         $group = 'Test Users';
         $people = User::where('user_type', User::TEST_USER)->orderBy('name')->get();
         return view('content.people', compact('people', 'group', 'content_thread'));
