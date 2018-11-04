@@ -76,7 +76,7 @@ class HomeController extends Controller
             array(
                 'badge_header' => 'Final LoFi Prototype',
                 'badge_header_route' => 'prototype',
-                'badge_content' => 'Final LoFi deign was  created.',
+                'badge_content' => 'Final LoFi design was  created.',
                 'file_list' => array(['link' => 'https://share.proto.io/T4EDZF/', 'name' => 'Final prototype on Proto.io']),
             )
         );
