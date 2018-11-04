@@ -6,19 +6,19 @@
                     <div class="carousel-inner">
                         @foreach($images as $image)
                             @if($first)
-                            <div class="item active">
-                                <img class="img-responsive" src="{{ isset($image['asset_src']) ? $image['asset_src'] : $image['src'] }}" alt="{{ $image['name'] }}">
-                                <div class="carousel-caption">
-                                    {{$image['name']}}
+                                <div class="item active">
+                                    <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=One" alt="...">
+                                    <div class="carousel-caption">
+                                        One Image
+                                    </div>
                                 </div>
-                            </div>
                             @else
-                            <div class="item">
-                                <img class="img-responsive" src="{{ isset($image['asset_src']) ? $image['asset_src'] : $image['src'] }}" alt="{{ $image['name'] }}">
-                                <div class="carousel-caption">
-                                    {{$image['name']}}
+                                <div class="item">
+                                    <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=two" alt="...">
+                                    <div class="carousel-caption">
+                                        One Imgggage
+                                    </div>
                                 </div>
-                            </div>
                             @endif
                         @endforeach
                     </div>
