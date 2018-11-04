@@ -103,7 +103,7 @@ class ContentController extends Controller
     {
         $files = [
           ['name' => 'Project Proposal Document', 'link' => 'https://docs.google.com/document/d/1Nu_wGyuH_YlbpmIGzlqsj88UVrqvIiWq4xSjPNMinCY/edit#'],
-          ['name' => 'Test User Images', 'link' => 'https://drive.google.com/drive/folders/1bcYFrOGww4_mxx5Pt_mRtlSzloAnYH__'],
+//          ['name' => 'Test User Images', 'link' => 'https://drive.google.com/drive/folders/1bcYFrOGww4_mxx5Pt_mRtlSzloAnYH__'],
         ];
         return view('content.files', compact('files'));
     }

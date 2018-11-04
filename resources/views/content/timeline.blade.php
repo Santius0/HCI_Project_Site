@@ -26,7 +26,7 @@
     </a>
     @include('_partials._delete_modal', [
                     'id' => "deleteReply",
-                    'route' => ['timeline'],
+                    'route' => ['prototype.timeline'],
                     'title' => 'Delete Reply',
                     'body' => '<p>Are you sure you want to delete this reply? This cannot be undone.</p>',
                 ])
