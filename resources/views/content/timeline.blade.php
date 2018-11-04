@@ -21,6 +21,8 @@
         @endforeach
         <li class="clearfix no-float"></li>
     </ul>
-
-    @include('_partials._image_modal', ['id' => "ViewImages{$item['badge_header']}"])
+    <a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target=#ViewImages{{ $badge_header }}>
+        Delete
+    </a>
+    @include('_partials._image_modal', ['id' => "ViewImages"])
 @endsection
