@@ -6,9 +6,6 @@
   color: #a0a5a0;
 }
 
-.timeline-panel:hover {
-  background: #ddd;
-}
 .timeline {
   list-style: none;
   padding: 10px 0;
@@ -31,6 +28,9 @@
   width: 50%;
   float: left;
   clear: left;
+
+}.timeline > li:hover {
+   background: #888;
 }
 .timeline > li:before, .timeline > li:after {
   content:" ";
