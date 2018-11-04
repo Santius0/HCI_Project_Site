@@ -192,6 +192,11 @@ class ContentController extends Controller
         return view('content.files', compact('files'));
     }
 
+    public function user_testing()
+    {
+        return view('content.user_testing');
+    }
+
 
 
 }
