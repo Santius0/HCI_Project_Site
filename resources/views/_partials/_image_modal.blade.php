@@ -6,16 +6,20 @@
                     <div class="carousel-inner">
                         @foreach($images as $image)
                             @if($first)
-                                <div class="item active">
-                                    @php($first = false )
-                                    @else
-                                        <div class="item">
-                                            @endif
+                            <div class="item active">
                                 <img class="img-responsive" src="{{ isset($image['asset_src']) ? $image['asset_src'] : $image['src'] }}" alt="{{ $image['name'] }}">
                                 <div class="carousel-caption">
                                     {{$image['name']}}
                                 </div>
                             </div>
+                            @else
+                            <div class="item">
+                                <img class="img-responsive" src="{{ isset($image['asset_src']) ? $image['asset_src'] : $image['src'] }}" alt="{{ $image['name'] }}">
+                                <div class="carousel-caption">
+                                    {{$image['name']}}
+                                </div>
+                            </div>
+                            @endif
                         @endforeach
                     </div>
                 <!-- Wrapper for slides -->
