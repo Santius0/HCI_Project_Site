@@ -96,6 +96,28 @@ class ContentController extends Controller
                 'badge_header' => 'Recruit Test Users',
                 'badge_header_route' => 'people.users',
                 'badge_content' => Thread::where('title', 'Recruiting Test Users')->first()->excerpt(),
+            ),
+            array(
+                'badge_header' => 'Research Interviews',
+                'badge_header_route' => 'research.results',
+                'badge_content' => '',
+                 'images' => [
+                    ['asset_src' => 'images/Users/1.png', 'name' => '1'],
+                    ['asset_src' => 'images/Users/2.png', 'name' => '2'],
+                    ['asset_src' => 'images/Users/3.png', 'name' => '3'],
+                    ['asset_src' => 'images/Users/4.png', 'name' => '4'],
+                    ['asset_src' => 'images/Users/5.png', 'name' => '5'],
+                    ['asset_src' => 'images/Users/6.png', 'name' => '6'],
+                    ['asset_src' => 'images/Users/7.png', 'name' => '7'],
+                    ['asset_src' => 'images/Users/8.png', 'name' => '8'],
+                    ['asset_src' => 'images/Users/9.png', 'name' => '9'],
+                ]
+
+            ),
+            array(
+                'badge_header' => 'Recruit Test Users',
+                'badge_header_route' => 'people.users',
+                'badge_content' => Thread::where('title', 'Recruiting Test Users')->first()->excerpt(),
             )
         );
         return view('content.timeline', ['timeline_items' => $timeline_items]);
