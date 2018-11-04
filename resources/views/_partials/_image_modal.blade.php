@@ -15,7 +15,7 @@
                                 </div>
                             @else
                                 <div class="item">
-                                    <img class="img-responsive" src="{{ asset('images/Design_Sketch/9.jpeg') }}" alt= "{{ $image['name'] }}">
+                                    <img class="img-responsive" src="{{ $image['src'] }}" alt= "{{ $image['name'] }}">
                                     <div class="carousel-caption">
                                         {{ $image['name'] }}
                                     </div>
