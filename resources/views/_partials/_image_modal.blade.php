@@ -8,17 +8,17 @@
                             @if($first)
                                 @php($first = false)
                                 <div class="item active">
-                                    <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=One" alt="...">
-                                    <div class="carousel-caption">
-                                        One Image
-                                    </div>
+                                    <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=One" alt= "{{ $image['name'] }}">
+                                    {{--<div class="carousel-caption">--}}
+                                        {{--One Image--}}
+                                    {{--</div>--}}
                                 </div>
                             @else
                                 <div class="item">
-                                    <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=two" alt="...">
-                                    <div class="carousel-caption">
-                                        One Imgggage
-                                    </div>
+                                    <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=two" alt= "{{ $image['name'] }}">
+                                    {{--<div class="carousel-caption">--}}
+                                        {{--One Imgggage--}}
+                                    {{--</div>--}}
                                 </div>
                             @endif
                         @endforeach
