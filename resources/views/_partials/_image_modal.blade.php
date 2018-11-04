@@ -5,12 +5,11 @@
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         @foreach($images as $image)
-                            @php($src = $image['asset_src'])
-                            @php($src = asset('images/Users/1.png'))
+                            @php($src = isset($image['asset_src']) ? $image['asset_src'] : $image['src'])
                             @if($first)
                                 @php($first = false)
                                 <div class="item active">
-                                    <img class="img-responsive" src="{{ asset('images/My_UWI_Owl.png') }}" alt= "{{ $image['name'] }}">
+                                    <img class="img-responsive" src="{{ $src }}" alt= "{{ $image['name'] }}">
                                     <div class="carousel-caption">
                                         {{ $image['name'] }}
                                     </div>
