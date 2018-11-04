@@ -64,7 +64,7 @@ class ContentController extends Controller
                 'badge_header_route' => 'proposal.concept',
                 'badge_content' => Thread::where('title', 'Conceptual Design')->first()->excerpt(),
 //                'date' => '',
-                'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Design Doc']),
+//                'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Design Doc']),
                 'images' => array(['asset_src' => 'images/My_UWI_Owl.png', 'name' => 'concept'])
             ),
             array(

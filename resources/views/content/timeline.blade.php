@@ -21,4 +21,13 @@
         @endforeach
         <li class="clearfix no-float"></li>
     </ul>
+    <a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target="#deleteReply">
+        Delete
+    </a>
+    @include('_partials._delete_modal', [
+                    'id' => "deleteReply",
+                    'route' => ['timeline'],
+                    'title' => 'Delete Reply',
+                    'body' => '<p>Are you sure you want to delete this reply? This cannot be undone.</p>',
+                ])
 @endsection
