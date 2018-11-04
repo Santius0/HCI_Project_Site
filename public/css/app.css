@@ -9753,7 +9753,7 @@ a.list-group-item-danger.active:focus {
 
 .timeline-footer > a {
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .timeline > li.timeline-inverted {
