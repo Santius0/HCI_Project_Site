@@ -35,8 +35,9 @@
                 <li class="dropdown {{ active(['prototype', 'prototype*']) }}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Application Design <span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                        <li><a href="{{ route('prototype.testing') }}">User Testing</a></li>
                         <li><a href="{{ route('prototype') }}">LoFi Prototype</a></li>
-                        <li><a href="{{ route('prototype.timeline') }}">Application Timeline</a></li>
+{{--                        <li><a href="{{ route('prototype.timeline') }}">Application Timeline</a></li>--}}
                     </ul>
                 </li>
 

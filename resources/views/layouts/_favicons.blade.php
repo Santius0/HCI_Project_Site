@@ -11,7 +11,16 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-<link rel="manifest" href="/images/favicons/manifest.json">
+<link rel="manifest" href="/images/favicons/site.webmanifest">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+
+{{--<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">--}}
+{{--<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">--}}
+{{--<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">--}}
+{{--<link rel="manifest" href="/images/favicons/">--}}
+{{--<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">--}}
+{{--<meta name="msapplication-TileColor" content="#2b5797">--}}
+{{--<meta name="theme-color" content="#ffffff">--}}
+

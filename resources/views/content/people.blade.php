@@ -4,7 +4,7 @@
 @section('post_body')
     <br/>
     @if(isset($content_thread))
-        {{ $content_thread->body() }}
+        {!! $content_thread->body() !!}
         <br>
     @endif
     @foreach($people as $person)

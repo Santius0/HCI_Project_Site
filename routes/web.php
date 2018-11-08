@@ -98,6 +98,7 @@ Route::prefix('/research')->namespace('Content')->group(function(){
 Route::prefix('/prototype')->namespace('Content')->group(function(){
     Route::get('/', 'ContentController@prototype')->name('prototype');
     Route::get('/timeline', 'ContentController@prototype_timeline')->name('prototype.timeline');
+    Route::get('/user-testing', 'ContentController@user_testing')->name('prototype.testing');
 });
 
 Route::prefix('/people')->namespace('Content')->group(function(){
