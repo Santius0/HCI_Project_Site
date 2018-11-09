@@ -119,3 +119,8 @@
 .panel:nth-child(4n+4) {
   //background-image:radial-gradient(circle, lightcoral, tomato);
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}

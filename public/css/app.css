@@ -10098,3 +10098,10 @@ a.list-group-item-danger.active:focus {
 
 /* background colours */
 
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+

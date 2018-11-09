@@ -13,7 +13,7 @@
             <th>Knowledgeable?<br>
                 Motivated?<br>
                 Believable</th>
-            <th>Comments/suggested fixes</th>
+            <th>Comments/suggested fixes</th><br>
         </tr>
         @foreach($rows as $row)
         <tr>
