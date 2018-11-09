@@ -10,9 +10,7 @@
     <table id="miyazaki">
         <caption>Task-Centered System Walkthrough</caption>
         <thead>
-        <tr><th>Task step<th>Knowledgeable?
-                Motivated?
-                Believable<th>Comments/suggested fixes
+        <tr><th>Task step<th>Knowledgeable?<br>Motivated?<br>Believable<th>Comments/suggested fixes
         <tbody>
         @foreach($rows as $row)
         <tr>
@@ -22,29 +20,29 @@
         @endforeach
     </table>
     <br><hr><br>
-    <article class="comic">
-        <div class="panel">
+    {{--<article class="comic">--}}
+        {{--<div class="panel">--}}
             {{--<p class="text top-left">Suddenly...</p>--}}
             {{--<p class="text bottom-right">...something amazing happened</p>--}}
-            <p class="text">Storyboard will start here...</p>
-        </div>
-        <div class="panel">
+            {{--<p class="text">Storyboard will start here...</p>--}}
+        {{--</div>--}}
+        {{--<div class="panel">--}}
             {{--<p class="text top-left">Try resizing...</p>--}}
             {{--<p class="text bottom-right">...it's responsive</p>--}}
-        </div>
-        <div class="panel">
+        {{--</div>--}}
+        {{--<div class="panel">--}}
             {{--<p class="speech">A speech bubble</p>--}}
-        </div>
-        <div class="panel"></div>
-        <div class="panel"></div>
-        <div class="panel"></div>
-        <div class="panel"></div>
-        <div class="panel"></div>
-        <div class="panel">
+        {{--</div>--}}
+        {{--<div class="panel"></div>--}}
+        {{--<div class="panel"></div>--}}
+        {{--<div class="panel"></div>--}}
+        {{--<div class="panel"></div>--}}
+        {{--<div class="panel"></div>--}}
+        {{--<div class="panel">--}}
             {{--<p class="text bottom-right">THE END</p>--}}
-            <p class="text">Storyboard will end here...</p>
-        </div>
-    </article>
+            {{--<p class="text">Storyboard will end here...</p>--}}
+        {{--</div>--}}
+    {{--</article>--}}
     <br><hr><br>
     <div class="media">
         <h4>Video Prototype</h4>
