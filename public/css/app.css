@@ -9965,10 +9965,3 @@ a.list-group-item-danger.active:focus {
   }
 }
 
-.media-body {
-  margin: auto;
-  display: inline-block;
-  border: 3px solid #73AD21;
-  padding: 10px;
-}
-
