@@ -203,6 +203,6 @@ class ContentController extends Controller
             ['task' => 'click the thing', 'knowledge' => 'the things', 'comments' => 'comment2'],
             ['task' => 'click the thing', 'knowledge' => 'the things', 'comments' => 'comment2']
             ];
-        return view('content.storyboard', compact($rows));
+        return view('content.storyboard', compact('rows'));
     }
 }
