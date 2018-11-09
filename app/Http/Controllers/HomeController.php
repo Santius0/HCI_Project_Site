@@ -75,6 +75,7 @@ class HomeController extends Controller
                 'badge_header' => 'Storyboarding',
                 'badge_header_route' => 'prototype.storyboard',
                 'badge_content' => 'Single design sketch chosen. Storyboard created, and analysed.',
+                'in_page_id' => '#storyboard'
             ),
             array(
                 'badge_header' => 'Video Demo Created',
@@ -113,6 +114,7 @@ class HomeController extends Controller
                 'badge_header' => 'Final LoFi Prototype',
                 'badge_header_route' => 'prototype',
                 'badge_content' => 'Final LoFi prototype was created.',
+                'in_page_id' => '#lofi-prototype',
                 'file_list' => array(
                     ['link' => 'https://share.proto.io/T4EDZF/', 'name' => 'Final prototype on Proto.io'],
                     ['link' => 'https://docs.google.com/document/d/1Nu_wGyuH_YlbpmIGzlqsj88UVrqvIiWq4xSjPNMinCY/edit#', 'name' => 'Finalised Project Proposal and Research Document'],
