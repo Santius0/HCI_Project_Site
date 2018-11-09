@@ -2,7 +2,7 @@
 @title('Storyboard and Video Demo')
 
 @section('post_body')
-    <h4>Storyboard</h4>
+    <h3>Storyboard</h3>
     <p>
         The following is a storyboard depicting...
         <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget porta purus. Nam quam justo, tincidunt in risus semper, dignissim eleifend lacus. Vestibulum nec est mauris. Aliquam facilisis ante a accumsan feugiat. Etiam sit amet sapien eu enim euismod ultrices. Ut in nisl tortor. Donec in augue felis. Nulla vehicula sapien ante, at rhoncus sapien auctor posuere. Sed tempus felis molestie mi fringilla consequat. Donec risus leo, aliquet vitae tellus a, tristique mattis eros. Integer a massa laoreet, aliquam mauris imperdiet, imperdiet sem. Etiam ultrices velit in ante rutrum, scelerisque euismod arcu consectetur. Aenean ultrices ex sit amet sem accumsan, non imperdiet lectus posuere. Maecenas viverra neque sit amet nulla volutpat interdum. Nulla porttitor faucibus ipsum, sed porttitor urna scelerisque efficitur. In hac habitasse platea dictumst.
@@ -19,7 +19,7 @@
             <td>{{ $row['comments'] }}
         @endforeach
     </table>
-    <br>
+
     {{--<article class="comic">--}}
         {{--<div class="panel">--}}
             {{--<p class="text top-left">Suddenly...</p>--}}

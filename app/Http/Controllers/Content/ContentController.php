@@ -200,8 +200,10 @@ class ContentController extends Controller
     public function storyboard()
     {
         $rows = [
-            ['task' => 'click the thing', 'knowledge' => 'the things', 'comments' => 'comment2'],
-            ['task' => 'click the thing', 'knowledge' => 'the things', 'comments' => 'comment2']
+            ['task' => 'task 1', 'knowledge' => 'the things', 'comments' => 'comment1'],
+            ['task' => 'task 2', 'knowledge' => 'the things', 'comments' => 'comment2'],
+            ['task' => 'task 3', 'knowledge' => 'the things', 'comments' => 'comment3'],
+            ['task' => 'task 4', 'knowledge' => 'the things', 'comments' => 'comment4'],
             ];
         return view('content.storyboard', compact('rows'));
     }
