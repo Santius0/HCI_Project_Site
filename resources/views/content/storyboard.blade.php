@@ -1,5 +1,5 @@
 @extends('content.base')
-@title('Conceptual Design')
+@title('Storyboard and Video Demo')
 
 @section('post_body')
     <h4>Video Prototype</h4>
