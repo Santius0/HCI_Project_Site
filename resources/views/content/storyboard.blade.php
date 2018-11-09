@@ -7,21 +7,27 @@
     <p>
         The following is a storyboard depicting...
     </p>
-    <table style="width:100%">
+    <table id="miyazaki">
+        <caption>The Films of Hayao Miyazaki</caption>
+        <thead>
+        <tr><th>Film<th>Year<th>Honor
+        <tbody>
         <tr>
-            <th>Task Step</th>
-            <th>Knowledgeable?<br>
-                Motivated?<br>
-                Believable</th>
-            <th>Comments/suggested fixes<br></th>
-        </tr>
-        @foreach($rows as $row)
+            <td>My Neighbor Totoro
+            <td>1988
+            <td>Blue Ribbon Award (Special)
         <tr>
-            <td>{{ $row['task'] }}</td>
-            <td>{{ $row['knowledge'] }}</td>
-            <td>{{ $row['comments'] }}</td>
-        </tr>
-        @endforeach
+            <td>Princess Mononoke
+            <td>1997
+            <td>Nebula Award (Best Script)
+        <tr>
+            <td>Spirited Away
+            <td>2001
+            <td>Academy Award (Best Animated Feature)
+        <tr>
+            <td>Howl’s Moving Castle
+            <td>2004
+            <td>Hollywood Film Festival (Animation OTY)
     </table>
     <br><hr><br>
     <article class="comic">
