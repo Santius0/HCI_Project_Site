@@ -70,5 +70,10 @@
                 <img src="{{ asset('images/Brainstorm/2.jpg') }}" title='4'>
             </div>
         </div>
+    </div>
     <br><hr><br>
+    <h3>Reflection</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat elit nibh, in aliquam leo porta at. Donec tellus quam, rhoncus nec venenatis ac, vulputate sed orci. Phasellus non sodales lectus, sit amet interdum augue. Suspendisse at eleifend ligula, euismod porttitor nisl. In lobortis auctor odio non elementum. Ut viverra urna vel tortor euismod condimentum. Pellentesque rutrum leo ut gravida mollis.
+    </p>
 @endsection
