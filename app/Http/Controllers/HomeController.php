@@ -70,10 +70,17 @@ class HomeController extends Controller
                 'badge_header' => 'Initial Application Sketches',
                 'badge_header_route' => 'prototype.sketches',
                 'badge_content' => 'Multiple design sketches made by the development team.<br>Narrowed down to three ideas that were then further polished.',
-            ),array(
+            ),
+            array(
                 'badge_header' => 'Storyboarding',
                 'badge_header_route' => 'prototype.storyboard',
                 'badge_content' => 'Single design sketch chosen. Storyboard created, and analysed.',
+            ),
+            array(
+                'badge_header' => 'Video Demo Created',
+                'badge_header_route' => 'prototype.storyboard',
+                'badge_content' => 'Video demo made and uploaded.',
+                'in_page_id' => '#video'
             ),
             array(
                 'badge_header' => 'Initial Application Prototype',
