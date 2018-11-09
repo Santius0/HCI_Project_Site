@@ -8,7 +8,7 @@
     </div>
         <div class="timeline-panel">
             <div class="timeline-heading">
-                <h4><a href="{{ route($badge_header_route) }}">{{ $badge_header }}</a></h4>
+                <h4><a href="{{ route($badge_header_route) }}#video">{{ $badge_header }}</a></h4>
             </div>
             <div class="timeline-body">
                 <p> {{ $badge_content }}</p>

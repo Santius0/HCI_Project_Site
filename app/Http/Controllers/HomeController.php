@@ -65,7 +65,6 @@ class HomeController extends Controller
                 'badge_header' => 'Assess Research Results',
                 'badge_header_route' => 'research.results',
                 'badge_content' => 'Using information gathered from the interviews, the application design process began.',
-
             ),
             array(
                 'badge_header' => 'Initial Application Sketches',

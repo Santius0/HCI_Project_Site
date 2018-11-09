@@ -31,11 +31,13 @@
         {{--</div>--}}
     {{--</article>--}}
     <br><hr>
-    <h3>Video Prototype</h3>
-    <div class="media">
-        <p>The storyboard detailed above is demo'd in the following video</p>
-        <div class="media-body" style="text-align: center">
-            {!! Embed::make("https://www.youtube.com/watch?v=fB8TyLTD7EE")->parseUrl()->setAttribute(['width' => 1000])->getIframe() !!}
+    <div id="video">
+        <h3>Video Prototype</h3>
+        <div class="media">
+            <p>The storyboard detailed above is demo'd in the following video</p>
+            <div class="media-body" style="text-align: center">
+                {!! Embed::make("https://www.youtube.com/watch?v=fB8TyLTD7EE")->parseUrl()->setAttribute(['width' => 1000])->getIframe() !!}
+            </div>
         </div>
     </div>
     <br><hr>
