@@ -162,6 +162,7 @@ return [
         Watson\Active\ActiveServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Grohiro\LaravelBladeMacro\BladeMacroServiceProvider::class,
+        Cohensive\Embed\EmbedServiceProvider::class,
     ],
 
     /*
@@ -215,6 +216,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'Embed' => Cohensive\Embed\Facades\Embed::class,
     ],
 
 ];

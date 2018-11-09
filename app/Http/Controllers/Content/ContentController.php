@@ -197,6 +197,8 @@ class ContentController extends Controller
         return view('content.user_testing');
     }
 
-
-
+    public function storyboard()
+    {
+        return view('content.storyboard');
+    }
 }
