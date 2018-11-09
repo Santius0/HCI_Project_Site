@@ -8,7 +8,7 @@
     <div class="text-center image-box">
         <div class="row">
             <figure>
-                <div class="flex-column">
+                <div class="flex-column" style="border: solid">
                     <img src="{{ asset('images/1st_Sketch_Design/0.jpg') }}" title='0' width="300" height="650">
                     <img src="{{ asset('images/1st_Sketch_Design/1.jpg') }}" title='1' width="300" height="650">
                     <img src="{{ asset('images/1st_Sketch_Design/2.jpg') }}" title='2' width="300" height="650">
