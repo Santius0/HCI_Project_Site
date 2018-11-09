@@ -5,10 +5,7 @@
     <div class="text-center image-box">
         <div class="row">
             <div class="flex-column">
-                <figure>
-                    <img src="{{ asset('images/1st_Sketch_Design/0.jpg') }}" title='0' width="300" height="650">
-                    <figcaption>Fig.1 - Design Sketch 1</figcaption>
-                </figure>
+                <img src="{{ asset('images/1st_Sketch_Design/0.jpg') }}" title='0' width="300" height="650">
                 <img src="{{ asset('images/1st_Sketch_Design/1.jpg') }}" title='1' width="300" height="650">
                 <img src="{{ asset('images/1st_Sketch_Design/2.jpg') }}" title='2' width="300" height="650">
             </div>
