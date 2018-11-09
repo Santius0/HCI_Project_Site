@@ -31,5 +31,13 @@
             </div>
         </div>
     </div>
+    <br><hr>
+    <h3>Affinity Diagram</h3>
+    <p>
+        From the selected designs the following affinity diagram was constructed.
+    </p>
+    <div class="flex-column">
+        <img src="{{ asset('images/1st_Sketch_Design/affinity_final.jpg') }}">
+    </div>
 @endsection
 
