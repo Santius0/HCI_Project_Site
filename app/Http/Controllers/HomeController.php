@@ -69,7 +69,7 @@ class HomeController extends Controller
             ),
             array(
                 'badge_header' => 'Initial Application Sketches',
-                'badge_header_route' => 'prototype.storyboard',
+                'badge_header_route' => 'prototype.sketches',
                 'badge_content' => 'Multiple design sketches made by the development team.<br>Narrowed down to three ideas that were then further polished.',
             ),array(
                 'badge_header' => 'Storyboarding',

@@ -2,6 +2,9 @@
 @title('Design Sketches')
 
 @section('post_body')
+    <p>
+        All design sketches created by development team.
+    </p>
     <div class="text-center image-box">
         <div class="row">
             <div class="flex-column">
