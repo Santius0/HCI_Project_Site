@@ -215,4 +215,8 @@ class ContentController extends Controller
             ];
         return view('content.storyboard', compact('rows'));
     }
+    public function sketches()
+    {
+        return view('content.sketches');
+    }
 }

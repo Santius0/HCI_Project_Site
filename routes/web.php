@@ -100,6 +100,7 @@ Route::prefix('/prototype')->namespace('Content')->group(function(){
     Route::get('/timeline', 'ContentController@prototype_timeline')->name('prototype.timeline');
     Route::get('/user-testing', 'ContentController@user_testing')->name('prototype.testing');
     Route::get('/storyboard', 'ContentController@storyboard')->name('prototype.storyboard');
+    Route::get('/sketches', 'ContentController@sketches')->name('prototype.sketches');
 });
 
 Route::prefix('/people')->namespace('Content')->group(function(){

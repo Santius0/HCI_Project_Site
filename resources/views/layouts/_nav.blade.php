@@ -39,6 +39,7 @@
                         <li><a href="{{ route('prototype') }}">LoFi Prototype</a></li>
                         <li><a href="{{ route('prototype.timeline') }}">Application Timeline</a></li>
                         <li><a href="{{ route('prototype.storyboard') }}">Storyboard Demo</a></li>
+                        <li><a href="{{ route('prototype.sketches') }}">Design Sketches</a></li>
                     </ul>
                 </li>
 
