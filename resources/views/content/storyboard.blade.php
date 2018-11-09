@@ -10,7 +10,7 @@
     <table id="miyazaki">
         <caption>Task-Centered System Walkthrough</caption>
         <thead>
-        <tr><th>Task step<th>Knowledgeable?<br>Motivated?<br>Believable<th>Comments/suggested fixes
+        <tr><th>Task Step<th>Knowledgeable?<br>Motivated?<br>Believable<th>Comments/Suggested Fixes
         <tbody>
         @foreach($rows as $row)
         <tr>
@@ -19,7 +19,7 @@
             <td>{{ $row['comments'] }}
         @endforeach
     </table>
-    <br><hr><br>
+    <br>
     {{--<article class="comic">--}}
         {{--<div class="panel">--}}
             {{--<p class="text top-left">Suddenly...</p>--}}
@@ -58,15 +58,15 @@
     <div class="text-center image-box">
         <div class="row">
             <div class="flex-column">
-                <img src="{{ asset('images/Brainstorm/1.jpg') }}" title='1' width="300" height="650">
+                <img src="{{ asset('images/Brainstorm/1.jpg') }}" title='1'>
             </div>
             <br>
             <div class="flex-column">
-                <img src="{{ asset('images/Brainstorm/2.jpg') }}" title='4' width="300" height="650">
+                <img src="{{ asset('images/Brainstorm/2.jpg') }}" title='4'>
             </div>
             <br>
             <div class="flex-column">
-                <img src="{{ asset('images/Brainstorm/3.jpg') }}" title='7' width="300" height="650">
+                <img src="{{ asset('images/Brainstorm/3.jpg') }}" title='7'>
             </div>
         </div>
     <br><hr><br>
