@@ -9965,9 +9965,9 @@ a.list-group-item-danger.active:focus {
   }
 }
 
-.media div {
+.media-body {
   margin: auto;
-  width: 60%;
+  display: inline-block;
   border: 3px solid #73AD21;
   padding: 10px;
 }
