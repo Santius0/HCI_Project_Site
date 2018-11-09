@@ -1,7 +1,7 @@
 @extends('content.base')
 @title('Storyboard and Video Demo')
 
-@php($rows = [['task' => 'click the thing', 'knowledge' => 'the things', 'comments' => 'comment2']])
+@php($rows = [['task' => 'click the thing', 'knowledge' => 'the things', 'comments' => 'comment2'],['task' => 'click the thing', 'knowledge' => 'the things', 'comments' => 'comment2']])
 @section('post_body')
     <h4>Storyboard</h4>
     <p>
@@ -23,6 +23,7 @@
         </tr>
         @endforeach
     </table>
+    <br><hr><br>
     <article class="comic">
         <div class="panel">
             {{--<p class="text top-left">Suddenly...</p>--}}
