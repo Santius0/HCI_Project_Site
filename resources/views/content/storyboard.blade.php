@@ -64,10 +64,6 @@
             <div class="flex-column">
                 <img src="{{ asset('images/Brainstorm/2.jpg') }}" title='4'>
             </div>
-            <br>
-            <div class="flex-column">
-                <img src="{{ asset('images/Brainstorm/3.jpg') }}" title='7'>
-            </div>
         </div>
     <br><hr><br>
 @endsection
