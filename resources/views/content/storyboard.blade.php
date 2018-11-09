@@ -59,6 +59,11 @@
         Nunc sit amet bibendum sapien. Sed volutpat lectus volutpat magna malesuada, vel venenatis ipsum tincidunt. Sed ultricies feugiat ipsum id consectetur. In at lorem cursus, eleifend odio tristique, rhoncus justo. Ut bibendum mi vitae velit accumsan, in elementum lacus tristique. Ut a consequat libero. Quisque vestibulum dictum ornare. Sed rutrum ipsum in molestie elementum. Vivamus efficitur, neque ut ornare congue, massa enim convallis turpis, sit amet ullamcorper ex sem non orci.
     </p>
     <br><hr><br>
+    <h3>Reflection</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat elit nibh, in aliquam leo porta at. Donec tellus quam, rhoncus nec venenatis ac, vulputate sed orci. Phasellus non sodales lectus, sit amet interdum augue. Suspendisse at eleifend ligula, euismod porttitor nisl. In lobortis auctor odio non elementum. Ut viverra urna vel tortor euismod condimentum. Pellentesque rutrum leo ut gravida mollis.
+    </p>
+    <br><hr><br>
     <h3>Brainstorming and Sketching Session</h3>
     <div class="text-center image-box">
         <div class="row">
@@ -71,9 +76,4 @@
             </div>
         </div>
     </div>
-    <br><hr><br>
-    <h3>Reflection</h3>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat elit nibh, in aliquam leo porta at. Donec tellus quam, rhoncus nec venenatis ac, vulputate sed orci. Phasellus non sodales lectus, sit amet interdum augue. Suspendisse at eleifend ligula, euismod porttitor nisl. In lobortis auctor odio non elementum. Ut viverra urna vel tortor euismod condimentum. Pellentesque rutrum leo ut gravida mollis.
-    </p>
 @endsection
