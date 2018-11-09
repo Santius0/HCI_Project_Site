@@ -1,12 +1,28 @@
 @extends('content.base')
 @title('Storyboard and Video Demo')
 
+@php($rows = [['task' => 'click the thing', 'knowledge' => 'the things', 'comments' => 'comment2']])
 @section('post_body')
     <h4>Storyboard</h4>
     <p>
         The following is a storyboard depicting...
     </p>
-
+    <table style="width:100%">
+        <tr>
+            <th>Task Step</th>
+            <th>Knowledgeable?<br>
+                Motivated?<br>
+                Believable</th>
+            <th>Comments/suggested fixes</th>
+        </tr>
+        @foreach($rows as $row)
+        <tr>
+            <td>{{ $row['task'] }}</td>
+            <td>{{ $row['knowledge'] }}</td>
+            <td>{{ $row['comments'] }}</td>
+        </tr>
+        @endforeach
+    </table>
     <article class="comic">
         <div class="panel">
             {{--<p class="text top-left">Suddenly...</p>--}}
@@ -42,4 +58,19 @@
     <h1>Major Issues in Task Centered Walkthrough</h1>
     <br><hr><br>
     <h1>Brainstorming and Sketching Session</h1>
+    <div class="text-center image-box">
+        <div class="row">
+            <div class="flex-column">
+                <img src="{{ asset('images/Brainstorm/1.jpg') }}" title='1' width="300" height="650">
+            </div>
+            <br>
+            <div class="flex-column">
+                <img src="{{ asset('images/Brainstorm/2.jpg') }}" title='4' width="300" height="650">
+            </div>
+            <br>
+            <div class="flex-column">
+                <img src="{{ asset('images/Brainstorm/3.jpg') }}" title='7' width="300" height="650">
+            </div>
+        </div>
+    <br><hr><br>
 @endsection
