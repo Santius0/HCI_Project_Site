@@ -199,6 +199,10 @@ class ContentController extends Controller
 
     public function storyboard()
     {
-        return view('content.storyboard');
+        $rows = [
+            ['task' => 'click the thing', 'knowledge' => 'the things', 'comments' => 'comment2'],
+            ['task' => 'click the thing', 'knowledge' => 'the things', 'comments' => 'comment2']
+            ];
+        return view('content.storyboard', compact($rows));
     }
 }
