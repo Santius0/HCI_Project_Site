@@ -109,11 +109,19 @@ class ContentController extends Controller
 //                    ['src' => 'https://image.ibb.co/kTZdOL/7.jpg', 'name' => '4'],
 //                ]
 
+            ),array(
+                'badge_header' => 'Initial Application Sketches',
+                'badge_header_route' => 'prototype.storyboard',
+                'badge_content' => 'Multiple design sketches made by the development team.<br>Narrowed down to three ideas that were then further polished.',
+            ),array(
+                'badge_header' => 'Storyboarding',
+                'badge_header_route' => 'prototype.storyboard',
+                'badge_content' => 'Single design sketch chosen. Storyboard created, and analysed.',
             ),
             array(
                 'badge_header' => 'Initial Application Design',
                 'badge_header_route' => 'prototype',
-                'badge_content' => 'Design sketches completed',
+                'badge_content' => '1st Prototype iteration created',
 //                 'images' => [
 //                    ['src' => 'https://image.ibb.co/nuLwA0/1.jpg', 'name' => '1'],
 //                    ['src' => 'https://image.ibb.co/dEGExf/2.jpg', 'name' => '2'],
