@@ -7,14 +7,14 @@
     </p>
     <div class="text-center image-box">
         <div class="row">
-            <div class="flex-column">
-                <figure style="width: 300px; height: 650px">
+            <figure>
+                <div class="flex-column">
                     <img src="{{ asset('images/1st_Sketch_Design/0.jpg') }}" title='0' width="300" height="650">
-                    <figcaption>Chosen Design 1</figcaption>
-                </figure>
-                <img src="{{ asset('images/1st_Sketch_Design/1.jpg') }}" title='1' width="300" height="650">
-                <img src="{{ asset('images/1st_Sketch_Design/2.jpg') }}" title='2' width="300" height="650">
-            </div>
+                    <img src="{{ asset('images/1st_Sketch_Design/1.jpg') }}" title='1' width="300" height="650">
+                    <img src="{{ asset('images/1st_Sketch_Design/2.jpg') }}" title='2' width="300" height="650">
+                </div>
+                <figcaption>Chosen Designs</figcaption>
+            </figure>
             <br>
             <div class="flex-column">
                 <img src="{{ asset('images/1st_Sketch_Design/3.jpg') }}" title='3' width="300" height="650">
