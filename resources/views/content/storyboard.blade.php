@@ -8,26 +8,18 @@
         The following is a storyboard depicting...
     </p>
     <table id="miyazaki">
-        <caption>The Films of Hayao Miyazaki</caption>
+        <caption>Task-Centered System Walkthrough</caption>
         <thead>
-        <tr><th>Film<th>Year<th>Honor
+        <tr><th>Task step<th>Knowledgeable?
+                Motivated?
+                Believable<th>Comments/suggested fixes
         <tbody>
+        @foreach($rows as $row)
         <tr>
-            <td>My Neighbor Totoro
-            <td>1988
-            <td>Blue Ribbon Award (Special)
-        <tr>
-            <td>Princess Mononoke
-            <td>1997
-            <td>Nebula Award (Best Script)
-        <tr>
-            <td>Spirited Away
-            <td>2001
-            <td>Academy Award (Best Animated Feature)
-        <tr>
-            <td>Howl’s Moving Castle
-            <td>2004
-            <td>Hollywood Film Festival (Animation OTY)
+            <td>{{ $row['task'] }}
+            <td>{{ $row['knowledge'] }}
+            <td>{{ $row['comments'] }}
+        @endforeach
     </table>
     <br><hr><br>
     <article class="comic">
