@@ -215,6 +215,11 @@ class ContentController extends Controller
         ];
         $panels = [
             ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
+            ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
+            ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
+            ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
+            ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
+            ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
         ];
         return view('content.storyboard', compact('rows', 'panels'));
     }
