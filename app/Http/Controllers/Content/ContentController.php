@@ -214,7 +214,7 @@ class ContentController extends Controller
             ['task' => 'task 4', 'knowledge' => 'the things', 'comments' => 'comment4'],
         ];
         $panels = [
-            ['image' => asset('images/placeholder1'), 'name' => 'placeholder'],
+            ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
         ];
         return view('content.storyboard', compact('rows', 'panels'));
     }
