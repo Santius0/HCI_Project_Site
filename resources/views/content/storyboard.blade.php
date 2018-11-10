@@ -10,7 +10,7 @@
     <article class="comic">
         @foreach($panels as $panel)
             <div class="panel">
-                {{$panel['image']}}
+                <img src="{{ $panel['image'] }}" name="{{ $panel['name'] }}">
                 {{--Picture one--}}
                 {{--<p class="text top-left">Suddenly...</p>--}}
                 {{--<p class="text bottom-right">...something amazing happened</p>--}}
