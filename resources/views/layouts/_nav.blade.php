@@ -34,6 +34,16 @@
                     </ul>
                 </li>
 
+                <li class="dropdown {{ active(['prototype', 'prototype*']) }}">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Design Sketches and Prototype Demo (A3) <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ route('prototype') }}">LoFi Prototype</a></li>
+                        <li><a href="{{ route('prototype.sketches') }}">Design Sketches</a></li>
+                        <li><a href="{{ route('prototype.storyboard') }}">Storyboard and Demo</a></li>
+                    </ul>
+                </li>
+
+
                 {{--<li class="dropdown {{ active(['research', 'research*']) }}">--}}
                     {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>--}}
                     {{--<ul class="dropdown-menu">--}}
@@ -42,15 +52,15 @@
                     {{--</ul>--}}
                 {{--</li>--}}
 
-                <li class="dropdown {{ active(['prototype', 'prototype*']) }}">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Design <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ route('prototype') }}">LoFi Prototype</a></li>
-                        <li><a href="{{ route('prototype.timeline') }}">Application Timeline</a></li>
-                        <li><a href="{{ route('prototype.storyboard') }}">Storyboard Demo</a></li>
-                        <li><a href="{{ route('prototype.sketches') }}">Design Sketches</a></li>
-                    </ul>
-                </li>
+                {{--<li class="dropdown {{ active(['prototype', 'prototype*']) }}">--}}
+                    {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Design <span class="caret"></span></a>--}}
+                    {{--<ul class="dropdown-menu">--}}
+                        {{--<li><a href="{{ route('prototype') }}">LoFi Prototype</a></li>--}}
+                        {{--<li><a href="{{ route('prototype.timeline') }}">Application Timeline</a></li>--}}
+                        {{--<li><a href="{{ route('prototype.storyboard') }}">Storyboard Demo</a></li>--}}
+                        {{--<li><a href="{{ route('prototype.sketches') }}">Design Sketches</a></li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
 
                 <li class="dropdown {{ active(['people', 'people*']) }}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">People <span class="caret"></span></a>
