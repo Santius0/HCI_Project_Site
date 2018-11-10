@@ -10051,51 +10051,6 @@ a.list-group-item-danger.active:focus {
   width: 0;
 }
 
-.panel:nth-child(1) {
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px;
-}
-
-.panel:nth-child(2) {
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
-}
-
-.panel:nth-child(3) {
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
-}
-
-.panel:nth-child(4) {
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
-}
-
-.panel:nth-child(5) {
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
-}
-
-.panel:nth-child(6) {
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
-}
-
-.panel:nth-child(7) {
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px;
-}
-
-.panel:nth-child(8) {
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
-}
-
-.panel:nth-child(9) {
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
-}
-
 /* background colours */
 
 table#miyazaki {
