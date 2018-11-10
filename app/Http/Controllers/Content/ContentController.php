@@ -212,8 +212,11 @@ class ContentController extends Controller
             ['task' => 'task 2', 'knowledge' => 'the things', 'comments' => 'comment2'],
             ['task' => 'task 3', 'knowledge' => 'the things', 'comments' => 'comment3'],
             ['task' => 'task 4', 'knowledge' => 'the things', 'comments' => 'comment4'],
-            ];
-        return view('content.storyboard', compact('rows'));
+        ];
+        $panels = [
+            ['image' => asset('images/placeholder1'), 'name' => 'placeholder'],
+        ];
+        return view('content.storyboard', compact('rows', 'panels'));
     }
     public function sketches()
     {

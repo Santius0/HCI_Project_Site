@@ -5,20 +5,25 @@
     <div id="storyboard">
         <h3>Storyboard</h3>
         <p>
-            The following is a storyboard depicting...
-            <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget porta purus. Nam quam justo, tincidunt in risus semper, dignissim eleifend lacus. Vestibulum nec est mauris. Aliquam facilisis ante a accumsan feugiat. Etiam sit amet sapien eu enim euismod ultrices. Ut in nisl tortor. Donec in augue felis. Nulla vehicula sapien ante, at rhoncus sapien auctor posuere. Sed tempus felis molestie mi fringilla consequat. Donec risus leo, aliquet vitae tellus a, tristique mattis eros. Integer a massa laoreet, aliquam mauris imperdiet, imperdiet sem. Etiam ultrices velit in ante rutrum, scelerisque euismod arcu consectetur. Aenean ultrices ex sit amet sem accumsan, non imperdiet lectus posuere. Maecenas viverra neque sit amet nulla volutpat interdum. Nulla porttitor faucibus ipsum, sed porttitor urna scelerisque efficitur. In hac habitasse platea dictumst.
+            The following is a storyboard depicting a situation where all classes in the Faculty of Science and Technology's main building have been cancelled due to a gas leak at the Cariri Caribbean Research Institute. Classes from the other departments that would be hosted in FST's main building are being temporarily relocated.
         </p>
-    {{--<article class="comic">--}}
+    <article class="comic">
+        @foreach($panels as $panel)
+            <div class="panel">
+                {{$panel['image']}}
+                {{--Picture one--}}
+                {{--<p class="text top-left">Suddenly...</p>--}}
+                {{--<p class="text bottom-right">...something amazing happened</p>--}}
+                {{--<p class="text">Storyboard will start here...</p>--}}
+            </div>
+        @endforeach
         {{--<div class="panel">--}}
-            {{--<p class="text top-left">Suddenly...</p>--}}
-            {{--<p class="text bottom-right">...something amazing happened</p>--}}
-            {{--<p class="text">Storyboard will start here...</p>--}}
-        {{--</div>--}}
-        {{--<div class="panel">--}}
+            {{--Picture two--}}
             {{--<p class="text top-left">Try resizing...</p>--}}
             {{--<p class="text bottom-right">...it's responsive</p>--}}
         {{--</div>--}}
         {{--<div class="panel">--}}
+            {{--Picture three--}}
             {{--<p class="speech">A speech bubble</p>--}}
         {{--</div>--}}
         {{--<div class="panel"></div>--}}
@@ -30,7 +35,7 @@
             {{--<p class="text bottom-right">THE END</p>--}}
             {{--<p class="text">Storyboard will end here...</p>--}}
         {{--</div>--}}
-    {{--</article>--}}
+    </article>
     </div>
     <br><hr>
     <div id="video">
