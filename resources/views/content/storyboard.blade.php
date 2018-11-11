@@ -8,29 +8,12 @@
             The following is a storyboard depicting a situation where all classes in the Faculty of Science and Technology's main building have been cancelled due to a gas leak at the Cariri Caribbean Research Institute. Classes from the other departments that would be hosted in FST's main building are being temporarily relocated.
         </p>
     <article class="comic">
+        <h4>Storyboard Panels</h4>
         @foreach($panels as $panel)
             <div class="panel">
                 <img src="{{ $panel['image'] }}" name="{{ $panel['name'] }}">
             </div>
         @endforeach
-        {{--<div class="panel">--}}
-            {{--Picture two--}}
-            {{--<p class="text top-left">Try resizing...</p>--}}
-            {{--<p class="text bottom-right">...it's responsive</p>--}}
-        {{--</div>--}}
-        {{--<div class="panel">--}}
-            {{--Picture three--}}
-            {{--<p class="speech">A speech bubble</p>--}}
-        {{--</div>--}}
-        {{--<div class="panel"></div>--}}
-        {{--<div class="panel"></div>--}}
-        {{--<div class="panel"></div>--}}
-        {{--<div class="panel"></div>--}}
-        {{--<div class="panel"></div>--}}
-        {{--<div class="panel">--}}
-            {{--<p class="text bottom-right">THE END</p>--}}
-            {{--<p class="text">Storyboard will end here...</p>--}}
-        {{--</div>--}}
     </article>
     </div>
     <br><hr>
