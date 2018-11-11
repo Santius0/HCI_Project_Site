@@ -213,6 +213,7 @@ class ContentController extends Controller
             ['task' => 'Obtain all relevant information from newsfeed item', 'knowledge' => 'Ability to view further details clearly communicated to user.', 'comments' => 'Information provided in newsfeed item did not convey all required information'],
             ['task' => 'View further details on item', 'knowledge' => '', 'comments' => ''],
             ['task' => 'View temporary class locations', 'knowledge' => 'Readable timetable view available.', 'comments' => ''],
+            ['task' => 'Obtain directions to temporary class locations', 'knowledge' => 'Assumed that user understands google maps UI', 'comments' => ''],
             ['task' => 'Check for changes to situation', 'knowledge' => '', 'comments' => 'Have to search for the original post for updates. No means to effectively do this currently'],
         ];
         $panels = [
