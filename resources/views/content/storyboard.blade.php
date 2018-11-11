@@ -74,7 +74,7 @@
     <div id="reflection">
         <h3>Reflection</h3>
         <p>
-          Though the application's aesthetics are important, its main purpose is the delivery and collection of information. As a result, users must be able to quickly identify the type of information presented, as well as the most important content of that information. We focused on functionality and usability for our demo's design, however more work is needed when is comes to the clarity and immediate readability of the information presented. This is especially important when dealing with emergency situations such as the one presented in the storyboard and demo above.
+          Though the application's aesthetics are important, its main purpose is the delivery and collection of information. As a result, users must be able to quickly identify the type of information presented, as well as the most important content of that information. We focused on functionality and usability for our prototypes's design, however more work is needed when is comes to the clarity and immediate readability of the information presented. This is especially important when dealing with emergency situations such as the one presented in the storyboard and demo above.
         </p>
     </div>
     <br><hr>
