@@ -11,10 +11,6 @@
         @foreach($panels as $panel)
             <div class="panel">
                 <img src="{{ $panel['image'] }}" name="{{ $panel['name'] }}">
-                {{--Picture one--}}
-                {{--<p class="text top-left">Suddenly...</p>--}}
-                {{--<p class="text bottom-right">...something amazing happened</p>--}}
-                {{--<p class="text">Storyboard will start here...</p>--}}
             </div>
         @endforeach
         {{--<div class="panel">--}}

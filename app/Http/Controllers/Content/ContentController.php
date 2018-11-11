@@ -214,12 +214,11 @@ class ContentController extends Controller
             ['task' => 'task 4', 'knowledge' => 'the things', 'comments' => 'comment4'],
         ];
         $panels = [
-            ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
-            ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
-            ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
-            ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
-            ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
-            ['image' => asset('images/placeholder1.png'), 'name' => 'placeholder'],
+            ['image' => asset('images/Storyboard/1.jpg'), 'name' => '1'],
+            ['image' => asset('images/Storyboard/2.jpg'), 'name' => '2'],
+            ['image' => asset('images/Storyboard/3.jpg'), 'name' => '3'],
+            ['image' => asset('images/Storyboard/4.jpg'), 'name' => '4'],
+            ['image' => asset('images/Storyboard/5.jpg'), 'name' => '5'],
         ];
         return view('content.storyboard', compact('rows', 'panels'));
     }
