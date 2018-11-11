@@ -9984,7 +9984,7 @@ a.list-group-item-danger.active:focus {
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
-  height: 200px;
+  height: 500px;
   margin: 1vmin;
   overflow: hidden;
   position: relative;
