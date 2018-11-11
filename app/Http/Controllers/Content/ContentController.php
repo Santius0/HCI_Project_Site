@@ -208,12 +208,12 @@ class ContentController extends Controller
     public function storyboard()
     {
         $rows = [
-            ['task' => 'Access newsfeed', 'knowledge' => 'the things', 'comments' => 'comment1'],
-            ['task' => 'Identify issue requiring immediate attention via newsfeed. In this case class gas leak information', 'knowledge' => 'the things', 'comments' => 'comment1'],
-            ['task' => 'Obtain all relevant information from newsfeed item', 'knowledge' => 'the things', 'comments' => 'comment2'],
-            ['task' => 'View further details on item', 'knowledge' => 'the things', 'comments' => 'comment3'],
-            ['task' => 'View temporary class locations', 'knowledge' => 'the things', 'comments' => 'comment4'],
-            ['task' => 'Check for changes to situation', 'knowledge' => 'the things', 'comments' => 'comment4'],
+            ['task' => 'Access Newsfeed', 'knowledge' => 'UI should encourage users to navigate to newsfeed when an unread alert appears. ', 'comments' => ''],
+            ['task' => 'Identify issue requiring immediate attention via Newsfeed. In this case class gas leak information', 'knowledge' => 'Alert shown clearly at top of newsfeed.', 'comments' => 'Alerts and announcements are not easily differentiated from other newsfeed items.'],
+            ['task' => 'Obtain all relevant information from newsfeed item', 'knowledge' => 'Ability to view further details clearly communicated to user.', 'comments' => 'Information provided in newsfeed item did not convey all required information'],
+            ['task' => 'View further details on item', 'knowledge' => '', 'comments' => 'comment3'],
+            ['task' => 'View temporary class locations', 'knowledge' => 'Readable timetable view available.', 'comments' => ''],
+            ['task' => 'Check for changes to situation', 'knowledge' => '', 'comments' => 'Have to search for the original post for updates. No means to effectively do this currently'],
         ];
         $panels = [
             ['image' => asset('images/Storyboard/1.jpg'), 'name' => '1'],

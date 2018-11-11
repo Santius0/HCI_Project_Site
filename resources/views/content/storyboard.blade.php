@@ -31,7 +31,7 @@
         <table id="miyazaki">
             <caption>Task-Centered System Walkthrough</caption>
             <thead>
-            <tr><th>Task Step<th>Knowledgeable?<br>Motivated?<br>Believable<th>Comments/Suggested Fixes
+            <tr><th>Task Step<th>Knowledgeable?<br>Motivated?<br>Believable?<th>Comments/Suggested Fixes
             <tbody>
             @foreach($rows as $row)
                 <tr>
@@ -45,8 +45,29 @@
         <h3>Major Issues in Task Centered Walkthrough</h3>
         <br>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat elit nibh, in aliquam leo porta at. Donec tellus quam, rhoncus nec venenatis ac, vulputate sed orci. Phasellus non sodales lectus, sit amet interdum augue. Suspendisse at eleifend ligula, euismod porttitor nisl. In lobortis auctor odio non elementum. Ut viverra urna vel tortor euismod condimentum. Pellentesque rutrum leo ut gravida mollis.
-            Nunc sit amet bibendum sapien. Sed volutpat lectus volutpat magna malesuada, vel venenatis ipsum tincidunt. Sed ultricies feugiat ipsum id consectetur. In at lorem cursus, eleifend odio tristique, rhoncus justo. Ut bibendum mi vitae velit accumsan, in elementum lacus tristique. Ut a consequat libero. Quisque vestibulum dictum ornare. Sed rutrum ipsum in molestie elementum. Vivamus efficitur, neque ut ornare congue, massa enim convallis turpis, sit amet ullamcorper ex sem non orci.
+            <ul>
+                <li>
+                    User may not be able to quickly and easily identify Alerts which require immediate attention.
+                    <ul>
+                        <li> The colour scheme and layout for all newsfeed item types should be different.</li>
+                        Solution:  Alerts should have a distinct colour that call attention towards them, such as a bright red.
+                    </ul>
+                </li>
+                <li>
+                    User could not ascertain all necessary information without viewing further details.
+                    <ul>
+                        <li>The newsfeed item’s summary of events was insufficient to communicate all pertinent information to the user quickly.</li>
+                        Solution: Article excerpts will be updated to include only the core details of the article.
+                    </ul>
+                </li>
+                <li>
+                    User was unable to easily obtain updates on the situation.
+                    <ul>
+                        <li>There is currently no means for user to quickly and easily obtain updates on existing alerts and/or announcements.</li>
+                        Solution: Implement article updates so users can easily track the status of previous alerts and/or announcements.
+                    </ul>
+                </li>
+            </ul>
         </p>
         <br><hr>
     </div>
