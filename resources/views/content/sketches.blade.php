@@ -49,11 +49,11 @@
         </div>
         <br>
         <div class="flex-column">
-            <img src="{{ asset('images/Affinity Diagram/4.jpg') }}" width="227" height="450">
-            <img src="{{ asset('images/Affinity Diagram/5.jpg') }}" width="227" height="450">
-            <img src="{{ asset('images/Affinity Diagram/6.jpg') }}" width="227" height="450">
-            <img src="{{ asset('images/Affinity Diagram/7.jpg') }}" width="227" height="450">
-            <img src="{{ asset('images/Affinity Diagram/8.jpg') }}" width="227" height="450">
+            <img src="{{ asset('images/Affinity Diagram/4.jpg') }}" width="230" height="450">
+            <img src="{{ asset('images/Affinity Diagram/5.jpg') }}" width="230" height="450">
+            <img src="{{ asset('images/Affinity Diagram/6.jpg') }}" width="230" height="450">
+            <img src="{{ asset('images/Affinity Diagram/7.jpg') }}" width="230" height="450">
+            <img src="{{ asset('images/Affinity Diagram/8.jpg') }}" width="230" height="450">
         </div>
     </div>
 @endsection
