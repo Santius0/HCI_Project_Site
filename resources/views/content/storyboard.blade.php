@@ -3,12 +3,10 @@
 
 @section('post_body')
     <div id="storyboard">
-        <h3>Storyboard</h3>
         <p>
             The following is a storyboard depicting a situation where all classes in the Faculty of Science and Technology's main building have been cancelled due to a gas leak at the Cariri Caribbean Research Institute. Classes from the other departments that would be hosted in FST's main building are being temporarily relocated.
         </p>
     <article class="comic">
-        <h4>Storyboard Panels</h4>
         @foreach($panels as $panel)
             <div class="panel">
                 <img src="{{ $panel['image'] }}" name="{{ $panel['name'] }}">

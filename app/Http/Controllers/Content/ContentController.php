@@ -208,10 +208,12 @@ class ContentController extends Controller
     public function storyboard()
     {
         $rows = [
-            ['task' => 'Staff: ', 'knowledge' => 'the things', 'comments' => 'comment1'],
-            ['task' => 'task 2', 'knowledge' => 'the things', 'comments' => 'comment2'],
-            ['task' => 'task 3', 'knowledge' => 'the things', 'comments' => 'comment3'],
-            ['task' => 'task 4', 'knowledge' => 'the things', 'comments' => 'comment4'],
+            ['task' => 'Access newsfeed', 'knowledge' => 'the things', 'comments' => 'comment1'],
+            ['task' => 'Identify issue requiring immediate attention via newsfeed. In this case class gas leak information', 'knowledge' => 'the things', 'comments' => 'comment1'],
+            ['task' => 'Obtain all relevant information from newsfeed item', 'knowledge' => 'the things', 'comments' => 'comment2'],
+            ['task' => 'View further details on item', 'knowledge' => 'the things', 'comments' => 'comment3'],
+            ['task' => 'View temporary class locations', 'knowledge' => 'the things', 'comments' => 'comment4'],
+            ['task' => 'Check for changes to situation', 'knowledge' => 'the things', 'comments' => 'comment4'],
         ];
         $panels = [
             ['image' => asset('images/Storyboard/1.jpg'), 'name' => '1'],
