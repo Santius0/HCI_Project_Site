@@ -48,13 +48,11 @@
             <img src="{{ asset('images/Affinity Diagram/3.jpg') }}">
         </div>
         <div class="flex-column">
-            <img src="{{ asset('images/Affinity Diagram/4.jpg') }}" width="550" height="650">
-            <img src="{{ asset('images/Affinity Diagram/5.jpg') }}" width="550" height="650">
-            <img src="{{ asset('images/Affinity Diagram/6.jpg') }}" width="550" height="660">
-        </div>
-        <div class="flex-column">
-            <img src="{{ asset('images/Affinity Diagram/7.jpg') }}" width="550" height="650">
-            <img src="{{ asset('images/Affinity Diagram/8.jpg') }}" width="550" height="650">
+            <img src="{{ asset('images/Affinity Diagram/4.jpg') }}">
+            <img src="{{ asset('images/Affinity Diagram/5.jpg') }}">
+            <img src="{{ asset('images/Affinity Diagram/6.jpg') }}">
+            <img src="{{ asset('images/Affinity Diagram/7.jpg') }}">
+            <img src="{{ asset('images/Affinity Diagram/8.jpg') }}">
         </div>
     </div>
 @endsection
