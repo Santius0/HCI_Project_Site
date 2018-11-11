@@ -76,8 +76,7 @@
     <div id="reflection">
         <h3>Reflection</h3>
         <p>
-            Will fill this out last.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum feugiat elit nibh, in aliquam leo porta at. Donec tellus quam, rhoncus nec venenatis ac, vulputate sed orci. Phasellus non sodales lectus, sit amet interdum augue. Suspendisse at eleifend ligula, euismod porttitor nisl. In lobortis auctor odio non elementum. Ut viverra urna vel tortor euismod condimentum. Pellentesque rutrum leo ut gravida mollis.
+          Though the application's aesthetics are important, its main purpose is the delivery and collection of information. As a result, users must be able to quickly identify the type of information presented, as well as the most important content of that information. We focused on functionality and usability for our demo's design, however more work is needed when is comes to the clarity and immediate readability of the information presented. This is especially important when dealing with emergency situations such as the one presented in the storyboard and demo above.
         </p>
     </div>
     <br><hr>
