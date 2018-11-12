@@ -20,7 +20,7 @@
         <div class="media">
             <p>The storyboard detailed above is demo'd in the following video</p>
             <div class="media-body" style="text-align: center">
-                {!! Embed::make("https://www.youtube.com/watch?v=fB8TyLTD7EE")->parseUrl()->setAttribute(['width' => 1000])->getIframe() !!}
+                {!! Embed::make("https://www.youtube.com/watch?v=NpEaa2P7qZI")->parseUrl()->setAttribute(['width' => 1000])->getIframe() !!}
             </div>
         </div>
     </div>
