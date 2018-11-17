@@ -26,27 +26,27 @@
                     <div class="form-radio form-radio-inline">
                         <div class="form-radio-legend">Problem Rating</div>
                         <label class="form-radio-label">
-                            <input name=rating class="form-radio-field" type="radio" required value="He" />
+                            <input name=rating class="form-radio-field" type="radio" required value="0" />
                             <i class="form-radio-button"></i>
                             <span>0</span>
                         </label>
                         <label class="form-radio-label">
-                            <input name=rating class="form-radio-field" type="radio" required value="She" />
+                            <input name=rating class="form-radio-field" type="radio" required value="1" />
                             <i class="form-radio-button"></i>
                             <span>1</span>
                         </label>
                         <label class="form-radio-label">
-                            <input name=rating class="form-radio-field" type="radio" required value="They" />
+                            <input name=rating class="form-radio-field" type="radio" required value="2" />
                             <i class="form-radio-button"></i>
                             <span>2</span>
                         </label>
                         <label class="form-radio-label">
-                            <input name=rating class="form-radio-field" type="radio" required value="Ze" />
+                            <input name=rating class="form-radio-field" type="radio" required value="3" />
                             <i class="form-radio-button"></i>
                             <span>3</span>
                         </label>
                         <label class="form-radio-label">
-                            <input name=rating class="form-radio-field" type="radio" required value="A rating not listed" />
+                            <input name=rating class="form-radio-field" type="radio" required value="4" />
                             <i class="form-radio-button"></i>
                             <span>4</span>
                         </label>
@@ -58,6 +58,7 @@
             <hr><br>
         @endforeach
     </div>
+    <br><br>
     <div>
         Results
     </div>
