@@ -78,7 +78,7 @@
 #s-e5c4986d-5cfc-4172-b800-0daeda45b832 #s-Bg_1 > .backgroundLayer {
   height: calc(100% + 0px);
   width: calc(100% + 0px);
-  background-color: #ABE2BA;
+  background-color: #6BCDFD;
   background-image: none;
   box-shadow: -3px 0px 4px 0px #A0A0A0;
 }
@@ -392,7 +392,7 @@
 #s-e5c4986d-5cfc-4172-b800-0daeda45b832 #s-Rectangle_115 > .backgroundLayer {
   height: calc(100% + 0px);
   width: calc(100% + 0px);
-  background-color: #ABE2BA;
+  background-color: #6BCDFD;
   background-image: none;
   box-shadow: none;
 }
@@ -560,14 +560,14 @@
   text-align: left;
 }
 #s-e5c4986d-5cfc-4172-b800-0daeda45b832 #s-Text_1 span {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
   font-family: 'Roboto-Bold',Arial;
   font-size: 14.0pt;
 }
 #s-e5c4986d-5cfc-4172-b800-0daeda45b832 #s-Text_1 span#rtr-s-Text_1_0 {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
   font-family: 'Roboto-Bold',Arial;
@@ -1510,7 +1510,7 @@
   padding-right: 0px;
   padding-top: 0px;
   font-size: 11.0pt;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-Italic',Arial;
 }
 #s-e5c4986d-5cfc-4172-b800-0daeda45b832 #s-Text_4 > .clipping, #s-e5c4986d-5cfc-4172-b800-0daeda45b832 #s-Text_4 > .paddingLayer {
   height: calc(100% + -2px);
@@ -1528,22 +1528,14 @@
   color: #808080;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-Italic',Arial;
   font-size: 11.0pt;
 }
 #s-e5c4986d-5cfc-4172-b800-0daeda45b832 #s-Text_4 span#rtr-s-Text_4_0 {
   color: #808080;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Light',Arial;
-  font-size: 11.0pt;
-  line-height: 0px;
-}
-#s-e5c4986d-5cfc-4172-b800-0daeda45b832 #s-Text_4 span#rtr-s-Text_4_1 {
-  color: #808080;
-  text-align: left;
-  text-decoration: none;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-Italic',Arial;
   font-size: 11.0pt;
   line-height: 0px;
 }
@@ -4988,7 +4980,7 @@
   color: #747474;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Thin',Arial;
+  font-family: 'Roboto-Regular',Arial;
   font-size: 11.0pt;
   line-height: 0px;
 }
@@ -5047,7 +5039,7 @@
   color: #747474;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Thin',Arial;
+  font-family: 'Roboto-Regular',Arial;
   font-size: 11.0pt;
   line-height: 0px;
 }
@@ -5114,7 +5106,7 @@
   color: #747474;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Thin',Arial;
+  font-family: 'Roboto-Regular',Arial;
   font-size: 11.0pt;
   line-height: 0px;
 }
@@ -5173,7 +5165,7 @@
   color: #747474;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Thin',Arial;
+  font-family: 'Roboto-Regular',Arial;
   font-size: 11.0pt;
   line-height: 0px;
 }
@@ -5232,7 +5224,7 @@
   color: #747474;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Thin',Arial;
+  font-family: 'Roboto-Regular',Arial;
   font-size: 11.0pt;
   line-height: 0px;
 }

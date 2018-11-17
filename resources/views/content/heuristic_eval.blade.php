@@ -6,7 +6,7 @@
         <div id="evaluation">
             <h3>Navigate the <a href="{{ route('hifi.demo') }}" target="_blank">HiFi Prototype</a> and if at any point you feel like any of the following design principles are violated write up where and why.<br>
             Be sure to rate how serious you think the problem is from 0 to 4.</h3><br>
-            <h3>Rating Scale</h3><br>
+            <h4>Rating Scale</h4><br>
             <h5>
                 0 = I don’t agree that this is a usability problem at all<br>
                 1 = Cosmetic problem only: need not be fixed unless extra time is available on project<br>
@@ -14,26 +14,28 @@
                 3 = Major usability problem: important to fix, so should be given high priority<br>
                 4 = Usability catastrophe: imperative to fix this before product can be released<br>
             </h5>
-{{--            @foreach($heuristics as $heuristic)--}}
-                {{--<br>--}}
+            @foreach($heuristics as $heuristic)
+                <br>
 {{--                {!! Form::open(['route' => 'thread.store', 'method' => $method ?? 'POST']) !!}--}}
-                {{--<div class="timeline-panel">--}}
-                    {{--<div class="timeline-heading">--}}
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        {!! $heuristic['title'] !!}
                         {{--@formGroup('subject')--}}
                         {{--{!! Form::label($heuristic['title']) !!}--}}
                         {{--{!! Form::hidden('title', $heuristic['title'].'-'.Auth::user()->name().'-'.\Carbon\Carbon::now()->toDateTimeString(), ['class' => 'form-control', 'required', 'maxlength' => '60']) !!}--}}
                         {{--<span class="help-block">{!! $heuristic['description'] !!}}</span>--}}
                         {{--@error('subject')--}}
                         {{--@endFormGroup--}}
-                    {{--</div>--}}
-                    {{--<div class="timeline-body">--}}
+                    </div>
+                    <div class="timeline-body">
+                        {!! $heuristic['description'] !!}
                         {{--@endFormGroup @formGroup('body')--}}
                         {{--{!! Form::label('Details') !!}--}}
                         {{--{!! Form::textarea('body', null, ['class' => 'form-control', 'required']) !!}--}}
                         {{--@error('body')--}}
                         {{--@endFormGroup--}}
-                    {{--</div>--}}
-                    {{--<div class="timeline-footer">--}}
+                    </div>
+                    <div class="timeline-footer">
                         {{--@formGroup('rating')--}}
                         {{--<div class="form-radio form-radio-inline">--}}
                             {{--<div class="form-radio-legend">Problem Rating</div>--}}
@@ -65,12 +67,12 @@
                         {{--</div>--}}
                         {{--@error('rating')--}}
                         {{--@endFormGroup--}}
-                    {{--</div>--}}
+                    </div>
 {{--                    {!! Form::submit('Submit Feedback', ['class' => 'btn btn-primary btn-block']) !!}--}}
 {{--                    {!! Form::close() !!}--}}
-                {{--</div>--}}
-                {{--<hr><br>--}}
-            {{--@endforeach--}}
+                </div>
+                <hr><br>
+            @endforeach
         </div>
         <br><br>
     {{--@endif--}}

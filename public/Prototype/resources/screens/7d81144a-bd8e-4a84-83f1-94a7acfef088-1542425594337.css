@@ -78,7 +78,7 @@
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Bg_1 > .backgroundLayer {
   height: calc(100% + 0px);
   width: calc(100% + 0px);
-  background-color: #ABE2BA;
+  background-color: #6BCDFD;
   background-image: none;
   box-shadow: -3px 0px 4px 0px #A0A0A0;
 }
@@ -392,7 +392,7 @@
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Rectangle_115 > .backgroundLayer {
   height: calc(100% + 0px);
   width: calc(100% + 0px);
-  background-color: #ABE2BA;
+  background-color: #6BCDFD;
   background-image: none;
   box-shadow: none;
 }
@@ -560,14 +560,14 @@
   text-align: left;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_1 span {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
   font-family: 'Roboto-Bold',Arial;
   font-size: 14.0pt;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_1 span#rtr-s-Text_1_0 {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
   font-family: 'Roboto-Bold',Arial;
@@ -1518,7 +1518,7 @@
   padding-right: 0px;
   padding-top: 0px;
   font-size: 11.0pt;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-BoldItalic',Arial;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_3 > .clipping, #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_3 > .paddingLayer {
   height: calc(100% + 0px);
@@ -1533,13 +1533,21 @@
   text-align: left;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_3 span {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-BoldItalic',Arial;
   font-size: 11.0pt;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_3 span#rtr-s-Text_3_0 {
+  color: #000000;
+  text-align: left;
+  text-decoration: none;
+  font-family: 'Roboto-BoldItalic',Arial;
+  font-size: 11.0pt;
+  line-height: 0px;
+}
+#s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_3 span#rtr-s-Text_3_1 {
   color: #808080;
   text-align: left;
   text-decoration: none;
@@ -2681,7 +2689,7 @@
   padding-right: 0px;
   padding-top: 0px;
   font-size: 11.0pt;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-BoldItalic',Arial;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_4 > .clipping, #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_4 > .paddingLayer {
   height: calc(100% + 0px);
@@ -2696,17 +2704,17 @@
   text-align: left;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_4 span {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-BoldItalic',Arial;
   font-size: 11.0pt;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_4 span#rtr-s-Text_4_0 {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-BoldItalic',Arial;
   font-size: 11.0pt;
   line-height: 0px;
 }
@@ -3287,7 +3295,7 @@
   padding-right: 0px;
   padding-top: 0px;
   font-size: 11.0pt;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-BoldItalic',Arial;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_5 > .clipping, #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_5 > .paddingLayer {
   height: calc(100% + 0px);
@@ -3302,17 +3310,17 @@
   text-align: left;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_5 span {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-BoldItalic',Arial;
   font-size: 11.0pt;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_5 span#rtr-s-Text_5_0 {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-BoldItalic',Arial;
   font-size: 11.0pt;
   line-height: 0px;
 }
@@ -3893,7 +3901,7 @@
   padding-right: 0px;
   padding-top: 0px;
   font-size: 11.0pt;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-BoldItalic',Arial;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_6 > .clipping, #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_6 > .paddingLayer {
   height: calc(100% + 0px);
@@ -3908,17 +3916,17 @@
   text-align: left;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_6 span {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-BoldItalic',Arial;
   font-size: 11.0pt;
 }
 #s-7d81144a-bd8e-4a84-83f1-94a7acfef088 #s-Text_6 span#rtr-s-Text_6_0 {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
-  font-family: 'Roboto-Light',Arial;
+  font-family: 'Roboto-BoldItalic',Arial;
   font-size: 11.0pt;
   line-height: 0px;
 }

@@ -78,7 +78,7 @@
 #s-a2d965d2-311c-4174-9f0f-9777417eb4ca #s-Bg_1 > .backgroundLayer {
   height: calc(100% + 0px);
   width: calc(100% + 0px);
-  background-color: #ABE2BA;
+  background-color: #6BCDFD;
   background-image: none;
   box-shadow: -3px 0px 4px 0px #A0A0A0;
 }
@@ -190,25 +190,6 @@
 #s-a2d965d2-311c-4174-9f0f-9777417eb4ca #s-more-vertical_4 > img, #s-a2d965d2-311c-4174-9f0f-9777417eb4ca #s-more-vertical_4 > svg {
   height: 26px;
   width: 26px;
-  box-shadow: none;
-}
-#s-a2d965d2-311c-4174-9f0f-9777417eb4ca #s-Image_12 > svg {
-}
-#s-a2d965d2-311c-4174-9f0f-9777417eb4ca #s-Image_12 {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  transform: rotate(0deg);
-  padding-left: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-}
-#s-a2d965d2-311c-4174-9f0f-9777417eb4ca #s-Image_12 > img, #s-a2d965d2-311c-4174-9f0f-9777417eb4ca #s-Image_12 > svg {
-  height: 24px;
-  width: 24px;
   box-shadow: none;
 }
 #s-a2d965d2-311c-4174-9f0f-9777417eb4ca #s-Menu > svg {
@@ -392,7 +373,7 @@
 #s-a2d965d2-311c-4174-9f0f-9777417eb4ca #s-Rectangle_115 > .backgroundLayer {
   height: calc(100% + 0px);
   width: calc(100% + 0px);
-  background-color: #ABE2BA;
+  background-color: #6BCDFD;
   background-image: none;
   box-shadow: none;
 }
@@ -560,14 +541,14 @@
   text-align: left;
 }
 #s-a2d965d2-311c-4174-9f0f-9777417eb4ca #s-Text_1 span {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
   font-family: 'Roboto-Bold',Arial;
   font-size: 14.0pt;
 }
 #s-a2d965d2-311c-4174-9f0f-9777417eb4ca #s-Text_1 span#rtr-s-Text_1_0 {
-  color: #808080;
+  color: #000000;
   text-align: left;
   text-decoration: none;
   font-family: 'Roboto-Bold',Arial;

@@ -19,6 +19,11 @@
        url("../fonts/Roboto-Thin.ttf")  format("truetype");
 }
 @font-face {
+  font-family: "Roboto-Italic";
+  src: url("../fonts/Roboto-Italic.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Roboto-Italic.ttf")  format("truetype");
+}
+@font-face {
   font-family: "Roboto-Medium";
   src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
        url("../fonts/Roboto-Medium.ttf")  format("truetype");
@@ -27,4 +32,9 @@
   font-family: "Roboto-BoldItalic";
   src: url("../fonts/Roboto-BoldItalic.eot?#iefix") format("embedded-opentype"),
        url("../fonts/Roboto-BoldItalic.ttf")  format("truetype");
+}
+@font-face {
+  font-family: "Roboto-LightItalic";
+  src: url("../fonts/Roboto-LightItalic.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Roboto-LightItalic.ttf")  format("truetype");
 }
