@@ -15,7 +15,7 @@
                 4 = Usability catastrophe: imperative to fix this before product can be released<br>
             </h5>
             @foreach($heuristics as $heuristic)
-                <br>
+                {{--<br>--}}
 {{--                {!! Form::open(['route' => 'thread.store', 'method' => $method ?? 'POST']) !!}--}}
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -35,7 +35,7 @@
                         {{--@error('body')--}}
                         {{--@endFormGroup--}}
                     </div>
-                    <div class="timeline-footer">
+                    {{--<div class="timeline-footer">--}}
                         {{--@formGroup('rating')--}}
                         {{--<div class="form-radio form-radio-inline">--}}
                             {{--<div class="form-radio-legend">Problem Rating</div>--}}
@@ -67,7 +67,7 @@
                         {{--</div>--}}
                         {{--@error('rating')--}}
                         {{--@endFormGroup--}}
-                    </div>
+                    {{--</div>--}}
 {{--                    {!! Form::submit('Submit Feedback', ['class' => 'btn btn-primary btn-block']) !!}--}}
 {{--                    {!! Form::close() !!}--}}
                 </div>
