@@ -10308,3 +10308,182 @@ table#miyazaki tbody tr:not(:last-child) {
   display: none;
 }
 
+#evaluation .form-checkbox,
+#evaluation .form-radio {
+  position: relative;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+  text-align: left;
+}
+
+#evaluation .form-checkbox-inline .form-checkbox-label,
+#evaluation .form-radio-inline .form-radio-label {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+#evaluation .form-checkbox-legend,
+#evaluation .form-radio-legend {
+  margin: 0 0 0.125rem 0;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+}
+
+#evaluation .form-checkbox-label,
+#evaluation .form-radio-label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 1.5rem;
+  text-align: left;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#evaluation .form-checkbox-label:hover i,
+#evaluation .form-radio-label:hover i {
+  color: #337ab7;
+}
+
+#evaluation .form-checkbox-label span,
+#evaluation .form-radio-label span {
+  display: block;
+}
+
+#evaluation .form-checkbox-label input,
+#evaluation .form-radio-label input {
+  width: auto;
+  opacity: 0.0001;
+  position: absolute;
+  left: 0.25rem;
+  top: 0.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+#evaluation .form-checkbox-button {
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: block;
+  color: #999;
+  left: 0;
+  top: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  z-index: 0;
+  border: 0.125rem solid currentColor;
+  border-radius: 0.0625rem;
+  -webkit-transition: color 0.28s ease;
+  transition: color 0.28s ease;
+  will-change: color;
+}
+
+#evaluation .form-checkbox-button::before,
+#evaluation .form-checkbox-button::after {
+  position: absolute;
+  height: 0;
+  width: 0.2rem;
+  background-color: #337ab7;
+  display: block;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  border-radius: 0.25rem;
+  content: "";
+  -webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
+  transition: opacity 0.28s ease, height 0s linear 0.28s;
+  opacity: 0;
+  will-change: opacity, height;
+}
+
+#evaluation .form-checkbox-button::before {
+  top: 0.65rem;
+  left: 0.38rem;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  -webkit-box-shadow: 0 0 0 0.0625rem #fff;
+          box-shadow: 0 0 0 0.0625rem #fff;
+}
+
+#evaluation .form-checkbox-button::after {
+  top: 0.3rem;
+  left: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#evaluation .form-checkbox-field:checked ~ .form-checkbox-button {
+  color: #337ab7;
+}
+
+#evaluation .form-checkbox-field:checked ~ .form-checkbox-button::after,
+#evaluation .form-checkbox-field:checked ~ .form-checkbox-button::before {
+  opacity: 1;
+  -webkit-transition: height 0.28s ease;
+  transition: height 0.28s ease;
+}
+
+#evaluation .form-checkbox-field:checked ~ .form-checkbox-button::after {
+  height: 0.5rem;
+}
+
+#evaluation .form-checkbox-field:checked ~ .form-checkbox-button::before {
+  height: 1.2rem;
+  -webkit-transition-delay: 0.28s;
+          transition-delay: 0.28s;
+}
+
+#evaluation .form-radio-button {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #999;
+}
+
+#evaluation .form-radio-button::before,
+#evaluation .form-radio-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  -webkit-transition: color 0.28s ease, -webkit-transform 0.28s ease;
+  transition: color 0.28s ease, -webkit-transform 0.28s ease;
+  transition: transform 0.28s ease, color 0.28s ease;
+  transition: transform 0.28s ease, color 0.28s ease, -webkit-transform 0.28s ease;
+  border-radius: 50%;
+  border: 0.125rem solid currentColor;
+  will-change: transform, color;
+}
+
+#evaluation .form-radio-button::after {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+#evaluation .form-radio-field:checked ~ .form-radio-button::after {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+#evaluation .form-radio-field:checked ~ .form-radio-button::before {
+  color: #337ab7;
+}
+
+#evaluation .form-has-error .form-checkbox-button,
+#evaluation .form-has-error .form-radio-button {
+  color: #d9534f;
+}
+
