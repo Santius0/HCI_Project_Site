@@ -19,7 +19,7 @@
 {{--                {!! Form::open(['route' => 'thread.store', 'method' => $method ?? 'POST']) !!}--}}
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        {!! $heuristic['title'] !!}
+                        <h3>{!! $heuristic['title'] !!}</h3>
                         {{--@formGroup('subject')--}}
                         {{--{!! Form::label($heuristic['title']) !!}--}}
                         {{--{!! Form::hidden('title', $heuristic['title'].'-'.Auth::user()->name().'-'.\Carbon\Carbon::now()->toDateTimeString(), ['class' => 'form-control', 'required', 'maxlength' => '60']) !!}--}}
@@ -28,7 +28,7 @@
                         {{--@endFormGroup--}}
                     </div>
                     <div class="timeline-body">
-                        {!! $heuristic['description'] !!}
+                        <span class="help-block">{!! $heuristic['description'] !!}}</span>
                         {{--@endFormGroup @formGroup('body')--}}
                         {{--{!! Form::label('Details') !!}--}}
                         {{--{!! Form::textarea('body', null, ['class' => 'form-control', 'required']) !!}--}}
