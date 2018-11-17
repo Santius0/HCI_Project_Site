@@ -108,6 +108,11 @@ Route::prefix('/people')->namespace('Content')->group(function(){
     Route::get('/test-users', 'ContentController@test_users')->name('people.users');
 });
 
+Route::prefix('/hifi')->namespace('Content')->group(function(){
+    Route::get('/prototype', 'ContentController@hifi')->name('hifi.demo');
+    Route::get('/heuristic-evaluation', 'ContentController@heuristic_eval')->name('hifi.eval');
+});
+
 Route::prefix('/files')->namespace('Content')->group(function(){
     Route::get('/', 'ContentController@files')->name('files');
 });

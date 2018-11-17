@@ -225,7 +225,18 @@ class ContentController extends Controller
         ];
         return view('content.storyboard', compact('rows', 'panels'));
     }
+
     public function sketches()
+    {
+        return view('content.sketches');
+    }
+
+    public function hifi()
+    {
+        return view('content.sketches');
+    }
+
+    public function heuristic_eval()
     {
         return view('content.sketches');
     }
