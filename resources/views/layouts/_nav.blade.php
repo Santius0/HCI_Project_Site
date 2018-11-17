@@ -12,7 +12,9 @@
 
         <div class="collapse navbar-collapse" id="main-navbar-collapse">
             <ul class="nav navbar-nav">
+                @if(Auth::user() && Auth::user()->user_type == \App\User::DEVELOPER)
                 <li class="{{ active(['threads', 'thread*']) }}"><a href="{{ route('threads') }}">Updates</a></li>
+                @endif
 
                 {{--<li class="dropdown {{ active(['proposal', 'proposal*']) }}">--}}
                 {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal <span class="caret"></span></a>--}}

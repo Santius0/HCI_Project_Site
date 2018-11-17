@@ -9975,7 +9975,7 @@ a.list-group-item-danger.active:focus {
   padding: 1vmin;
 }
 
-.panel {
+.comic .panel {
   background-color: #fff;
   border: solid 2px #000;
   -webkit-box-shadow: 0 6px 6px -6px #000;
@@ -9990,14 +9990,14 @@ a.list-group-item-danger.active:focus {
   position: relative;
 }
 
-.text {
+.comic .text {
   background-color: #fff;
   border: solid 2px #000;
   margin: 0;
   padding: 3px 10px;
 }
 
-.top-left {
+.comic .top-left {
   left: -6px;
   position: absolute;
   top: -2px;
@@ -10005,7 +10005,7 @@ a.list-group-item-danger.active:focus {
           transform: skew(-15deg);
 }
 
-.bottom-right {
+.comic .bottom-right {
   bottom: -2px;
   position: absolute;
   right: -6px;
@@ -10013,7 +10013,7 @@ a.list-group-item-danger.active:focus {
           transform: skew(-15deg);
 }
 
-.speech {
+.comic .speech {
   background-color: #fff;
   border: solid 2px #000;
   border-radius: 12px;
@@ -10023,7 +10023,7 @@ a.list-group-item-danger.active:focus {
   position: relative;
 }
 
-.speech:before {
+.comic .speech:before {
   border: solid 12px transparent;
   border-left: solid 12px #000;
   border-top: solid 12px #000;
@@ -10037,7 +10037,7 @@ a.list-group-item-danger.active:focus {
   width: 0;
 }
 
-.speech:after {
+.comic .speech:after {
   border: solid 10px transparent;
   border-left: solid 10px #fff;
   border-top: solid 10px #fff;
@@ -10051,47 +10051,47 @@ a.list-group-item-danger.active:focus {
   width: 0;
 }
 
-.panel:nth-child(1) {
+.comic .panel:nth-child(1) {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
 }
 
-.panel:nth-child(2) {
+.comic .panel:nth-child(2) {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
 }
 
-.panel:nth-child(3) {
+.comic .panel:nth-child(3) {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
 }
 
-.panel:nth-child(4) {
+.comic .panel:nth-child(4) {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
 }
 
-.panel:nth-child(5) {
+.comic .panel:nth-child(5) {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
 }
 
-.panel:nth-child(6) {
+.comic .panel:nth-child(6) {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
 }
 
-.panel:nth-child(7) {
+.comic .panel:nth-child(7) {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
 }
 
-.panel:nth-child(8) {
+.comic .panel:nth-child(8) {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
 }
 
-.panel:nth-child(9) {
+.comic .panel:nth-child(9) {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
 }
