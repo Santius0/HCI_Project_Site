@@ -26,7 +26,7 @@
                 {{--</li>--}}
 
                 <li class="dropdown {{ active(['proposal', 'proposal*', 'research', 'research*']) }}">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal(A2)<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Project Proposal(A2)<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('proposal.concept') }}">Conceptual Design</a></li>
                         <li><a href="{{ route('proposal.definition') }}">Problem Definition</a></li>
