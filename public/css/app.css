@@ -10177,6 +10177,7 @@ table#miyazaki tbody tr:not(:last-child) {
   float: left;
   width: 33%;
   height: 800px;
+  padding: 50px;
 }
 
 #evaluation .clearBoth {
