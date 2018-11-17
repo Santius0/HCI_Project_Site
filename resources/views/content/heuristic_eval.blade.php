@@ -13,7 +13,7 @@
                 <br>
             </div>
             <div class="timeline-footer">
-                {!! Form::open(['route' => 'thread.post', 'method' => $method ?? 'POST']) !!}
+                {!! Form::open(['route' => 'thread.store', 'method' => $method ?? 'POST']) !!}
 
                 @formGroup('subject')
                 {!! Form::label('title') !!}
