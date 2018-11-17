@@ -24,7 +24,7 @@
                 {{--</li>--}}
 
                 <li class="dropdown {{ active(['proposal', 'proposal*', 'research', 'research*']) }}">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal and Research (A2) <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal(A2)<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('proposal.concept') }}">Conceptual Design</a></li>
                         <li><a href="{{ route('proposal.definition') }}">Problem Definition</a></li>
@@ -35,7 +35,7 @@
                 </li>
 
                 <li class="dropdown {{ active(['prototype', 'prototype*']) }}">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Design Sketches and Prototype Demo (A3) <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lofi Prototype(A3)<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('prototype.sketches') }}">Design Sketches</a></li>
                         <li><a href="{{ route('prototype') }}">LoFi Prototype</a></li>
@@ -44,7 +44,7 @@
                 </li>
 
                 <li class="dropdown {{ active(['hifi', 'hifi*']) }}">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hifi Prototype and Heuristic Analysis (A3) <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hifi Prototype(A4) <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('prototype.sketches') }}">Hifi Prototype</a></li>
                         <li><a href="{{ route('prototype') }}">Heuristic Analysis</a></li>
