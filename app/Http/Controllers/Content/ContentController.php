@@ -237,9 +237,9 @@ class ContentController extends Controller
             [     'head' => [
                         'name' => 'Newsfeed',
                         'child' => [
-                            'name' => '11111111111111',
+                            'name' => 'Subsystem 1.1',
                             'child' => [
-                                'name' => '22222222222222222222222'
+                                'name' => 'Subsystem 1.2'
                             ]
                         ]
                     ]
@@ -247,9 +247,9 @@ class ContentController extends Controller
             [     'head' => [
                     'name' => 'Classes',
                     'child' => [
-                        'name' => '11111111111111111',
+                        'name' => 'Subsystem 1.1',
                         'child' => [
-                            'name' => '22222222222222222222222'
+                            'name' => 'Subsystem 2.2'
                         ]
                     ]
                 ]
@@ -257,9 +257,9 @@ class ContentController extends Controller
             [     'head' => [
                     'name' => 'Third',
                     'child' => [
-                        'name' => '11111111111111111',
+                        'name' => 'Subsystem 3.1',
                         'child' => [
-                            'name' => '222222222222222222222'
+                            'name' => 'Subsytem 3.2'
                         ]
                     ]
                 ]
@@ -267,18 +267,18 @@ class ContentController extends Controller
             [     'head' => [
                     'name' => 'Fourth',
                     'child' => [
-                        'name' => '11111111111111111',
+                        'name' => 'Subsystem 4.1',
                         'child' => [
-                            'name' => '222222222222222'
+                            'name' => '4.2'
                         ]
                     ]
                 ]
           ],[     'head' => [
                     'name' => 'Fifth',
                     'child' => [
-                        'name' => '11111111111111111',
+                        'name' => 'Subsystem 5.1',
                         'child' => [
-                            'name' => '222222222222<br>2222'
+                            'name' => 'Subsystem 5.2'
                         ]
                     ]
                 ]
