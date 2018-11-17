@@ -4,28 +4,29 @@
 @section('post_body')
     <div id="evaluation">
         @foreach($heuristics as $heuristic)
-        <div class="timeline-panel">
-            <div class="timeline-footer">
-                {!! Form::open(['route' => 'thread.store', 'method' => $method ?? 'POST']) !!}
-
-                @formGroup('subject')
-                {!! Form::label($heuristic['title']) !!}
-                {!! Form::hidden('title', $heuristic['title'], ['class' => 'form-control', 'required', 'maxlength' => '60']) !!}
-                <span class="help-block">{!! $heuristic['description'] !!}}</span>
-                @error('subject')
-                @endFormGroup
-
-                @endFormGroup @formGroup('body')
-                {!! Form::label('Details') !!}
-                {!! Form::textarea('body', null, ['class' => 'form-control wysiwyg', 'required']) !!}
-                @error('body')
-                @endFormGroup
-
-                {!! Form::submit('Submit', ['class' => 'btn btn-primary btn-block']) !!}
-                {{--<a href="{{ isset($thread) ? route('thread.show', $thread->id()) : route('threads') }}" class="btn btn-default btn-block">Cancel</a>--}}
-                {!! Form::close() !!}
+            <br>
+            {!! Form::open(['route' => 'thread.store', 'method' => $method ?? 'POST']) !!}
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    @formGroup('subject')
+                    {!! Form::label($heuristic['title']) !!}
+                    {!! Form::hidden('title', $heuristic['title'], ['class' => 'form-control', 'required', 'maxlength' => '60']) !!}
+                    <span class="help-block">{!! $heuristic['description'] !!}}</span>
+                    @error('subject')
+                    @endFormGroup                </div>
+                <div class="timeline-body">
+                    @endFormGroup @formGroup('body')
+                    {!! Form::label('Details') !!}
+                    {!! Form::textarea('body', null, ['class' => 'form-control', 'required']) !!}
+                    @error('body')
+                    @endFormGroup
+                </div>
+                <div class="timeline-footer">
+                    {!! Form::submit('Submit', ['class' => 'btn btn-primary btn-block']) !!}
+                    {!! Form::close() !!}
+                </div>
             </div>
-        </div>
+            <hr><br>
         @endforeach
     </div>
     <div>
