@@ -4,7 +4,7 @@
 @section('post_body')
 {{--    @if(Auth::user() && (Auth::user()->user_type() == \App\User::DEVELOPER || Auth::user()->user_type == \App\User::TEST_USER))--}}
         <div id="evaluation">
-            <h3>Navigate the <a href="{{ route('hifi.demo') }}" target="_blank">HiFi Prototype</a> and if at any point you disagree with any of the following statements, write up and submit a response.<br>
+            <h3>Navigate the <a href="{{ route('hifi.demo') }}" target="_blank">HiFi Prototype</a> and if at any point you feel like any of the following design principles are violated write up where and why.<br>
             Be sure to rate how serious you think the problem is.</h3><br>
             <small>
                 0 = I don’t agree that this is a usability problem at all<br>
