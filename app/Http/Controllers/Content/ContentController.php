@@ -234,7 +234,7 @@ class ContentController extends Controller
     public function hifi()
     {
 
-        return view('content.hifi');
+        return view('Prototype.hifi');
     }
 
     public function heuristic_eval()
