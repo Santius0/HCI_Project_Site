@@ -3,7 +3,7 @@
 
 @section('post_body')
    <div id="evaluation">
-       <div class="w3-container" id="docs-list">
+       <div class="w3-container inline" id="docs-list">
            <ul id="myUL" class="w3-margin-top w3-margin-bottom">
                @foreach($tasks as $task)
                    <li><p><b> {{ $task }}</b></p></li>
