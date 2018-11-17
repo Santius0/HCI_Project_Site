@@ -51,6 +51,11 @@ class ThreadsController extends Controller
             'title' => $request->title,
             'body' => $request->body
         ]);
+
+        if($request->rating){
+            $thread->rating = $request->rating;
+        }
+
         if($thread->save()){
             return redirect('/updates/thread/'.$thread->id());
         };
