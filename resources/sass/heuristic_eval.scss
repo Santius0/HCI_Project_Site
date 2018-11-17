@@ -1,3 +1,4 @@
 #evaluation{
-  display: inline-block;
+  div.inline { float:left; }
+  .clearBoth { clear:both; }
 }
