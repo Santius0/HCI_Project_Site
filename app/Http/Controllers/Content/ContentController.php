@@ -259,7 +259,7 @@ class ContentController extends Controller
                     'child' => [
                         'name' => '11111111111111111',
                         'child' => [
-                            'name' => '22222222222222222222222'
+                            'name' => '222222222222222222222'
                         ]
                     ]
                 ]
@@ -269,7 +269,7 @@ class ContentController extends Controller
                     'child' => [
                         'name' => '11111111111111111',
                         'child' => [
-                            'name' => '22222222222222222222222'
+                            'name' => '222222222222222'
                         ]
                     ]
                 ]
@@ -278,7 +278,7 @@ class ContentController extends Controller
                     'child' => [
                         'name' => '11111111111111111',
                         'child' => [
-                            'name' => '22222222222222222222222'
+                            'name' => '222222222222<br>2222'
                         ]
                     ]
                 ]
