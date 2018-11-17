@@ -3,15 +3,21 @@
 
 @section('post_body')
    <div id="evaluation">
-       <div class="inline" style="width: 33%; height: 800px;">
-           Tasks
+       <div class="w3-container" id="docs-list">
+           <ul id="myUL" class="w3-margin-top w3-margin-bottom">
+               @foreach($tasks as $task)
+                   <li><p><b> {{ $task }}</b></p></li>
+               @endforeach
+           </ul>
        </div>
        <div class="inline" style="width: 33%; height: 900px;">
            <div class="protoio-embed-prototype" data-code="GZTL1G" data-show-sidebuttons="0" style="width: 100%; height: 800px;"></div>
            <script async src="https://static.proto.io/api/widget-embed.js"></script>
        </div>
        <div class="inline" style="width: 33%; height: 800px;">
-           Problems
+           @foreach($tasks as $task)
+               <li><p><b> {{ $task }}</b></p></li>
+           @endforeach
        </div>
    </div>
 @endsection
