@@ -233,11 +233,15 @@ class ContentController extends Controller
 
     public function hifi()
     {
+
         return view('content.hifi');
     }
 
     public function heuristic_eval()
     {
-        return view('content.heuristic_eval');
+        $tasks = [
+            'Task 1', 'Task 2', 'Task 3', 'Task 4'
+        ];
+        return view('content.heuristic_eval', compact('tasks'));
     }
 }
