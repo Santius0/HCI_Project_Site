@@ -291,10 +291,16 @@ class ContentController extends Controller
     public function heuristic_eval()
     {
         $heuristics = [
-          ['title' => 'Visibility of system status', 'description'=>'Always keep users informed about what is going on,through appropriate feedback within reasonable time. For example, if a system operation will take some time, give an indication of how long and how much is complete.'],
-          ['title' => 'Match between system and the real world', 'description'=>'The system should speak the user’s language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in natural and logical order.'],
-          ['title' => 'User control and freedom', 'description'=>'Users often choose system functions by mistake and need a clearly marked ‘emergency exit’ to leave the unwanted state without having to go through an extended dialog. Support undo and redo.'],
-          ['title' => 'Consistency and standards', 'description'=>'Users should not have to wonder whether words, situations or actions mean the same thing in different contexts. Follow platform conventions and accepted standards.'],
+            ['title' => 'Visibility of system status', 'description'=>'Always keep users informed about what is going on,through appropriate feedback within reasonable time. For example, if a system operation will take some time, give an indication of how long and how much is complete.'],
+            ['title' => 'Match between system and the real world', 'description'=>'The system should speak the user’s language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in natural and logical order.'],
+            ['title' => 'User control and freedom', 'description'=>'Users often choose system functions by mistake and need a clearly marked ‘emergency exit’ to leave the unwanted state without having to go through an extended dialog. Support undo and redo.'],
+            ['title' => 'Consistency and standards', 'description'=>'Users should not have to wonder whether words, situations or actions mean the same thing in different contexts. Follow platform conventions and accepted standards.'],
+            ['title' => 'Error prevention', 'description'=>'Make it difficult to make errors. Even better than good error messages is a careful design that prevents a problem from occurring in the first place.'],
+            ['title' => 'Recognition rather than recall', 'description'=>'Make objects, actions and options visible. The user should not have to remember information from one part of the dialog to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate.'],
+            ['title' => 'Flexibility and efficiency of use', 'description'=>'Allow users to tailor frequent actions. Accelerators – unseen by the novice user – may often speed up the interaction for the expert user to such an extent that the system can cater to both inexperienced and experienced users.'],
+            ['title' => 'Aesthetic and minimalist design', 'Dialogs should not contain information that is irrelevant or rarely needed. Every extra unit of information in a dialog competes with the relevant units of information and diminishes their relative visibility.'],
+            ['title' => 'Help users recognize, diagnose and recover from errors', 'Error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution.'],
+            ['title' => 'Help and documentation', 'description'=>'Few systems can be used with no instructions so it may be necessary to provide help and documentation. Any such information should be easy to search, focused on the user’s task, list concrete steps to be carried out, and not be too large.'],
         ];
         $results = Thread::where('rating', 2)->get();
         return view('content.heuristic_eval', compact('results', 'heuristics'));
