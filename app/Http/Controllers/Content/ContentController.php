@@ -269,7 +269,7 @@ class ContentController extends Controller
                     'child' => [
                         'name' => 'Subsystem 4.1',
                         'child' => [
-                            'name' => '4.2'
+                            'name' => 'Subsytem 4.2'
                         ]
                     ]
                 ]
