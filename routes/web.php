@@ -33,15 +33,10 @@ Route::namespace('Auth')->group(function () {
     Route::post('password/email', 'ForgotPasswordController@sendResetLinkEmail')->name('password.forgot.post');
     Route::get('password/reset/{token}', 'ResetPasswordController@showResetForm')->name('password.reset');
     Route::post('password/reset', 'ResetPasswordController@reset')->name('password.reset.post');
-//
-//    // Email address confirmation
-//    Route::get('email-confirmation', 'EmailConfirmationController@send')->name('email.send_confirmation');
-//    Route::get('email-confirmation/{email_address}/{code}', 'EmailConfirmationController@confirm')
-//        ->name('email.confirm');
-//
+
 //    // Social authentication
     Route::get('login/github', 'GithubController@redirectToProvider')->name('login.github');
-    Route::get('auth/github', 'GithubController@handleProviderCallback');
+    Route::get('auth/github', 'GithubController@handleProviderCallb ack');
     Route::get('register/username/change', 'GithubController@usernameChaange')->name('register.username.post');
 });
 
