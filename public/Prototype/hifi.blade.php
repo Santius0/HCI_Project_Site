@@ -297,8 +297,8 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="{{ asset("Prototype/review/includes/include-1542420855199.js") }}" class="canvasjs"></script>
-    <script type="text/javascript">(function(){jimMain.init(" {{ "Prototype/resources/screens/e6b4de06-9473-416c-a777-33c14c84caf5" }} ");})();</script>
+    <script type="text/javascript" src="./review/includes/include-1542420855199.js" class="canvasjs"></script>
+    <script type="text/javascript">(function(){jimMain.init("screens/e6b4de06-9473-416c-a777-33c14c84caf5");})();</script>
     </div>
 
 @endsection

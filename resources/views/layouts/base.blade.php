@@ -15,8 +15,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link type="text/css" rel="stylesheet" href="./review/includes/include-1542420855199.css" />
-    <script type="text/javascript" src="./resources/external_tools.js"></script>
+    <link type="text/css" rel="stylesheet" href="{{ asset('Prototype/review/includes/include-1542420855199.css') }}" />
+    <script type="text/javascript" src="{{ asset("Prototype/resources/external_tools.js") }}"></script>
 
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
