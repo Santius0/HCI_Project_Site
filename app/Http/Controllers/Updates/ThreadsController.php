@@ -54,6 +54,7 @@ class ThreadsController extends Controller
 
         if($request->rating){
             $thread->rating = $request->rating;
+            $thread->type = 2;
         }
 
         if($thread->save()){
