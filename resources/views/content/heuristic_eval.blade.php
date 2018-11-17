@@ -20,7 +20,7 @@
                     <div class="timeline-heading">
                         @formGroup('subject')
                         {!! Form::label($heuristic['title']) !!}
-                        {!! Form::hidden('title', $heuristic['title'], ['class' => 'form-control', 'required', 'maxlength' => '60']) !!}
+                        {!! Form::hidden('title', $heuristic['title'].'-'.Auth::user()->name().'-'.\Carbon\Carbon::now()->toDateTimeString(), ['class' => 'form-control', 'required', 'maxlength' => '60']) !!}
                         <span class="help-block">{!! $heuristic['description'] !!}}</span>
                         @error('subject')
                         @endFormGroup

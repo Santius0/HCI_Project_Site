@@ -86,7 +86,7 @@ class ThreadsController extends Controller
         }
 
         if($thread->save()){
-            return redirect(route('hifi.demo').'#evaluationss');
+            return redirect(route('hifi.eval').'#evaluationss');
         };
         //return error page here
         return $thread;
