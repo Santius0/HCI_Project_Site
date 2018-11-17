@@ -6,7 +6,7 @@
         <div id="evaluation">
             <h3>Navigate the <a href="{{ route('hifi.demo') }}" target="_blank">HiFi Prototype</a> and if at any point you feel like any of the following design principles are violated write up where and why.<br>
             Be sure to rate how serious you think the problem is from 0 to 4.</h3><br>
-            <h4>Rating Scale</h4><br>
+            <h4>Rating Scale:</h4>
             <h5>
                 0 = I don’t agree that this is a usability problem at all<br>
                 1 = Cosmetic problem only: need not be fixed unless extra time is available on project<br>
