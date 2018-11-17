@@ -23,8 +23,8 @@
                 @endFormGroup
 
                 @endFormGroup @formGroup('body')
-                {!! Form::label('DetailsZ') !!}
-                @include('layouts.editor')
+                {!! Form::label('Details') !!}
+                {!! Form::textarea('body', null, ['class' => 'form-control wysiwyg', 'required']) !!}
                 @error('body')
                 @endFormGroup
 
