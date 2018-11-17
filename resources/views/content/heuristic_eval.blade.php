@@ -13,16 +13,23 @@
                 <br>
             </div>
             <div class="timeline-footer">
-                {!! Form::open(['route' => $route, 'method' => $method ?? 'POST']) !!}
+                {!! Form::open(['route' => 'thread.post', 'method' => $method ?? 'POST']) !!}
 
-                @formGroup('body')
-                {!! Form::label('Details') !!}
+                @formGroup('subject')
+                {!! Form::label('title') !!}
+                {!! Form::hidden('title', $heuristic['title'], ['class' => 'form-control', 'required', 'maxlength' => '60']) !!}
+                <span class="help-block">Maximum 60 characters.</span>
+                @error('subject')
+                @endFormGroup
+
+                @endFormGroup @formGroup('body')
+                {!! Form::label('DetailsZ') !!}
                 @include('layouts.editor')
                 @error('body')
                 @endFormGroup
 
-                {!! Form::submit(isset($thread) ? 'Update Thread' : 'Create Thread', ['class' => 'btn btn-primary btn-block']) !!}
-                <a href="{{ isset($thread) ? route('thread.show', $thread->id()) : route('threads') }}" class="btn btn-default btn-block">Cancel</a>
+                {!! Form::submit('Submit', ['class' => 'btn btn-primary btn-block']) !!}
+                {{--<a href="{{ isset($thread) ? route('thread.show', $thread->id()) : route('threads') }}" class="btn btn-default btn-block">Cancel</a>--}}
                 {!! Form::close() !!}
             </div>
         </div>
