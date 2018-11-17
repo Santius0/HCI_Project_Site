@@ -3,6 +3,8 @@
 
 @section('post_body')
     <br/>
+    <h3>See <a href="{{asset('Prototype/index.html')}}" target="_blank">HiFi Demo</a> </h3><hr><br>
+    <h3>Vertical Prototype</h3>
     <div class="tree">
         <ul>
             <li>

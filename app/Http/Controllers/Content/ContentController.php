@@ -233,7 +233,8 @@ class ContentController extends Controller
 
     public function hifi()
     {
-        return redirect(asset('Prototype/index.html'));
+        return view('content.hifi');
+//        return redirect(asset('Prototype/index.html'));
     }
 
     public function heuristic_eval()

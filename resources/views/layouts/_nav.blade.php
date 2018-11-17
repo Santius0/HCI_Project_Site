@@ -48,7 +48,7 @@
                 <li class="dropdown {{ active(['hifi', 'hifi*']) }}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hifi Prototype(A4) <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('hifi.demo') }}" target="_blank">Hifi Prototype</a></li>
+                        <li><a href="{{ route('hifi.demo') }}">Hifi Prototype</a></li>
                         <li><a href="{{ route('hifi.eval') }}">Heuristic Analysis</a></li>
                     </ul>
                 </li>
