@@ -1,4 +1,9 @@
 #evaluation{
-  div.inline { float:left; }
+  div.inline {
+    float:left;
+    width: 33%;
+    height: 800px;
+  }
   .clearBoth { clear:both; }
+
 }
