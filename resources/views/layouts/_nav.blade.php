@@ -12,7 +12,7 @@
 
         <div class="collapse navbar-collapse" id="main-navbar-collapse">
             <ul class="nav navbar-nav">
-                @if(Auth::user() && Auth::user()->user_type == \App\User::DEVELOPER)
+                @if(Auth::user() && Auth::user()->user_type() == \App\User::DEVELOPER)
                 <li class="{{ active(['threads', 'thread*']) }}"><a href="{{ route('threads') }}">Updates</a></li>
                 @endif
 
