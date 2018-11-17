@@ -10495,7 +10495,6 @@ table#miyazaki tbody tr:not(:last-child) {
 .tree ul {
   padding-top: 20px;
   position: relative;
-  margin: auto;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -10506,6 +10505,9 @@ table#miyazaki tbody tr:not(:last-child) {
   text-align: center;
   list-style-type: none;
   position: relative;
+  width: 70%;
+  height: 20%;
+  margin: auto;
   padding: 20px 5px 0 5px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
