@@ -14,8 +14,8 @@ class AddRatingsToThreads extends Migration
     public function up()
     {
         Schema::table('threads', function (Blueprint $table) {
-            $table->int('rating')->nullable();
-            $table->type('rating')->default(1);
+            $table->integer('rating')->nullable();
+            $table->integer('rating')->default(1);
         });
     }
 
