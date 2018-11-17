@@ -23,12 +23,12 @@
                         {{--@formGroup('subject')--}}
                         {{--{!! Form::label($heuristic['title']) !!}--}}
                         {{--{!! Form::hidden('title', $heuristic['title'].'-'.Auth::user()->name().'-'.\Carbon\Carbon::now()->toDateTimeString(), ['class' => 'form-control', 'required', 'maxlength' => '60']) !!}--}}
-                        {{--<span class="help-block">{!! $heuristic['description'] !!}}</span>--}}
+                        {{--<span class="help-block">{!! $heuristic['description'] !!}</span>--}}
                         {{--@error('subject')--}}
                         {{--@endFormGroup--}}
-                    </div>
+                    </div><br>
                     <div class="timeline-body">
-                        <span class="help-block">{!! $heuristic['description'] !!}}</span>
+                        <span class="help-block" style="font-size: 16px;">{!! $heuristic['description'] !!}</span>
                         {{--@endFormGroup @formGroup('body')--}}
                         {{--{!! Form::label('Details') !!}--}}
                         {{--{!! Form::textarea('body', null, ['class' => 'form-control', 'required']) !!}--}}
