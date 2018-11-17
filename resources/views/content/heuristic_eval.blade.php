@@ -24,38 +24,32 @@
                 </div>
                 <div class="timeline-footer">
                     <div class="form-radio form-radio-inline">
-                        <div class="form-radio-legend">Prefered Pronoun</div>
+                        <div class="form-radio-legend">Problem Rating</div>
                         <label class="form-radio-label">
-                            <input name=pronoun class="form-radio-field" type="radio" required value="He" />
+                            <input name=rating class="form-radio-field" type="radio" required value="He" />
                             <i class="form-radio-button"></i>
-                            <span>He</span>
+                            <span>0</span>
                         </label>
                         <label class="form-radio-label">
-                            <input name=pronoun class="form-radio-field" type="radio" required value="She" />
+                            <input name=rating class="form-radio-field" type="radio" required value="She" />
                             <i class="form-radio-button"></i>
-                            <span>She</span>
+                            <span>1</span>
                         </label>
                         <label class="form-radio-label">
-                            <input name=pronoun class="form-radio-field" type="radio" required value="They" />
+                            <input name=rating class="form-radio-field" type="radio" required value="They" />
                             <i class="form-radio-button"></i>
-                            <span>They</span>
+                            <span>2</span>
                         </label>
                         <label class="form-radio-label">
-                            <input name=pronoun class="form-radio-field" type="radio" required value="Ze" />
+                            <input name=rating class="form-radio-field" type="radio" required value="Ze" />
                             <i class="form-radio-button"></i>
-                            <span>Ze</span>
+                            <span>3</span>
                         </label>
                         <label class="form-radio-label">
-                            <input name=pronoun class="form-radio-field" type="radio" required value="A pronoun not listed" />
+                            <input name=rating class="form-radio-field" type="radio" required value="A rating not listed" />
                             <i class="form-radio-button"></i>
-                            <span>A pronoun not listed</span>
+                            <span>4</span>
                         </label>
-                        <label class="form-radio-label">
-                            <input name=pronoun class="form-radio-field" type="radio" required value="No pronoun preference" />
-                            <i class="form-radio-button"></i>
-                            <span>No pronoun preference</span>
-                        </label>
-                        <small class="form-element-hint">Feel free to choose</small>
                     </div>
                 </div>
                 {!! Form::submit('Submit', ['class' => 'btn btn-primary btn-block']) !!}
