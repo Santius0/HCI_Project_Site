@@ -5,13 +5,6 @@
     <div id="evaluation">
         @foreach($heuristics as $heuristic)
         <div class="timeline-panel">
-            <div class="timeline-heading">
-                <h4>{{ $heuristic['title'] }}</h4>
-            </div>
-            <div class="timeline-body">
-                <p> {{ $heuristic['description'] }}</p>
-                <br>
-            </div>
             <div class="timeline-footer">
                 {!! Form::open(['route' => 'thread.store', 'method' => $method ?? 'POST']) !!}
 
