@@ -5,43 +5,11 @@
     <br/>
     <h3>See <a href="{{asset('Prototype/index.html')}}" target="_blank">HiFi Demo</a> </h3><hr><br>
     <h3>Vertical Prototype</h3>
-    <div class="tree">
-        <ul>
-            <li>
-                <a href="#">Parent</a>
-                <ul>
-                    <li>
-                        <a href="#">Child</a>
-                        <ul>
-                            <li>
-                                <a href="#">Grand Child</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Child</a>
-
-                    </li>
-                </ul>
-            </li>
-        </ul><ul>
-            <li>
-                <a href="#">Parent</a>
-                <ul>
-                    <li>
-                        <a href="#">Child</a>
-                        <ul>
-                            <li>
-                                <a href="#">Grand Child</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Child</a>
-
-                    </li>
-                </ul>
-            </li>
-        </ul>
+    @foreach($systems as $system)
+    <div class="inline">
+        <div class="tree">
+            @include('content.vertical_tree_child', ['child' => $system['head']])
+        </div>
     </div>
+    @endforeach
 @endsection

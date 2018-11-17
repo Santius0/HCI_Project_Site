@@ -233,7 +233,29 @@ class ContentController extends Controller
 
     public function hifi()
     {
-        return view('content.hifi');
+        $systems = [
+            [     'head' => [
+                        'name' => 'Newsfeed',
+                        'child' => [
+                            'name' => '1',
+                            'child' => [
+                                'name' => '2'
+                            ]
+                        ]
+                    ]
+            ],
+            [     'head' => [
+                    'name' => 'Classes',
+                    'child' => [
+                        'name' => '1',
+                        'child' => [
+                            'name' => '2'
+                        ]
+                    ]
+                ]
+          ],
+        ];
+        return view('content.hifi', compact('systems'));
 //        return redirect(asset('Prototype/index.html'));
     }
 
