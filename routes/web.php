@@ -52,6 +52,8 @@ Route::prefix('/updates')->namespace('Updates')->group(function (){
     Route::get('/create', 'ThreadsController@create')->name('thread.create');
     Route::post('/create', 'ThreadsController@store')->name('thread.store');
 
+    Route::post('/create-feedback', 'ThreadsController@store_feedback')->name('thread.store_feedback');
+
     Route::get('/edit/{id}', 'ThreadsController@edit')->name('thread.edit');
     Route::put('/edit/{id}', 'ThreadsController@update')->name('thread.update');
 

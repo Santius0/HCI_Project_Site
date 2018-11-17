@@ -15,7 +15,7 @@
             </smal>
             @foreach($heuristics as $heuristic)
                 <br>
-                {!! Form::open(['route' => 'thread.store', 'method' => $method ?? 'POST']) !!}
+                {!! Form::open(['route' => 'thread.store_feedback', 'method' => $method ?? 'POST']) !!}
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         @formGroup('subject')

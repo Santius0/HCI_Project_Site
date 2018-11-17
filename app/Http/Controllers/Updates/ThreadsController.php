@@ -64,6 +64,34 @@ class ThreadsController extends Controller
         return $thread;
     }
 
+    public function store_feedback(Request $request)
+    {
+        if(!Auth::user()){
+            return false;
+        }
+        $request->validate([
+            'title' => 'required|max:60',
+            'body' => 'required'
+        ]);
+
+        $thread = new Thread([
+            'author_id' => Auth::id(),
+            'title' => $request->title,
+            'body' => $request->body
+        ]);
+
+        if($request->rating){
+            $thread->rating = $request->rating;
+            $thread->type = 2;
+        }
+
+        if($thread->save()){
+            return redirect(route('hifi.demo').'#evaluationss');
+        };
+        //return error page here
+        return $thread;
+    }
+
     public function edit($id)
     {
         if(Auth::user()) {
