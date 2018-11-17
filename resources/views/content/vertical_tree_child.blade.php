@@ -1,6 +1,6 @@
 <ul>
     <li>
-        <a href="#">{{$child['name']}}</a>
+        <a href="#"><h4>{{$child['name']}}</h4></a>
         @if(isset($child['child']))
             @include('content.vertical_tree_child', ['child' => $child['child']])
         @endif
