@@ -237,7 +237,7 @@ class ContentController extends Controller
             [     'head' => [
                         'name' => 'Newsfeed',
                         'child' => [
-                            'name' => '1',
+                            'name' => '11111111111111',
                             'child' => [
                                 'name' => '2'
                             ]
@@ -247,7 +247,7 @@ class ContentController extends Controller
             [     'head' => [
                     'name' => 'Classes',
                     'child' => [
-                        'name' => '1',
+                        'name' => '11111111111111111',
                         'child' => [
                             'name' => '2'
                         ]
