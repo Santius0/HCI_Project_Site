@@ -10175,13 +10175,11 @@ table#miyazaki tbody tr:not(:last-child) {
 
 #evaluation div.inline {
   float: left;
+  width: 33%;
+  height: 800px;
 }
 
 #evaluation .clearBoth {
   clear: both;
-}
-
-#evaluation div.body_generic_inner {
-  padding: 20px;
 }
 
