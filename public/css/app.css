@@ -10181,3 +10181,7 @@ table#miyazaki tbody tr:not(:last-child) {
   clear: both;
 }
 
+#evaluation div.body_generic_inner {
+  padding: 20px;
+}
+
