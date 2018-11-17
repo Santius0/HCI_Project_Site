@@ -10173,3 +10173,7 @@ table#miyazaki tbody tr:not(:last-child) {
   }
 }
 
+#evaluation {
+  display: inline-block;
+}
+
