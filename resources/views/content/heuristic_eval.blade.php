@@ -16,9 +16,9 @@
                 {!! Form::open(['route' => 'thread.store', 'method' => $method ?? 'POST']) !!}
 
                 @formGroup('subject')
-                {!! Form::label('title') !!}
+                {!! Form::label($heuristic['title']) !!}
                 {!! Form::hidden('title', $heuristic['title'], ['class' => 'form-control', 'required', 'maxlength' => '60']) !!}
-                <span class="help-block">Maximum 60 characters.</span>
+                <span class="help-block">{!! $heuristic['description'] !!}}</span>
                 @error('subject')
                 @endFormGroup
 
