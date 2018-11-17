@@ -1,6 +1,6 @@
 @extends('content.base')
 @title('Heuristic Evaluation')
-@php($heuristics = [])
+
 @section('post_body')
     <div id="evaluation">
         @foreach($heuristics as $heuristic)
