@@ -33,34 +33,37 @@
                         @endFormGroup
                     </div>
                     <div class="timeline-footer">
+                        @formGroup('rating')
                         <div class="form-radio form-radio-inline">
                             <div class="form-radio-legend">Problem Rating</div>
                             <label class="form-radio-label">
-                                <input name=rating class="form-radio-field" type="radio" required value="0" />
+                                <input name=rating class="form-radio-field" type="radio" />
                                 <i class="form-radio-button"></i>
                                 <span>0</span>
                             </label>
                             <label class="form-radio-label">
-                                <input name=rating class="form-radio-field" type="radio" required value="1" />
+                                <input name=rating class="form-radio-field" type="radio"/>
                                 <i class="form-radio-button"></i>
                                 <span>1</span>
                             </label>
                             <label class="form-radio-label">
-                                <input name=rating class="form-radio-field" type="radio" required value="2" />
+                                <input name=rating class="form-radio-field" type="radio"/>
                                 <i class="form-radio-button"></i>
                                 <span>2</span>
                             </label>
                             <label class="form-radio-label">
-                                <input name=rating class="form-radio-field" type="radio" required value="3" />
+                                <input name=rating class="form-radio-field" type="radio"/>
                                 <i class="form-radio-button"></i>
                                 <span>3</span>
                             </label>
                             <label class="form-radio-label">
-                                <input name=rating class="form-radio-field" type="radio" required value="4" />
+                                <input name=rating class="form-radio-field" type="radio"/>
                                 <i class="form-radio-button"></i>
                                 <span>4</span>
                             </label>
                         </div>
+                        @error('rating')
+                        @endFormGroup
                     </div>
                     {!! Form::submit('Submit Feedback', ['class' => 'btn btn-primary btn-block']) !!}
                     {!! Form::close() !!}
