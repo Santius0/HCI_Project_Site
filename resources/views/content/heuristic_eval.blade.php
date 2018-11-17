@@ -1,28 +1,28 @@
 @extends('content.base')
 @title('Heuristic Evaluation')
-
+@php($heuristics = [])
 @section('post_body')
-   <div id="evaluation">
-       <div class="w3-container inline" id="docs-list" style="padding-top: 50px">
-           <ul id="myUL" class="w3-margin-top w3-margin-bottom">
-               @foreach($tasks as $task)
-                   <li><p><b> {{ $task }}</b></p></li>
-               @endforeach
-           </ul>
-       </div>
-       <div class="inline">
-           <div class="protoio-embed-prototype" data-code="GZTL1G" data-show-sidebuttons="0" style="width: 100%; height: 800px;"></div>
-           <script async src="https://static.proto.io/api/widget-embed.js"></script>
-       </div>
-       <div class="w3-container inline" id="docs-list" style="padding-top: 50px">
-           <ul id="myUL" class="w3-margin-top w3-margin-bottom">
-               @foreach($tasks as $task)
-                   <li><p><b> {{ $task }}</b></p></li>
-               @endforeach
-           </ul>
-       </div>
-   </div>
-   <br>
+    <div id="evaluation">
+        @foreach($heuristics as $heuristic)
+            <div class="container">
+                <p>
+                    <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
+                </p>
+
+                <h3>Todo</h3>
+                <ul id="incomplete-tasks">
+                    <li><input type="checkbox"><label>Pay Bills</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                    <li class="editMode"><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+
+                </ul>
+
+                <h3>Completed</h3>
+                <ul id="completed-tasks">
+                    <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                </ul>
+            </div>
+        @endforeach
+    </div>
     <div>
         Results
     </div>

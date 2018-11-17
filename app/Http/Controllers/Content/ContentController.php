@@ -238,8 +238,8 @@ class ContentController extends Controller
 
     public function heuristic_eval()
     {
-        $tasks = [
-            'Task 1', 'Task 2', 'Task 3', 'Task 4'
+        $results = [
+            ['name'=>'Sergio', 'comment'=>'Task 2', 'effect'=>'']
         ];
         return view('content.heuristic_eval', compact('tasks'));
     }
