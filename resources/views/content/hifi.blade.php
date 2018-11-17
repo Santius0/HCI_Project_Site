@@ -2,4 +2,5 @@
 @title('HiFi Prototype')
 
 @section('post_body')
+
 @endsection

@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
                 'password' => bcrypt('password'),
                 'user_type' => User::DEVELOPER,
                 'bio' => "Web developer and document management. Responsible for the construction of the <b><i>My UWI</i></b> project website and content and technical editing of documents.",
-                'avatar_url' => "https://img.icons8.com/color/50/000000/avatar.png"
+                'avatar_url' => asset('images/avatars/23.png')
             ] ,
             [  'name' => 'Maya Bannis',
                 'email' => 'maya@example.com',
