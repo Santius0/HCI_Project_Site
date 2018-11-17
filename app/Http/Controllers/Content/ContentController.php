@@ -253,6 +253,6 @@ class ContentController extends Controller
         $results = [
             ['name'=>'Sergio', 'comment'=>'Task 2', 'effect'=>'']
         ];
-        return view('content.heuristic_eval', compact('tasks'));
+        return view('content.heuristic_eval', compact('results', 'heuristics'));
     }
 }
