@@ -20,64 +20,21 @@
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h3>{!! $heuristic['title'] !!}</h3>
-                        {{--@formGroup('subject')--}}
-                        {{--{!! Form::label($heuristic['title']) !!}--}}
-                        {{--{!! Form::hidden('title', $heuristic['title'].'-'.Auth::user()->name().'-'.\Carbon\Carbon::now()->toDateTimeString(), ['class' => 'form-control', 'required', 'maxlength' => '60']) !!}--}}
-                        {{--<span class="help-block">{!! $heuristic['description'] !!}</span>--}}
-                        {{--@error('subject')--}}
-                        {{--@endFormGroup--}}
+                        <span class="help-block" style="font-size: 16px;">{!! $heuristic['description'] !!}</span>
                     </div><br>
                     <div class="timeline-body">
-                        <span class="help-block" style="font-size: 16px;">{!! $heuristic['description'] !!}</span>
-                        {{--@endFormGroup @formGroup('body')--}}
-                        {{--{!! Form::label('Details') !!}--}}
-                        {{--{!! Form::textarea('body', null, ['class' => 'form-control', 'required']) !!}--}}
-                        {{--@error('body')--}}
-                        {{--@endFormGroup--}}
                     </div>
-                    {{--<div class="timeline-footer">--}}
-                        {{--@formGroup('rating')--}}
-                        {{--<div class="form-radio form-radio-inline">--}}
-                            {{--<div class="form-radio-legend">Problem Rating</div>--}}
-                            {{--<label class="form-radio-label">--}}
-                                {{--<input name=rating class="form-radio-field" type="radio" />--}}
-                                {{--<i class="form-radio-button"></i>--}}
-                                {{--<span>0</span>--}}
-                            {{--</label>--}}
-                            {{--<label class="form-radio-label">--}}
-                                {{--<input name=rating class="form-radio-field" type="radio"/>--}}
-                                {{--<i class="form-radio-button"></i>--}}
-                                {{--<span>1</span>--}}
-                            {{--</label>--}}
-                            {{--<label class="form-radio-label">--}}
-                                {{--<input name=rating class="form-radio-field" type="radio"/>--}}
-                                {{--<i class="form-radio-button"></i>--}}
-                                {{--<span>2</span>--}}
-                            {{--</label>--}}
-                            {{--<label class="form-radio-label">--}}
-                                {{--<input name=rating class="form-radio-field" type="radio"/>--}}
-                                {{--<i class="form-radio-button"></i>--}}
-                                {{--<span>3</span>--}}
-                            {{--</label>--}}
-                            {{--<label class="form-radio-label">--}}
-                                {{--<input name=rating class="form-radio-field" type="radio"/>--}}
-                                {{--<i class="form-radio-button"></i>--}}
-                                {{--<span>4</span>--}}
-                            {{--</label>--}}
-                        {{--</div>--}}
-                        {{--@error('rating')--}}
-                        {{--@endFormGroup--}}
-                    {{--</div>--}}
-{{--                    {!! Form::submit('Submit Feedback', ['class' => 'btn btn-primary btn-block']) !!}--}}
-{{--                    {!! Form::close() !!}--}}
+                    <div class="timeline-footer">
+
+                    </div>
                 </div>
                 <hr><br>
             @endforeach
         </div>
-        <br><br>
+        {{--<br><br>--}}
     {{--@endif--}}
-    <div>
-        <h3>Heuristic Evaluation Feedback</h3>
+    {{--<div>--}}
+        {{--<h3>Heuristic Evaluation Feedback</h3>--}}
         {{--@foreach($results as $result)--}}
             {{--<div class="timeline-panel">--}}
                 {{--<div class="timeline-heading">--}}
@@ -92,8 +49,8 @@
                 {{--</div>--}}
             {{--</div>--}}
         {{--@endforeach--}}
-    </div>
-   <hr><br>
+    {{--</div>--}}
+   {{--<hr><br>--}}
     <div>
         <h3>Evaluation Analysis</h3>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
