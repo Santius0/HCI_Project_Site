@@ -15,8 +15,6 @@
                 4 = Usability catastrophe: imperative to fix this before product can be released<br>
             </h5>
             @foreach($heuristics as $heuristic)
-                {{--<br>--}}
-{{--                {!! Form::open(['route' => 'thread.store', 'method' => $method ?? 'POST']) !!}--}}
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h3>{!! $heuristic['title'] !!}</h3>
@@ -31,26 +29,6 @@
                 <hr><br>
             @endforeach
         </div>
-        {{--<br><br>--}}
-    {{--@endif--}}
-    {{--<div>--}}
-        {{--<h3>Heuristic Evaluation Feedback</h3>--}}
-        {{--@foreach($results as $result)--}}
-            {{--<div class="timeline-panel">--}}
-                {{--<div class="timeline-heading">--}}
-                    {{--<h4> {!! $result->title !!} </h4>--}}
-                {{--</div>--}}
-                {{--<div class="timeline-body">--}}
-                    {{--<p> {!! $result->body !!} </p>--}}
-                    {{--<br>--}}
-                {{--</div>--}}
-                {{--<div class="timeline-footer">--}}
-                    {{--{!! $result->rating !!}--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--@endforeach--}}
-    {{--</div>--}}
-   {{--<hr><br>--}}
     <div>
         <h3>Evaluation Analysis</h3>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore

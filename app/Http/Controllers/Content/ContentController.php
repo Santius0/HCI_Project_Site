@@ -237,9 +237,12 @@ class ContentController extends Controller
             [     'head' => [
                         'name' => 'Newsfeed',
                         'child' => [
-                            'name' => 'Subsystem 1.1',
+                            'name' => 'View All News Items',
                             'child' => [
-                                'name' => 'Subsystem 1.2'
+                                'name' => 'Select Item',
+                                'child' => [
+                                    'name' => 'View Item'
+                                ]
                             ]
                         ]
                     ]
