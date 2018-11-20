@@ -98,11 +98,23 @@ right connector from last child*/
   border-color:  #94a0b4;
 }
 
-  div.inline {
-    float:left;
-    width: 20%;
-    //height: 500px;
-    padding-left: 10px;
-    padding-right: 10px;
+div.inline {
+   float:left;
+   width: 20%;
+   //height: 500px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.clearBoth { clear:both; }
+
+#vertical-prototype{
+  width: 100%;
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
   }
-  .clearBoth { clear:both; }
+  table{
+    width: 100%;
+  }
+}
