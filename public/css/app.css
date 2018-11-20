@@ -10625,3 +10625,7 @@ div.inline {
   clear: both;
 }
 
+#vertical-prototype {
+  width: 100%;
+}
+

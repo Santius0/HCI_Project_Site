@@ -13,16 +13,6 @@
     {{--</div>--}}
     {{--@endforeach--}}
     <div id="vertical-prototype">
-        <table>
-            <tr>
-                <th>Newsfeed</th>
-                <th>Alerts</th>
-                <th>Timetable</th>
-                <th>Campus Status</th>
-                <th>Shuttle Services</th>
-                <th>Campus Maps</th>
-                <th>Setting</th>
-            </tr>
-        </table>
+       <img src="{{ asset('images/prototypes/vertical-prototype.JPG')  }}">
     </div>
 @endsection
