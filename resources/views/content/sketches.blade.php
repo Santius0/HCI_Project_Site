@@ -45,7 +45,7 @@
             From the selected designs the following affinity diagram was constructed.
         </p>
         <div class="flex-column">
-            <img src="{{ asset('images/Affinity Diagram/3.jpg') }}">
+            <img src="{{ asset('images/Affinity Diagram/affinity.jpg') }}">
         </div>
         <br>
         <div class="flex-column">
