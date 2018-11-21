@@ -27,12 +27,9 @@
                             <div class="timeline-body">
                                     <ul>
                                         <li>
-                                            <div>
-                                                <p>{!! $response['body'] !!}</p>
-                                            </div><br>
-                                            <div>
-                                                <p>Rating: {{ $response['rating'] }}</p>
-                                            </div>
+                                            <h5>{!! $response['name'] !!}</h5><br>
+                                            <p>{!! $response['body'] !!}</p>
+                                            <p>{{ $response['rating'] }}</p>
                                         </li>
                                     </ul>
                             </div>
