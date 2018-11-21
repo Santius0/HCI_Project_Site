@@ -4,11 +4,9 @@
 @section('post_body')
     <h3>Project topic Brainstorming</h3>
     <br>
-    <h4><b>
-            Creating mobile application
-        </b>
-    </h4>
-    <ol style="left: 20%">
+    <h4><b>Ideas:</b></h4>
+    <br>
+    <ol>
         <li><p>
                 <b>Campus Food run</b> - UWI students are given the luxury of having food delivered right
                 outside their classrooms. This is to help the back to back class goers or even the laziest
@@ -164,10 +162,8 @@
         Design and Development
     </h3>
     <br>
-    <h4><b>
-            Creating mobile application
-        </b>
-    </h4>
+    <h4><b>Creating mobile application</b></h4>
+    <br>
     <p>
         This application will be cross platform, Android and IOS. The use of web applications
         such as REACT will be used to create the system. Login will be mandatory to access the
