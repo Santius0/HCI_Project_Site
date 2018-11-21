@@ -297,8 +297,8 @@ class ContentController extends Controller
             ['title' => 'Visibility of system status',
                 'description'=>'Always keep users informed about what is going on,through appropriate feedback within reasonable time. For example, if a system operation will take some time, give an indication of how long and how much is complete.',
                 'responses' => [
-                    ['body' => 'The button assets used are commonly used in other applications', 'author' => 'Maya', 'rating' => 2],
                     ['body' => 'The visibility of system statuses could be more visible and impactful, but this is not really a problem as it is sufficient. For example, when scrolling to the bottom of the News Feed and Alerts screens the screen heading disappear. This may confuse the user as to what part of the application they are using.', 'author' => 'Keneil', 'rating' => 3],
+                    ['body' => 'The button assets used are commonly used in other applications', 'author' => 'Maya', 'rating' => 2],
                 ],
                 'rating' => 2.2
             ],
