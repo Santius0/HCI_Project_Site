@@ -303,13 +303,14 @@ class ContentController extends Controller
             ],
             ['title' => 'Match between system and the real world',
                 'description'=>'The system should speak the user’s language, with words, phrases and concepts familiar to the user, rather than system-oriented terms. Follow real-world conventions, making information appear in natural and logical order.',
-                'responses' => [],
-                'rating' => 2.55
+                'responses' => [
+                    ['body' => 'Colour coding of alerts could make visual ranking easier as users will know by first glance what to take note of first.', 'author' => 'Maya', 'rating' => 1],
+                    ['body' => 'Some components of the system may not be as close to real-world conventions, but are easy enough to understand and map to real-world actions. For example, some individual alerts in the Alerts screen may have a higher priority to the user but they are not particularly highlighted except for the different symbols fixed next to the alert.', 'author' => 'Keneil', 'rating' => 0],
+                ],
             ],
             ['title' => 'User control and freedom',
                 'description'=>'Users often choose system functions by mistake and need a clearly marked ‘emergency exit’ to leave the unwanted state without having to go through an extended dialog. Support undo and redo.',
                 'responses' => [],
-                'rating' => 4.4
             ],
             ['title' => 'Consistency and standards',
                 'description'=>'Users should not have to wonder whether words, situations or actions mean the same thing in different contexts. Follow platform conventions and accepted standards.',
