@@ -22,10 +22,12 @@
                     </div><br>
                     <div class="timeline-body">
                         @if(isset($heuristic['responses']))
-                            @php($rating = 0; $count = 0)
+                            @php($rating = 0)
+                            @php($count = 0)
                             <ul>
                                 @foreach($heuristic['responses'] as $response)
-                                    @php($rating += $response['rating']; $count += 1)
+                                    @php($rating += $response['rating'])
+                                    @php($count += 1)
                                     <li>
                                         <p>
                                             {!! $response['body'] !!}
