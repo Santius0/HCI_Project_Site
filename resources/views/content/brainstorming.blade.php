@@ -143,4 +143,39 @@
             </p>
         </li>
     </ol>
+    <br>
+    <h3>
+        Part C. Design and Development
+    </h3>
+    <br>
+    <h4><b>
+            Creating mobile application
+        </b>
+    </h4>
+    <p>
+        This application will be cross platform, Android and IOS. The use of web applications
+        such as REACT will be used to create the system. Login will be mandatory to access the
+        resources of this application; the user credential will be sourced from the university’s already
+        existing student identification/credentials database/system. Thus, this project will be broken into
+        3 parts.
+    </p>
+    <p>
+        First, focus on the main features: News board/ bulletin; shuttle services and class alerts. A
+        database will be created and used to populate the list view to display information, in the News
+        board. A map API will be included in the shuttle feature; this map will be interactive and
+        consistent. Class alerts will not be fully implemented; as in the timetable feature will not be in
+        the first app cycle. Class alerts will only send as notifications to students who mark themselves
+        as members of the current running course.
+        Second, Student Journalism feature; class map. A space for students to write and share with
+        other students on campus will be available. And reusing the map API in the shuttle service, we
+        can create a map indicating where all UWI facilities and classes are.
+        After the two cycles are implemented, other features will come out gradually. Faculty
+        notifications, timetable, safety alerts etc.
+    </p>
+    <p>
+        Thus, to build this system we will use open source and pre-existing systems. UWI’s user
+        credential database/system, REACT and other web application development tools, Database :
+        firebase or expansion of the universities already pre-existing system and Google maps or WAZE
+        API.
+    </p>
 @endsection
