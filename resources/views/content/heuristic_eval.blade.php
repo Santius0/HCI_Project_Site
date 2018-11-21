@@ -26,10 +26,11 @@
                             @php($rating += $response['rating'])
                             <div class="timeline-body">
                                     <ul>
-                                        <li>
-                                            {{ $response['author'] }}
-                                            {{ $response['body'] }}
-                                            {{ $response['rating'] }}
+                                        <li><p>
+                                                {{ $response['author'] }} -
+                                                {{ $response['body'] }} <br>
+                                                {{ $response['rating'] }}
+                                            </p>
                                         </li>
                                     </ul>
                             </div>
