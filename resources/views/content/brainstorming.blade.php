@@ -4,7 +4,7 @@
 @section('post_body')
     <h3>Project topic Brainstorming</h3><br>
     <h5>Ideas</h5>
-    <ol style="text-indent: 20px">
+    <ol style="left: 20%">
         <li>Campus Food run: UWI students are given the luxury of having food delivered right
             outside their classrooms. This is to help the back to back class goers or even the laziest
             students. This service will be done by the students, for the students as students are the ones
@@ -95,4 +95,26 @@
         delivering information to Lecturers, Alumni, Prospective students, Current Students and
         Administration; promises an efficient, cohesive way to alert, report, educate.
     </p><br>
+
+    <h3>Project Goals</h3>
+    <ul style="left: 20%">
+        <li>News/bulletin board – Publications can be made by the correct roles to inform the masses.</li>
+        <li>Safety Alerts- Campus police, Student Council and Campus Administration can make alerts about dangers or critical matters happening around campus.</li>
+        <li>Administration Alerts- Inform students and staff of important events, dates, deadlines and changes.</li>
+        <li>Class alerts- Alert students of class relocation or cancellations.</li>
+        <li>Faculty alerts- news about Departments and Faculties for specific categories of students.</li>
+        <li>Interactive Maps – Helps students locate classrooms and buildings using GPS and geotags.        </li>
+        <li>Shuttle services – Campus Police and shuttle drivers can share location, activity and
+            routes currently covered to students and staff.</li>
+        <li>Timetable – Students can build their timetable; the times are gathered from the campus
+            systems. As students build calendars, class count is monitored. Changes to class locations and
+            cancellations will be reflected on this feature.</li>
+    </ul>
+    <br>
+    <h3>Scenarios</h3>
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
 @endsection
