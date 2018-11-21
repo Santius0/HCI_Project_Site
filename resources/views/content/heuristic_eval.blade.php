@@ -29,7 +29,7 @@
                                         <li><div>
                                                 <p>
                                                     {!! $response['body'] !!}<br>
-                                                    Rating: {!! $response['rating'] !!}
+                                                    Rating: {{ $response['rating'] }}
                                                 </p>
                                             </div>
                                         </li>
@@ -43,7 +43,7 @@
                         @endforeach
                     @endif
                 </div>
-                <br>
+                <br><br>
             @endforeach
         </div>
     <div>
