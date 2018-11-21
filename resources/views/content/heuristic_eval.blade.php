@@ -23,11 +23,12 @@
                     @if(isset($heuristic['responses']) && count($heuristic['responses'])>0 )
                         @php($rating = 0)
                         @foreach($heuristic['responses'] as $response)
+                            @php($rating += $response['rating'])
                             <div class="timeline-body">
                                     <ul>
-                                        @php($rating += $response['rating'])
-                                        <li><div>
-                                                <p>{!! $response['body'] !!}</p>
+                                        <li>
+                                            <div>
+                                                <p>{!! $response['body'] !!}</p><br>
                                                 <p>Rating: {{ $response['rating'] }}</p>
                                             </div>
                                         </li>
