@@ -26,13 +26,12 @@
                                     @php($rating = 0)
                                     <ul>
                                         @php($rating += $response['rating'])
-                                        <li>
-                                            <p>
-                                               {!! $response['body'] !!}
-                                            </p>
-                                            <p>
-                                                Rating: {!! $response['rating'] !!}
-                                            </p>
+                                        <li><div>
+                                                <p>
+                                                    {!! $response['body'] !!}<br>
+                                                    Rating: {!! $response['rating'] !!}
+                                                </p>
+                                            </div>
                                         </li>
                                     </ul>
                             </div>
