@@ -27,10 +27,8 @@
                                     <ul>
                                         @php($rating += $response['rating'])
                                         <li><div>
-                                                <p>
-                                                    {!! $response['body'] !!}<br>
-                                                    Rating: {{ $response['rating'] }}
-                                                </p>
+                                                <p>{!! $response['body'] !!}</p>
+                                                <p>Rating: {{ $response['rating'] }}</p>
                                             </div>
                                         </li>
                                     </ul>
