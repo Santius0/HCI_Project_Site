@@ -20,7 +20,7 @@
                         <h3>{!! $heuristic['title'] !!}</h3><br>
                         <span class="help-block" style="font-size: 16px;">{!! $heuristic['description'] !!}</span>
                     </div><br>
-                    @if(isset($heuristic['responses']) && count($reponses)>0 )
+                    @if(isset($heuristic['responses']) && count($responses)>0 )
                         <div class="timeline-body">
                                 @php($rating = 0)
                                 <ul>
