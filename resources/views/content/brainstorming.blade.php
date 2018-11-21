@@ -9,29 +9,34 @@
         </b>
     </h4>
     <ol style="left: 20%">
-        <li>
-            <b>Campus Food run</b> - UWI students are given the luxury of having food delivered right
-            outside their classrooms. This is to help the back to back class goers or even the laziest
-            students. This service will be done by the students, for the students as students are the ones
-            who will both make orders and do the deliveries. The deliveries will cost $5 + the food amount.
-            <br>
+        <li><p>
+                <b>Campus Food run</b> - UWI students are given the luxury of having food delivered right
+                outside their classrooms. This is to help the back to back class goers or even the laziest
+                students. This service will be done by the students, for the students as students are the ones
+                who will both make orders and do the deliveries. The deliveries will cost $5 + the food amount.
+                <br>
+            </p>
         </li>
         <li>
-            <b>International Coin Exchange</b> - Frequent travellers all have the experience of discarding or
-            hoarding their coins from foreign countries. This product, International coin exchange, will be
-            placed in airports all over the globe. Travellers will simply dump their coins or bills into the
-            allocated machine slots and a paper print out with the coin amount and a barcode/ scannable
-            for identification/security. These printouts can be placed into machines in other airports and the
-            local currency will be given in return (conversion will be done).
-            <br>
+                <p><b>International Coin Exchange</b> - Frequent travellers all have the experience of discarding or
+                hoarding their coins from foreign countries. This product, International coin exchange, will be
+                placed in airports all over the globe. Travellers will simply dump their coins or bills into the
+                allocated machine slots and a paper print out with the coin amount and a barcode/ scannable
+                for identification/security. These printouts can be placed into machines in other airports and the
+                local currency will be given in return (conversion will be done).
+                <br>
+            </p>
         </li>
         <li>
-            <b>UWI Student App</b> - A media/ output for student queries, information and guidance.
-            <br>
+            <p>
+                <b>UWI Student App</b> - A media/ output for student queries, information and guidance.
+                <br>
+            </p>
         </li>
     </ol>
     <br>
     <h3>Preliminary User and Task Analysis</h3>
+    <br>
     <p>
         The UWI Student App was the chosen idea as International coin exchange is already being
         implemented in
@@ -108,17 +113,17 @@
     <h3>Project Goals</h3>
     <br>
     <ul>
-        <li>News/bulletin board – Publications can be made by the correct roles to inform the masses.<br></li>
-        <li>Safety Alerts- Campus police, Student Council and Campus Administration can make alerts about dangers or critical matters happening around campus.<br></li>
-        <li>Administration Alerts- Inform students and staff of important events, dates, deadlines and changes.<br></li>
-        <li>Class alerts- Alert students of class relocation or cancellations.<br></li>
-        <li>Faculty alerts- news about Departments and Faculties for specific categories of students.<br></li>
-        <li>Interactive Maps – Helps students locate classrooms and buildings using GPS and geotags.<br></li>
-        <li>Shuttle services – Campus Police and shuttle drivers can share location, activity and
-            routes currently covered to students and staff.<br></li>
-        <li>Timetable – Students can build their timetable; the times are gathered from the campus
+        <li><p>News/bulletin board – Publications can be made by the correct roles to inform the masses.<br></p></li>
+        <li><p>Safety Alerts- Campus police, Student Council and Campus Administration can make alerts about dangers or critical matters happening around campus.<br></p></li>
+        <li><p>Administration Alerts- Inform students and staff of important events, dates, deadlines and changes.<br></p></li>
+        <li><p>Class alerts- Alert students of class relocation or cancellations.<br></p></li>
+        <li><p>Faculty alerts- news about Departments and Faculties for specific categories of students.<br></p></li>
+        <li><p>Interactive Maps – Helps students locate classrooms and buildings using GPS and geotags.<br></p></li>
+        <li><p>Shuttle services – Campus Police and shuttle drivers can share location, activity and
+                routes currently covered to students and staff.<br></p></li>
+        <li><p>Timetable – Students can build their timetable; the times are gathered from the campus
             systems. As students build calendars, class count is monitored. Changes to class locations and
-            cancellations will be reflected on this feature.<br></li>
+                cancellations will be reflected on this feature.<br></p></li>
     </ul>
     <br>
     <h3>Scenarios</h3>
