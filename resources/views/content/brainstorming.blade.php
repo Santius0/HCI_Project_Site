@@ -2,13 +2,18 @@
 @title('Project Selection')
 
 @section('post_body')
-    <h3>Project topic Brainstorming</h3><br>
-    <h5>Ideas</h5>
+    <h3>Project topic Brainstorming</h3>
+    <br>
+    <h4><b>
+            Creating mobile application
+        </b>
+    </h4>
     <ol style="left: 20%">
         <li>Campus Food run: UWI students are given the luxury of having food delivered right
             outside their classrooms. This is to help the back to back class goers or even the laziest
             students. This service will be done by the students, for the students as students are the ones
             who will both make orders and do the deliveries. The deliveries will cost $5 + the food amount.
+            <br>
         </li>
         <li>
             International coin exchange: Frequent travellers all have the experience of discarding or
@@ -17,9 +22,11 @@
             allocated machine slots and a paper print out with the coin amount and a barcode/ scannable
             for identification/security. These printouts can be placed into machines in other airports and the
             local currency will be given in return (conversion will be done).
+            <br>
         </li>
         <li>
             UWI Student App- A media/ output for student queries, information and guidance.
+            <br>
         </li>
     </ol>
     <br>
@@ -96,22 +103,24 @@
         Administration; promises an efficient, cohesive way to alert, report, educate.
     </p><br>
 
-    <h3>Project Goals</h3><br>
-    <ul style="left: 20%">
-        <li>News/bulletin board – Publications can be made by the correct roles to inform the masses.</li>
-        <li>Safety Alerts- Campus police, Student Council and Campus Administration can make alerts about dangers or critical matters happening around campus.</li>
-        <li>Administration Alerts- Inform students and staff of important events, dates, deadlines and changes.</li>
-        <li>Class alerts- Alert students of class relocation or cancellations.</li>
-        <li>Faculty alerts- news about Departments and Faculties for specific categories of students.</li>
-        <li>Interactive Maps – Helps students locate classrooms and buildings using GPS and geotags.        </li>
+    <h3>Project Goals</h3>
+    <br>
+    <ul>
+        <li>News/bulletin board – Publications can be made by the correct roles to inform the masses.<br></li>
+        <li>Safety Alerts- Campus police, Student Council and Campus Administration can make alerts about dangers or critical matters happening around campus.<br></li>
+        <li>Administration Alerts- Inform students and staff of important events, dates, deadlines and changes.<br></li>
+        <li>Class alerts- Alert students of class relocation or cancellations.<br></li>
+        <li>Faculty alerts- news about Departments and Faculties for specific categories of students.<br></li>
+        <li>Interactive Maps – Helps students locate classrooms and buildings using GPS and geotags.<br></li>
         <li>Shuttle services – Campus Police and shuttle drivers can share location, activity and
-            routes currently covered to students and staff.</li>
+            routes currently covered to students and staff.<br></li>
         <li>Timetable – Students can build their timetable; the times are gathered from the campus
             systems. As students build calendars, class count is monitored. Changes to class locations and
-            cancellations will be reflected on this feature.</li>
+            cancellations will be reflected on this feature.<br></li>
     </ul>
     <br>
     <h3>Scenarios</h3>
+    <br>
     <ol>
         <li>
             <p>
@@ -122,7 +131,7 @@
                 from ‘Normal Schedule’ to ‘Cancelled’ or ‘Rescheduled’. Students will receive the notifications
                 from the faculty and timetable. Time table will show the classes affected as Cancelled, or the
                 alternative times given by the lecturer.
-            </p>
+            </p><br>
         </li>
         <li>
             <p>
@@ -132,7 +141,7 @@
                 currently active, and the route they will take. This allows students who are waiting in the wrong
                 areas to relocate or on nights where shuttles are understaffed, campus security can notify
                 students of the new routes and times.
-            </p>
+            </p><br>
         </li>
         <li>
             <p>
@@ -140,12 +149,12 @@
                 date on the registration requirements and schedules. Receive notifications of campus tours and
                 open seminars. They can also view opportunities, such as; scholarships, grants, competitions
                 and campus events.
-            </p>
+            </p><br>
         </li>
     </ol>
     <br>
     <h3>
-        Part C. Design and Development
+        Design and Development
     </h3>
     <br>
     <h4><b>
