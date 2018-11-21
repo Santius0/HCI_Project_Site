@@ -298,6 +298,8 @@ class ContentController extends Controller
                 'description'=>'Always keep users informed about what is going on,through appropriate feedback within reasonable time. For example, if a system operation will take some time, give an indication of how long and how much is complete.',
                 'responses' => [
                     ['body' => 'The buttons from experience from other applications says what to expect', 'author' => 'Maya', 'rating' => 0],
+                    ['body' => 'The visibility of system statuses could be more visible and impactful, but this is not really a problem as it is sufficient. For example, when scrolling to the bottom of the <b>News Feed</b> and <b>Alerts</b> screens the screen heading disappear. This may confuse the user as to what part of the application they are using', 'author' => 'Keneil', 'rating' => 0],
+                    ['body' => 'The buttons from experience from other applications says what to expect', 'author' => 'Maya', 'rating' => 0],
                 ],
                 'rating' => 2.2
             ],
