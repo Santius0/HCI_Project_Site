@@ -16,7 +16,7 @@
                 <li class="{{ active(['threads', 'thread*']) }}"><a href="{{ route('threads') }}">Updates</a></li>
                 @endif
 
-                <li class=""{{ active(['brainstorming', 'brainstorming*']) }}><a href="{{ route('brainstorming') }}">Idea Selection</a></li>
+                <li class=""{{ active(['brainstorming', 'brainstorming*']) }}><a href="{{ route('brainstorming') }}">Idea Selection(A1)</a></li>
 
                 <li class="dropdown {{ active(['proposal', 'proposal*', 'research', 'research*']) }}">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal(A2)<span class="caret"></span></a>
