@@ -21,9 +21,25 @@
                         <span class="help-block" style="font-size: 16px;">{!! $heuristic['description'] !!}</span>
                     </div><br>
                     <div class="timeline-body">
+                        <ul>
+                            @if(isset($heuristic['responses']))
+                                @foreach($heuristic['responses'] as $response)
+                                    <li>
+                                        <p>
+                                            {!! $response['body'] !!}
+                                        </p>
+                                        <p>
+                                            Rating: {!! $response['rating'] !!}
+                                        </p>
+                                    </li>
+                                @endforeach
+                            @endif
+                        </ul>
                     </div>
                     <div class="timeline-footer">
-
+                        <p>
+                            Average Rating: {{ $heuristic['rating'] }}
+                        </p>
                     </div>
                 </div>
                 <hr><br>
