@@ -21,27 +21,27 @@
                         <span class="help-block" style="font-size: 16px;">{!! $heuristic['description'] !!}</span>
                     </div><br>
                     @if(isset($heuristic['responses']) && count($responses)>0 )
-                        <div class="timeline-body">
-                                @php($rating = 0)
-                                <ul>
-                                    @foreach($heuristic['responses'] as $response)
+                        @foreach($heuristic['responses'] as $response)
+                            <div class="timeline-body">
+                                    @php($rating = 0)
+                                    <ul>
                                         @php($rating += $response['rating'])
                                         <li>
                                             <p>
-                                                {!! $response['body'] !!}
+                                               {!! $response['body'] !!}
                                             </p>
                                             <p>
                                                 Rating: {!! $response['rating'] !!}
                                             </p>
                                         </li>
-                                    @endforeach
-                                </ul>
-                        </div>
-                        <div class="timeline-footer">
-                            <p>
-                                Average Rating: {{ $rating/count($heuristic['responses']) }}
-                            </p>
-                        </div>
+                                    </ul>
+                            </div>
+                            <div class="timeline-footer">
+                                <p>
+                                    Average Rating: {{ $rating/count($heuristic['responses']) }}
+                                </p>
+                            </div>
+                        @endforeach
                     @endif
 
                 </div>
