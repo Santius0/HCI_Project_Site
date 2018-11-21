@@ -27,9 +27,11 @@
                             <div class="timeline-body">
                                     <ul>
                                         <li>
-                                            <p>{!! $response['author'] !!} - </p><br>
-                                            <p>{!! $response['body'] !!}</p><br>
-                                            <p>Rating: {{ $response['rating'] }}</p>
+                                            <p>
+                                                {!! $response['author'] !!} - <br>
+                                                {!! $response['body'] !!}   <br>
+                                                Rating: {{ $response['rating'] }}
+                                            </p>
                                         </li>
                                     </ul>
                             </div>

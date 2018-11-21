@@ -299,6 +299,7 @@ class ContentController extends Controller
                 'responses' => [
                     ['body' => 'The visibility of system statuses could be more visible and impactful, but this is not really a problem as it is sufficient. For example, when scrolling to the bottom of the News Feed and Alerts screens the screen heading disappear. This may confuse the user as to what part of the application they are using.', 'author' => 'Keneil', 'rating' => 3],
                     ['body' => 'The button assets used are commonly used in other applications', 'author' => 'Maya', 'rating' => 2],
+                    ['body' => 'The button assets used are commonly used in other applications', 'author' => 'Maya', 'rating' => 2],
                 ],
                 'rating' => 2.2
             ],
