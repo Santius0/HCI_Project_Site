@@ -216,7 +216,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
         'Image' => Intervention\Image\Facades\Image::class,
-        'Embed' => Cohensive\Embed\Facades\Embed::class,
+        'Embed' => \Cohensive\Embed\Facades\Embed::class,
     ],
 
 ];
