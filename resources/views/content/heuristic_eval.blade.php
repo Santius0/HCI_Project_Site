@@ -20,14 +20,12 @@
                         <h3>{!! $heuristic['title'] !!}</h3><br>
                         <span class="help-block" style="font-size: 16px;">{!! $heuristic['description'] !!}</span>
                     </div><br>
-                    @if(isset($heuristic['responses']))
+                    @if(isset($heuristic['responses']) && count($reponses)>0 )
                         <div class="timeline-body">
                                 @php($rating = 0)
-                                @php($count = 0)
                                 <ul>
                                     @foreach($heuristic['responses'] as $response)
                                         @php($rating += $response['rating'])
-                                        @php($count += 1)
                                         <li>
                                             <p>
                                                 {!! $response['body'] !!}
@@ -41,7 +39,7 @@
                         </div>
                         <div class="timeline-footer">
                             <p>
-                                Average Rating: {{ $rating/$count }}
+                                Average Rating: {{ $rating/count($heuristic['responses']) }}
                             </p>
                         </div>
                     @endif
