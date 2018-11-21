@@ -47,14 +47,14 @@
         <div class="flex-column">
             <img src="{{ asset('images/Affinity Diagram/aff.jpg') }}">
         </div>
-        <br>
-        <div class="flex-column">
-            <img src="{{ asset('images/Affinity Diagram/4.jpg') }}" width="231" height="450">
-            <img src="{{ asset('images/Affinity Diagram/5.jpg') }}" width="231" height="450">
-            <img src="{{ asset('images/Affinity Diagram/6.jpg') }}" width="231" height="450">
-            <img src="{{ asset('images/Affinity Diagram/7.jpg') }}" width="231" height="450">
-            <img src="{{ asset('images/Affinity Diagram/8.jpg') }}" width="231" height="450">
-        </div>
+        {{--<br>--}}
+        {{--<div class="flex-column">--}}
+            {{--<img src="{{ asset('images/Affinity Diagram/4.jpg') }}" width="231" height="450">--}}
+            {{--<img src="{{ asset('images/Affinity Diagram/5.jpg') }}" width="231" height="450">--}}
+            {{--<img src="{{ asset('images/Affinity Diagram/6.jpg') }}" width="231" height="450">--}}
+            {{--<img src="{{ asset('images/Affinity Diagram/7.jpg') }}" width="231" height="450">--}}
+            {{--<img src="{{ asset('images/Affinity Diagram/8.jpg') }}" width="231" height="450">--}}
+        {{--</div>--}}
     </div>
 @endsection
 
