@@ -29,7 +29,7 @@
                                         <li><p>
                                                 {{ $response['author'] }} -
                                                 {{ $response['body'] }} <br>
-                                                {{ $response['rating'] }}
+                                                Rating: {{ $response['rating'] }}
                                             </p>
                                         </li>
                                     </ul>
