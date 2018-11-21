@@ -28,9 +28,7 @@
                                     <ul>
                                         <li>
                                             <p>
-                                                {!! $response['author'] !!} - <br>
-                                                {!! $response['body'] !!}   <br>
-                                                Rating: {{ $response['rating'] }}
+                                                {{ $response['author'] . '<br>' . $response['body'] . '<br>Rating: ' . $response['body'] }}
                                             </p>
                                         </li>
                                     </ul>
