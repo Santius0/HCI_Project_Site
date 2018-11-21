@@ -20,32 +20,32 @@
                         <h3>{!! $heuristic['title'] !!}</h3><br>
                         <span class="help-block" style="font-size: 16px;">{!! $heuristic['description'] !!}</span>
                     </div><br>
-                    <div class="timeline-body">
-                        @if(isset($heuristic['responses']))
-                            @php($rating = 0)
-                            @php($count = 0)
-                            <ul>
-                                @foreach($heuristic['responses'] as $response)
-                                    @php($rating += $response['rating'])
-                                    @php($count += 1)
-                                    <li>
-                                        <p>
-                                            {!! $response['body'] !!}
-                                        </p>
-                                        <p>
-                                            Rating: {!! $response['rating'] !!}
-                                        </p>
-                                    </li>
-                                @endforeach
-                            </ul>
-                        @endif
+                    @if(isset($heuristic['responses']))
+                        <div class="timeline-body">
+                                @php($rating = 0)
+                                @php($count = 0)
+                                <ul>
+                                    @foreach($heuristic['responses'] as $response)
+                                        @php($rating += $response['rating'])
+                                        @php($count += 1)
+                                        <li>
+                                            <p>
+                                                {!! $response['body'] !!}
+                                            </p>
+                                            <p>
+                                                Rating: {!! $response['rating'] !!}
+                                            </p>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                        </div>
+                        <div class="timeline-footer">
+                            <p>
+                                Average Rating: {{ $rating/$count }}
+                            </p>
+                        </div>
+                    @endif
 
-                    </div>
-                    <div class="timeline-footer">
-                        <p>
-                            Average Rating: {{ $rating/$count }}
-                        </p>
-                    </div>
                 </div>
                 <br>
             @endforeach
