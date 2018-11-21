@@ -96,7 +96,7 @@
         Administration; promises an efficient, cohesive way to alert, report, educate.
     </p><br>
 
-    <h3>Project Goals</h3>
+    <h3>Project Goals</h3><br>
     <ul style="left: 20%">
         <li>News/bulletin board – Publications can be made by the correct roles to inform the masses.</li>
         <li>Safety Alerts- Campus police, Student Council and Campus Administration can make alerts about dangers or critical matters happening around campus.</li>
@@ -113,8 +113,34 @@
     <br>
     <h3>Scenarios</h3>
     <ol>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+            <p>
+                An emergency meeting was announced for the faculty of Food and Agriculture. All classes
+                of that faculty will be cancelled, however some students will be informed that they can attend
+                the later tutorials. The administration of the faculty will release a publication to the ‘news and
+                bulletin board’ section of the mobile application. Lecturers will change the status of their classes
+                from ‘Normal Schedule’ to ‘Cancelled’ or ‘Rescheduled’. Students will receive the notifications
+                from the faculty and timetable. Time table will show the classes affected as Cancelled, or the
+                alternative times given by the lecturer.
+            </p>
+        </li>
+        <li>
+            <p>
+                At 7:50 pm, a class by the course code of Math 2550, ended. Students who live on
+                campus accommodations are waiting by the designated shuttle stops around campus. The
+                students, using the application’s shuttle services features, can see how many shuttles are
+                currently active, and the route they will take. This allows students who are waiting in the wrong
+                areas to relocate or on nights where shuttles are understaffed, campus security can notify
+                students of the new routes and times.
+            </p>
+        </li>
+        <li>
+            <p>
+                Before the university registration period, perspective students can learn more and be up to
+                date on the registration requirements and schedules. Receive notifications of campus tours and
+                open seminars. They can also view opportunities, such as; scholarships, grants, competitions
+                and campus events.
+            </p>
+        </li>
     </ol>
 @endsection
