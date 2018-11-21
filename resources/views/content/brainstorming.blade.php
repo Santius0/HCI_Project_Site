@@ -9,14 +9,15 @@
         </b>
     </h4>
     <ol style="left: 20%">
-        <li>Campus Food run: UWI students are given the luxury of having food delivered right
+        <li>
+            <b>Campus Food run</b> - UWI students are given the luxury of having food delivered right
             outside their classrooms. This is to help the back to back class goers or even the laziest
             students. This service will be done by the students, for the students as students are the ones
             who will both make orders and do the deliveries. The deliveries will cost $5 + the food amount.
             <br>
         </li>
         <li>
-            International coin exchange: Frequent travellers all have the experience of discarding or
+            <b>International Coin Exchange</b> - Frequent travellers all have the experience of discarding or
             hoarding their coins from foreign countries. This product, International coin exchange, will be
             placed in airports all over the globe. Travellers will simply dump their coins or bills into the
             allocated machine slots and a paper print out with the coin amount and a barcode/ scannable
@@ -25,7 +26,7 @@
             <br>
         </li>
         <li>
-            UWI Student App- A media/ output for student queries, information and guidance.
+            <b>UWI Student App</b> - A media/ output for student queries, information and guidance.
             <br>
         </li>
     </ol>
@@ -34,8 +35,9 @@
     <p>
         The UWI Student App was the chosen idea as International coin exchange is already being
         implemented in
-        Japan(https://asia.nikkei.com/Editor-s-Picks/Japan-Update/Don-t-take-those-coins-home-E-mon
-        ey-solves-a-tourism-quandary). And Campus food run is feasible, yet less challenging as a Map
+        Japan(<a href="https://asia.nikkei.com/Editor-s-Picks/Japan-Update/Don-t-take-those-coins-home-E-mon
+        ey-solves-a-tourism-quandary">https://asia.nikkei.com/Editor-s-Picks/Japan-Update/Don-t-take-those-coins-home-E-mon
+            ey-solves-a-tourism-quandary</a>). And Campus food run is feasible, yet less challenging as a Map
         Api, database and login is all that is needed to implement it.
     </p><br>
     <p>
@@ -51,7 +53,7 @@
         the West Indies has also been a member of the ranks; however, the method is outdated.
         Pm Weizenbaum. (1985). Creating a campus on-line news system. SIGDOC '85 Proceedings of
         the 4th annual international conference on Systems documentation, 102-107.
-        https://dl.acm.org/citation.cfm?id=10580
+        <a href="https://dl.acm.org/citation.cfm?id=62641">https://dl.acm.org/citation.cfm?id=62641</a>
     </p><br>
     <p>
         There are many ways to bring the current system into the modern age, where a slow email
@@ -60,14 +62,14 @@
         But to catch up, we need to take several leaps forward.
         Glenn Zwinger. (1988). Running a campus bulletin board system. SIGUCCS '88 Proceedings of
         the 16th annual ACM SIGUCCS Conference on User Services,243-246.
-        https://dl.acm.org/citation.cfm?id=62641
+        <a href="https://dl.acm.org/citation.cfm?id=62641">https://dl.acm.org/citation.cfm?id=62641</a>
     </p><br>
     <p>
         With Map API’s that are open, available, consistent, and modifiable; the university can invest in
         ways to make student lives easier. Attending classes is one of the top priority of a student, but
         not knowing the location is time lost.
         Time Hammond. (2008). Campus directions. ACM-SE 46 Proceedings of the 46th Annual
-        Southeast Regional Conference on XX,172-175. https://dl.acm.org/citation.cfm?id=1593149
+        Southeast Regional Conference on XX,172-175. <a href="//dl.acm.org/citation.cfm?id=1593149">//dl.acm.org/citation.cfm?id=1593149</a>
     </p><br>
     <p>
         Also, in this information age. Students can report and feed information to the campus. This
@@ -89,12 +91,12 @@
         Campus Safety Reports and Its Design Implications to Mobile Crowdsourcing for Safety.
         MobileHCI '15 Proceedings of the 17th International Conference on Human-Computer
         Interaction with Mobile Devices and Services,400-409.
-        https://dl.acm.org/citation.cfm?id=2785889
+        <a href="https://dl.acm.org/citation.cfm?id=2785889">https://dl.acm.org/citation.cfm?id=2785889</a>
     </p><br>
     <p>
         Laurie J. Fox,Andy Camidge,Kirk M. Anne.(2011).Can you hear me now?: communicating to the
         campus community. SIGUCCS '11 Proceedings of the 39th annual ACM SIGUCCS conference
-        on User services, 79-82. https://dl.acm.org/citation.cfm?id=2070385
+        on User services, 79-82. <a href="https://dl.acm.org/citation.cfm?id=2070385">https://dl.acm.org/citation.cfm?id=2070385</a>
     </p><br>
     <p>
         A new wave of information sharing and human environment interaction through crowdsourcing
