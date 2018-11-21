@@ -42,6 +42,10 @@
                                     Average Rating: {{ $rating/count($heuristic['responses']) }}
                                 </p>
                             </div>
+                    @else
+                        <div class="timeline-body">
+                           <p>No Violations Noted</p>
+                        </div>
                     @endif
                 </div>
                 <br><br>
