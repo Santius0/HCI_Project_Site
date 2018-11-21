@@ -22,8 +22,10 @@
                     </div><br>
                     <div class="timeline-body">
                         @if(isset($heuristic['responses']))
+                            @php($rating = 0)
                             <ul>
                                 @foreach($heuristic['responses'] as $response)
+                                    @php($rating += $response['rating'])
                                     <li>
                                         <p>
                                             {!! $response['body'] !!}
@@ -39,7 +41,7 @@
                     </div>
                     <div class="timeline-footer">
                         <p>
-                            Average Rating: {{ $heuristic['rating'] }}
+                            Average Rating: {{ $rating }}
                         </p>
                     </div>
                 </div>
