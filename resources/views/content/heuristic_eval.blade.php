@@ -21,9 +21,9 @@
                         <span class="help-block" style="font-size: 16px;">{!! $heuristic['description'] !!}</span>
                     </div><br>
                     @if(isset($heuristic['responses']) && count($heuristic['responses'])>0 )
+                        @php($rating = 0)
                         @foreach($heuristic['responses'] as $response)
                             <div class="timeline-body">
-                                    @php($rating = 0)
                                     <ul>
                                         @php($rating += $response['rating'])
                                         <li><div>
@@ -33,12 +33,12 @@
                                         </li>
                                     </ul>
                             </div>
+                        @endforeach
                             <div class="timeline-footer">
                                 <p>
                                     Average Rating: {{ $rating/count($heuristic['responses']) }}
                                 </p>
                             </div>
-                        @endforeach
                     @endif
                 </div>
                 <br><br>
