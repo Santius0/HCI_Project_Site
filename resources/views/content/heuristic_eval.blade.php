@@ -17,12 +17,12 @@
             @foreach($heuristics as $heuristic)
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h3>{!! $heuristic['title'] !!}</h3>
+                        <h3>{!! $heuristic['title'] !!}</h3><br>
                         <span class="help-block" style="font-size: 16px;">{!! $heuristic['description'] !!}</span>
                     </div><br>
                     <div class="timeline-body">
-                        <ul>
-                            @if(isset($heuristic['responses']))
+                        @if(isset($heuristic['responses']))
+                            <ul>
                                 @foreach($heuristic['responses'] as $response)
                                     <li>
                                         <p>
@@ -33,8 +33,9 @@
                                         </p>
                                     </li>
                                 @endforeach
-                            @endif
-                        </ul>
+                            </ul>
+                        @endif
+
                     </div>
                     <div class="timeline-footer">
                         <p>
@@ -42,7 +43,7 @@
                         </p>
                     </div>
                 </div>
-                <hr><br>
+                <br>
             @endforeach
         </div>
     <div>
