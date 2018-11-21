@@ -1,4 +1,10 @@
 .forum {
+
+    li, h3 {
+        clear:both;
+        list-style:none;
+    }
+
     .header-divider {
         margin: 10.5px 0 21px 0;
     }

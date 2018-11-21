@@ -9440,6 +9440,12 @@ a.list-group-item-danger.active:focus {
   font-weight: bold;
 }
 
+.forum li,
+.forum h3 {
+  clear: both;
+  list-style: none;
+}
+
 .forum .header-divider {
   margin: 10.5px 0 21px 0;
 }
@@ -10194,12 +10200,6 @@ table#miyazaki tbody tr:not(:last-child) {
 
 #evaluation li * {
   float: left;
-}
-
-#evaluation li,
-#evaluation h3 {
-  clear: both;
-  list-style: none;
 }
 
 #evaluation input,
