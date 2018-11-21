@@ -308,4 +308,9 @@ class ContentController extends Controller
         $results = Thread::where('rating', 2)->get();
         return view('content.heuristic_eval', compact('results', 'heuristics'));
     }
+
+    public function brainstorming()
+    {
+        return view('content.brainstorming');
+    }
 }
