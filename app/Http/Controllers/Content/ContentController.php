@@ -56,120 +56,6 @@ class ContentController extends Controller
         return view('content.prototype_overview', compact('reflection_thread'));
     }
 
-    public function prototype_timeline()
-    {
-        $timeline_items = array(
-            array(
-                'badge_header' => 'Problem Definition',
-                'badge_header_route' => 'proposal.definition',
-                'badge_content' => Thread::where('title', 'Project Definition')->first()->excerpt(),
-//                'date' => '',
-//                'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Design Doc']),
-//                'images' => [
-//                    ['asset_src' => 'images/My_UWI_Owl.png', 'name' => 'concept'],
-//                    ['src' => 'https://drive.google.com/drive/folders/17DGtvlyBeWRiSsv4i-1sVvoocQmP-a9D', 'name' => 'concept2']
-//                ]
-            ),
-            array(
-                'badge_header' => 'Conceptual Design',
-                'badge_header_route' => 'proposal.concept',
-                'badge_content' => Thread::where('title', 'Conceptual Design')->first()->excerpt(),
-//                'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Design Doc']),
-//                'images' => [
-//                    ['asset_src' => 'images/My_UWI_Owl.png', 'name' => 'concept'],
-//                    ['src' => 'https://drive.google.com/drive/folders/17DGtvlyBeWRiSsv4i-1sVvoocQmP-a9D', 'name' => 'concept2']
-//                ]
-            ),
-            array(
-                'badge_header' => 'Identify Users and Stakeholders',
-                'badge_header_route' => 'proposal.users',
-                'badge_content' => Thread::where('title', 'Stakeholders and Users')->first()->excerpt(),
-            ),
-            array(
-                'badge_header' => 'Select Research Methods',
-                'badge_header_route' => 'research.methods',
-                'badge_content' => Thread::where('title', 'Research Methods')->first()->excerpt(),
-//                'file_list' => array(['link' => 'https://www.google.com', 'name' => 'Survey Questions']),
-
-            ),
-            array(
-                'badge_header' => 'Recruit Test Users',
-                'badge_header_route' => 'people.users',
-                'badge_content' => Thread::where('title', 'Recruiting Test Users')->first()->excerpt(),
-            ),
-
-            array(
-                'badge_header' => 'Research Interviews',
-                'badge_header_route' => 'research.results',
-                'badge_content' => '',
-//                'images' => [
-//                    ['src' => 'https://image.ibb.co/dziuxf/3.jpg', 'name' => '1'],
-//                    ['src' => 'https://image.ibb.co/f1P1cf/4.jpg', 'name' => '2'],
-//                    ['src' => 'https://image.ibb.co/iHcyOL/6.jpg', 'name' => '3'],
-//                    ['src' => 'https://image.ibb.co/kTZdOL/7.jpg', 'name' => '4'],
-//                ]
-
-            ),array(
-                'badge_header' => 'Initial Application Sketches',
-                'badge_header_route' => 'prototype.storyboard',
-                'badge_content' => 'Multiple design sketches made by the development team.<br>Narrowed down to three ideas that were then further polished.',
-            ),array(
-                'badge_header' => 'Storyboarding',
-                'badge_header_route' => 'prototype.storyboard',
-                'badge_content' => 'Single design sketch chosen. Storyboard created, and analysed.',
-            ),
-            array(
-                'badge_header' => 'Initial Application Design',
-                'badge_header_route' => 'prototype',
-                'badge_content' => '1st Prototype iteration created',
-//                 'images' => [
-//                    ['src' => 'https://image.ibb.co/nuLwA0/1.jpg', 'name' => '1'],
-//                    ['src' => 'https://image.ibb.co/dEGExf/2.jpg', 'name' => '2'],
-//                    ['src' => 'https://image.ibb.co/nz2Mcf/3.jpg', 'name' => '3'],
-//                    ['src' => 'https://image.ibb.co/ifY53L/4.jpg', 'name' => '4'],
-//                    ['src' => 'https://image.ibb.co/hzyiq0/5.jpg', 'name' => '5'],
-//                    ['src' => 'https://image.ibb.co/ctPOq0/6.jpg', 'name' => '6'],
-//                    ['src' => 'https://image.ibb.co/cZctq0/7.jpg', 'name' => '7'],
-//                    ['src' => 'https://image.ibb.co/fosRA0/8.jpg', 'name' => '8'],
-//                    ['src' => 'https://image.ibb.co/cmr8OL/9.jpg', 'name' => '9'],
-//                ]
-            ),
-            array(
-                'badge_header' => 'Self Testing',
-                'badge_header_route' => 'research.results',
-                'badge_content' => 'Design re-assessed and improved upon.',
-//                'images' => [
-//                    ['src' => 'https://image.ibb.co/dbTPV0/IMG-20181101-WA0001.jpg', 'name' => '1'],
-//                    ['src' => 'https://image.ibb.co/fnsUxf/IMG-20181101-WA0000.jpg', 'name' => '2'],
-//                    ['src' => 'https://image.ibb.co/gKhjV0/IMG-20181102-WA0009.jpg', 'name' => '3'],
-//                    ['src' => 'https://image.ibb.co/m3Q4V0/IMG-20181102-WA0008.jpg', 'name' => '4'],
-//                    ['src' => 'https://image.ibb.co/ih2jV0/IMG-20181102-WA0004.jpg', 'name' => '5'],
-//                    ['src' => 'https://image.ibb.co/nK27iL/IMG-20181102-WA0003.jpg', 'name' => '6'],
-//                    ['src' => 'https://image.ibb.co/m11YOL/IMG-20181102-WA0001.jpg', 'name' => '7'],
-//                    ['src' => 'https://image.ibb.co/inMBA0/IMG-20181102-WA0002.jpg', 'name' => '8'],
-//                ]
-
-            ),
-            array(
-                'badge_header' => 'Controlled Observation',
-                'badge_header_route' => 'research.results',
-                'badge_content' => 'Multiple rounds of controller observation and re-design.',
-//                 'images' => [
-//                    ['src' => 'https://image.ibb.co/eTJuxf/1.jpg', 'name' => '1'],
-//                    ['src' => 'https://image.ibb.co/csMQ3L/8.jpg', 'name' => '2'],
-//                    ['src' => 'https://image.ibb.co/dOd53L/5.jpg', 'name' => '3'],
-//                ]
-            ),
-            array(
-                'badge_header' => 'Final LoFi Prototype',
-                'badge_header_route' => 'prototype',
-                'badge_content' => 'Final LoFi deign was  created.',
-                'file_list' => array(['link' => 'https://share.proto.io/T4EDZF/', 'name' => 'Final prototype on Proto.io']),
-            )
-        );
-        return view('content.timeline', ['timeline_items' => $timeline_items]);
-    }
-
     public function concept()
     {
         $concept_thread = Thread::where('title', 'Conceptual Design')->first();
@@ -195,7 +81,7 @@ class ContentController extends Controller
     public function files()
     {
         $files = [
-          ['name' => 'Project Proposal Document', 'link' => 'https://docs.google.com/document/d/1TR90babwad7q6gaxcaNVx403_kr3vhGTLZ9gc9swmzA/edit'],
+          ['name' => 'Project Proposal Document', 'link' => asset('files/Project_Proposal_A1.pdf')],
         ];
         return view('content.files', compact('files'));
     }
