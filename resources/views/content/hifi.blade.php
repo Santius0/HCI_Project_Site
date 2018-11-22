@@ -10,9 +10,9 @@
         {{--</div>--}}
     {{--</div>--}}
     {{--@endforeach--}}
-    <h3>Prototype Layout</h3>
+    <h2>Prototype Layout</h2>
     <div id="vertical-prototype">
        <img src="{{ asset('images/prototypes/vertical-prototype.JPG')  }}">
     </div>
-    <h3>See <a href="{{asset('Prototype/index.html')}}" target="_blank">HiFi Demo</a> </h3><hr><br>
+    <h2>See <a href="{{asset('Prototype/index.html')}}" target="_blank">HiFi Demo</a> </h2><hr><br>
 @endsection
