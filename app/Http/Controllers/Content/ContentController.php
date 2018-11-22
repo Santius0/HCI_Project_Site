@@ -306,12 +306,14 @@ class ContentController extends Controller
                 'responses' => [
                     ['body' => 'Colour coding of alerts could make visual ranking easier as users will know by first glance what to take note of first.', 'author' => 'Maya', 'rating' => 1],
                     ['body' => 'Some components of the system may not be as close to real-world conventions, but are easy enough to understand and map to real-world actions. For example, some individual alerts in the Alerts screen may have a higher priority to the user but they are not particularly highlighted except for the different symbols fixed next to the alert.', 'author' => 'Keneil', 'rating' => 0],
+                    ['body' => 'Certain alerts will have a higher level of immediate importance to students, dependant on their current location, and/or if the alert directly affects them. Currently all alerts are treated equally for all users.', 'author' => 'Sergio', 'rating' => 1],
                 ],
             ],
             ['title' => 'User control and freedom',
                 'description'=>'Users often choose system functions by mistake and need a clearly marked ‘emergency exit’ to leave the unwanted state without having to go through an extended dialog. Support undo and redo.',
                 'responses' => [
                     ['body' => 'The system provides adequate support for exiting states, undo, and redo. It may just take the user a little more time to do this in screens such as News Feeds and Alerts because of the scrolling feature they have, but this is not necessarily a problem.', 'author' => 'Keniel', 'rating' => 0],
+                    ['body' => 'Colour coding of alerts could make visual ranking easier as users will know by first glance what to take note of first.', 'author' => 'Maya', 'rating' => 1],
                     ['body' => 'Colour coding of alerts could make visual ranking easier as users will know by first glance what to take note of first.', 'author' => 'Maya', 'rating' => 1],
                 ],
             ],

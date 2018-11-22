@@ -14,5 +14,5 @@
     <div id="vertical-prototype">
        <img src="{{ asset('images/prototypes/vertical-prototype.JPG')  }}">
     </div>
-    <h2>See <a href="{{asset('Prototype/index.html')}}" target="_blank">HiFi Demo</a> </h2><hr><br>
+    <h2>See <a href="{{asset('Prototype/index.html')}}" target="_blank">HiFi Prototype</a> </h2><hr><br>
 @endsection
