@@ -52,8 +52,8 @@
         <h3>Evaluation Analysis</h3>
         <br>
         <p>
-            The application's Heuristic Evaluation revealed certain violations of Jakob Nielsen's 10 heuristics, with the most pressing regarding Consistency and Standard as well as Help and Documentation.
-            Other violations were noted, however most of these were viewed as necessary or negligible in the context of the application. Adjustments were made to application in to correct these issues where possible and further changes will be made in future design iterations.
+            The application's Heuristic Evaluation revealed numerous violations of Jakob Nielsen's 10 heuristics. The most pressing violations fell under the heuristics of; Consistency and Standards as well as Help and Documentation.
+            Other violations were noted, however most of these were viewed as necessary or negligible in the context of the application. Adjustments were made to application in an attempt to correct these issues where possible and further changes will be made in future design iterations.
         </p>
     </div>
 @endsection
