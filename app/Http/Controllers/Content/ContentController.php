@@ -310,42 +310,65 @@ class ContentController extends Controller
             ],
             ['title' => 'User control and freedom',
                 'description'=>'Users often choose system functions by mistake and need a clearly marked ‘emergency exit’ to leave the unwanted state without having to go through an extended dialog. Support undo and redo.',
-                'responses' => [],
+                'responses' => [
+                    ['body' => 'The system provides adequate support for exiting states, undo, and redo. It may just take the user a little more time to do this in screens such as News Feeds and Alerts because of the scrolling feature they have, but this is not necessarily a problem.', 'author' => 'Keniel', 'rating' => 0],
+                    ['body' => 'Colour coding of alerts could make visual ranking easier as users will know by first glance what to take note of first.', 'author' => 'Maya', 'rating' => 1],
+                ],
             ],
             ['title' => 'Consistency and standards',
                 'description'=>'Users should not have to wonder whether words, situations or actions mean the same thing in different contexts. Follow platform conventions and accepted standards.',
-                'responses' => [],
-                'rating' => 3.4
+                'responses' => [
+                    ['body' => 'Familiar buttons with different functions will cause confusion for first time users.', 'author' => 'Maya', 'rating' => 1],
+                    ['body' => 'The checks next to the gates on the Campus Status screen appear as though they can be clicked (not supposed to be clicked). This may confuse the user a bit, but is not a huge problem that would need to be fixed given the time constraint', 'author' => 'Keneil', 'rating' => 1],
+                    ['body' => 'Campus Status page, checkboxes looks clickable(can be changed by user).', 'author' => 'Liam', 'rating' => 1],
+                ],
             ],
             ['title' => 'Error prevention',
                 'description'=>'Make it difficult to make errors. Even better than good error messages is a careful design that prevents a problem from occurring in the first place.',
-                'responses' => [],
-                'rating' => 3.45
+                'responses' => [
+                    ['body' => 'The minimal amount of user input means less errors are expected, however layout will always be an issue depending on the user(font size, colour scheme, spacing, ordering of items, search restrictions).', 'author' => 'Maya', 'rating' => 0],
+                    ['body' => 'The distance between each item in the menu pane may be too little for users with large hands. This may cause incorrect selections to be made', 'author' => 'Keneil', 'rating' => 1],
+                ],
             ],
             ['title' => 'Recognition rather than recall',
                 'description'=>'Make objects, actions and options visible. The user should not have to remember information from one part of the dialog to another. Instructions for use of the system should be visible or easily retrievable whenever appropriate.',
-                'responses' => [],
-                'rating' => 33
+                'responses' => [
+                    ['body' => 'App is minimalistic, limited options for impactful data.', 'author' => 'Maya', 'rating' => 0],
+                    ['body' => 'Users may have to remember where the button to go to the menu button is when scrolling down screens. The user may have to remember where the button is. This is not a huge problem but it can be fixed if time permits .', 'author' => 'Keneil', 'rating' => 1],
+                ],
             ],
             ['title' => 'Flexibility and efficiency of use',
                 'description'=>'Allow users to tailor frequent actions. Accelerators – unseen by the novice user – may often speed up the interaction for the expert user to such an extent that the system can cater to both inexperienced and experienced users.',
-                'responses'=>[],
-                'rating' => 34.3
+                'responses'=>[
+                    ['body' => 'The app caters to new and experienced users. However a tutorial or help dialog can be helpful for the rare cases.', 'author' => 'Maya', 'rating' => 1],
+                    ['body' => 'The application doesn’t allow for tailoring actions. This is not a problem.', 'author' => 'Keneil', 'rating' => 1],
+                    ['body' => "Doesn't allow for user to pin alert types.", 'author' => 'Liam', 'rating' => 1],
+
                 ],
+            ],
             ['title' => 'Aesthetic and minimalist design',
                 'description'=>'Dialogs should not contain information that is irrelevant or rarely needed. Every extra unit of information in a dialog competes with the relevant units of information and diminishes their relative visibility.',
-                'responses'=>[],
-                'rating' => 34.3
+                'responses'=>[
+                    ['body' => "Hardly any dialog and the information is concise and useful.", 'author' => 'Maya', 'rating' => 0],
+                    ['body' => "The application contains very little irrelevant information. This is not a problem.", 'author' => 'Keneil', 'rating' => 0],
+                    ['body' => "Added notifications in Alert notices.", 'author' => 'Liam', 'rating' => 1],
+                ],
             ],
             ['title' => 'Help users recognize, diagnose and recover from errors',
                 'description'=>'Error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution.',
-                'responses'=>[],
-                'rating' => 34.3
+                'responses'=>[
+                    ['body' => "Errors are explained in the most layman way.", 'author' => 'Maya', 'rating' => 1],
+                    ['body' => "The error messages may be a little vague at times. This is not a huge problem.", 'author' => 'Keneil', 'rating' => 1],
+                    ['body' => "Error messages should consist of one line. Short and sweet.", 'author' => 'Liam', 'rating' => 0],
+                ],
             ],
             ['title' => 'Help and documentation',
                 'description'=>'Few systems can be used with no instructions so it may be necessary to provide help and documentation. Any such information should be easy to search, focused on the user’s task, list concrete steps to be carried out, and not be too large.',
-                'responses'=>[],
-                'rating' => 34.3
+                'responses'=>[
+                    ['body' => "Documentation and a form of instructions can be added, but the simplistic nature of the app do not demand it.", 'author' => 'Maya', 'rating' => 2],
+                    ['body' => "The system does not offer enough instructions to the user. The system relies on user intuition. This should be fixed but should be given a low priority.", 'author' => 'Keneil', 'rating' => 2],
+                    ['body' => "If there is a concern with the timetable date/time, no steps on who to contact.", 'author' => 'Liam', 'rating' => 2],
+                ],
             ],
         ];
         $results = Thread::where('rating', 2)->get();
