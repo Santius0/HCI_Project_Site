@@ -314,7 +314,7 @@ class ContentController extends Controller
                 'responses' => [
                     ['body' => 'The system provides adequate support for exiting states, undo, and redo. It may just take the user a little more time to do this in screens such as News Feeds and Alerts because of the scrolling feature they have, but this is not necessarily a problem.', 'author' => 'Keniel', 'rating' => 0],
                     ['body' => 'Colour coding of alerts could make visual ranking easier as users will know by first glance what to take note of first.', 'author' => 'Maya', 'rating' => 1],
-                    ['body' => 'Colour coding of alerts could make visual ranking easier as users will know by first glance what to take note of first.', 'author' => 'Maya', 'rating' => 1],
+                    ['body' => "Users have to tap a 'back' button 1-2 times to return from certain interfaces", 'author' => 'Sergio', 'rating' => 0],
                 ],
             ],
             ['title' => 'Consistency and standards',
@@ -323,6 +323,7 @@ class ContentController extends Controller
                     ['body' => 'Familiar buttons with different functions will cause confusion for first time users.', 'author' => 'Maya', 'rating' => 1],
                     ['body' => 'The checks next to the gates on the Campus Status screen appear as though they can be clicked (not supposed to be clicked). This may confuse the user a bit, but is not a huge problem that would need to be fixed given the time constraint', 'author' => 'Keneil', 'rating' => 1],
                     ['body' => 'Campus Status page, checkboxes looks clickable(can be changed by user).', 'author' => 'Liam', 'rating' => 1],
+                    ['body' => 'Some UI elements such as the checkboxes in the Campus Status and Shuttle Service interfaces may look clickable to some users though they are not.', 'author' => 'Sergio', 'rating' => 2],
                 ],
             ],
             ['title' => 'Error prevention',
@@ -330,6 +331,7 @@ class ContentController extends Controller
                 'responses' => [
                     ['body' => 'The minimal amount of user input means less errors are expected, however layout will always be an issue depending on the user(font size, colour scheme, spacing, ordering of items, search restrictions).', 'author' => 'Maya', 'rating' => 0],
                     ['body' => 'The distance between each item in the menu pane may be too little for users with large hands. This may cause incorrect selections to be made', 'author' => 'Keneil', 'rating' => 1],
+                    ['body' => 'Users may click on the wrong item on the newsfeed element at times due to the size of the device and distance between the elements.', 'author' => 'Sergio', 'rating' => 1],
                 ],
             ],
             ['title' => 'Recognition rather than recall',
@@ -337,6 +339,7 @@ class ContentController extends Controller
                 'responses' => [
                     ['body' => 'App is minimalistic, limited options for impactful data.', 'author' => 'Maya', 'rating' => 0],
                     ['body' => 'Users may have to remember where the button to go to the menu button is when scrolling down screens. The user may have to remember where the button is. This is not a huge problem but it can be fixed if time permits .', 'author' => 'Keneil', 'rating' => 1],
+                    ['body' => 'Menu is hidden until accessed, as a result, it is not immediately obvious to a new user of the application how to access the less commonly accessed screens such as Campus Directory, Shuttle Service or Campus Map.', 'author' => 'Sergio', 'rating' => 1],
                 ],
             ],
             ['title' => 'Flexibility and efficiency of use',
@@ -345,6 +348,7 @@ class ContentController extends Controller
                     ['body' => 'The app caters to new and experienced users. However a tutorial or help dialog can be helpful for the rare cases.', 'author' => 'Maya', 'rating' => 1],
                     ['body' => 'The application doesn’t allow for tailoring actions. This is not a problem.', 'author' => 'Keneil', 'rating' => 1],
                     ['body' => "Doesn't allow for user to pin alert types.", 'author' => 'Liam', 'rating' => 1],
+                    ['body' => "No acceleration options available to for experienced users.", 'author' => 'Sergio', 'rating' => 1],
 
                 ],
             ],
@@ -354,6 +358,7 @@ class ContentController extends Controller
                     ['body' => "Hardly any dialog and the information is concise and useful.", 'author' => 'Maya', 'rating' => 0],
                     ['body' => "The application contains very little irrelevant information. This is not a problem.", 'author' => 'Keneil', 'rating' => 0],
                     ['body' => "Added notifications in Alert notices.", 'author' => 'Liam', 'rating' => 1],
+                    ['body' => "Newsfeed can look cluttered at times due to the amount of information that has to be delivered at a glance.", 'author' => 'Sergio', 'rating' => 0],
                 ],
             ],
             ['title' => 'Help users recognize, diagnose and recover from errors',
@@ -362,6 +367,7 @@ class ContentController extends Controller
                     ['body' => "Errors are explained in the most layman way.", 'author' => 'Maya', 'rating' => 1],
                     ['body' => "The error messages may be a little vague at times. This is not a huge problem.", 'author' => 'Keneil', 'rating' => 1],
                     ['body' => "Error messages should consist of one line. Short and sweet.", 'author' => 'Liam', 'rating' => 0],
+                    ['body' => "Error messages could be more user friendly.", 'author' => 'Sergio', 'rating' => 1],
                 ],
             ],
             ['title' => 'Help and documentation',
@@ -370,6 +376,7 @@ class ContentController extends Controller
                     ['body' => "Documentation and a form of instructions can be added, but the simplistic nature of the app do not demand it.", 'author' => 'Maya', 'rating' => 2],
                     ['body' => "The system does not offer enough instructions to the user. The system relies on user intuition. This should be fixed but should be given a low priority.", 'author' => 'Keneil', 'rating' => 2],
                     ['body' => "If there is a concern with the timetable date/time, no steps on who to contact.", 'author' => 'Liam', 'rating' => 2],
+                    ['body' => "No user documentation is available to guide new users and help existing ones.", 'author' => 'Sergio', 'rating' => 1],
                 ],
             ],
         ];
