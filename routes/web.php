@@ -110,7 +110,7 @@ Route::prefix('/hifi')->namespace('Content')->group(function(){
     Route::get('/heuristic-evaluation', 'ContentController@heuristic_eval')->name('hifi.eval');
 });
 
-Route::prefix('/app-files')->namespace('Content')->group(function(){
+Route::prefix('/files')->namespace('Content')->group(function(){
     Route::get('/', 'ContentController@files')->name('files');
 });
 
