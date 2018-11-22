@@ -81,7 +81,7 @@ class ContentController extends Controller
     public function files()
     {
         $files = [
-          ['name' => 'Project Proposal Document', 'link' => asset('files/Project_Proposal_A1.pdf')],
+          ['name' => 'Project Proposal Document', 'link' => asset('Project_Proposal_A1.pdf')],
         ];
         return view('content.files', compact('files'));
     }
