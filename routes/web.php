@@ -111,7 +111,7 @@ Route::prefix('/hifi')->namespace('Content')->group(function(){
 });
 
 Route::prefix('/app-files')->namespace('Content')->group(function(){
-    Route::get('/', 'ContentController@brainstorming')->name('files');
+    Route::get('/', 'ContentController@files')->name('files');
 });
 
 Route::prefix('/brainstorming')->namespace('Content')->group(function(){
