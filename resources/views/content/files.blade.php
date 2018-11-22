@@ -3,7 +3,7 @@
 
 @section('post_body')
     <br/>
-    <h3>All files created during this project can be found below.</h3>
+    <h3>All documents/files created during this project can be found below.</h3>
     <br><hr>
     <div class="w3-container" id="docs-list">
         <ul id="myUL" class="w3-margin-top w3-margin-bottom">

@@ -80,10 +80,10 @@ class ContentController extends Controller
 
     public function files()
     {
-        $files = [
-          ['name' => 'Project Proposal Document', 'link' => 'https://docs.google.com/document/d/1TR90babwad7q6gaxcaNVx403_kr3vhGTLZ9gc9swmzA/edit'],
-        ];
-        return view('content.files', compact('files'));
+//        $files = [
+//          ['name' => 'Project Proposal Document', 'link' => 'https://docs.google.com/document/d/1TR90babwad7q6gaxcaNVx403_kr3vhGTLZ9gc9swmzA/edit'],
+//        ];
+        return view('content.files');
     }
 
     public function user_testing()
