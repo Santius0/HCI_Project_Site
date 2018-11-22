@@ -117,7 +117,7 @@ class HomeController extends Controller
                 'badge_content' => 'Final LoFi prototype was created.',
                 'in_page_id' => '#lofi-prototype',
                 'file_list' => array(
-                    ['link' => 'https://share.proto.io/T4EDZF/', 'name' => 'Final prototype on Proto.io'],
+//                    ['link' => 'https://share.proto.io/T4EDZF/', 'name' => 'Final prototype on Proto.io'],
                     ['link' => 'https://docs.google.com/document/d/1Nu_wGyuH_YlbpmIGzlqsj88UVrqvIiWq4xSjPNMinCY/edit#', 'name' => 'Finalised Project Proposal and Research Document'],
                 ),
             )
