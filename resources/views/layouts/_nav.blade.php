@@ -77,32 +77,32 @@
 
                 <li class="dropdown {{ active(['files', 'files*']) }}"><a href="{{ route('files') }}">Files</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                @if (Auth::guest())
-                    <li class="{{ active('login') }}"><a href="{{ route('login') }}">Login</a></li>
-                    <li class="{{ active('register') }}"><a href="{{ route('register') }}">Register</a></li>
-                @else
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <img class="img-circle" src="{{ Auth::user()->gravatarUrl(60) }}" width="30"> <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <span>
-                                    <strong>{{ Auth::user()->name() }}</strong><br>
-                                    {{ '@'.Auth::user()->username() }}
-                                </span>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li class="{{ active('profile') }}"><a href="{{ route('profile', Auth::user()->username()) }}"><i class="fa fa-user-circle-o dropdown-icon" aria-hidden="true"></i>Profile</a></li>
+            {{--<ul class="nav navbar-nav navbar-right">--}}
+                {{--@if (Auth::guest())--}}
+                    {{--<li class="{{ active('login') }}"><a href="{{ route('login') }}">Login</a></li>--}}
+                    {{--<li class="{{ active('register') }}"><a href="{{ route('register') }}">Register</a></li>--}}
+                {{--@else--}}
+                    {{--<li class="dropdown">--}}
+                        {{--<a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">--}}
+                            {{--<img class="img-circle" src="{{ Auth::user()->gravatarUrl(60) }}" width="30"> <span class="caret"></span>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu">--}}
+                            {{--<li>--}}
+                                {{--<span>--}}
+                                    {{--<strong>{{ Auth::user()->name() }}</strong><br>--}}
+                                    {{--{{ '@'.Auth::user()->username() }}--}}
+                                {{--</span>--}}
+                            {{--</li>--}}
+                            {{--<li role="separator" class="divider"></li>--}}
+                            {{--<li class="{{ active('profile') }}"><a href="{{ route('profile', Auth::user()->username()) }}"><i class="fa fa-user-circle-o dropdown-icon" aria-hidden="true"></i>Profile</a></li>--}}
                             {{--<li class="{{ active('dashboard') }}"><a href="{{ route('dashboard') }}"><i class="fa fa-home dropdown-icon" aria-hidden="true"></i>Dashboard</a></li>--}}
                             {{--<li class="{{ active('settings.*') }}"><a href="{{ route('settings.profile') }}"> <i class="fa fa-cog dropdown-icon" aria-hidden="true"></i>Settings</a></li>--}}
-                            <li role="separator" class="divider"></li>
-                            <li><a href="{{ route('logout') }}"><i class="fa fa-sign-out dropdown-icon" aria-hidden="true"></i>Logout</a></li>
-                        </ul>
-                    </li>
-                @endif
-            </ul>
+                            {{--<li role="separator" class="divider"></li>--}}
+                            {{--<li><a href="{{ route('logout') }}"><i class="fa fa-sign-out dropdown-icon" aria-hidden="true"></i>Logout</a></li>--}}
+                        {{--</ul>--}}
+                    {{--</li>--}}
+                {{--@endif--}}
+            {{--</ul>--}}
         </div>
     </div>
 </nav>
