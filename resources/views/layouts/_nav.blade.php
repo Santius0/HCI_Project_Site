@@ -19,9 +19,9 @@
                 <li class=""{{ active(['brainstorming', 'brainstorming*']) }}><a href="{{ route('brainstorming') }}">Idea Selection(A1)</a></li>
 
                 <li class="dropdown {{ active(['proposal', 'proposal*', 'research', 'research*']) }}">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal and Research(A2)<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal(A2)<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('proposal') }}">Project Proposal</a></li>
+                        <li><a href="{{ route('proposal') }}">Project Proposal and Research Methods</a></li>
                         {{--<li><a href="{{ route('proposal.concept') }}">Conceptual Design</a></li>--}}
                         {{--<li><a href="{{ route('proposal.definition') }}">Problem Definition</a></li>--}}
                         {{--<li><a href="{{ route('proposal.users') }}">Users and Stakeholders</a></li>--}}

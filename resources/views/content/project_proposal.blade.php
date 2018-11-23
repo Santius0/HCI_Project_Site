@@ -1,5 +1,5 @@
 @extends('content.base')
-@title('Project Proposal')
+@title('Project Proposal and Research Methods')
 
 @section('post_body')
     <div id="conceptual-design">
