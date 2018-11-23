@@ -104,18 +104,19 @@ class HomeController extends Controller
                 'badge_content' => 'Video demo using storyboard uploaded.',
                 'in_page_id' => '#video'
             ),
-            array(
-                'badge_header' => 'MedFi Prototype Developed',
-                'badge_header_route' => 'prototype',
-                'badge_content' => 'Initial design re-assessed and improved upon after storyboarding and self testing to make develop a medium fidelity prototype.',
-                'in_page_id' => '#medfi-prototype',
 
-            ),
             array(
                 'badge_header' => 'Task Centered Walkthrough',
                 'badge_header_route' => 'prototype.storyboard',
                 'badge_content' => 'Task centered walkthrough using storyboard carried out.',
                 'in_page_id' => '#walkthrough',
+
+            ),
+            array(
+                'badge_header' => 'MedFi Prototype Developed',
+                'badge_header_route' => 'prototype',
+                'badge_content' => 'Initial design re-assessed and improved upon after storyboarding and self testing to make develop a medium fidelity prototype.',
+                'in_page_id' => '#medfi-prototype',
 
             ),
             array(

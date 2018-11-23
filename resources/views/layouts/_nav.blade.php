@@ -31,7 +31,7 @@
                 </li>
 
                 <li class="dropdown {{ active(['prototype', 'prototype*']) }}">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lofi Prototype<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lofi and MedFi Prototypes<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('prototype.sketches') }}">Design Sketches</a></li>
                         <li><a href="{{ route('prototype') }}">LoFi Prototype</a></li>

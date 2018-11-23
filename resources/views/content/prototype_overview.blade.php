@@ -1,5 +1,5 @@
 @extends('content.base')
-@title('LoFi Prototype')
+@title('LoFi and MedFi Prototypes')
 
 @section('post_body')
     <h3>LoFi Prototype</h3>
