@@ -79,7 +79,7 @@ Route::prefix('/profile')->namespace('Profile')->group(function (){
 });
 
 Route::prefix('/proposal')->namespace('Content')->group(function(){
-    Route::get('/', 'ContentController@index')->name('proposal');
+    Route::get('/', 'ContentController@proposal')->name('proposal');
     Route::get('/definition', 'ContentController@definition')->name('proposal.definition');
     Route::get('/concept', 'ContentController@concept')->name('proposal.concept');
     Route::get('/research', 'ContentController@research')->name('proposal.research');

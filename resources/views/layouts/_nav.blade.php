@@ -18,16 +18,18 @@
 
                 <li class=""{{ active(['brainstorming', 'brainstorming*']) }}><a href="{{ route('brainstorming') }}">Idea Selection(A1)</a></li>
 
-                <li class="dropdown {{ active(['proposal', 'proposal*', 'research', 'research*']) }}">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal(A2)<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ route('proposal.concept') }}">Conceptual Design</a></li>
-                        <li><a href="{{ route('proposal.definition') }}">Problem Definition</a></li>
-                        <li><a href="{{ route('proposal.users') }}">Users and Stakeholders</a></li>
-                        <li><a href="{{ route('research.methods') }}">Research Methods</a></li>
-                        <li><a href="{{ route('research.results') }}">Research Results</a></li>
-                    </ul>
-                </li>
+                    <li class=""{{ active(['proposal', 'proposal*', 'research', 'research*']) }}><a href="{{ route('proposal') }}">Project Proposal and Research(A2)</a></li>
+
+                {{--<li class="dropdown {{ active(['proposal', 'proposal*', 'research', 'research*']) }}">--}}
+                {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Proposal and Research(A2)<span class="caret"></span></a>--}}
+                    {{--<ul class="dropdown-menu">--}}
+                        {{--<li><a href="{{ route('proposal.concept') }}">Conceptual Design</a></li>--}}
+                        {{--<li><a href="{{ route('proposal.definition') }}">Problem Definition</a></li>--}}
+                        {{--<li><a href="{{ route('proposal.users') }}">Users and Stakeholders</a></li>--}}
+                        {{--<li><a href="{{ route('research.methods') }}">Research Methods</a></li>--}}
+                        {{--<li><a href="{{ route('research.results') }}">Research Results</a></li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
 
                 <li class="dropdown {{ active(['prototype', 'prototype*']) }}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lofi Prototype(A3)<span class="caret"></span></a>

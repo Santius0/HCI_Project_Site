@@ -22,8 +22,7 @@ class ContentController extends Controller
 
     public function proposal()
     {
-        $problem_thread = Thread::where('title', 'Project Definition')->first();
-        return view('content.problem_definition', compact('problem_thread'));
+        return view('content.project_proposal');
     }
 
     public function users()
