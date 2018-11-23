@@ -72,8 +72,14 @@ class HomeController extends Controller
             array(
                 'badge_header' => 'Initial Application Sketches Made',
                 'badge_header_route' => 'prototype.sketches',
-                'badge_content' => 'Multiple design sketches made by the development team. Narrowed down to three ideas that were then further polished.',
+                'badge_content' => 'Multiple design sketches made by the development team. Narrowed down to three ideas that were then further polished before choosing a final one.',
                 'in_page_id' => '#chosen-sketches'
+            ),
+            array(
+                'badge_header' => 'Affinity Diagram Created',
+                'badge_header_route' => 'prototype.sketches',
+                'badge_content' => 'Affinity diagram created using chosen design sketches.',
+                'in_page_id' => '#affinity_diagram'
             ),
             array(
                 'badge_header' => 'Self Testing',
@@ -88,7 +94,7 @@ class HomeController extends Controller
                 'in_page_id' => '#controlled-observation',
             ),
             array(
-                'badge_header' => 'Initial LoFi Prototype Developed',
+                'badge_header' => 'LoFi Prototype Developed',
                 'badge_header_route' => 'prototype',
                 'badge_content' => 'Final LoFi prototype completed, using paper.',
             ),

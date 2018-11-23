@@ -16,7 +16,7 @@
                     <div class="files">
                         <ul class="file-list">
                             @foreach($file_list as $file)
-                                <li><a href="{{ $file['link'] }}" target="_blank" class="video-link">{{ $file['name'] }}</a></li>
+                                <li style="padding-left: 20%"><a href="{{ $file['link'] }}" target="_blank" class="video-link">{{ $file['name'] }}</a></li>
                             @endforeach
                         </ul>
                     </div>
