@@ -18,9 +18,11 @@
         </ul>
     </div>
     <br><hr><br>
-    <p>
-        Download All Images <a href="{{ asset('files_and_docs/All_Images_HCI.zip') }}"><b>Here</b></a>
-    </p>
+    <div class="alert alert-info">
+        <p>
+            Download All Images <a href="{{ asset('files_and_docs/All_Images_HCI.zip') }}"><b>Here</b></a>
+        </p>
+    </div>
     <div class="w3-container" id="docs-list">
         <ul id="myUL" class="w3-margin-top w3-margin-bottom">
             @foreach($image_files as $image_file)
