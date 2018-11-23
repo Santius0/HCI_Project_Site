@@ -3,6 +3,7 @@
 
 @section('post_body')
     <h3>LoFi Prototype</h3>
+    <br>
     <p>
         In our initial design we placed a large focus on being innovative, and as a result our designs usability suffered. Despite its visual appeal its navigation was cumbersome. We switched focus from visual creativity to functionality; the gulf of evaluation and execution for all tasks showed a significant decrease.
     </p><br>
@@ -30,6 +31,7 @@
     <br><hr>
     <div id="medfi-prototype">
         <h3>MedFi Prototype</h3>
+        <br>
         <p>
             The  ‘final’ design obtained from self testing  was much more fluid and user friendly. Each team member could easily explain how the application flowed and how to navigate when given a random task by another teammate.
             <br>
