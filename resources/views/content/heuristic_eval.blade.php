@@ -3,7 +3,7 @@
 
 @section('post_body')
         <div id="evaluation">
-            <h3>Navigate the <a href="{{ route('hifi.demo') }}" target="_blank">HiFi Prototype</a> and if at any point you feel like any of the following design principles are violated write up where and why.<br>
+            <h3>Navigate the <a href="{{ asset('HiFi_Prototype\HiFi_Prototype_1.0') }}" target="_blank">HiFi Prototype</a> and if at any point you feel like any of the following design principles are violated write up where and why.<br>
             Be sure to rate how serious you think the problem is from 0 to 4.</h3><br>
             <h4>Rating Scale:</h4>
             <h5>

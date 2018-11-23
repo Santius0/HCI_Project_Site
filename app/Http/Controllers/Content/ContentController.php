@@ -85,6 +85,10 @@ class ContentController extends Controller
           ['name' => 'Project Proposal Document - Assignment 2', 'link' => asset('files_and_docs/Project_Proposal_A2.pdf')],
           ['name' => 'Application Design - Assignment 3', 'link' => asset('files_and_docs/Application_Design_A3.pdf')],
           ['name' => 'HiFi Prototype and Heuristic Analysis - Assignment 4', 'link' => asset('files_and_docs/HiFi_Prototype_and_Heuristic_Analysis_A4.pdf')],
+          ['name' => 'Final Project Document - Assignment 5', 'link' => asset('files_and_docs/HiFi_Prototype_and_Heuristic_Analysis_A4.pdf')],
+          ['name' => 'Group Brainstorming Images', 'link' => asset('files_and_docs/HiFi_Prototype_and_Heuristic_Analysis_A4.pdf')],
+          ['name' => 'Design Sketch Images', 'link' => asset('files_and_docs/HiFi_Prototype_and_Heuristic_Analysis_A4.pdf')],
+          ['name' => 'Affinity Diagram Images', 'link' => asset('files_and_docs/HiFi_Prototype_and_Heuristic_Analysis_A4.pdf')],
         ];
         return view('content.files', compact('files'));
     }

@@ -11,8 +11,10 @@
     {{--</div>--}}
     {{--@endforeach--}}
     <h2>Prototype Layout</h2>
+    <p>The results of the heuristic analysis were used to update the HiFi Prototype. The newly updated prototype can be found <a href="{{asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')}}" target="_blank">Here</a></p>
+    <br>
+    <p>The following is an overview of the HiFi prototype.</p>
     <div id="vertical-prototype">
        <img src="{{ asset('images/prototypes/vertical-prototype.JPG')  }}">
     </div>
-    <h2>See <a href="{{asset('Prototype/index.html')}}" target="_blank">HiFi Prototype</a> </h2><hr><br>
 @endsection

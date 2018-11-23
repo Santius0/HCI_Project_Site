@@ -7,7 +7,7 @@
     <br><hr>
     <div class="alert alert-info">
         <p>
-            Download All Files <a href="{{ asset('files_and_docs/All_Project_File_HCI.zip') }}"><b>Here</b></a>
+            Download All Project Files <a href="{{ asset('files_and_docs/All_Project_File_HCI.zip') }}"><b>Here</b></a>
         </p>
     </div>
     <div class="w3-container" id="docs-list">
