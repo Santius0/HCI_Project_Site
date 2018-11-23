@@ -123,9 +123,9 @@ class HomeController extends Controller
                 'badge_header' => 'HiFi Prototype Developed',
                 'badge_header_route' => 'hifi.eval',
                 'badge_content' => 'LoFi prototype design improved upon and used to develop HiFi prototype.',
-//                'file_list' =>[
-//                    ['name' => 'See HiFi Prototype 1.0', 'link' => asset('HiFi_Prototype/HiFi_Prototype_1.0/index.html')],
-//                ]
+                'file_list' =>[
+                    ['name' => 'See HiFi Prototype 1.0', 'link' => asset('HiFi_Prototype/HiFi_Prototype_1.0/index.html')],
+                ]
 
             ),
             array(
@@ -139,16 +139,18 @@ class HomeController extends Controller
                 'badge_header_route' => 'hifi.eval',
                 'badge_content' => 'Using feedback from heuristic analysis, HiFi prototype was improved upon.',
                 'in_page_id' => '#evaluation',
-//                'file_list' =>[
-//                    ['name' => 'See HiFi Prototype 1.1', 'link' => asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')],
-//                ]
+                'file_list' =>[
+                    ['name' => 'See HiFi Prototype 1.1', 'link' => asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')],
+                ]
             ),
             array(
                 'badge_header' => 'Final Document',
                 'badge_header_route' => 'hifi.eval',
                 'badge_content' => 'Final document created.',
                 'in_page_id' => '#evaluation',
-                'file_list' =>['name' => 'Final Document', 'link' => asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')]
+                'file_list' =>[
+                    ['name' => 'Final Document', 'link' => asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')],
+                ]
             ),
         );
         return view('home', ['timeline_items' => $timeline_items]);
