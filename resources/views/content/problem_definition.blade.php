@@ -1,9 +1,10 @@
 @extends('content.base')
-@title('Problem Definition')
+@title('Project Proposal')
 
 @section('post_body')
     <div id="conceptual-design">
         <h3>Conceptual Project Design</h3>
+        <br>
         <h4>Project Goals</h4>
         <ul>
             <li><p>News/bulletin board – Publications can be made by the correct roles to inform the masses.</p></li>
@@ -16,9 +17,10 @@
             <li><p>News/bulletin board – Publications can be made by the correct roles to inform the masses.</p></li>
         </ul>
     </div>
-    <br>
+    <br><br>
     <div id="problem-definition">
         <h3>Problem Definition</h3>
+        <br>
         <p>
             <b><i>My UWI</i></b> is A multifaceted mobile application focusing on assisting members of the University of the West Indies’s student population via efficient information delivery and data collection & analysis.
             <br>
@@ -39,18 +41,20 @@
                 </li>
             </ul>
     </div>
-    <br>
+    <br><br>
     <div id="users-and-stakeholders">
         <h3>Users and Stakeholders</h3>
+        <br>
         <p>
             This application will cater to students, staff  and alumni of the University of the West Indies, St. Augustine.
             Though the application’s stakeholders and users include persons along a wide age range it’s design will be focused towards its younger generation of users (will not cater for older, persons who are less comfortable with technology). This is due the fact that the bulk of the application’s target user population will be students whose average age is between 17 and 27 years old.
             The application will be easily accessible to anyone familiar with modern day smartphones, requiring no prior training. It will tackle a myriad of problems the university populace deals with daily, ranging from the inefficient delivery of announcements via emails that often go unread to the frustrating experience of dealing with any changing parking changes often missed as they are delivered in the campus newsletter.
         </p>
     </div>
-    <br>
+    <br><br>
     <div id="research-methods">
         <h3>Research Methods</h3>
+        <br>
         <ul>
             <li><p>
                     <b>Interview:</b> Interviews provide a controlled question environment with physical interaction that allows us (the developers) to observe
