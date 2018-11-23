@@ -1,5 +1,5 @@
 @extends('content.base')
-@title('Heuristic Evaluation')
+@title('Hifi Prototype and Heuristic Evaluation')
 
 @section('post_body')
         <div>
