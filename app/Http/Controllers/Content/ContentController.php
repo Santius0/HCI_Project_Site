@@ -85,11 +85,16 @@ class ContentController extends Controller
           ['name' => 'Application Design - Assignment 3', 'link' => asset('files_and_docs/Application_Design_A3.pdf')],
           ['name' => 'HiFi Prototype and Heuristic Analysis - Assignment 4', 'link' => asset('files_and_docs/HiFi_Prototype_and_Heuristic_Analysis_A4.pdf')],
           ['name' => 'Final Project Document - Assignment 5', 'link' => asset('files_and_docs/Final_Document_A5.pdf')],
-//          ['name' => 'Group Brainstorming Images', 'link' => asset('files_and_docs/HiFi_Prototype_and_Heuristic_Analysis_A4.pdf')],
-//          ['name' => 'Design Sketch Images', 'link' => asset('files_and_docs/HiFi_Prototype_and_Heuristic_Analysis_A4.pdf')],
-//          ['name' => 'Affinity Diagram Images', 'link' => asset('files_and_docs/HiFi_Prototype_and_Heuristic_Analysis_A4.pdf')],
         ];
-        return view('content.files', compact('files'));
+        $image_files = [
+            ['name' => 'Group Brainstorming Images', 'link' => asset('files_and_docs/Brainstorm.zip')],
+            ['name' => 'Initial Design Sketches', 'link' => asset('files_and_docs/Design_Sketches.zip')],
+            ['name' => 'Affinity Diagram Images', 'link' => asset('files_and_docs/Affinity_Diagram.zip')],
+            ['name' => 'Storyboard Images', 'link' => asset('files_and_docs/Storyboard.zip')],
+            ['name' => 'LoFi Prototype', 'link' => asset('files_and_docs/LoFi.zip')],
+            ['name' => 'MedFi Prototype', 'link' => asset('files_and_docs/MedFi.zip')],
+        ];
+        return view('content.files', compact('files', 'image_files'));
     }
 
     public function user_testing()
