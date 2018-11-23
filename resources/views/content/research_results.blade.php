@@ -7,43 +7,50 @@
     <h4>Interview With An Average User</h4>
     <p><b>This interview was conducted with someone with no prior knowledge of, or experience in the areas of Computer Science, Software Development or Application Design.</b></p>
     <p>
-        Q: Do you follow UWI social media?
+        Q: Do you follow UWI social media?<br>
         A: Yes I follow UWI on some social media.
     </p>
     <p>
-        Q: Do you get notifications, emails or any form of information digitally from UWI?
+        Q: Do you get notifications, emails or any form of information digitally from UWI?<br>
         A: Yes, sometimes.
     </p>
+    <br>
     <p>
         Q: How reliable is it?<br>
         A: Not very reliable.
     </p>
+    <br>
     <p>
-        Q: Do you think the UWI news email system is effective?
+        Q: Do you think the UWI news email system is effective?<br>
         A: No, not really.
     </p>
+    <br>
     <p>
-        Q: How often do you read them?
+        Q: How often do you read them?<br>
         A: Every other week.
     </p>
     <p>
-        Q: Would you prefer a more cohesive platform?
+        Q: Would you prefer a more cohesive platform?<br>
         A: Yes.
     </p>
+    <br>
     <p>
-        Q: If yes, what kind?
+        Q: If yes, what kind?<br>
         A: A social media app.
     </p>
+    <br>
     <p>
-        Q: (describe app features), would you download this app?
+        Q: (describe app features), would you download this app?<br>
         A: Yes I would.
     </p>
+    <br>
     <p>
-        Q: What are your favourite features, what would you remove, what would you add?
+        Q: What are your favourite features, what would you remove, what would you add?<br>
         A: The notifications are my favourite feature. I would not remove any of the existing features but I would like the ability to add classmates as friends
     </p>
+    <br>
     <p>
-        Q: Any questions, suggestions?
+        Q: Any questions, suggestions?<br>
         A: Make the app as attractive and easy to use.
     </p>
     <br><br>
@@ -51,35 +58,40 @@
     <h4>Interview With An Application Design Expert</h4>
     <p><b>This interview was conducted with someone who has a sufficient technical background in Computer Science and Application Design.</b></p>
     <p>
-        Q: Do you follow UWI social media?
+        Q: Do you follow UWI social media?<br>
         A: Yes I do.
     </p>
+    <br>
     <p>
-        Q: Do you get notifications, emails or any form of information digitally from UWI?
+        Q: Do you get notifications, emails or any form of information digitally from UWI?<br>
         A: Not really.
     </p>
     <p>
-        Q: Do you think the UWI news email system is effective?
+        Q: Do you think the UWI news email system is effective?<br>
         A: No, not really.
     </p>
+    <br>
     <p>
-        Q: How often do you read them?
+        Q: How often do you read them?<br>
         A: Once every month.
     </p>
+    <br>
     <p>
-        Q: Would you prefer a more cohesive platform?
+        Q: Would you prefer a more cohesive platform?<br>
         A: Yes, I would prefer a social media application.
     </p>
     <p>
-        Q: (describe app features), would you download this app?
+        Q: (describe app features), would you download this app?<br>
         A: Yes I would download this app.
     </p>
+    <br>
     <p>
-        Q: What are your favourite features, what would you remove, what would you add?
+        Q: What are your favourite features, what would you remove, what would you add?<br>
         A: The danger alert feature is my favourite. I would not remove any of the features, but it would make sense to have the application compatible and synchronized across multiple devices.
     </p>
+    <br>
     <p>
-        Q: Any questions, suggestions?
+        Q: Any questions, suggestions?<br>
         A: Make the app as simple as possible for the user by making it intuitive for them.
     </p>
     <br><hr><br>
@@ -97,6 +109,7 @@
                 ‘Rescheduled’. Students will receive notifications from the faculty and timetable. Timetable will show the classes affected as Cancelled or
                 the alternative times given by the lecturer.<br>
                 Users: Administration, Lecturers, and Students.
+                <br><br>
             </p>
         </li>
         <li>
@@ -106,19 +119,22 @@
                 route they will take. This allows students who are waiting in the wrong areas to relocate or on nights where shuttles are understaffed, campus
                 security can notify students of the new routes and times.<br>
                 Users: Campus police, Shuttle service drivers and Students(lecturers included).
+                <br><br>
             </p>
         </li>
         <li>
             <p>
                 Before the university Graduation period, Past students (alumni) can learn more and be up to date on the Awards requirements  and schedule.
                 Receive notifications of campus parking areas and additional information. They can also view other campus related things, such as;
-                scholarships donation needs, grants and scholarships available for postgraduates, competitions and campus events.<br>
+                scholarships donation needs, grants and scholarships available for postgraduates, competitions and campus events.
+                <br><br>
             </p>
         </li>
         <li>
             <p>
                 A student is rushing to print an assignment as soon as possible and needs to find the closest printer that they can use to be able to hand in
-                on time. Accessing the app, the student can determine which labs has printing as well as which labs are free of classes.<br>
+                on time. Accessing the app, the student can determine which labs has printing as well as which labs are free of classes.
+                <br><br>
             </p>
         </li>
     </ol>
