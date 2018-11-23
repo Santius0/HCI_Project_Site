@@ -39,13 +39,14 @@
                     </ul>
                 </li>
 
-                <li class="dropdown {{ active(['hifi', 'hifi*']) }}">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hifi Prototype(A4) <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ route('hifi.eval') }}">HiFi Prototype and Heuristic Analysis</a></li>
+                    <li class=" {{ active(['hifi', 'hifi*']) }}"><a href="{{ route('hifi.eval') }}">HiFi Prototype(A4)</a></li>
+                {{--<li class="dropdown {{ active(['hifi', 'hifi*']) }}">--}}
+                    {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hifi Prototype(A4) <span class="caret"></span></a>--}}
+                    {{--<ul class="dropdown-menu">--}}
+                        {{--<li><a href="{{ route('hifi.eval') }}">HiFi Prototype and Heuristic Analysis</a></li>--}}
                         {{--<li><a href="{{ route('hifi.demo') }}">Final HiFi Prototype</a></li>--}}
-                    </ul>
-                </li>
+                    {{--</ul>--}}
+                {{--</li>--}}
 
 
                 {{--<li class="dropdown {{ active(['research', 'research*']) }}">--}}
