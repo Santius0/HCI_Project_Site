@@ -14,9 +14,9 @@
                 <p> {{ $badge_content }}</p>
                 @if(isset($file_list))
                     <div class="files">
-                        <ul class="file-list">
+                        <ul style="padding-left: 10%" class="file-list">
                             @foreach($file_list as $file)
-                                <li style="padding-left: 20%"><a href="{{ $file['link'] }}" target="_blank" class="video-link">{{ $file['name'] }}</a></li>
+                                <li style="padding-left: 10%"><a href="{{ $file['link'] }}" target="_blank" class="video-link">{{ $file['name'] }}</a></li>
                             @endforeach
                         </ul>
                     </div>
