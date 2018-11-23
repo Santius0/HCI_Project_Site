@@ -4,7 +4,7 @@
 @section('post_body')
         <div>
             <h3>HiFi Prototype Developed.</h3>
-            <h4>See <a href="{{asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')}}" target="_blank">HiFi Prototype 1.0</a></h4>
+            <h4>See <a href="{{asset('HiFi_Prototype/HiFi_Prototype_1.0/index.html')}}" target="_blank">HiFi Prototype 1.0</a></h4>
             <h2>The HiFi Prototype follows the following layout</h2>
             <br>
             <div id="vertical-prototype">
@@ -65,5 +65,6 @@
             The application's Heuristic Evaluation revealed numerous violations of Jakob Nielsen's 10 heuristics. The most pressing violations fell under the heuristics of; Consistency and Standards as well as Help and Documentation.
             Other violations were noted, however most of these were viewed as necessary or negligible in the context of the application. Adjustments were made to application in an attempt to correct these issues where possible and further changes will be made in future design iterations.
         </p>
+        <h4>See updated Prototype: <a href="{{asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')}}" target="_blank">HiFi Prototype 1.1</a></h4>
     </div>
 @endsection
