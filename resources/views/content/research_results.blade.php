@@ -163,6 +163,7 @@
                 <li>Check your classes</li>
             </ul>
         </div>
+        <br>
         <div>
             <p>
                 It’s late and you are waiting on Student Shuttles. It’s has been over 30 minutes.<br>
@@ -173,6 +174,7 @@
                 <li>Check your classes</li>
             </ul>
         </div>
+        <br>
         <div>
             <p>
                 The shuttle Status is “No shuttles available”.<br>
@@ -182,6 +184,7 @@
                 <li>Check Student Shuttle Status and Alerts</li>
             </ul>
         </div>
+        <br>
         <div>
             <p>
                 It’s registration time, but my.uwi.edu had been down for 2 days.<br>
@@ -192,6 +195,7 @@
                 <li>Optional : filter by Department Registration</li>
             </ul>
         </div>
+        <br>
         <div>
             <p>
                 It’s a new semester and your first class of the day is in a building you never knew existed on campus.<br>
