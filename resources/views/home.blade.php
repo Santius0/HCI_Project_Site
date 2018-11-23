@@ -12,6 +12,9 @@
                 student population via efficient information delivery and data collection & analysis.
             </h2>
         </div>
+        <div>
+            <h4>Follow Our Development Journey</h4>
+        </div>
     </div>
     @php($invert = false)
     <ul class="timeline">

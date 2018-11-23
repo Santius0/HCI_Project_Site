@@ -3,7 +3,7 @@
 
 @section('post_body')
     <br/>
-    <h3>All documents and/or files created during this project can be found below.</h3>
+    <h3>All documents, and/or images created during this project can be found below.</h3>
     <br>
     <div class="alert alert-info">
         <p>
