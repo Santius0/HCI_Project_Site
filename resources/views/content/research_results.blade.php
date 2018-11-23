@@ -10,6 +10,7 @@
         Q: Do you follow UWI social media?<br>
         A: Yes I follow UWI on some social media.
     </p>
+    <br>
     <p>
         Q: Do you get notifications, emails or any form of information digitally from UWI?<br>
         A: Yes, sometimes.
@@ -66,6 +67,7 @@
         Q: Do you get notifications, emails or any form of information digitally from UWI?<br>
         A: Not really.
     </p>
+    <br>
     <p>
         Q: Do you think the UWI news email system is effective?<br>
         A: No, not really.
@@ -80,6 +82,7 @@
         Q: Would you prefer a more cohesive platform?<br>
         A: Yes, I would prefer a social media application.
     </p>
+    <br>
     <p>
         Q: (describe app features), would you download this app?<br>
         A: Yes I would download this app.
@@ -154,7 +157,7 @@
             You received from the App a notification from your faculty that classes were cancelled but tutorials were rescheduled.<br>
             Tasks expected:
         </p>
-        <ul>
+        <ul style="padding-left: 10px">
             <li>View the news item</li>
             <li>Check your classes</li>
         </ul>
@@ -164,7 +167,7 @@
             It’s late and you are waiting on Student Shuttles. It’s has been over 30 minutes.<br>
             Tasks expected:
         </p>
-        <ul>
+        <ul style="padding-left: 10px">
             <li>Check Student Shuttle Status</li>
             <li>Check your classes</li>
         </ul>
@@ -174,7 +177,7 @@
             The shuttle Status is “No shuttles available”.<br>
             Tasks expected:
         </p>
-        <ul>
+        <ul style="padding-left: 10px">
             <li>Check Student Shuttle Status and Alerts</li>
         </ul>
     </div>
@@ -183,7 +186,7 @@
             It’s registration time, but my.uwi.edu had been down for 2 days.<br>
             Tasks expected:
         </p>
-        <ul>
+        <ul style="padding-left: 10px">
             <li>Check noticeboard/campus News</li>
             <li>Optional : filter by Department Registration</li>
         </ul>
@@ -193,7 +196,7 @@
             It’s a new semester and your first class of the day is in a building you never knew existed on campus.<br>
             Tasks expected:
         </p>
-        <ul>
+        <ul style="padding-left: 10px">
             <li>Open Campus map and search by classroom name or code</li>
         </ul>
     </div>
