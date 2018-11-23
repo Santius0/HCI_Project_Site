@@ -10325,3 +10325,10 @@ div.inline {
   width: 100%;
 }
 
+#observation-results table,
+#observation-results th,
+#observation-results td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+

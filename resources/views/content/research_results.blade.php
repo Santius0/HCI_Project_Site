@@ -233,7 +233,7 @@
         <br><br>
         <h4><b>Observation 2</b></h4>
         <h4><b>Random Scenario: In the last lecture, you remembered the lecturer saying classes would be held in another venue.</b></h4>
-        <table style="border: 1px solid black; border-collapse: collapse;">
+        <table>
             <tr>
                 <th>Task #</th>
                 <th>Duration</th>
