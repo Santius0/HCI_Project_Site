@@ -4,8 +4,9 @@
 @section('post_body')
         <div>
             <h3>HiFi Prototype Developed.</h3>
-            <h4><a href="{{asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')}}" target="_blank">HiFi Prototype 1.1</a></h4>
-            <h2>The HiFi follows the following layout</h2>
+            <h4>See <a href="{{asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')}}" target="_blank">HiFi Prototype 1.0</a></h4>
+            <h2>The HiFi Prototype follows the following layout</h2>
+            <br>
             <div id="vertical-prototype">
                 <img src="{{ asset('images/prototypes/vertical-prototype.JPG')  }}">
             </div>
