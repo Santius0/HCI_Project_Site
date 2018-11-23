@@ -10333,3 +10333,8 @@ div.inline {
   padding: 5px;
 }
 
+#observation-results ul,
+#observation-results li {
+  padding-left: 10px;
+}
+

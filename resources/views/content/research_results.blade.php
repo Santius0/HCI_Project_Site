@@ -142,63 +142,65 @@
         </li>
     </ol>
     <br><hr><br>
-    <h3>Controlled Observation</h3>
-    <p>
-        The Same scenarios provided in the self testing section were used during the controlled observation experiment, however only from just the student’s
-        perspective. The final design obtained from the self testing experiment was converted into multiple images representing the prototype user interface.
-        During the controlled observation experiment we observed how long each task took to complete, how confidently the users performed each task and how
-        many attempts a user had to make before completing each task. We calculated the average for each of these and will use those values as our benchmarks
-        going forward.
-    </p>
-    <br>
-    <h5><b>Scenarios (TASK EXAMPLES):</b></h5>
-    <div>
+    <div id="controlled-observation">
+        <h3>Controlled Observation</h3>
         <p>
-            You received from the App a notification from your faculty that classes were cancelled but tutorials were rescheduled.<br>
-            Tasks expected:
+            The Same scenarios provided in the self testing section were used during the controlled observation experiment, however only from just the student’s
+            perspective. The final design obtained from the self testing experiment was converted into multiple images representing the prototype user interface.
+            During the controlled observation experiment we observed how long each task took to complete, how confidently the users performed each task and how
+            many attempts a user had to make before completing each task. We calculated the average for each of these and will use those values as our benchmarks
+            going forward.
         </p>
-        <ul style="padding-left: 10px">
-            <li>View the news item</li>
-            <li>Check your classes</li>
-        </ul>
-    </div>
-    <div>
-        <p>
-            It’s late and you are waiting on Student Shuttles. It’s has been over 30 minutes.<br>
-            Tasks expected:
-        </p>
-        <ul style="padding-left: 10px">
-            <li>Check Student Shuttle Status</li>
-            <li>Check your classes</li>
-        </ul>
-    </div>
-    <div>
-        <p>
-            The shuttle Status is “No shuttles available”.<br>
-            Tasks expected:
-        </p>
-        <ul style="padding-left: 10px">
-            <li>Check Student Shuttle Status and Alerts</li>
-        </ul>
-    </div>
-    <div>
-        <p>
-            It’s registration time, but my.uwi.edu had been down for 2 days.<br>
-            Tasks expected:
-        </p>
-        <ul style="padding-left: 10px">
-            <li>Check noticeboard/campus News</li>
-            <li>Optional : filter by Department Registration</li>
-        </ul>
-    </div>
-    <div>
-        <p>
-            It’s a new semester and your first class of the day is in a building you never knew existed on campus.<br>
-            Tasks expected:
-        </p>
-        <ul style="padding-left: 10px">
-            <li>Open Campus map and search by classroom name or code</li>
-        </ul>
+        <br>
+        <h5><b>Scenarios (TASK EXAMPLES):</b></h5>
+        <div>
+            <p>
+                You received from the App a notification from your faculty that classes were cancelled but tutorials were rescheduled.<br>
+                Tasks expected:
+            </p>
+            <ul>
+                <li>View the news item</li>
+                <li>Check your classes</li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                It’s late and you are waiting on Student Shuttles. It’s has been over 30 minutes.<br>
+                Tasks expected:
+            </p>
+            <ul>
+                <li>Check Student Shuttle Status</li>
+                <li>Check your classes</li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                The shuttle Status is “No shuttles available”.<br>
+                Tasks expected:
+            </p>
+            <ul>
+                <li>Check Student Shuttle Status and Alerts</li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                It’s registration time, but my.uwi.edu had been down for 2 days.<br>
+                Tasks expected:
+            </p>
+            <ul>
+                <li>Check noticeboard/campus News</li>
+                <li>Optional : filter by Department Registration</li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                It’s a new semester and your first class of the day is in a building you never knew existed on campus.<br>
+                Tasks expected:
+            </p>
+            <ul>
+                <li>Open Campus map and search by classroom name or code</li>
+            </ul>
+        </div>
     </div>
     <br>
     <div id="observation-results">
