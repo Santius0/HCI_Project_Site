@@ -13,7 +13,7 @@
             </h2>
         </div>
         <div>
-            <h4>Follow Our Development Journey</h4>
+            <h4>Follow Our Development Journey Below!</h4>
         </div>
     </div>
     @php($invert = false)

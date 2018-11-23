@@ -155,7 +155,7 @@ class HomeController extends Controller
                 'badge_content' => 'Final document created.',
                 'in_page_id' => '#evaluation',
                 'file_list' =>[
-                    ['name' => 'Final Document', 'link' => asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')],
+                    ['name' => 'Final Document', 'link' => asset('files_and_docs/Final_Document_A5.pdf')],
                 ]
             ),
         );
