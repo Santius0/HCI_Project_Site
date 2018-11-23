@@ -98,49 +98,51 @@
         A: Make the app as simple as possible for the user by making it intuitive for them.
     </p>
     <br><hr><br>
-    <h3>Self Testing</h3>
-    <p>After conducting the interview and getting feedback from the users. We created a simple image prototype  and had each member try to explain how to navigate the application according to the scenarios we created. If the explanation caused confusion or seemed convoluted modifications were made to the design.</p>
-    <br>
-    <p><b>The scenarios were as follows:</b></p>
-    <br>
-    <ol>
-        <li>
-            <p>
-                An emergency meeting was announced for the faculty of Food and Agriculture. All classes of that faculty will be canceled, some students will
-                also be informed that they can attend the later tutorial. The administration of the faculty will release a publication to the ‘news and bulletin
-                board’ section of the mobile application. Lecturers will change the status of their classes from ‘Normal Schedule’ to ‘Cancelled’ or
-                ‘Rescheduled’. Students will receive notifications from the faculty and timetable. Timetable will show the classes affected as Cancelled or
-                the alternative times given by the lecturer.<br>
-                Users: Administration, Lecturers, and Students.
-                <br><br>
-            </p>
-        </li>
-        <li>
-            <p>
-                At 7:50 pm, a class by the course code of Math 2550, ended. Students who live on campus accommodations are waiting by the designated shuttle
-                stops around campus. The students, using the application’s shuttle services features, can see how many shuttles are currently active, and the
-                route they will take. This allows students who are waiting in the wrong areas to relocate or on nights where shuttles are understaffed, campus
-                security can notify students of the new routes and times.<br>
-                Users: Campus police, Shuttle service drivers and Students(lecturers included).
-                <br><br>
-            </p>
-        </li>
-        <li>
-            <p>
-                Before the university Graduation period, Past students (alumni) can learn more and be up to date on the Awards requirements  and schedule.
-                Receive notifications of campus parking areas and additional information. They can also view other campus related things, such as;
-                scholarships donation needs, grants and scholarships available for postgraduates, competitions and campus events.
-                <br><br>
-            </p>
-        </li>
-        <li>
-            <p>
-                A student is rushing to print an assignment as soon as possible and needs to find the closest printer that they can use to be able to hand in
-                on time. Accessing the app, the student can determine which labs has printing as well as which labs are free of classes.
-                <br><br>
-            </p>
-        </li>
-    </ol>
+    <div id="self-testing">
+        <h3>Self Testing</h3>
+        <p>After conducting the interview and getting feedback from the users. We created a simple image prototype  and had each member try to explain how to navigate the application according to the scenarios we created. If the explanation caused confusion or seemed convoluted modifications were made to the design.</p>
+        <br>
+        <p><b>The scenarios were as follows:</b></p>
+        <br>
+        <ol>
+            <li>
+                <p>
+                    An emergency meeting was announced for the faculty of Food and Agriculture. All classes of that faculty will be canceled, some students will
+                    also be informed that they can attend the later tutorial. The administration of the faculty will release a publication to the ‘news and bulletin
+                    board’ section of the mobile application. Lecturers will change the status of their classes from ‘Normal Schedule’ to ‘Cancelled’ or
+                    ‘Rescheduled’. Students will receive notifications from the faculty and timetable. Timetable will show the classes affected as Cancelled or
+                    the alternative times given by the lecturer.<br>
+                    Users: Administration, Lecturers, and Students.
+                    <br><br>
+                </p>
+            </li>
+            <li>
+                <p>
+                    At 7:50 pm, a class by the course code of Math 2550, ended. Students who live on campus accommodations are waiting by the designated shuttle
+                    stops around campus. The students, using the application’s shuttle services features, can see how many shuttles are currently active, and the
+                    route they will take. This allows students who are waiting in the wrong areas to relocate or on nights where shuttles are understaffed, campus
+                    security can notify students of the new routes and times.<br>
+                    Users: Campus police, Shuttle service drivers and Students(lecturers included).
+                    <br><br>
+                </p>
+            </li>
+            <li>
+                <p>
+                    Before the university Graduation period, Past students (alumni) can learn more and be up to date on the Awards requirements  and schedule.
+                    Receive notifications of campus parking areas and additional information. They can also view other campus related things, such as;
+                    scholarships donation needs, grants and scholarships available for postgraduates, competitions and campus events.
+                    <br><br>
+                </p>
+            </li>
+            <li>
+                <p>
+                    A student is rushing to print an assignment as soon as possible and needs to find the closest printer that they can use to be able to hand in
+                    on time. Accessing the app, the student can determine which labs has printing as well as which labs are free of classes.
+                    <br><br>
+                </p>
+            </li>
+        </ol>
+    </div>
     <br><hr><br>
     <div id="controlled-observation">
         <h3>Controlled Observation</h3>

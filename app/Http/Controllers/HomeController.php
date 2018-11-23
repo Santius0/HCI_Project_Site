@@ -26,19 +26,28 @@ class HomeController extends Controller
     {
         $timeline_items = array(
             array(
-                'badge_header' => 'Problem Definition',
-                'badge_header_route' => 'proposal.definition',
-                'badge_content' => Thread::where('title', 'Project Definition')->first()->excerpt(),
+                'badge_header' => 'Idea Brainstorming',
+                'badge_header_route' => 'brainstorming',
+                'badge_content' => '3 ideas presented and before a single one is selected',
+                'in_page_id' => '#conceptual-design'
             ),
             array(
                 'badge_header' => 'Conceptual Design',
-                'badge_header_route' => 'proposal.concept',
+                'badge_header_route' => 'proposal',
                 'badge_content' => Thread::where('title', 'Conceptual Design')->first()->excerpt(),
+                'in_page_id' => '#conceptual-design'
+            ),
+            array(
+                'badge_header' => 'Problem Definition',
+                'badge_header_route' => 'proposal',
+                'badge_content' => Thread::where('title', 'Project Definition')->first()->excerpt(),
+                'in_page_id' => '#problem-definition'
             ),
             array(
                 'badge_header' => 'Identify Users and Stakeholders',
-                'badge_header_route' => 'proposal.users',
+                'badge_header_route' => 'proposal',
                 'badge_content' => Thread::where('title', 'Stakeholders and Users')->first()->excerpt(),
+                'in_page_id' => '#users-and-stakeholders'
             ),
             array(
                 'badge_header' => 'Identify Development Team Member Roles',
@@ -47,8 +56,9 @@ class HomeController extends Controller
             ),
             array(
                 'badge_header' => 'Select Research Methods',
-                'badge_header_route' => 'research.methods',
+                'badge_header_route' => 'proposal',
                 'badge_content' => Thread::where('title', 'Research Methods')->first()->excerpt(),
+                'in_page_id' => '#research-methods'
             ),
             array(
                 'badge_header' => 'Recruit Test Users',
@@ -59,68 +69,56 @@ class HomeController extends Controller
                 'badge_header' => 'Interviews',
                 'badge_header_route' => 'prototype.testing',
                 'badge_content' => 'Test users are interviewed.',
-
             ),
             array(
-                'badge_header' => 'Assess Research Results',
-                'badge_header_route' => 'research.results',
-                'badge_content' => 'Using information gathered from the interviews, the application design process began.',
-            ),
-            array(
-                'badge_header' => 'Initial Application Sketches',
+                'badge_header' => 'Initial Application Sketches Made',
                 'badge_header_route' => 'prototype.sketches',
-                'badge_content' => 'Multiple design sketches made by the development team.<br>Narrowed down to three ideas that were then further polished.',
+                'badge_content' => 'Multiple design sketches made by the development team. Narrowed down to three ideas that were then further polished.',
                 'in_page_id' => '#chosen-sketches'
+            ),
+            array(
+                'badge_header' => 'Self Testing',
+                'badge_header_route' => 'research.results',
+                'badge_content' => 'LoFi prototype assessed by team using multiple scenarios and appropriate changes made.',
+                'in_page_id' => '#self-testing',
+            ),
+            array(
+                'badge_header' => 'Controlled Observation',
+                'badge_header_route' => 'research.results',
+                'badge_content' => 'Users were provided with a prototype and asked to attempt to navigate to the best of their abilities.',
+                'in_page_id' => '#controlled-observation',
+            ),
+            array(
+                'badge_header' => 'Initial LoFi Prototype Developed',
+                'badge_header_route' => 'prototype',
+                'badge_content' => 'Final LoFi prototype completed, using paper.',
             ),
             array(
                 'badge_header' => 'Storyboarding',
                 'badge_header_route' => 'prototype.storyboard',
-                'badge_content' => 'Single design sketch chosen. Storyboard created, and analysed.',
+                'badge_content' => 'Initial LoFi prototype used to create storyboard.',
                 'in_page_id' => '#storyboard'
             ),
             array(
                 'badge_header' => 'Video Demo Created',
                 'badge_header_route' => 'prototype.storyboard',
-                'badge_content' => 'Video demo made and uploaded.',
+                'badge_content' => 'Video demo using storyboard uploaded.',
                 'in_page_id' => '#video'
             ),
+//            array(
+//                'badge_header' => 'Final LoFi Prototype Developed',
+//                'badge_header_route' => 'prototype',
+//                'badge_content' => 'Initial design re-assessed and improved upon after storyboarding and self testing.',
+//                'in_page_id' => '#lofi-prototype',
+//
+//            ),
             array(
-                'badge_header' => 'Initial Application Prototype',
-                'badge_header_route' => 'prototype',
-                'badge_content' => 'Initial design sketches completed.',
-            ),
-            array(
-                'badge_header' => 'Self Testing',
-                'badge_header_route' => 'prototype.testing',
-                'badge_content' => 'Initial design assessed by team using multiple scenarios and appropriate changes made.',
+                'badge_header' => 'Task Centered Walkthrough',
+                'badge_header_route' => 'prototype.storyboard',
+                'badge_content' => 'Task centered walkthrough using storyboard carried out.',
+                'in_page_id' => '#walkthrough',
 
             ),
-            array(
-                'badge_header' => 'Second Application Prototype',
-                'badge_header_route' => 'prototype',
-                'badge_content' => 'Initial design re-assessed and improved upon.',
-
-            ),
-            array(
-                'badge_header' => 'Controlled Observation',
-                'badge_header_route' => 'prototype.testing',
-                'badge_content' => 'Users were provided with a prototype and asked to attempt to navigate to the nest of their abilities.',
-            ),
-            array(
-                'badge_header' => 'Assess Research Results #2',
-                'badge_header_route' => 'research.results',
-                'badge_content' => 'Using the data gathered during the controlled observation experiment the application prototype was further modified.',
-            ),
-            array(
-                'badge_header' => 'Final LoFi Prototype',
-                'badge_header_route' => 'prototype',
-                'badge_content' => 'Final LoFi prototype was created.',
-                'in_page_id' => '#lofi-prototype',
-                'file_list' => array(
-//                    ['link' => 'https://share.proto.io/T4EDZF/', 'name' => 'Final prototype on Proto.io'],
-                    ['link' => 'https://docs.google.com/document/d/1Nu_wGyuH_YlbpmIGzlqsj88UVrqvIiWq4xSjPNMinCY/edit#', 'name' => 'Finalised Project Proposal and Research Document'],
-                ),
-            )
         );
         return view('home', ['timeline_items' => $timeline_items]);
     }
