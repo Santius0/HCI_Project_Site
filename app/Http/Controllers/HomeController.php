@@ -29,7 +29,6 @@ class HomeController extends Controller
                 'badge_header' => 'Idea Brainstorming',
                 'badge_header_route' => 'brainstorming',
                 'badge_content' => '3 ideas presented and before a single one is selected',
-                'in_page_id' => '#conceptual-design'
             ),
             array(
                 'badge_header' => 'Conceptual Design',
@@ -105,19 +104,46 @@ class HomeController extends Controller
                 'badge_content' => 'Video demo using storyboard uploaded.',
                 'in_page_id' => '#video'
             ),
-//            array(
-//                'badge_header' => 'Final LoFi Prototype Developed',
-//                'badge_header_route' => 'prototype',
-//                'badge_content' => 'Initial design re-assessed and improved upon after storyboarding and self testing.',
-//                'in_page_id' => '#lofi-prototype',
-//
-//            ),
+            array(
+                'badge_header' => 'MedFi Prototype Developed',
+                'badge_header_route' => 'prototype',
+                'badge_content' => 'Initial design re-assessed and improved upon after storyboarding and self testing to make develop a medium fidelity prototype.',
+                'in_page_id' => '#medfi-prototype',
+
+            ),
             array(
                 'badge_header' => 'Task Centered Walkthrough',
                 'badge_header_route' => 'prototype.storyboard',
                 'badge_content' => 'Task centered walkthrough using storyboard carried out.',
                 'in_page_id' => '#walkthrough',
 
+            ),
+            array(
+                'badge_header' => 'HiFi Prototype Developed',
+                'badge_header_route' => 'hifi.eval',
+                'badge_content' => 'LoFi prototype design improved upon and used to develop HiFi prototype.',
+                'file_list' =>['name' => 'See HiFi Prototype 1.0', 'link' => asset('HiFi_Prototype/HiFi_Prototype_1.0/index.html')]
+
+            ),
+            array(
+                'badge_header' => 'Heuristic Evaluation',
+                'badge_header_route' => 'hifi.eval',
+                'badge_content' => 'Heuristic evaluation carried out using HiFi prototype.',
+                'in_page_id' => '#evaluation'
+            ),
+            array(
+                'badge_header' => 'Final HiFi Prototype Developed',
+                'badge_header_route' => 'hifi.eval',
+                'badge_content' => 'Using feedback from heuristic analysis, HiFi prototype was improved upon.',
+                'in_page_id' => '#evaluation',
+                'file_list' =>['name' => 'See HiFi Prototype 1.1', 'link' => asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')]
+            ),
+            array(
+                'badge_header' => 'Final Document',
+                'badge_header_route' => 'hifi.eval',
+                'badge_content' => 'Final document created.',
+                'in_page_id' => '#evaluation',
+                'file_list' =>['name' => 'Final Document', 'link' => asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')]
             ),
         );
         return view('home', ['timeline_items' => $timeline_items]);
