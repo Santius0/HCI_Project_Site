@@ -2,6 +2,15 @@
 @title('Heuristic Evaluation')
 
 @section('post_body')
+        <div>
+            <h3>HiFi Prototype Developed.</h3>
+            <h4><a href="{{asset('HiFi_Prototype/HiFi_Prototype_1.1/index.html')}}" target="_blank">HiFi Prototype 1.1</a></h4>
+            <h2>The HiFi follows the following layout</h2>
+            <div id="vertical-prototype">
+                <img src="{{ asset('images/prototypes/vertical-prototype.JPG')  }}">
+            </div>
+        </div>
+        <br>
         <div id="evaluation">
             <h3>Navigate the <a href="{{ asset('HiFi_Prototype\HiFi_Prototype_1.0') }}" target="_blank">HiFi Prototype 1.0</a> and if at any point you feel like any of the following design principles are violated write up where and why.<br>
             Be sure to rate how serious you think the problem is from 0 to 4.</h3><br>
